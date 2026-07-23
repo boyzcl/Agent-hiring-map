@@ -28,15 +28,22 @@
     "third_party_content": "not_relicensed"
   },
   "release_as_of": "2026-07-23",
+  "publication": {
+    "initial_data_commit": "bf6de5c9bfd31e36b2495d269ea6114a3a4cdc22",
+    "observation_earliest_final_date": "2026-08-21",
+    "observation_started_at": "2026-07-23",
+    "published_at": "2026-07-23",
+    "repository_url": "https://github.com/boyzcl/Agent-hiring-map"
+  },
   "review_queue_rows": 828,
   "schema_version": "agent-hiring-map-public/1.0",
   "state": {
     "candidate_ready": false,
     "claim_api_write_enabled": false,
-    "data_published": false,
+    "data_published": true,
     "demand_proven": false,
     "external_business_writes_enabled": false,
-    "p4_observation_active": false,
+    "p4_observation_active": true,
     "p4_passed": false,
     "scale_proven": false
   }

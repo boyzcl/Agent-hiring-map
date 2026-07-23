@@ -113,7 +113,7 @@ python3 scripts/validate_submission.py examples/submissions/valid-china-role.jso
 ## 项目状态
 
 - P0–P3：中国与美国公开来源有界验证已通过；
-- P4：公开仓库已进入或准备进入至少四周的只读观察；
+- P4：公开仓库已于 2026-07-23 进入至少四周的只读观察；
 - 外部 Claim 写入接口：未开放；
 - 网站、API、MCP、岗位申请和消息功能：未开放；
 - 需求、规模化、PMF 和候选人就绪：均未证明。

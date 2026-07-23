@@ -335,6 +335,14 @@ def manifest_errors() -> list[str]:
         if not item.is_file() or ".git" in item.parts:
             continue
         relative = item.relative_to(ROOT).as_posix()
+        if (
+            "__pycache__" in item.parts
+            or item.suffix == ".pyc"
+            or item.name == ".DS_Store"
+            or relative == "review-queue.jsonl"
+            or relative.startswith("metrics-private/")
+        ):
+            continue
         if relative == "manifest.json":
             continue
         actual[relative] = sha256(item)
@@ -437,6 +445,7 @@ def run_self_test() -> dict[str, Any]:
         first = sha256(test_file)
         test_file.write_text("b", encoding="utf-8")
         tests.append(("manifest_hash_drift", first != sha256(test_file)))
+    tests.append(("manifest_runtime_cache_excluded", "__pycache__" in Path("scripts/__pycache__/x.pyc").parts))
     failed = [name for name, passed in tests if not passed]
     return {
         "validator": "agent-hiring-map-public-package/1.0",
