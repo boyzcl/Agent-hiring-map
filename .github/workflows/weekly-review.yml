@@ -1,0 +1,27 @@
+name: weekly-offline-review-queue
+
+on:
+  schedule:
+    - cron: "17 2 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-review-queue:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 scripts/build_review_queue.py --as-of "$(date -u +%F)" --output review-queue.jsonl --source-batches source-batches.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: offline-review-queue
+          path: |
+            review-queue.jsonl
+            source-batches.json
+          retention-days: 14
+

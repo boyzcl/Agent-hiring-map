@@ -1,0 +1,35 @@
+name: 自愿使用回执
+description: 自愿提供可核验的实质使用或外部集成证据
+title: "[使用回执] "
+labels: ["usage-evidence"]
+body:
+  - type: dropdown
+    id: usage_type
+    attributes:
+      label: 使用类型
+      options:
+        - 实质岗位查询
+        - 跨周重复使用
+        - 外部 Agent 或工具集成
+        - 将结果用于求职或市场研究流程
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: 做了什么
+      description: 不要提交查询中的个人资料、简历或私人信息。
+    validations:
+      required: true
+  - type: input
+    id: evidence_url
+    attributes:
+      label: 可选的公开核验链接
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 隐私确认
+      options:
+        - label: 回执不包含候选人资料、私人查询或秘密。
+          required: true
+

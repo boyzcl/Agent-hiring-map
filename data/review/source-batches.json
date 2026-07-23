@@ -1,0 +1,1287 @@
+{
+  "as_of_date": "2026-07-23",
+  "domains": [
+    {
+      "domain": "01ai.jobs.feishu.cn",
+      "queued_role_references": 14
+    },
+    {
+      "domain": "3h1china.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "611.zhiye.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "aipower.zhiye.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "airs.zhiye.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "aispeech.zhiye.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "alteryx.wd108.myworkdayjobs.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "anker-in.jobs.feishu.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "answermyq.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "app.mokahr.com",
+      "queued_role_references": 55
+    },
+    {
+      "domain": "apply.workable.com",
+      "queued_role_references": 3
+    },
+    {
+      "domain": "autohand.ai",
+      "queued_role_references": 2
+    },
+    {
+      "domain": "baicgroup.zhiye.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "banma.zhiye.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "beisen.zhiye.com",
+      "queued_role_references": 7
+    },
+    {
+      "domain": "big.cas.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "bluefocus.jobs.feishu.cn",
+      "queued_role_references": 2
+    },
+    {
+      "domain": "boe.zhiye.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "brightchip.jobs.feishu.cn",
+      "queued_role_references": 3
+    },
+    {
+      "domain": "campus-talent.alibaba.com",
+      "queued_role_references": 60
+    },
+    {
+      "domain": "career.huawei.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "career.yonyou.com",
+      "queued_role_references": 4
+    },
+    {
+      "domain": "careers-inc.nttdata.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "careers.americanexpress.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "careers.extraspace.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "careers.intelepeer.ai",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "careers.oppo.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "careers.paramount.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "careers.pddglobalhr.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "careers.tencent.com",
+      "queued_role_references": 3
+    },
+    {
+      "domain": "casic.zhiye.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "cigai.ai",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "claf.ac.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "cmhk.zhiye.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "cocoindex.io",
+      "queued_role_references": 2
+    },
+    {
+      "domain": "cogniify.ai",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "cottonholdings.pinpointhq.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "cq6qe6bvfr6.jobs.feishu.cn",
+      "queued_role_references": 7
+    },
+    {
+      "domain": "cursor.com",
+      "queued_role_references": 3
+    },
+    {
+      "domain": "daytonaio.notion.site",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "dcar.jobs.feishu.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "deepzero.zhiye.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "depthfirst.com",
+      "queued_role_references": 6
+    },
+    {
+      "domain": "dobot.zhiye.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "duxiaoman.jobs.feishu.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "ehr.zju.edu.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "engineering.westlake.edu.cn",
+      "queued_role_references": 2
+    },
+    {
+      "domain": "et.airchina.com.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "fastbase.jobs.feishu.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "fnii-shenzhen.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "fosunpharma.zhiye.com",
+      "queued_role_references": 2
+    },
+    {
+      "domain": "geovis.zhiye.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "hr.163.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "hr.fudan.edu.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "hr.sensetime.com",
+      "queued_role_references": 8
+    },
+    {
+      "domain": "iaii.cas.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "iflytek.zhiye.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "ihep.cas.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "insforge.dev",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "intuigenceai.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "iwhalecloud1.zhiye.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "job-boards.greenhouse.io",
+      "queued_role_references": 76
+    },
+    {
+      "domain": "job.xiaohongshu.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "jobs.ashbyhq.com",
+      "queued_role_references": 72
+    },
+    {
+      "domain": "jobs.bytedance.com",
+      "queued_role_references": 24
+    },
+    {
+      "domain": "jobs.gusto.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "jobs.lever.co",
+      "queued_role_references": 7
+    },
+    {
+      "domain": "jobs.paloaltonetworks.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "jobs.signatureaviation.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "jobs.smartrecruiters.com",
+      "queued_role_references": 65
+    },
+    {
+      "domain": "jobs.tsinghua.edu.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "join.dify.ai",
+      "queued_role_references": 3
+    },
+    {
+      "domain": "ke.zhiye.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "kotei.zhiye.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "laiye.zhiye.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "lcn7t8bwtgww.jobs.feishu.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "leiniao-ibg.jobs.feishu.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "liner.com",
+      "queued_role_references": 11
+    },
+    {
+      "domain": "m.easthospital.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "mindverse.jobs.feishu.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "mininglamp.zhiye.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "modelbest.jobs.feishu.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "momenta.jobs.feishu.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "msunsoft.zhiye.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "nio.jobs.feishu.cn",
+      "queued_role_references": 62
+    },
+    {
+      "domain": "oseasy.zhiye.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "poizon.jobs.feishu.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "rczp.nju.edu.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "rczpw.suat-sz.edu.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "rlzyb.zy91.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "rokid.zhiye.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "rsc.bjmu.edu.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "sda-software-defined-automation-gmbh.jobs.personio.de",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "shengshu.jobs.feishu.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "skit.keka.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "taichuai.jobs.feishu.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "talent.antgroup.com",
+      "queued_role_references": 19
+    },
+    {
+      "domain": "talent.baidu.com",
+      "queued_role_references": 51
+    },
+    {
+      "domain": "talent.didiglobal.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "talent.dingtalk.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "tib.cas.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "torchv.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "uniphore.wd503.myworkdayjobs.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "vrfi1sk8a0.jobs.feishu.cn",
+      "queued_role_references": 28
+    },
+    {
+      "domain": "wcn7iq2vq1am.jobs.feishu.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "weikezhijia.jobs.feishu.cn",
+      "queued_role_references": 3
+    },
+    {
+      "domain": "www.ahjzu.edu.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "www.bladeai.com.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "www.chinasofti.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "www.cnis.ac.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "www.comeet.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "www.epicgames.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "www.filevine.com",
+      "queued_role_references": 2
+    },
+    {
+      "domain": "www.gientech.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "www.greptile.com",
+      "queued_role_references": 8
+    },
+    {
+      "domain": "www.heygen.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "www.info2soft.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "www.inforbus.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "www.jxfhgc.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "www.opendoor.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "www.opt.ac.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "www.shlab.org.cn",
+      "queued_role_references": 23
+    },
+    {
+      "domain": "www.shuyouyinli.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "www.sim.cas.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "www.sinoinnosoft.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "www.slai.edu.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "www.terton.com.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "www.xydigit.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "www.ycombinator.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "www.zerith.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "x2-robot.jobs.feishu.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "xiaopeng.jobs.feishu.cn",
+      "queued_role_references": 41
+    },
+    {
+      "domain": "xpertai.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "yesv-desaysv.jobs.feishu.cn",
+      "queued_role_references": 4
+    },
+    {
+      "domain": "zenity.io",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "zftii.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "zhaopin.kuaishou.cn",
+      "queued_role_references": 41
+    },
+    {
+      "domain": "zhaopin.meituan.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "znvhr.zhiye.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "zyhy.zhiye.com",
+      "queued_role_references": 1
+    }
+  ],
+  "network_recheck_performed": false,
+  "schema_version": "agent-hiring-map-public/1.0",
+  "unique_domain_count": 140,
+  "unique_url_count": 716,
+  "urls": [
+    "http://fnii-shenzhen.cn/recruitment",
+    "http://www.bladeai.com.cn/contact1/2.html",
+    "http://www.sim.cas.cn/rczpw/rczp2017/shzp2017/202607/t20260702_8237224.html",
+    "http://www.sinoinnosoft.com/layout/view/a1",
+    "http://www.slai.edu.cn/zh-hans/recruitment/388",
+    "http://zftii.com/talent/846f3927138d4d2a95c2857a0baa3f1f.html",
+    "https://01ai.jobs.feishu.cn/index/position/7488560960111249705/detail",
+    "https://01ai.jobs.feishu.cn/index/position/7527178796232706313/detail",
+    "https://01ai.jobs.feishu.cn/index/position/7550230782863853863/detail",
+    "https://01ai.jobs.feishu.cn/index/position/7603661306130942262/detail",
+    "https://01ai.jobs.feishu.cn/index/position/7605639510441707782/detail",
+    "https://01ai.jobs.feishu.cn/index/position/7605812208450734374/detail",
+    "https://01ai.jobs.feishu.cn/index/position/7611016949842135338/detail",
+    "https://01ai.jobs.feishu.cn/index/position/7611109192032749865/detail",
+    "https://01ai.jobs.feishu.cn/index/position/7628556791354624265/detail",
+    "https://01ai.jobs.feishu.cn/index/position/7640037085303474458/detail",
+    "https://01ai.jobs.feishu.cn/index/position/7641848138185705755/detail",
+    "https://01ai.jobs.feishu.cn/index/position/7652612265690253609/detail",
+    "https://01ai.jobs.feishu.cn/index/position/7654790601955019051/detail",
+    "https://01ai.jobs.feishu.cn/index/position/7658185706783607081/detail",
+    "https://3h1china.com/index.php?a=show&c=content&id=425",
+    "https://611.zhiye.com/zpdetail/351580468",
+    "https://aipower.zhiye.com/campus/detail?jobAdId=75ca6817-0999-49c5-a08e-e9183894620d",
+    "https://airs.zhiye.com/social/detail?jobAdId=a8ffafd8-51fd-456e-8218-6ef55a919c95",
+    "https://aispeech.zhiye.com/jobs?KeyWords=",
+    "https://alteryx.wd108.myworkdayjobs.com/en-US/AlteryxCareers/job/Product-Marketing-Manager--Agent---Application-Experiences_R12218",
+    "https://anker-in.jobs.feishu.cn/index/position/7513829459096471862/detail",
+    "https://answermyq.com/careers",
+    "https://app.mokahr.com/apply/moonshot/148506",
+    "https://app.mokahr.com/social-recruitment/moka/118263",
+    "https://app.mokahr.com/social-recruitment/step/94904",
+    "https://app.mokahr.com/social-recruitment/zphz/148983?locale=zh-CN",
+    "https://apply.workable.com/bolderapps/jobs/view/D05CEF4B15.md",
+    "https://apply.workable.com/geodelphi/jobs/view/E8A22CF275.md",
+    "https://apply.workable.com/trilagen/jobs/view/3EAD630FE8.md",
+    "https://autohand.ai/careers/rl-researcher",
+    "https://autohand.ai/careers/staff-ai-engineer",
+    "https://baicgroup.zhiye.com/social/jobs",
+    "https://banma.zhiye.com/social/jobs",
+    "https://beisen.zhiye.com/social/detail?jobAdId=07895a41-2cb8-4594-9d57-a93131d498df",
+    "https://beisen.zhiye.com/social/detail?jobAdId=2f18ec1f-ae90-447d-ae87-3da21ed4d91b",
+    "https://beisen.zhiye.com/social/detail?jobAdId=51a4aaac-9f50-4ce4-a5b5-7770a9c8c8cb",
+    "https://beisen.zhiye.com/social/detail?jobAdId=81ca9265-d54b-4ca1-9560-2e6f0c677bdc",
+    "https://beisen.zhiye.com/social/detail?jobAdId=a40d2a78-eb92-4587-8617-e8796c3fd02c",
+    "https://beisen.zhiye.com/social/detail?jobAdId=e2156e56-a03d-405d-b9ef-f8269c0e5608",
+    "https://beisen.zhiye.com/social/detail?jobAdId=fcd97a81-2ab4-4028-a4b9-1149cca44251",
+    "https://big.cas.cn/rczp/202604/t20260408_8182900.html",
+    "https://bluefocus.jobs.feishu.cn/index/position/7530918742840477990/detail",
+    "https://bluefocus.jobs.feishu.cn/index/position/7575785572691364137/detail",
+    "https://boe.zhiye.com/api/Jobad/GetJobAdPageList?KeyWords=%E6%99%BA%E8%83%BD%E4%BD%93&PortalId=e71a8ad7-a321-4305-80db-73f2f18f8d22",
+    "https://brightchip.jobs.feishu.cn/index/position/7582096698991380790/detail",
+    "https://brightchip.jobs.feishu.cn/index/position/7582097064533166355/detail",
+    "https://brightchip.jobs.feishu.cn/index/position/7603277478718818602/detail",
+    "https://campus-talent.alibaba.com/campus/position/199903540001",
+    "https://campus-talent.alibaba.com/campus/position/199904520003",
+    "https://campus-talent.alibaba.com/campus/position/199905800007",
+    "https://campus-talent.alibaba.com/campus/position/199905800008",
+    "https://campus-talent.alibaba.com/campus/position/199905800009",
+    "https://campus-talent.alibaba.com/campus/position/199905840006",
+    "https://campus-talent.alibaba.com/campus/position/199905880003",
+    "https://campus-talent.alibaba.com/campus/position/199905940001",
+    "https://campus-talent.alibaba.com/campus/position/199905980001",
+    "https://campus-talent.alibaba.com/campus/position/199905980002",
+    "https://campus-talent.alibaba.com/campus/position/199906040002",
+    "https://campus-talent.alibaba.com/campus/position/199906040006",
+    "https://campus-talent.alibaba.com/campus/position/199906040011",
+    "https://campus-talent.alibaba.com/campus/position/199906040015",
+    "https://campus-talent.alibaba.com/campus/position/199906040016",
+    "https://campus-talent.alibaba.com/campus/position/199906060002",
+    "https://campus-talent.alibaba.com/campus/position/199906060007",
+    "https://campus-talent.alibaba.com/campus/position/199906080013",
+    "https://campus-talent.alibaba.com/campus/position/199906100003",
+    "https://campus-talent.alibaba.com/campus/position/199906100004",
+    "https://campus-talent.alibaba.com/campus/position/199906100008",
+    "https://campus-talent.alibaba.com/campus/position/199906100017",
+    "https://campus-talent.alibaba.com/campus/position/199906120007",
+    "https://campus-talent.alibaba.com/campus/position/199906120013",
+    "https://campus-talent.alibaba.com/campus/position/199906120014",
+    "https://campus-talent.alibaba.com/campus/position/199906140002",
+    "https://campus-talent.alibaba.com/campus/position/199906140003",
+    "https://campus-talent.alibaba.com/campus/position/199906740002",
+    "https://campus-talent.alibaba.com/campus/position/199906800002",
+    "https://campus-talent.alibaba.com/campus/position/199906800007",
+    "https://campus-talent.alibaba.com/campus/position/199906800008",
+    "https://campus-talent.alibaba.com/campus/position/199906820003",
+    "https://campus-talent.alibaba.com/campus/position/199906820005",
+    "https://campus-talent.alibaba.com/campus/position/199906820006",
+    "https://campus-talent.alibaba.com/campus/position/199906820007",
+    "https://campus-talent.alibaba.com/campus/position/199906820010",
+    "https://campus-talent.alibaba.com/campus/position/199906820011",
+    "https://campus-talent.alibaba.com/campus/position/199906840003",
+    "https://campus-talent.alibaba.com/campus/position/199906840007",
+    "https://campus-talent.alibaba.com/campus/position/199906840010",
+    "https://campus-talent.alibaba.com/campus/position/199906860003",
+    "https://campus-talent.alibaba.com/campus/position/199906860008",
+    "https://campus-talent.alibaba.com/campus/position/199906860009",
+    "https://campus-talent.alibaba.com/campus/position/199906860014",
+    "https://campus-talent.alibaba.com/campus/position/199906880007",
+    "https://campus-talent.alibaba.com/campus/position/199906880008",
+    "https://campus-talent.alibaba.com/campus/position/199906900001",
+    "https://campus-talent.alibaba.com/campus/position/199906900004",
+    "https://campus-talent.alibaba.com/campus/position/199906900012",
+    "https://campus-talent.alibaba.com/campus/position/199906920002",
+    "https://campus-talent.alibaba.com/campus/position/199906920003",
+    "https://campus-talent.alibaba.com/campus/position/199906920006",
+    "https://campus-talent.alibaba.com/campus/position/199906920007",
+    "https://campus-talent.alibaba.com/campus/position/199906940002",
+    "https://campus-talent.alibaba.com/campus/position/199906940003",
+    "https://campus-talent.alibaba.com/campus/position/199906960001",
+    "https://campus-talent.alibaba.com/campus/position/199906960005",
+    "https://campus-talent.alibaba.com/campus/position/199906980001",
+    "https://campus-talent.alibaba.com/campus/position/199906980002",
+    "https://campus-talent.alibaba.com/campus/position/199906980007",
+    "https://career.huawei.com/cn/job-details?advertisementId=34522&lang=zh_CN",
+    "https://career.yonyou.com/SU67ac41886202cc7916ae3029/pb/posDetail.html?postId=6a028b39e49e0e559f645e97&postType=society",
+    "https://career.yonyou.com/SU67ac41886202cc7916ae3029/pb/posDetail.html?postId=6a2fe82ce49e0e559f8dfa7a&postType=society",
+    "https://career.yonyou.com/SU67ac41886202cc7916ae3029/pb/posDetail.html?postId=6a2fe920e49e0e559f8dfa9e&postType=society",
+    "https://career.yonyou.com/SU67ac41886202cc7916ae3029/pb/posDetail.html?postId=6a3a04bdc7606e0d83c4a8e7&postType=society",
+    "https://careers-inc.nttdata.com/job/Dallas-Senior-AI-Engineer-Remote-TX-75201/1381744800",
+    "https://careers.americanexpress.com/en/sites/CX_1/job/26010339",
+    "https://careers.extraspace.com/job/Corporate/sr-ai-engineer/Salt-Lake-City-Utah/Extra%20Space%20Storage/R-79663",
+    "https://careers.intelepeer.ai/jobs/578273-ai-agent-engineer",
+    "https://careers.oppo.com/university/oppo/campus/post/1430?recruitType=doctor",
+    "https://careers.paramount.com/job/Burbank-Senior-Machine-Learning-Operations-Engineer%2C-Agentic-Systems-Platform-Engineering-CA-91505/1387818000",
+    "https://careers.pddglobalhr.com/jobs/detail",
+    "https://careers.tencent.com/tencentcareer/api/post/ByPostId?postId=1925398818564710400",
+    "https://careers.tencent.com/tencentcareer/api/post/ByPostId?postId=2055555661177204736",
+    "https://careers.tencent.com/tencentcareer/api/post/ByPostId?postId=2063134243537731584",
+    "https://casic.zhiye.com/xiangqing?jobId=151080978",
+    "https://cigai.ai/c/jrwm.html",
+    "https://claf.ac.cn/rczp/202505/t20250522_545314.html",
+    "https://cmhk.zhiye.com/api/JobAd/GetJobAdInfo?jobAdId=de1c6b4f-8844-417f-9c0d-bc2787094b17&portalId=ad6df64e-8702-483f-a2ec-c44deefceec4",
+    "https://cocoindex.io/careers",
+    "https://cogniify.ai/careers",
+    "https://cottonholdings.pinpointhq.com/postings/20a4ed84-9b73-4514-bdeb-a97e7c70525a",
+    "https://cq6qe6bvfr6.jobs.feishu.cn/baichuanzhaopin/position/7434429533023865098/detail",
+    "https://cq6qe6bvfr6.jobs.feishu.cn/baichuanzhaopin/position/7516826526512679180/detail",
+    "https://cq6qe6bvfr6.jobs.feishu.cn/baichuanzhaopin/position/7555061292853397799/detail",
+    "https://cq6qe6bvfr6.jobs.feishu.cn/baichuanzhaopin/position/7581458142631528713/detail",
+    "https://cq6qe6bvfr6.jobs.feishu.cn/baichuanzhaopin/position/7621077065886812462/detail",
+    "https://cq6qe6bvfr6.jobs.feishu.cn/baichuanzhaopin/position/7644411591471352073/detail",
+    "https://cq6qe6bvfr6.jobs.feishu.cn/baichuanzhaopin/position/7654879972347152650/detail",
+    "https://cursor.com/careers/gtm-systems-support-and-agentic-engineer",
+    "https://cursor.com/careers/software-engineer-agent-evaluation-and-quality",
+    "https://cursor.com/careers/software-engineer-agent-harness",
+    "https://daytonaio.notion.site/Senior-System-Engineer-25729a8a0d018003b6d4e503c41eec3e",
+    "https://dcar.jobs.feishu.cn/index/position/7643735231036082459/detail",
+    "https://deepzero.zhiye.com/jobs?KeyWords=",
+    "https://depthfirst.com/careers/backend-engineer-a2416174",
+    "https://depthfirst.com/careers/forward-deployed-security-engineer-c53f54bd",
+    "https://depthfirst.com/careers/product-engineer-1ae8ff71",
+    "https://depthfirst.com/careers/research-engineer-c73ec5e2",
+    "https://depthfirst.com/careers/security-product-engineer-f0b11e7a",
+    "https://depthfirst.com/careers/security-researcher-6f858f7f",
+    "https://dobot.zhiye.com/jobs?KeyWords=",
+    "https://duxiaoman.jobs.feishu.cn/051736/position/7615934023782123803/detail",
+    "https://ehr.zju.edu.cn/vuejs/recruitment/position-detail.htm?id=N1870031994385072142",
+    "https://engineering.westlake.edu.cn/Recuitment/202509/t20250916_59065.shtml",
+    "https://engineering.westlake.edu.cn/Recuitment/202606/t20260602_67512.shtml",
+    "https://et.airchina.com.cn/cn/about_us/recruitment/ground_crew_info/184618.shtml",
+    "https://fastbase.jobs.feishu.cn/referral/campus/position/7619270023261948198/detail",
+    "https://fosunpharma.zhiye.com/internxq?jobId=561143915",
+    "https://fosunpharma.zhiye.com/internxq?jobId=561265883",
+    "https://geovis.zhiye.com/jobs?KeyWords=",
+    "https://hr.163.com/job-detail.html?id=76697",
+    "https://hr.fudan.edu.cn/86/ec/c15370a755436/page.htm?_refluxos=a10",
+    "https://hr.sensetime.com/exp/position/7641115537258711305/detail",
+    "https://hr.sensetime.com/exp/position/7641514498783758601/detail",
+    "https://hr.sensetime.com/exp/position/7644494757113039114/detail",
+    "https://hr.sensetime.com/exp/position/7644776642477492490/detail",
+    "https://hr.sensetime.com/exp/position/7651505643388455222/detail",
+    "https://hr.sensetime.com/exp/position/7651829462854093094/detail",
+    "https://hr.sensetime.com/exp/position/7652299407749433642/detail",
+    "https://hr.sensetime.com/exp/position/7656778224399894790/detail",
+    "https://iaii.cas.cn/rcdw/rczp/202606/t20260630_8235793.html",
+    "https://iflytek.zhiye.com/api/Jobad/GetJobAdPageList?KeyWords=Agent&PortalId=6e2235dc-4b88-4698-b96a-5a73c705d8db",
+    "https://ihep.cas.cn/tfyzx/rczp/202509/t20250902_7956895.html",
+    "https://insforge.dev/careers/devrel-engineer",
+    "https://intuigenceai.com/careers/full-stack-engineer",
+    "https://iwhalecloud1.zhiye.com/api/JobAd/GetJobAdInfo?jobAdId=a6621abf-aa65-4e0a-8116-c7c75dff492a&portalId=792964a1-5b16-4806-8f35-c3662525d8d8",
+    "https://job-boards.greenhouse.io/anthropic/jobs/4017331008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/4502508008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/4613568008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/4673416008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/4931772008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/4949336008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/4980335008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5013366008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5061517008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5065894008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5074217008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5074937008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5075093008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5076477008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5096878008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5098025008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5116820008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5134895008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5139654008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5153924008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5157847008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5159608008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5174747008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5174755008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5186067008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5191785008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5192104008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5197549008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5197597008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5198255008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5198991008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5206978008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5220143008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5223916008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5226954008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5230755008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5231612008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5236531008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5238460008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5238606008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5239733008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5247640008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5250063008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5250091008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5251671008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5254364008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5271426008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5271428008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5277834008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5278065008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5285246008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5285250008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5290360008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5290837008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5302779008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5304425008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5305476008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5311463008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5311465008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5315789008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5320469008",
+    "https://job-boards.greenhouse.io/anthropic/jobs/5342935008",
+    "https://job-boards.greenhouse.io/arizeai/jobs/5396396004",
+    "https://job-boards.greenhouse.io/bridgewater89/jobs/8499417002",
+    "https://job-boards.greenhouse.io/fairmarkit/jobs/6111188004",
+    "https://job-boards.greenhouse.io/kargo/jobs/6100171004",
+    "https://job-boards.greenhouse.io/komodohealth/jobs/8569468002",
+    "https://job-boards.greenhouse.io/liveviewtechnologiesinc/jobs/5268398008",
+    "https://job-boards.greenhouse.io/machinifyinc/jobs/4146862009",
+    "https://job-boards.greenhouse.io/taxbit/jobs/6111068004",
+    "https://job-boards.greenhouse.io/thealleninstitute/jobs/7872683",
+    "https://job-boards.greenhouse.io/vercel/jobs/5806749004",
+    "https://job-boards.greenhouse.io/vercel/jobs/5808568004",
+    "https://job-boards.greenhouse.io/vercel/jobs/5810285004",
+    "https://job-boards.greenhouse.io/vercel/jobs/6011651004",
+    "https://job-boards.greenhouse.io/vercel/jobs/6011904004",
+    "https://job.xiaohongshu.com/websiterecruit/position/queryPositionDetail?positionId=20183",
+    "https://jobs.ashbyhq.com/1mind/052ca544-28c4-4fcb-a0a2-63140ccf0212",
+    "https://jobs.ashbyhq.com/1mind/0dfbe31e-89ef-4f54-b0f9-f51f29c3c083",
+    "https://jobs.ashbyhq.com/1mind/2b085917-8022-4e12-8a54-06de0722f091",
+    "https://jobs.ashbyhq.com/1mind/3d939e24-b792-4663-9ae2-9e4c468c127e",
+    "https://jobs.ashbyhq.com/1mind/46a3c257-5c87-4e8b-925a-8d5b332307d9",
+    "https://jobs.ashbyhq.com/1mind/8fbff4e2-9753-4e98-b281-2724e81efbb0",
+    "https://jobs.ashbyhq.com/1mind/fdc593fa-26a3-444d-b963-c89a1859f58e",
+    "https://jobs.ashbyhq.com/AgentMail/6e99881b-595c-44e0-8f82-eb431ef98623",
+    "https://jobs.ashbyhq.com/Archy/0761dac4-f95d-440a-b9a6-02bf451a3ab2",
+    "https://jobs.ashbyhq.com/Archy/18aa3a15-1637-4667-a059-1a95fcaee870",
+    "https://jobs.ashbyhq.com/Archy/4e6c9099-221d-449d-8158-3db7ab00b802",
+    "https://jobs.ashbyhq.com/Archy/5750a13d-c342-4618-9d9a-ccc6dda2481a",
+    "https://jobs.ashbyhq.com/Archy/6ccab302-5c12-47f5-bb69-277b500959d3",
+    "https://jobs.ashbyhq.com/Archy/e6091485-6c59-487c-be7a-20ea62770ed9",
+    "https://jobs.ashbyhq.com/Deepgram/4a873ede-8555-42ae-9ddc-ac89afdd7278",
+    "https://jobs.ashbyhq.com/Deepgram/7c7064bb-2bf0-4f64-81cc-14afe79a15c1",
+    "https://jobs.ashbyhq.com/Deepgram/d483b474-0d4d-49ac-887f-0027456dd82e",
+    "https://jobs.ashbyhq.com/Hamming%20AI/7d96d1ce-c81c-4757-96c4-af101b2dce22",
+    "https://jobs.ashbyhq.com/Juicebox/54fc01a7-3e7a-4549-8ed0-fecbdaad38cd",
+    "https://jobs.ashbyhq.com/Juicebox/976237c5-a77f-47b3-bf3e-39b95461f8c9",
+    "https://jobs.ashbyhq.com/Juicebox/ad92e89b-d908-4b6a-ac1e-7c3ce81a2f71",
+    "https://jobs.ashbyhq.com/Juicebox/cc626054-c5cb-4f0b-8af5-d71129b5ba4c",
+    "https://jobs.ashbyhq.com/Juicebox/e8c1b9ee-76ba-4f53-a660-714ad89982ba",
+    "https://jobs.ashbyhq.com/Juicebox/fd329c43-55f2-4890-a3d3-7a1a4b28cb80",
+    "https://jobs.ashbyhq.com/Lance/0f86cbc1-f89e-49e7-bf31-c112b223c87d",
+    "https://jobs.ashbyhq.com/Tsenta/6f260369-fb1b-4025-abd3-ec48c2087c14",
+    "https://jobs.ashbyhq.com/automat/032d1a16-fe7d-4c78-86d5-5d9ae2d95f17",
+    "https://jobs.ashbyhq.com/automat/5c9a8eae-0705-48b6-9b7a-8d752146feb0",
+    "https://jobs.ashbyhq.com/automat/a4172515-0353-47ec-9c71-631a294aa137",
+    "https://jobs.ashbyhq.com/automat/c69679cd-98e0-4513-b899-1eb00925a1a9",
+    "https://jobs.ashbyhq.com/automat/e962c8d0-d892-4f87-b090-71944f7c4f0f",
+    "https://jobs.ashbyhq.com/equi/0e335b36-ac8b-43bc-8198-ff6745fa3f00",
+    "https://jobs.ashbyhq.com/general-context/b438efd7-fc2e-471c-9cc2-652c7966c1c3",
+    "https://jobs.ashbyhq.com/gigaml/0356bbca-0bc4-4463-8ca6-ea2db04c0d83",
+    "https://jobs.ashbyhq.com/gigaml/06954bfa-8917-436f-b442-a473c576bfef",
+    "https://jobs.ashbyhq.com/gigaml/0bd3cb15-811f-4a6b-ac12-781f24735a86",
+    "https://jobs.ashbyhq.com/gigaml/22b98514-cb06-4088-9553-9c9039434b9c",
+    "https://jobs.ashbyhq.com/gigaml/79f05a1a-7cde-4eb5-8e3f-ed9ebae077e0",
+    "https://jobs.ashbyhq.com/gigaml/7f70df01-8b1f-4368-a51a-801ed21833f3",
+    "https://jobs.ashbyhq.com/gigaml/834fc9bf-fd1f-43f5-9bbe-1e1404d8b0e8",
+    "https://jobs.ashbyhq.com/gigaml/8adaaa03-6e33-4906-8ca3-6227abbee8bd",
+    "https://jobs.ashbyhq.com/gigaml/adb98b23-36f9-4078-9a7b-454752a30360",
+    "https://jobs.ashbyhq.com/gigaml/b5a48fee-24dd-4123-a216-da63a196e6e1",
+    "https://jobs.ashbyhq.com/gigaml/ba9b543d-e85c-4bd1-978b-f838d7a4062f",
+    "https://jobs.ashbyhq.com/gigaml/cbe0ddad-a47c-420b-bf77-73721959d4fa",
+    "https://jobs.ashbyhq.com/gigaml/fb38661d-66a8-4614-b4aa-835bfb33cf8f",
+    "https://jobs.ashbyhq.com/happyrobot.ai/224e1cd5-4299-483d-a6d6-70e34130ad94",
+    "https://jobs.ashbyhq.com/happyrobot.ai/7324dd6c-6c6c-4b05-871a-7da626824252",
+    "https://jobs.ashbyhq.com/happyrobot.ai/812916b1-da01-40d4-8a5b-f3d1f0f4eb42",
+    "https://jobs.ashbyhq.com/happyrobot.ai/f025b971-e667-4a95-b626-a2fad22bbd65",
+    "https://jobs.ashbyhq.com/happyrobot.ai/ffb28efb-3bfd-4306-ba2e-53141a1c476e",
+    "https://jobs.ashbyhq.com/horizon3ai/e36e9f43-c831-43ac-85b3-782b28bef222",
+    "https://jobs.ashbyhq.com/intrinsic-safety/0d1e219c-d734-43c7-82ea-e1aeb2df2ed6",
+    "https://jobs.ashbyhq.com/intrinsic-safety/2dca04c0-1ec1-4645-a807-20347d3f64ce",
+    "https://jobs.ashbyhq.com/intrinsic-safety/66dfd37e-6df5-4f89-8454-b3005bd6e1aa",
+    "https://jobs.ashbyhq.com/intrinsic-safety/e68b8f6a-c8ea-4295-99bd-a95a22d86fac",
+    "https://jobs.ashbyhq.com/kong/ea7b507b-b249-4cf2-88ea-09fbbaf32acb",
+    "https://jobs.ashbyhq.com/mintmcp/cd5d5aa3-a7d3-4e85-bdc9-19d42da1eccc",
+    "https://jobs.ashbyhq.com/momentic/42657161-9437-44d1-b6b5-31600d264223",
+    "https://jobs.ashbyhq.com/onton/46a504b2-0c36-43c2-899f-8c3a2d207c0c",
+    "https://jobs.ashbyhq.com/pear-vc/e681cf11-9b8a-4630-86ac-b995a76a77d7",
+    "https://jobs.ashbyhq.com/sesame/04780842-fd58-41d9-87a1-f65e818eebab",
+    "https://jobs.ashbyhq.com/sesame/08ade360-a4bc-4584-9c40-04dc380276a5",
+    "https://jobs.ashbyhq.com/sesame/35793528-2b5c-47b3-9422-eaced2b69f63",
+    "https://jobs.ashbyhq.com/sesame/376d302f-f870-40aa-940f-aee951803d2b",
+    "https://jobs.ashbyhq.com/sesame/5e846cd7-5719-440c-b8ef-2fba501847ae",
+    "https://jobs.ashbyhq.com/sesame/bb89d497-f1cc-427d-bac5-2c6f6335bcfa",
+    "https://jobs.ashbyhq.com/sesame/c1a37be6-ccbd-4b3f-9a21-6ef7eb3c3378",
+    "https://jobs.ashbyhq.com/sesame/f54a7538-34d3-4572-90ad-e9867c36461c",
+    "https://jobs.ashbyhq.com/sesame/fa6a85fb-1f04-4f8e-b95f-e948ebef7fd7",
+    "https://jobs.ashbyhq.com/shepherd/6cbab29e-1bbf-42b4-9308-3823693ca288",
+    "https://jobs.ashbyhq.com/v7labs.com/00d9239d-17ab-499e-ab59-6e1fb7b1ef20",
+    "https://jobs.bytedance.com/api/v1/job/posts/7344994205192915210",
+    "https://jobs.bytedance.com/api/v1/job/posts/7410256299985864986",
+    "https://jobs.bytedance.com/api/v1/job/posts/7456661700856891656",
+    "https://jobs.bytedance.com/api/v1/job/posts/7470766192203139335",
+    "https://jobs.bytedance.com/api/v1/job/posts/7519831676537637138",
+    "https://jobs.bytedance.com/api/v1/job/posts/7593182253968263477",
+    "https://jobs.bytedance.com/api/v1/job/posts/7593365278961174789",
+    "https://jobs.bytedance.com/api/v1/job/posts/7594713251364768005",
+    "https://jobs.bytedance.com/api/v1/job/posts/7599565528480729349",
+    "https://jobs.bytedance.com/api/v1/job/posts/7600271767215786293",
+    "https://jobs.bytedance.com/api/v1/job/posts/7600284929716865333",
+    "https://jobs.bytedance.com/api/v1/job/posts/7612557694127425797",
+    "https://jobs.bytedance.com/api/v1/job/posts/7616307562766469429",
+    "https://jobs.bytedance.com/api/v1/job/posts/7617786273006717189",
+    "https://jobs.bytedance.com/api/v1/job/posts/7628154377077344565",
+    "https://jobs.bytedance.com/api/v1/job/posts/7628582583933274373",
+    "https://jobs.bytedance.com/api/v1/job/posts/7628867718565300485",
+    "https://jobs.bytedance.com/api/v1/job/posts/7631410200812980533",
+    "https://jobs.bytedance.com/api/v1/job/posts/7637823437259606277",
+    "https://jobs.bytedance.com/api/v1/job/posts/7639746179199043893",
+    "https://jobs.bytedance.com/api/v1/job/posts/7643658211312175413",
+    "https://jobs.bytedance.com/api/v1/job/posts/7644401394539759877",
+    "https://jobs.bytedance.com/api/v1/job/posts/7656745923674229045",
+    "https://jobs.bytedance.com/campus/m/position/detail/7628867718565300485",
+    "https://jobs.gusto.com/postings/loman-ai-forward-deployed-engineer-3362f353-fda7-43ce-92b3-9dfc911bb236",
+    "https://jobs.lever.co/appzen/a280ec03-9d0e-4a08-84ef-0bab09cc61c4",
+    "https://jobs.lever.co/blencorp/4b2e3689-9720-4785-b0fe-d09bd5325f74",
+    "https://jobs.lever.co/copilotkit/2d8b533b-1432-4ac0-9319-10f7c99b38fc",
+    "https://jobs.lever.co/copilotkit/d134b481-f042-45b1-b908-dd38ff72fdd0",
+    "https://jobs.lever.co/field-ai/c56e6bc4-23d9-4ed1-9349-fee74e35c264",
+    "https://jobs.lever.co/getzuma/3dd732f9-e4a6-4f38-8ec3-aa80434b261d",
+    "https://jobs.lever.co/mangolanguage/f00af1eb-2641-44fb-9065-9cbbde381a6e",
+    "https://jobs.paloaltonetworks.com/en/job/sofia/senior-software-engineer-secure-ai-agent/47263/96174879872",
+    "https://jobs.signatureaviation.com/en/sites/CX_1/job/16018",
+    "https://jobs.smartrecruiters.com/AbbVie/3743990012925490-strategic-product-manager-knowledge-integration-articulation-hybrid-",
+    "https://jobs.smartrecruiters.com/AbbVie/3743990013029087-non-human-identity-and-cloud-iam-platform-lead",
+    "https://jobs.smartrecruiters.com/AbbVie/3743990013337511-enterprise-data-architect-operations-and-finance-",
+    "https://jobs.smartrecruiters.com/AbbVie/3743990013375146-business-process-automation-engineer",
+    "https://jobs.smartrecruiters.com/AbbVie/3743990013606826-solutions-architect-platform-enterprise-integration-",
+    "https://jobs.smartrecruiters.com/AbbVie/3743990013617026-director-competitive-strategic-insights-ai-strategy",
+    "https://jobs.smartrecruiters.com/AbbVie/3743990013624176-senior-engineer-applied-ai-engineering-platforms",
+    "https://jobs.smartrecruiters.com/AbbVie/3743990013731386-senior-software-engineer-design-systems",
+    "https://jobs.smartrecruiters.com/AbbVie/3743990013935997-architect-delivery-operations-ai-systems",
+    "https://jobs.smartrecruiters.com/AbbVie/3743990014029446-principal-agentic-ai-security-engineer",
+    "https://jobs.smartrecruiters.com/AbbVie/3743990014064636-modeling-and-simulation-module-developer-data-ai-acceleration-hybrid-",
+    "https://jobs.smartrecruiters.com/BoschGroup/744000133692982-ai-research-engineer-agentic-ai",
+    "https://jobs.smartrecruiters.com/Freshworks/744000136541299-staff-engineer-machine-learning",
+    "https://jobs.smartrecruiters.com/IFS1/744000105697277-senior-product-manager-agentic-ai-ifs-loops",
+    "https://jobs.smartrecruiters.com/IFS1/744000125183650-forward-deployed-engineer",
+    "https://jobs.smartrecruiters.com/IFS1/744000130065959-ai-machine-learning-engineer-python-loops",
+    "https://jobs.smartrecruiters.com/IFS1/744000130066187-data-scientist-agentic-ai-systems-loops",
+    "https://jobs.smartrecruiters.com/IFS1/744000136261139-outbound-product-manager-agentic-ai-digital-workers",
+    "https://jobs.smartrecruiters.com/NBCUniversal3/744000135549464-senior-software-engineer-engineering-operations",
+    "https://jobs.smartrecruiters.com/Nagarro1/744000115578514-staff-engineer-ai-",
+    "https://jobs.smartrecruiters.com/Nagarro1/744000128183759-associate-staff-engineer-ai-",
+    "https://jobs.smartrecruiters.com/RenesasElectronics/744000132257128-senior-engineer-ai-compiler-automotive-soc",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000107221016-senior-staff-software-engineer-agentic-ai-systems-moveworks",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000107400781-senior-machine-learning-engineer-agentic-ai-systems-moveworks",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000107801692-staff-machine-learning-engineer-agentic-systems-moveworks",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000108296495-principal-inbound-product-manager-moveworks-enterprise-search-platform-",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000118271653-senior-ai-automation-engineer-cs-ops-moveworks",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000118983032-senior-security-engineer-security-operations-moveworks-",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000121884357-principal-product-designer-moveworks",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000125181170-machine-learning-engineer-gai-search-platform-moveworks",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000125214274-senior-software-engineer-agentic-systems-moveworks",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000125226734-sr-software-engineer-frontend-fullstack-moveworks",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000126417779-software-engineer-agentic-ai-systems-moveworks",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000128598249-sr-director-executive-communications-",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000128790683-principal-inbound-product-manager-ai-assistant-employee-experience-moveworks",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000129017890-staff-mle-gai-search-platform-moveworks-",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000130259399-staff-software-engineer-agentic-systems-moveworks",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000130558571-senior-application-security-engineer-moveworks",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000130592199-agentic-search-infrastructure-engineer-moveworks",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000130593679-sr-staff-product-designer-identity-security-platform-systems",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000130893870-staff-security-engineer-security-operations-moveworks-",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000131541919-senior-staff-ai-native-software-engineer-agentic-systems-",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000132951349-global-partner-manager-autonomous-workforce",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000133461449-c-i-partner-manager-ibm-governance-security-autonomous-workforce",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000134029129-senior-software-engineer-agentic-ai-systems-moveworks",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000134357109-staff-machine-learning-engineer-agentic-application",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000134357240-senior-staff-machine-learning-engineer-agentic-application",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000134523622-senior-technical-support-engineer",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000134539069-staff-ai-engineer-conversational-agentic-ai",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000135064189-senior-director-hr-operations-strategy-transformation-enablement-",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000135168359--senior-staff-software-engineer-ai-ml-veza",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000135542804-director-industry-marketing-defense",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000136030671-vp-marketing",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000136063259-solution-architect-ai-data",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000136106549-director-industry-marketing-life-sciences",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000136531576-senior-director-ai-evaluation-platform",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000136547750-staff-agentic-search-infrastructure-engineer-moveworks",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000136548419-senior-agentic-search-infrastructure-engineer-moveworks",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000136548859-staff-software-engineer-developer-experience-moveworks",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000136574600-senior-info-sec-operations-engineer-okta-iam",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000136869969-principal-product-manager-action-fabric",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000136875629-director-c-i-gtm-strategy-servicenow",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000137214359-senior-data-scientist",
+    "https://jobs.smartrecruiters.com/ServiceNow/744000137502479-senior-engineering-manager-agentic-generative-ai-benchmarking-and-evaluations",
+    "https://jobs.smartrecruiters.com/Sutherland/744000136303539-principal-architect",
+    "https://jobs.tsinghua.edu.cn/project/qhdx/pages/recruit_new",
+    "https://join.dify.ai/roles.html",
+    "https://ke.zhiye.com/intern/detail?jobAdId=5cd6e3fe-ce55-45bf-bc7f-201aefedb75b",
+    "https://kotei.zhiye.com/campus/jobs?1=%5B%7B%22id%22%3A%224%22%2C%22label%22%3A%22%E5%BC%80%E5%8F%91%E7%B1%BB%22%7D%5D",
+    "https://laiye.zhiye.com/social/jobs",
+    "https://lcn7t8bwtgww.jobs.feishu.cn/index/position/7585080543353882886/detail",
+    "https://leiniao-ibg.jobs.feishu.cn/index/position/7459302085524670783/detail",
+    "https://liner.com/careers/jobs/116653",
+    "https://liner.com/careers/jobs/188851",
+    "https://liner.com/careers/jobs/189417",
+    "https://liner.com/careers/jobs/209470",
+    "https://liner.com/careers/jobs/209478",
+    "https://liner.com/careers/jobs/210789",
+    "https://liner.com/careers/jobs/215691",
+    "https://liner.com/careers/jobs/219426",
+    "https://liner.com/careers/jobs/225687",
+    "https://liner.com/careers/jobs/226290",
+    "https://liner.com/careers/jobs/227845",
+    "https://m.easthospital.cn/news/content/fid/4932",
+    "https://mindverse.jobs.feishu.cn/766573/position/7615192662900476201/detail",
+    "https://mininglamp.zhiye.com/social/detail?jobAdId=101d1be2-ec60-48b3-b4d3-8789b85646df",
+    "https://modelbest.jobs.feishu.cn/career/position/7516640987126974730/detail",
+    "https://momenta.jobs.feishu.cn/campus/position/7605149699658549514/detail",
+    "https://msunsoft.zhiye.com/jobs",
+    "https://nio.jobs.feishu.cn/index/position/7161624348922579208/detail",
+    "https://nio.jobs.feishu.cn/index/position/7218055528395868477/detail",
+    "https://nio.jobs.feishu.cn/index/position/7384349065776302374/detail",
+    "https://nio.jobs.feishu.cn/index/position/7415633360330410277/detail",
+    "https://nio.jobs.feishu.cn/index/position/7512021339030718758/detail",
+    "https://nio.jobs.feishu.cn/index/position/7532310109129591059/detail",
+    "https://nio.jobs.feishu.cn/index/position/7533420635751008553/detail",
+    "https://nio.jobs.feishu.cn/index/position/7535378940585347370/detail",
+    "https://nio.jobs.feishu.cn/index/position/7536124726097791283/detail",
+    "https://nio.jobs.feishu.cn/index/position/7559765153639696690/detail",
+    "https://nio.jobs.feishu.cn/index/position/7569525986242840873/detail",
+    "https://nio.jobs.feishu.cn/index/position/7576502852056697098/detail",
+    "https://nio.jobs.feishu.cn/index/position/7584658273249954067/detail",
+    "https://nio.jobs.feishu.cn/index/position/7585491464999995694/detail",
+    "https://nio.jobs.feishu.cn/index/position/7593272695866394926/detail",
+    "https://nio.jobs.feishu.cn/index/position/7595045844475676966/detail",
+    "https://nio.jobs.feishu.cn/index/position/7597269493211498795/detail",
+    "https://nio.jobs.feishu.cn/index/position/7606250615199893766/detail",
+    "https://nio.jobs.feishu.cn/index/position/7610994900566280491/detail",
+    "https://nio.jobs.feishu.cn/index/position/7613313181097068850/detail",
+    "https://nio.jobs.feishu.cn/index/position/7619204027667073334/detail",
+    "https://nio.jobs.feishu.cn/index/position/7620278549894662446/detail",
+    "https://nio.jobs.feishu.cn/index/position/7621399485659236651/detail",
+    "https://nio.jobs.feishu.cn/index/position/7621790726287968575/detail",
+    "https://nio.jobs.feishu.cn/index/position/7625826551658088750/detail",
+    "https://nio.jobs.feishu.cn/index/position/7625956216712087827/detail",
+    "https://nio.jobs.feishu.cn/index/position/7625972196666329398/detail",
+    "https://nio.jobs.feishu.cn/index/position/7626329771405052187/detail",
+    "https://nio.jobs.feishu.cn/index/position/7626581035987388714/detail",
+    "https://nio.jobs.feishu.cn/index/position/7627067244958566666/detail",
+    "https://nio.jobs.feishu.cn/index/position/7628885412417587506/detail",
+    "https://nio.jobs.feishu.cn/index/position/7631113532385986862/detail",
+    "https://nio.jobs.feishu.cn/index/position/7631131435907729706/detail",
+    "https://nio.jobs.feishu.cn/index/position/7632156125212035391/detail",
+    "https://nio.jobs.feishu.cn/index/position/7633624594079353124/detail",
+    "https://nio.jobs.feishu.cn/index/position/7636983420547467529/detail",
+    "https://nio.jobs.feishu.cn/index/position/7638949656764778802/detail",
+    "https://nio.jobs.feishu.cn/index/position/7639989769258600758/detail",
+    "https://nio.jobs.feishu.cn/index/position/7641183648330762537/detail",
+    "https://nio.jobs.feishu.cn/index/position/7641495071783405843/detail",
+    "https://nio.jobs.feishu.cn/index/position/7642172029648013578/detail",
+    "https://nio.jobs.feishu.cn/index/position/7642546933533788435/detail",
+    "https://nio.jobs.feishu.cn/index/position/7642592792942315812/detail",
+    "https://nio.jobs.feishu.cn/index/position/7643704446958127387/detail",
+    "https://nio.jobs.feishu.cn/index/position/7643745537414433050/detail",
+    "https://nio.jobs.feishu.cn/index/position/7644825237817444662/detail",
+    "https://nio.jobs.feishu.cn/index/position/7644864741672749353/detail",
+    "https://nio.jobs.feishu.cn/index/position/7645237468690860338/detail",
+    "https://nio.jobs.feishu.cn/index/position/7646625231271938314/detail",
+    "https://nio.jobs.feishu.cn/index/position/7647789106257266987/detail",
+    "https://nio.jobs.feishu.cn/index/position/7651525581699467546/detail",
+    "https://nio.jobs.feishu.cn/index/position/7652260422582700331/detail",
+    "https://nio.jobs.feishu.cn/index/position/7652565813685438771/detail",
+    "https://nio.jobs.feishu.cn/index/position/7654428486060656934/detail",
+    "https://nio.jobs.feishu.cn/index/position/7655537717627570458/detail",
+    "https://nio.jobs.feishu.cn/index/position/7656624829114829102/detail",
+    "https://nio.jobs.feishu.cn/index/position/7657095387249199411/detail",
+    "https://nio.jobs.feishu.cn/index/position/7657103581527279898/detail",
+    "https://nio.jobs.feishu.cn/index/position/7657440204613716243/detail",
+    "https://nio.jobs.feishu.cn/index/position/7659353837052823849/detail",
+    "https://nio.jobs.feishu.cn/index/position/7659968824640506150/detail",
+    "https://nio.jobs.feishu.cn/index/position/7660807494290540826/detail",
+    "https://oseasy.zhiye.com/social/jobs",
+    "https://poizon.jobs.feishu.cn/578078/position/7623981843205654810/detail",
+    "https://rczp.nju.edu.cn/glgwjqt/sybzry/bwry/20260716/i402049.html",
+    "https://rczpw.suat-sz.edu.cn/info/1012/1357.htm",
+    "https://rlzyb.zy91.com/apply/getNotice.action?keycode=65dfc16c-5681-496a-899e-76de5357de14",
+    "https://rokid.zhiye.com/jobs",
+    "https://rsc.bjmu.edu.cn/rczp/jfxz/4f3585eaae994c4495180df954a7c926.htm",
+    "https://sda-software-defined-automation-gmbh.jobs.personio.de/job/2549026?language=en",
+    "https://shengshu.jobs.feishu.cn/index/position/7615833662533290246/detail",
+    "https://skit.keka.com/careers/jobdetails/137357",
+    "https://taichuai.jobs.feishu.cn/index/position/7618913915698710803/detail",
+    "https://talent.antgroup.com/off-campus?keywords=Agent&search=Agent",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/0272a8fe-3c21-409f-a9a9-1058bfbf9881",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/069db2ba-2318-4887-9867-1449f6c17035",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/11562602-fff5-4c60-b71c-6723e9a7d9e4",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/17557f31-be1d-4969-9294-b778d4e9abb5",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/1c181244-44a6-4e45-b8c5-36286f2d3c30",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/1f31d2bc-9fe1-419c-848b-4e886eefe5ce",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/1f7d8a88-1c3a-473c-bf50-66f6a11244d4",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/24c9e591-75c8-42bd-b531-522b53fc47ac",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/2c4d891d-4009-4fe4-8d1e-45abfff84ee8",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/356d7786-eeea-453b-bffb-5413ab30df2c",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/3844e001-7847-49ab-819e-df6e1e813042",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/3be84d76-38d2-40ff-ac4f-9aaef403179e",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/40033338-ccd0-4a3d-b2ac-fc47e32a109e",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/4aa8dad1-aa0e-4327-83db-9553326a988c",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/4b0e734c-9e2d-4427-87d0-f5348a674dba",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/4b326f6b-2c39-461c-ae64-69b4201c680e",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/4babd389-6523-477e-ad43-c09193fddcd0",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/56ce428e-426c-4bfe-881d-af90313cf9da",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/59ca923d-2153-4ec5-8b7d-29cdd308b61c",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/5a0f295a-c08a-446f-a7df-217a8761a7d5",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/5bb42582-10ab-4f49-94a6-7ee296885d8f",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/5d79d5e9-2095-4805-af7d-e64f2162c05d",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/66b364b4-a55b-41e6-9d8f-4f3b240980e3",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/67a90a79-47ef-4c18-9191-90bd608f4048",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/77b0400e-129d-41fc-a671-ebe8d9e7bffc",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/7a198150-b3ce-4c8b-9432-01ddbafe227a",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/81dc2738-9bcd-4e4c-9841-2ccfc37f3b26",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/8536e658-3e44-4545-9656-383fe104b020",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/86482c5b-492c-417b-8c48-de14505c7489",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/8959cc3f-852f-47c1-9874-08a1fdc92942",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/8e2014de-7a7a-4df6-80f8-8ea95f03420d",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/8f9bbee9-a2bd-484e-bfd4-26a243fd66a3",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/a77c208b-f6f0-4245-b44e-6f90f4b5e7a2",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/aa3be39c-798a-4d92-a5af-1c84fa63b049",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/bc24330f-f982-4752-baaa-8ff39452b491",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/bfc48fb5-5eee-46b7-a03f-5e8529b49277",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/c3c957f1-1707-4a05-b01b-4fe6c1285066",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/cd99369c-ebdf-4ca8-afe0-2fa2db31eaae",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/d15a7913-31cb-4eb8-a1a3-944b831d34cc",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/d51ecddb-6948-42e9-b904-384966cac8fd",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/d527f26d-4990-4db5-b1de-d8dc4243824b",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/da721ec7-8fc0-46da-ae40-4adbb07dd135",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/dab60caf-fe97-4b19-b513-c1a2c4143d48",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/dd312460-ab60-4dde-ad83-2d89e206c6de",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/e1b83f4b-ef24-495a-a276-67d8ca5f786b",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/e8e1904a-f6a7-4053-b630-c91f7e1d5269",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/ea7bbb48-615a-4b49-8f14-96b62277271f",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/eb48374e-272f-4cdd-abfe-e616f84ae3a4",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/ed67a452-d65b-4be1-9b5c-3bb1ab3cb5a2",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/f16d38a1-440b-4e7b-b09b-ddfdfaf643e4",
+    "https://talent.baidu.com/jobs/detail/SOCIAL/f5c06e32-856c-4cae-81e2-8d09669ae78d",
+    "https://talent.didiglobal.com/social/p/63396",
+    "https://talent.dingtalk.com/off-campus/position-detail?positionId=100021400009",
+    "https://tib.cas.cn/rcdw/rczp/zyjszp/t_8227670.html",
+    "https://torchv.com/docs/hr/jd",
+    "https://uniphore.wd503.myworkdayjobs.com/Uniphore/job/USA---CA---Palo-Alto/Director--AI-Advisory_JR100900",
+    "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7203339313111058725/detail",
+    "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7229256814943209765/detail",
+    "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7494586225161046282/detail",
+    "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7495670973120645388/detail",
+    "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7520549080461887785/detail",
+    "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7560556380446476607/detail",
+    "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7598036042735110446/detail",
+    "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7638320102106040627/detail",
+    "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7641108307957270820/detail",
+    "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7641118825673247027/detail",
+    "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7641124619067410697/detail",
+    "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7641143528680540442/detail",
+    "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7641148041870117126/detail",
+    "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7641152676122052891/detail",
+    "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7641155155795298596/detail",
+    "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7641164325705304329/detail",
+    "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7641967185192421678/detail",
+    "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7642261783000975626/detail",
+    "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7643719270614665535/detail",
+    "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7644834917046667539/detail",
+    "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7644858427722500415/detail",
+    "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7646635669703985414/detail",
+    "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7649362118672877867/detail",
+    "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7651581813773961526/detail",
+    "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7651601796775069971/detail",
+    "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7654051545948997894/detail",
+    "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7655214771168020742/detail",
+    "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7660063893650606374/detail",
+    "https://wcn7iq2vq1am.jobs.feishu.cn/index/position/7633405980566636846/detail",
+    "https://weikezhijia.jobs.feishu.cn/MSXF0619/position/7532787752207993114/detail",
+    "https://weikezhijia.jobs.feishu.cn/MSXF0619/position/7532787759049099558/detail",
+    "https://weikezhijia.jobs.feishu.cn/MSXF0619/position/7543912202676259115/detail",
+    "https://www.ahjzu.edu.cn/hnxy/2026/0506/c6234a269518/page.htm",
+    "https://www.chinasofti.com/pages/careers/detail.html?id=1",
+    "https://www.cnis.ac.cn/rczp/qyb/202509/t20250915_61666.html",
+    "https://www.comeet.com/jobs/coralogix/06.004/forward-deployed-engineer/CE.B66",
+    "https://www.epicgames.com/site/careers/jobs/5996485004",
+    "https://www.filevine.com/jobs/6eaa2f55-5678-4e6c-be86-27e5d5ceef62",
+    "https://www.filevine.com/jobs/cc9e0224-2deb-4a21-9a1f-79cfae365bab",
+    "https://www.gientech.com/job_detail.html?PositionId=724533457207466",
+    "https://www.greptile.com/careers/developer-advocate",
+    "https://www.greptile.com/careers/enterprise-account-executive",
+    "https://www.greptile.com/careers/forward-deployed-engineer",
+    "https://www.greptile.com/careers/frontend-engineer",
+    "https://www.greptile.com/careers/generalist-engineer",
+    "https://www.greptile.com/careers/infrastructure-engineer",
+    "https://www.greptile.com/careers/product-marketing-manager",
+    "https://www.greptile.com/careers/research-engineer",
+    "https://www.heygen.com/careers/5113387007",
+    "https://www.info2soft.cn/joinus/social-recruitment/ai-product-rd-architect",
+    "https://www.inforbus.com/about/careers",
+    "https://www.jxfhgc.com/jxfhgc/shzp/202603/a67d0960e4554ba39b05d079ddb505fa.shtml",
+    "https://www.opendoor.com/careers/open-positions/jobs/agentic-analytics-engineer-61e10868-0439-4bff-adc3-ef4e8afdf644",
+    "https://www.opt.ac.cn/gb2019/kydw/rczp/202607/t20260703_8237711.html",
+    "https://www.shlab.org.cn/joinus/detail/7446322333617670441?mode=social",
+    "https://www.shlab.org.cn/joinus/detail/7506817514979428617?mode=social",
+    "https://www.shlab.org.cn/joinus/detail/7551721191871432998?mode=social",
+    "https://www.shlab.org.cn/joinus/detail/7574396982888139014?mode=social",
+    "https://www.shlab.org.cn/joinus/detail/7574990533287971118?mode=campus",
+    "https://www.shlab.org.cn/joinus/detail/7576251600356821284?mode=social",
+    "https://www.shlab.org.cn/joinus/detail/7576494298850593043?mode=social",
+    "https://www.shlab.org.cn/joinus/detail/7579213575362595114?mode=social",
+    "https://www.shlab.org.cn/joinus/detail/7581428726505687306?mode=campus",
+    "https://www.shlab.org.cn/joinus/detail/7583654129794615571?mode=social",
+    "https://www.shlab.org.cn/joinus/detail/7587259497380268331?mode=social",
+    "https://www.shlab.org.cn/joinus/detail/7589470525413689619?mode=social",
+    "https://www.shlab.org.cn/joinus/detail/7591846263403202852?mode=social",
+    "https://www.shlab.org.cn/joinus/detail/7594400219677100298?mode=campus",
+    "https://www.shlab.org.cn/joinus/detail/7600665649429629220?mode=social",
+    "https://www.shlab.org.cn/joinus/detail/7612976611081095451?mode=social",
+    "https://www.shlab.org.cn/joinus/detail/7617694191393311014?mode=social",
+    "https://www.shlab.org.cn/joinus/detail/7621753945655953673?mode=social",
+    "https://www.shlab.org.cn/joinus/detail/7626654688298125610?mode=social",
+    "https://www.shlab.org.cn/joinus/detail/7626656342182332682?mode=social",
+    "https://www.shlab.org.cn/joinus/detail/7631220649969912106?mode=campus",
+    "https://www.shlab.org.cn/joinus/detail/7633726167145007403?mode=campus",
+    "https://www.shlab.org.cn/joinus/detail/7657846659330558259?mode=social",
+    "https://www.shuyouyinli.com/job-details.html?id=ai-algorithm",
+    "https://www.terton.com.cn/gytrt/rczp",
+    "https://www.xydigit.com/content/zte-dt/cn/joinus.html",
+    "https://www.ycombinator.com/companies/allus-ai/jobs/AcYMVC9-founding-ai-agent-engineer",
+    "https://www.zerith.com/join?id=1",
+    "https://x2-robot.jobs.feishu.cn/index/position/7660732025301240110/detail",
+    "https://xiaopeng.jobs.feishu.cn/index/position/7461916101904484659/detail",
+    "https://xiaopeng.jobs.feishu.cn/index/position/7488632819863357759/detail",
+    "https://xiaopeng.jobs.feishu.cn/index/position/7517590526948264242/detail",
+    "https://xiaopeng.jobs.feishu.cn/index/position/7540231825995712831/detail",
+    "https://xiaopeng.jobs.feishu.cn/index/position/7540859752482982185/detail",
+    "https://xiaopeng.jobs.feishu.cn/index/position/7554201340270053658/detail",
+    "https://xiaopeng.jobs.feishu.cn/index/position/7554201414286035239/detail",
+    "https://xiaopeng.jobs.feishu.cn/index/position/7563871140525410606/detail",
+    "https://xiaopeng.jobs.feishu.cn/index/position/7565534519681075502/detail",
+    "https://xiaopeng.jobs.feishu.cn/index/position/7565534803577473299/detail",
+    "https://xiaopeng.jobs.feishu.cn/index/position/7578769398917695763/detail",
+    "https://xiaopeng.jobs.feishu.cn/index/position/7579842954442246419/detail",
+    "https://xiaopeng.jobs.feishu.cn/index/position/7600243134942234923/detail",
+    "https://xiaopeng.jobs.feishu.cn/index/position/7600971363138079019/detail",
+    "https://xiaopeng.jobs.feishu.cn/index/position/7605124941982320915/detail",
+    "https://xiaopeng.jobs.feishu.cn/index/position/7605134628114188563/detail",
+    "https://xiaopeng.jobs.feishu.cn/index/position/7620398450182506803/detail",
+    "https://xiaopeng.jobs.feishu.cn/index/position/7626603424449153323/detail",
+    "https://xiaopeng.jobs.feishu.cn/index/position/7627088292899883290/detail",
+    "https://xiaopeng.jobs.feishu.cn/index/position/7627089004685084955/detail",
+    "https://xiaopeng.jobs.feishu.cn/index/position/7627089714336450879/detail",
+    "https://xiaopeng.jobs.feishu.cn/index/position/7627089800511785266/detail",
+    "https://xiaopeng.jobs.feishu.cn/index/position/7627102260971473194/detail",
+    "https://xiaopeng.jobs.feishu.cn/index/position/7631028272042690879/detail",
+    "https://xiaopeng.jobs.feishu.cn/index/position/7633250611811076388/detail",
+    "https://xiaopeng.jobs.feishu.cn/index/position/7633640458358933810/detail",
+    "https://xiaopeng.jobs.feishu.cn/index/position/7638876311171664169/detail",
+    "https://xiaopeng.jobs.feishu.cn/index/position/7639287111359760666/detail",
+    "https://xiaopeng.jobs.feishu.cn/index/position/7639922173050964270/detail",
+    "https://xiaopeng.jobs.feishu.cn/index/position/7641796812063639834/detail",
+    "https://xiaopeng.jobs.feishu.cn/index/position/7641908092641675558/detail",
+    "https://xiaopeng.jobs.feishu.cn/index/position/7645258954804889892/detail",
+    "https://xiaopeng.jobs.feishu.cn/index/position/7648864604001241385/detail",
+    "https://xiaopeng.jobs.feishu.cn/index/position/7650044770170308905/detail",
+    "https://xiaopeng.jobs.feishu.cn/index/position/7651926452322191658/detail",
+    "https://xiaopeng.jobs.feishu.cn/index/position/7654769641482602771/detail",
+    "https://xiaopeng.jobs.feishu.cn/index/position/7657016222886070547/detail",
+    "https://xiaopeng.jobs.feishu.cn/index/position/7657434458718554414/detail",
+    "https://xiaopeng.jobs.feishu.cn/index/position/7657821378279934262/detail",
+    "https://xiaopeng.jobs.feishu.cn/index/position/7658221044009093414/detail",
+    "https://xiaopeng.jobs.feishu.cn/index/position/7661954361203132682/detail",
+    "https://xpertai.cn/jobs",
+    "https://yesv-desaysv.jobs.feishu.cn/index/position/7605867551042930971/detail",
+    "https://yesv-desaysv.jobs.feishu.cn/index/position/7612558570962290987/detail",
+    "https://yesv-desaysv.jobs.feishu.cn/index/position/7622974372491708713/detail",
+    "https://yesv-desaysv.jobs.feishu.cn/index/position/7649276701008021823/detail",
+    "https://zenity.io/careers/hybrid-phoenix-az-united-states/senior-forward-deployed-engineer/91.E6C",
+    "https://zhaopin.kuaishou.cn/",
+    "https://zhaopin.meituan.com/web/position/detail?highlightType=social&jobUnionId=3093645365",
+    "https://znvhr.zhiye.com/campus/jobs",
+    "https://zyhy.zhiye.com/jobs"
+  ]
+}

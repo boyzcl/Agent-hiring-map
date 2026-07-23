@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "team.schema.json",
+  "title": "Team",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "team_id", "organization_id", "team_name", "team_geography", "evidence_ids"],
+  "properties": {
+    "schema_version": {"const": "agent-hiring-map-public/1.0"},
+    "team_id": {"type": "string"},
+    "organization_id": {"type": "string"},
+    "team_name": {"type": "string"},
+    "product_ids": {"type": "array", "items": {"type": "string"}},
+    "team_geography": {"type": "array", "items": {"enum": ["China", "United States"]}},
+    "status": {"type": ["string", "null"]},
+    "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+    "evidence_ids": {"type": "array", "items": {"type": "string", "pattern": "^AMC-[0-9]{4}$"}},
+    "version": {"type": "integer", "minimum": 1}
+  }
+}

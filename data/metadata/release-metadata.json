@@ -1,0 +1,43 @@
+{
+  "bounded_scope": [
+    "China",
+    "United States"
+  ],
+  "canonical_counts": {
+    "organizations": 1194,
+    "products": 2554,
+    "relations": 9991,
+    "roles": 1148,
+    "teams": 1424
+  },
+  "current_opportunities": {
+    "candidate_input_rows": 920,
+    "excluded_time_anomalies_or_expired": 9,
+    "geography": {
+      "China": 601,
+      "United States": 310
+    },
+    "rows": 911,
+    "ttl_days": 14
+  },
+  "evidence_rows": 7217,
+  "evidence_rows_are_current_job_count": false,
+  "licenses": {
+    "code": "Apache-2.0",
+    "original_data_and_docs": "CC-BY-4.0",
+    "third_party_content": "not_relicensed"
+  },
+  "release_as_of": "2026-07-23",
+  "review_queue_rows": 828,
+  "schema_version": "agent-hiring-map-public/1.0",
+  "state": {
+    "candidate_ready": false,
+    "claim_api_write_enabled": false,
+    "data_published": false,
+    "demand_proven": false,
+    "external_business_writes_enabled": false,
+    "p4_observation_active": false,
+    "p4_passed": false,
+    "scale_proven": false
+  }
+}

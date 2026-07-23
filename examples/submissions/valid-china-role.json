@@ -1,0 +1,15 @@
+{
+  "schema_version": "agent-hiring-map-submission/1.0",
+  "change_type": "add",
+  "organization_name": "示例组织",
+  "team_name": "示例团队",
+  "product_name": "示例 Agent 产品",
+  "role_title": "示例 Agent 工程师",
+  "geography": "China",
+  "official_source_url": "https://example.com/careers/agent-role",
+  "observed_at": "2026-07-23",
+  "access_requirement": "public_no_login",
+  "agent_specific_excerpt": "负责设计和评估面向公开工作流的 Agent 系统。",
+  "replaces_role_id": null,
+  "notes": "这是结构示例，不代表真实岗位。"
+}

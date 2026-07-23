@@ -1,0 +1,15 @@
+{
+  "schema_version": "agent-hiring-map-submission/1.0",
+  "change_type": "add",
+  "organization_name": "Example Organization",
+  "team_name": "Example Team",
+  "product_name": "Example Agent Product",
+  "role_title": "Example Agent Engineer",
+  "geography": "United States",
+  "official_source_url": "https://example.org/careers/agent-role",
+  "observed_at": "2026-07-23",
+  "access_requirement": "public_no_login",
+  "agent_specific_excerpt": "Design and evaluate agent systems for a public workflow.",
+  "replaces_role_id": null,
+  "notes": "Schema example only; not a real job."
+}

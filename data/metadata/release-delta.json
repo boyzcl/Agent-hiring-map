@@ -1,0 +1,91 @@
+{
+  "as_of_date": "2026-07-23",
+  "excluded": [
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-09-22",
+      "reason": "future_last_verified_at",
+      "role_id": "ROLE-71DBB1A418151277",
+      "source_urls": [
+        "https://careers.extraspace.com/job/Corporate/sr-ai-engineer/Salt-Lake-City-Utah/Extra%20Space%20Storage/R-79663"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-08-31",
+      "reason": "future_last_verified_at",
+      "role_id": "ROLE-E35FE54ACE83A52F",
+      "source_urls": [
+        "https://www.opt.ac.cn/gb2019/kydw/rczp/202607/t20260703_8237711.html"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-31",
+      "reason": "future_last_verified_at",
+      "role_id": "ROLE-B0A80F962CFE85AD",
+      "source_urls": [
+        "https://rsc.bjmu.edu.cn/rczp/jfxz/4f3585eaae994c4495180df954a7c926.htm"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2027-02-01",
+      "reason": "future_last_verified_at",
+      "role_id": "ROLE-A0CB92AB90AFE9D5",
+      "source_urls": [
+        "https://611.zhiye.com/zpdetail/351580468"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-08-30",
+      "reason": "future_last_verified_at",
+      "role_id": "ROLE-D2A9EC5EF54A83B0",
+      "source_urls": [
+        "https://ehr.zju.edu.cn/vuejs/recruitment/position-detail.htm?id=N1870031994385072142"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-08-11",
+      "reason": "future_last_verified_at",
+      "role_id": "ROLE-118F04B71472690C",
+      "source_urls": [
+        "https://jobs.tsinghua.edu.cn/project/qhdx/pages/recruit_new"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-29",
+      "reason": "future_last_verified_at",
+      "role_id": "ROLE-D6F119EBB07AE584",
+      "source_urls": [
+        "https://rczp.nju.edu.cn/glgwjqt/sybzry/bwry/20260716/i402049.html"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-27",
+      "reason": "future_last_verified_at",
+      "role_id": "ROLE-A6596BDAF4814496",
+      "source_urls": [
+        "https://careers.americanexpress.com/en/sites/CX_1/job/26010339"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-31",
+      "reason": "future_last_verified_at",
+      "role_id": "ROLE-316C6E00BADDEE5E",
+      "source_urls": [
+        "https://cottonholdings.pinpointhq.com/postings/20a4ed84-9b73-4514-bdeb-a97e7c70525a"
+      ]
+    }
+  ],
+  "excluded_rows": 9,
+  "p0_p3_current_candidate_rows": 920,
+  "public_current_rows": 911,
+  "rule": "future, missing/invalid, or TTL-expired last_verified_at cannot enter public current view",
+  "schema_version": "agent-hiring-map-public/1.0"
+}

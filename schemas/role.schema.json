@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "role.schema.json",
+  "title": "Role",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "role_id", "organization_id", "title", "official_role_url", "evidence_ids"],
+  "properties": {
+    "schema_version": {"const": "agent-hiring-map-public/1.0"},
+    "role_id": {"type": "string"},
+    "organization_id": {"type": "string"},
+    "team_id": {"type": ["string", "null"]},
+    "product_id": {"type": ["string", "null"]},
+    "title": {"type": "string"},
+    "role_family": {"type": ["string", "null"]},
+    "job_locations": {"type": "array", "items": {"type": "string"}},
+    "remote_scope": {"type": ["string", "null"]},
+    "agent_specific_quote": {"type": ["string", "null"], "maxLength": 300},
+    "official_role_url": {"type": ["string", "null"], "format": "uri"},
+    "first_seen_at": {"type": ["string", "null"]},
+    "last_seen_at": {"type": ["string", "null"]},
+    "last_verified_at": {"type": ["string", "null"]},
+    "currentness_status": {"type": ["string", "null"]},
+    "access_requirement": {"type": ["string", "null"]},
+    "evidence_grade": {"type": ["string", "null"]},
+    "supersedes_role_id": {"type": ["string", "null"]},
+    "evidence_ids": {"type": "array", "items": {"type": "string", "pattern": "^AMC-[0-9]{4}$"}},
+    "version": {"type": "integer", "minimum": 1}
+  }
+}

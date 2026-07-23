@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "current-opportunity.schema.json",
+  "title": "当前岗位",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "role_id",
+    "organization_id",
+    "title",
+    "geography",
+    "currentness_status",
+    "last_verified_at",
+    "access_requirement",
+    "source_urls",
+    "agent_specific_excerpt",
+    "evidence_grade",
+    "evidence_ids",
+    "limitations"
+  ],
+  "properties": {
+    "schema_version": {"const": "agent-hiring-map-public/1.0"},
+    "role_id": {"type": "string", "minLength": 1},
+    "organization_id": {"type": "string", "minLength": 1},
+    "team_id": {"type": ["string", "null"]},
+    "product_id": {"type": ["string", "null"]},
+    "title": {"type": "string", "minLength": 1, "maxLength": 300},
+    "geography": {"enum": ["China", "United States"]},
+    "currentness_status": {
+      "enum": ["current_verified", "current_probable"]
+    },
+    "last_verified_at": {"type": "string", "format": "date"},
+    "access_requirement": {"const": "public_no_login"},
+    "source_urls": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string", "format": "uri"},
+      "uniqueItems": true
+    },
+    "agent_specific_excerpt": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 300
+    },
+    "evidence_grade": {"enum": ["A", "B", "C"]},
+    "evidence_ids": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string", "pattern": "^AMC-[0-9]{4}$"},
+      "uniqueItems": true
+    },
+    "limitations": {
+      "type": "array",
+      "items": {"type": "string"}
+    }
+  }
+}

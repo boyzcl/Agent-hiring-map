@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "organization.schema.json",
+  "title": "Organization",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "organization_id", "canonical_name", "geography", "evidence_ids"],
+  "properties": {
+    "schema_version": {"const": "agent-hiring-map-public/1.0"},
+    "organization_id": {"type": "string"},
+    "canonical_name": {"type": "string"},
+    "group_id": {"type": ["string", "null"]},
+    "official_domains": {"type": "array", "items": {"type": "string"}},
+    "geography": {"type": "array", "items": {"enum": ["China", "United States"]}},
+    "aliases": {"type": "array", "items": {"type": "string"}},
+    "status": {"type": ["string", "null"]},
+    "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+    "evidence_ids": {"type": "array", "items": {"type": "string", "pattern": "^AMC-[0-9]{4}$"}},
+    "version": {"type": "integer", "minimum": 1}
+  }
+}

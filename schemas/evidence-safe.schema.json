@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "evidence-safe.schema.json",
+  "title": "安全 Evidence 索引",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "evidence_id",
+    "geography_bucket",
+    "coverage_scope",
+    "source_class",
+    "source_urls",
+    "access_requirement",
+    "evidence_grade",
+    "evidence_kind",
+    "quote_publication_status",
+    "limitations"
+  ],
+  "properties": {
+    "schema_version": {"const": "agent-hiring-map-public/1.0"},
+    "evidence_id": {"type": "string", "pattern": "^AMC-[0-9]{4}$"},
+    "geography_bucket": {
+      "enum": ["China", "United States", "Other/Global", "Unknown"]
+    },
+    "coverage_scope": {
+      "enum": ["canonical_map_scope", "evidence_index_only"]
+    },
+    "organization_observed": {"type": "string", "maxLength": 240},
+    "parent_organization_inferred": {"type": "string", "maxLength": 240},
+    "product_or_work_surface": {"type": "string", "maxLength": 240},
+    "source_class": {
+      "enum": [
+        "official_or_first_party",
+        "public_registry_or_open_source",
+        "third_party_locator",
+        "held_or_unclassified"
+      ]
+    },
+    "source_urls": {
+      "type": "array",
+      "items": {"type": "string", "format": "uri"},
+      "uniqueItems": true
+    },
+    "attribution": {"type": "string", "maxLength": 240},
+    "access_requirement": {
+      "enum": [
+        "public_no_login",
+        "official_free_account",
+        "user_assisted_auth",
+        "paid_or_private_blocked"
+      ]
+    },
+    "observed_at": {"type": ["string", "null"], "format": "date"},
+    "evidence_grade": {"enum": ["A", "B", "C", "D", "E"]},
+    "evidence_kind": {
+      "enum": ["source_locator", "product_signal", "role_signal"]
+    },
+    "public_excerpt": {"type": "string", "maxLength": 300},
+    "quote_publication_status": {"type": "string"},
+    "limitations": {
+      "type": "array",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    }
+  }
+}

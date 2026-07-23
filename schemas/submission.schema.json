@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "submission.schema.json",
+  "title": "待审核岗位建议",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "change_type",
+    "organization_name",
+    "role_title",
+    "geography",
+    "official_source_url",
+    "observed_at",
+    "access_requirement",
+    "agent_specific_excerpt"
+  ],
+  "properties": {
+    "schema_version": {"const": "agent-hiring-map-submission/1.0"},
+    "change_type": {
+      "enum": ["add", "correct", "close", "supersede", "duplicate", "ownership_dispute"]
+    },
+    "organization_name": {"type": "string", "minLength": 1, "maxLength": 200},
+    "team_name": {"type": ["string", "null"], "maxLength": 200},
+    "product_name": {"type": ["string", "null"], "maxLength": 200},
+    "role_title": {"type": "string", "minLength": 1, "maxLength": 240},
+    "geography": {"enum": ["China", "United States"]},
+    "official_source_url": {"type": "string", "format": "uri"},
+    "observed_at": {"type": "string", "format": "date"},
+    "access_requirement": {"const": "public_no_login"},
+    "agent_specific_excerpt": {"type": "string", "minLength": 1, "maxLength": 300},
+    "replaces_role_id": {"type": ["string", "null"]},
+    "notes": {"type": ["string", "null"], "maxLength": 300}
+  }
+}

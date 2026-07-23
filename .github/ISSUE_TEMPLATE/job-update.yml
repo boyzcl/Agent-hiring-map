@@ -1,0 +1,75 @@
+name: 岗位新增或纠错
+description: 提交中国或美国 Agent 岗位的公开来源证据
+title: "[岗位建议] "
+labels: ["needs-review"]
+body:
+  - type: dropdown
+    id: change_type
+    attributes:
+      label: 建议类型
+      options:
+        - 新增岗位
+        - 纠正信息
+        - 岗位关闭
+        - 岗位替代
+        - 重复岗位
+        - 组织归属争议
+    validations:
+      required: true
+  - type: input
+    id: organization
+    attributes:
+      label: 组织名称
+    validations:
+      required: true
+  - type: input
+    id: team_product
+    attributes:
+      label: 团队或产品
+      description: 不知道可以留空，不要猜测。
+  - type: input
+    id: role_title
+    attributes:
+      label: 岗位名称
+    validations:
+      required: true
+  - type: dropdown
+    id: geography
+    attributes:
+      label: 地域
+      options:
+        - China
+        - United States
+    validations:
+      required: true
+  - type: input
+    id: source_url
+    attributes:
+      label: 官方公开岗位链接
+      description: 必须无需登录；不要提交私人或付费链接。
+    validations:
+      required: true
+  - type: input
+    id: observed_at
+    attributes:
+      label: 观察日期
+      placeholder: YYYY-MM-DD
+    validations:
+      required: true
+  - type: textarea
+    id: excerpt
+    attributes:
+      label: 最短必要的 Agent 相关原文
+      description: 最多 300 字符；不要复制完整岗位正文，不要提交私人联系方式。
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: 确认
+      options:
+        - label: 这是公开、无需登录的来源，不含候选人资料、秘密或完整岗位正文。
+          required: true
+        - label: 我理解本建议只进入待审核区，不会自动修改正式地图。
+          required: true
+
