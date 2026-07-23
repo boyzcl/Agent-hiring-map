@@ -2,6 +2,8 @@
 
 这是一个基于公开来源、可追溯、可下载的中国与美国 Agent 岗位地图。
 
+**在线筛选：** [打开中美 Agent 岗位地图](https://boyzcl.github.io/Agent-hiring-map/)
+
 当前公开版本包含：
 
 - 7,217 条**安全证据索引**；
@@ -29,6 +31,8 @@
 用中文查看全部团队、每团队岗位数和整体分类分布：
 
 - [团队与岗位全景总览](docs/TEAM_ROLE_OVERVIEW.md)
+
+网页直接读取仓库中的正式数据文件。以后组织、团队、产品、岗位和当前岗位经过既有审核与验证流程更新并进入 `main` 后，网页会随 GitHub Pages 的重新发布自动显示新增数据，无需人工逐条维护页面。
 
 查看全部证据的安全索引：
 
@@ -129,6 +133,7 @@ python3 scripts/validate_submission.py examples/submissions/valid-china-role.jso
 - [规则权威](docs/AUTHORITY.md)
 - [字段和状态](docs/DATA_DICTIONARY.md)
 - [团队与岗位全景总览](docs/TEAM_ROLE_OVERVIEW.md)
+- [在线筛选网页](https://boyzcl.github.io/Agent-hiring-map/)
 - [贡献指南](docs/CONTRIBUTING.md)
 - [维护手册](docs/MAINTENANCE.md)
 - [方法和限制](docs/METHODOLOGY.md)

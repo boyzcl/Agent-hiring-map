@@ -46,6 +46,10 @@ DATASET_SPECS = {
     "data/review/review-queue": None,
 }
 REQUIRED_FILES = [
+    ".nojekyll",
+    "index.html",
+    "assets/app.js",
+    "assets/styles.css",
     "README.md",
     "LICENSE-CODE",
     "LICENSE-DATA",
@@ -310,7 +314,11 @@ def honest_state_errors() -> list[str]:
     errors: list[str] = []
     combined = "\n".join(
         path.read_text(encoding="utf-8")
-        for path in [ROOT / "README.md", ROOT / "docs" / "OBSERVATION.md"]
+        for path in [
+            ROOT / "README.md",
+            ROOT / "index.html",
+            ROOT / "docs" / "OBSERVATION.md",
+        ]
     ).lower()
     false_claims = (
         "7,217 个当前岗位",
@@ -323,6 +331,88 @@ def honest_state_errors() -> list[str]:
     for claim in false_claims:
         if claim.lower() in combined:
             errors.append(f"false_state_claim:{claim}")
+    return errors
+
+
+def site_errors() -> list[str]:
+    html = (ROOT / "index.html").read_text(encoding="utf-8")
+    app = (ROOT / "assets" / "app.js").read_text(encoding="utf-8")
+    styles = (ROOT / "assets" / "styles.css").read_text(encoding="utf-8")
+    errors: list[str] = []
+
+    required_html_tokens = (
+        'http-equiv="Content-Security-Policy"',
+        'id="explorer"',
+        'id="filter-query"',
+        'id="filter-scope"',
+        'id="filter-geography"',
+        'id="filter-category"',
+        'id="filter-remote"',
+        'id="filter-grade"',
+        'id="filter-team-state"',
+        'id="results"',
+        'src="./assets/app.js"',
+        'href="./assets/styles.css"',
+    )
+    for token in required_html_tokens:
+        if token not in html:
+            errors.append(f"site_missing_html_token:{token}")
+
+    required_data_paths = (
+        "./data/metadata/release-metadata.json",
+        "./data/map/organizations.jsonl",
+        "./data/map/teams.jsonl",
+        "./data/map/products.jsonl",
+        "./data/map/roles.jsonl",
+        "./data/current/current-opportunities.jsonl",
+    )
+    for path in required_data_paths:
+        if path not in app:
+            errors.append(f"site_missing_dynamic_data_path:{path}")
+
+    if re.search(r"<script(?![^>]*\bsrc=)[^>]*>", html, flags=re.IGNORECASE):
+        errors.append("site_inline_script")
+    if re.search(r"<style(?:\s|>)", html, flags=re.IGNORECASE):
+        errors.append("site_inline_style")
+    if re.search(r"<form(?:\s|>)", html, flags=re.IGNORECASE):
+        errors.append("site_business_form")
+    if re.search(
+        r"<script[^>]+\bsrc=[\"']https?://",
+        html,
+        flags=re.IGNORECASE,
+    ):
+        errors.append("site_external_script")
+    if re.search(
+        r"<link[^>]+\brel=[\"']stylesheet[\"'][^>]+\bhref=[\"']https?://",
+        html,
+        flags=re.IGNORECASE,
+    ):
+        errors.append("site_external_stylesheet")
+
+    forbidden_app_tokens = (
+        ".innerHTML",
+        ".outerHTML",
+        "document.write",
+        "new Function",
+        "eval(",
+        "localStorage",
+        "sessionStorage",
+        "sendBeacon",
+        "WebSocket(",
+    )
+    for token in forbidden_app_tokens:
+        if token in app:
+            errors.append(f"site_forbidden_runtime:{token}")
+    if "textContent" not in app or "document.createElement" not in app:
+        errors.append("site_external_text_not_dom_safe")
+    if 'credentials: "same-origin"' not in app:
+        errors.append("site_fetch_not_same_origin")
+    if 'document.addEventListener("DOMContentLoaded", load)' not in app:
+        errors.append("site_missing_load_entrypoint")
+    if "@media (max-width:" not in styles:
+        errors.append("site_missing_responsive_layout")
+    if "@media (prefers-reduced-motion: reduce)" not in styles:
+        errors.append("site_missing_reduced_motion")
     return errors
 
 
@@ -410,6 +500,7 @@ def run_default() -> dict[str, Any]:
     errors.extend(scan_csv_formula())
     errors.extend(workflow_errors())
     errors.extend(honest_state_errors())
+    errors.extend(site_errors())
     errors.extend(overview_errors())
     errors = sorted(set(errors))
     return {
@@ -458,6 +549,57 @@ def run_self_test() -> dict[str, Any]:
     tests.append(("workflow_write_permission", bool(re.search(r"contents:\s*write", "permissions:\n contents: write"))))
     tests.append(("telemetry_domain", "posthog.capture" in "posthog.capture('query')"))
     tests.append(("evidence_current_conflation", "7,217 个当前岗位" in "本项目有 7,217 个当前岗位"))
+    tests.append(
+        (
+            "site_inline_script",
+            bool(
+                re.search(
+                    r"<script(?![^>]*\bsrc=)[^>]*>",
+                    "<script>alert(1)</script>",
+                )
+            ),
+        )
+    )
+    tests.append(
+        (
+            "site_external_script",
+            bool(
+                re.search(
+                    r"<script[^>]+\bsrc=[\"']https?://",
+                    '<script src="https://example.com/a.js">',
+                )
+            ),
+        )
+    )
+    tests.append(
+        (
+            "site_business_form",
+            bool(re.search(r"<form(?:\s|>)", "<form action='/apply'>")),
+        )
+    )
+    site_app = (ROOT / "assets" / "app.js").read_text(encoding="utf-8")
+    tests.append(
+        (
+            "site_dynamic_data_binding",
+            all(
+                path in site_app
+                for path in (
+                    "./data/metadata/release-metadata.json",
+                    "./data/map/organizations.jsonl",
+                    "./data/map/teams.jsonl",
+                    "./data/map/products.jsonl",
+                    "./data/map/roles.jsonl",
+                    "./data/current/current-opportunities.jsonl",
+                )
+            ),
+        )
+    )
+    tests.append(
+        (
+            "site_safe_text_rendering",
+            ".innerHTML" not in site_app and "textContent" in site_app,
+        )
+    )
     with tempfile.TemporaryDirectory() as tmp:
         test_file = Path(tmp) / "x"
         test_file.write_text("a", encoding="utf-8")
