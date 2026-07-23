@@ -8,6 +8,8 @@ import csv
 import hashlib
 import json
 import re
+import subprocess
+import sys
 import tempfile
 from datetime import date
 from pathlib import Path
@@ -56,11 +58,13 @@ REQUIRED_FILES = [
     "docs/METHODOLOGY.md",
     "docs/OBSERVATION.md",
     "docs/CHANGELOG.md",
+    "docs/TEAM_ROLE_OVERVIEW.md",
     "schemas/evidence-safe.schema.json",
     "schemas/current-opportunity.schema.json",
     "schemas/submission.schema.json",
     "schemas/review-queue-item.schema.json",
     "scripts/build_review_queue.py",
+    "scripts/build_team_role_overview.py",
     "scripts/validate_submission.py",
     ".github/workflows/validate.yml",
     ".github/workflows/weekly-review.yml",
@@ -322,6 +326,20 @@ def honest_state_errors() -> list[str]:
     return errors
 
 
+def overview_errors() -> list[str]:
+    result = subprocess.run(
+        [sys.executable, str(ROOT / "scripts" / "build_team_role_overview.py"), "--check"],
+        cwd=ROOT,
+        text=True,
+        capture_output=True,
+        check=False,
+    )
+    if result.returncode == 0:
+        return []
+    detail = (result.stderr or result.stdout).strip().replace("\n", " ")
+    return [f"team_role_overview:{detail or 'check_failed'}"]
+
+
 def manifest_errors() -> list[str]:
     path = ROOT / "manifest.json"
     if not path.exists():
@@ -392,6 +410,7 @@ def run_default() -> dict[str, Any]:
     errors.extend(scan_csv_formula())
     errors.extend(workflow_errors())
     errors.extend(honest_state_errors())
+    errors.extend(overview_errors())
     errors = sorted(set(errors))
     return {
         "validator": "agent-hiring-map-public-package/1.0",

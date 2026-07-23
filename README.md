@@ -26,6 +26,10 @@
 - `data/map/roles.*`
 - `data/map/relations.*`
 
+用中文查看全部团队、每团队岗位数和整体分类分布：
+
+- [团队与岗位全景总览](docs/TEAM_ROLE_OVERVIEW.md)
+
 查看全部证据的安全索引：
 
 - `data/evidence/evidence-ledger-safe.*`
@@ -124,6 +128,7 @@ python3 scripts/validate_submission.py examples/submissions/valid-china-role.jso
 
 - [规则权威](docs/AUTHORITY.md)
 - [字段和状态](docs/DATA_DICTIONARY.md)
+- [团队与岗位全景总览](docs/TEAM_ROLE_OVERVIEW.md)
 - [贡献指南](docs/CONTRIBUTING.md)
 - [维护手册](docs/MAINTENANCE.md)
 - [方法和限制](docs/METHODOLOGY.md)
