@@ -108,6 +108,7 @@ REQUIRED_FILES = [
     "docs/OBSERVATION.md",
     "docs/CHANGELOG.md",
     "docs/TEAM_ROLE_OVERVIEW.md",
+    "docs/PROBABLE_ROLE_UPGRADE.md",
     "schemas/evidence-safe.schema.json",
     "schemas/current-opportunity.schema.json",
     "schemas/submission.schema.json",
@@ -528,7 +529,7 @@ def role_display_errors(
         errors.append("recovery_existing_retained_count")
     if recovery_metadata.get("existing_records_demoted_to_leads") != 445:
         errors.append("recovery_demoted_lead_count")
-    if recovery_metadata.get("new_probable_roles") != 265:
+    if recovery_metadata.get("new_probable_roles") != 172:
         errors.append("recovery_new_role_count")
     if recovery_metadata.get("duplicate_role_records_suppressed") != 2:
         errors.append("recovery_duplicate_suppression_count")
@@ -540,14 +541,27 @@ def role_display_errors(
         errors.append("recovery_confidence_counts")
     if origin_counts != {
         "existing_role_revalidated": 701,
-        "global_deferred_evidence_recovered": 349,
+        "global_deferred_evidence_recovered": 347,
         "unlinked_evidence_recovered": 265,
     }:
         errors.append("recovery_origin_counts")
-    if recovery_metadata.get("new_roles_admitted_to_strict_current") != 0:
+    if recovery_metadata.get("new_roles_admitted_to_strict_current") != 91:
         errors.append("recovery_new_role_current_pollution")
-    if recovery_metadata.get("global_new_current_opportunities") != 254:
+    if recovery_metadata.get("global_new_current_opportunities") != 345:
         errors.append("recovery_global_current_count")
+    upgrade_metadata = metadata.get("probable_role_upgrade", {})
+    if upgrade_metadata != {
+        "version": "agent-hiring-map-probable-role-upgrade/1.0",
+        "frozen_roles": 95,
+        "verified_and_current": 91,
+        "retained_probable": 1,
+        "source_changed_or_closed": 1,
+        "agent_relevance_insufficient_removed": 2,
+        "title_or_url_mismatches": 0,
+        "wrong_cross_group_merges": 0,
+        "full_descriptions_persisted": 0,
+    }:
+        errors.append("probable_role_upgrade_metadata")
 
     beisen = [
         role

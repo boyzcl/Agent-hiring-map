@@ -23,13 +23,14 @@
   "canonical_counts": {
     "organizations": 1355,
     "products": 2871,
-    "relations": 11443,
-    "roles": 1315,
+    "relations": 11437,
+    "roles": 1313,
     "teams": 1741
   },
   "coverage_statement": "Global public-source recovery from the frozen Cycle 213 evidence ledger; China and the United States remain the priority validated strata.",
   "current_opportunities": {
     "added_by_global_recovery": 254,
+    "added_by_probable_upgrade": 91,
     "candidate_input_rows": 496,
     "excluded_duplicate_role_records": 2,
     "excluded_restricted_access": 3,
@@ -39,25 +40,28 @@
       "ROLE-DF72C228F5621EB1"
     ],
     "geography": {
+      "Argentina": 1,
       "Australia": 1,
       "Canada": 3,
       "China": 277,
-      "France": 5,
-      "Germany": 7,
-      "India": 13,
+      "France": 6,
+      "Germany": 10,
+      "India": 14,
       "Israel": 3,
       "Malaysia": 3,
-      "Other/Global": 65,
+      "Mexico": 1,
+      "Other/Global": 72,
       "Pakistan": 3,
       "Poland": 1,
       "Portugal": 1,
-      "Spain": 2,
-      "Sri Lanka": 5,
-      "United Kingdom": 10,
+      "Singapore": 2,
+      "Spain": 3,
+      "Sri Lanka": 6,
+      "United Kingdom": 11,
       "United States": 220,
-      "Unknown": 126
+      "Unknown": 198
     },
-    "rows": 745,
+    "rows": 836,
     "ttl_days": 14
   },
   "evidence_rows": 7217,
@@ -66,6 +70,17 @@
     "code": "Apache-2.0",
     "original_data_and_docs": "CC-BY-4.0",
     "third_party_content": "not_relicensed"
+  },
+  "probable_role_upgrade": {
+    "agent_relevance_insufficient_removed": 2,
+    "frozen_roles": 95,
+    "full_descriptions_persisted": 0,
+    "retained_probable": 1,
+    "source_changed_or_closed": 1,
+    "title_or_url_mismatches": 0,
+    "verified_and_current": 91,
+    "version": "agent-hiring-map-probable-role-upgrade/1.0",
+    "wrong_cross_group_merges": 0
   },
   "publication": {
     "initial_data_commit": "bf6de5c9bfd31e36b2495d269ea6114a3a4cdc22",
@@ -81,20 +96,20 @@
     "existing_roles_audited": 1148,
     "existing_roles_retained": 701,
     "global_frozen_evidence_terminalized": 4643,
-    "global_new_current_opportunities": 254,
+    "global_new_current_opportunities": 345,
     "global_new_organizations": 161,
-    "global_new_roles": 349,
-    "new_probable_roles": 265,
-    "new_roles_admitted_to_strict_current": 0,
+    "global_new_roles": 347,
+    "new_probable_roles": 172,
+    "new_roles_admitted_to_strict_current": 91,
     "public_confidence_tier": {
-      "probable": 427,
-      "verified": 888
+      "probable": 334,
+      "verified": 979
     },
-    "public_role_records": 1315,
+    "public_role_records": 1313,
     "version": "agent-hiring-map-global-evidence-recovery/1.0"
   },
   "release_as_of": "2026-07-24",
-  "review_queue_rows": 856,
+  "review_queue_rows": 763,
   "role_display": {
     "default_rule": "roles without explicit remote or hybrid signals are classified as onsite",
     "languages": [
@@ -103,17 +118,17 @@
     ],
     "location_data_status": {
       "company_or_context_only": 9,
-      "normalized_or_descriptive": 906,
+      "normalized_or_descriptive": 904,
       "official_role_title_location_reviewed": 1,
       "pending_review": 399
     },
     "version": "agent-hiring-map-role-display/1.0",
     "work_arrangement": {
-      "onsite": 1022,
+      "onsite": 1020,
       "remote_or_hybrid": 293
     },
     "work_arrangement_basis": {
-      "default_onsite_no_remote_signal": 1015,
+      "default_onsite_no_remote_signal": 1013,
       "explicit_onsite": 7,
       "explicit_remote_or_hybrid": 293
     }
@@ -137,7 +152,7 @@
     "Sri Lanka": 6,
     "United Kingdom": 11,
     "United States": 7,
-    "Unknown": 1166
+    "Unknown": 1164
   },
   "schema_version": "agent-hiring-map-public/1.1",
   "state": {
@@ -154,9 +169,9 @@
   "title_authenticity": {
     "current_title_citation_support": "100%",
     "role_family_used_as_title_fallback": 0,
-    "roles_audited": 1315,
+    "roles_audited": 1313,
     "status": {
-      "verified_official_title": 1315
+      "verified_official_title": 1313
     },
     "version": "agent-hiring-map-title-authenticity/1.0"
   }
