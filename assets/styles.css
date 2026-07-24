@@ -589,6 +589,12 @@ footer {
   background: var(--paper-deep);
 }
 
+.chip-probable {
+  border-color: #c97822;
+  color: #6f3800;
+  background: #fff0dc;
+}
+
 .job-card h3 {
   margin: 16px 0 10px;
   font-size: clamp(19px, 2vw, 26px);

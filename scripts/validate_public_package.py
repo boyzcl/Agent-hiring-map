@@ -57,6 +57,7 @@ WORK_ARRANGEMENT_BASES = {
     "explicit_onsite",
     "default_onsite_no_remote_signal",
 }
+PUBLIC_CONFIDENCE_TIERS = {"verified", "probable"}
 LOCATION_RESIDUE_ZH = re.compile(
     r"(?i)(?:"
     r"\b(?:current|roles?|job|remote|hybrid|onsite|on-site|full-time|"
@@ -82,9 +83,9 @@ DATASET_SPECS = {
     "data/map/organizations": 1194,
     "data/map/teams": 1424,
     "data/map/products": 2554,
-    "data/map/roles": 1148,
-    "data/map/relations": 9991,
-    "data/current/current-opportunities": None,
+    "data/map/roles": 966,
+    "data/map/relations": 9445,
+    "data/current/current-opportunities": 491,
     "data/review/review-queue": None,
 }
 REQUIRED_FILES = [
@@ -112,6 +113,7 @@ REQUIRED_FILES = [
     "schemas/review-queue-item.schema.json",
     "scripts/build_review_queue.py",
     "scripts/build_team_role_overview.py",
+    "scripts/build_manifest.py",
     "scripts/validate_submission.py",
     ".github/workflows/validate.yml",
     ".github/workflows/weekly-review.yml",
@@ -360,6 +362,8 @@ def role_display_errors(
     basis_counts: dict[str, int] = {}
     location_counts: dict[str, int] = {}
     title_status_counts: dict[str, int] = {}
+    confidence_counts: dict[str, int] = {}
+    origin_counts: dict[str, int] = {}
     required_text = (
         "display_title_zh",
         "display_title_en",
@@ -376,6 +380,26 @@ def role_display_errors(
         title_status_counts[title_status] = title_status_counts.get(
             title_status, 0
         ) + 1
+        confidence_tier = role.get("public_confidence_tier")
+        if confidence_tier not in PUBLIC_CONFIDENCE_TIERS:
+            errors.append(f"role_confidence_tier:{role_id}")
+        else:
+            confidence_counts[confidence_tier] = (
+                confidence_counts.get(confidence_tier, 0) + 1
+            )
+        origin = role.get("recovery_origin")
+        if origin not in {
+            "existing_role_revalidated",
+            "unlinked_evidence_recovered",
+        }:
+            errors.append(f"role_recovery_origin:{role_id}")
+        else:
+            origin_counts[origin] = origin_counts.get(origin, 0) + 1
+        if confidence_tier == "probable" and (
+            role.get("eligible_for_strict_current") is not False
+            or role.get("title_current_eligible_after_gate") is not False
+        ):
+            errors.append(f"probable_role_current_pollution:{role_id}")
         if role.get("title_provenance") == "role_family":
             errors.append(f"role_family_used_as_title:{role_id}")
         if title_status in VERIFIED_TITLE_STATUSES:
@@ -397,6 +421,13 @@ def role_display_errors(
             for field in required_text
         ):
             errors.append(f"role_display_missing_bilingual_text:{role_id}")
+        if (
+            re.search(r"[\u4e00-\u9fff]", role.get("display_title_en", ""))
+            or "官方中文原名" in role.get("display_title_en", "")
+            or "官方英文原名" in role.get("display_title_zh", "")
+            or role.get("display_title_en", "").startswith("Agent-related role")
+        ):
+            errors.append(f"role_title_language_fallback:{role_id}")
         arrangement = role.get("work_arrangement")
         basis = role.get("work_arrangement_basis")
         location_status = role.get("location_data_status")
@@ -478,6 +509,34 @@ def role_display_errors(
         errors.append("title_authenticity_metadata_status_counts")
     if title_metadata.get("role_family_used_as_title_fallback") != 0:
         errors.append("title_authenticity_role_family_fallback")
+    recovery_metadata = metadata.get("recovery", {})
+    if recovery_metadata.get("version") != "agent-hiring-map-evidence-recovery/1.0":
+        errors.append("recovery_metadata_version")
+    if recovery_metadata.get("existing_roles_audited") != 1148:
+        errors.append("recovery_existing_audit_count")
+    if recovery_metadata.get("existing_roles_accepted_before_public_dedupe") != 703:
+        errors.append("recovery_existing_pre_dedupe_count")
+    if recovery_metadata.get("existing_roles_retained") != 701:
+        errors.append("recovery_existing_retained_count")
+    if recovery_metadata.get("existing_records_demoted_to_leads") != 445:
+        errors.append("recovery_demoted_lead_count")
+    if recovery_metadata.get("new_probable_roles") != 265:
+        errors.append("recovery_new_role_count")
+    if recovery_metadata.get("duplicate_role_records_suppressed") != 2:
+        errors.append("recovery_duplicate_suppression_count")
+    if recovery_metadata.get("public_role_records") != len(roles):
+        errors.append("recovery_public_role_count")
+    if recovery_metadata.get("public_confidence_tier") != dict(
+        sorted(confidence_counts.items())
+    ):
+        errors.append("recovery_confidence_counts")
+    if origin_counts != {
+        "existing_role_revalidated": 701,
+        "unlinked_evidence_recovered": 265,
+    }:
+        errors.append("recovery_origin_counts")
+    if recovery_metadata.get("new_roles_admitted_to_strict_current") != 0:
+        errors.append("recovery_new_role_current_pollution")
 
     beisen = [
         role
@@ -501,6 +560,33 @@ def role_display_errors(
             != "default_onsite_no_remote_signal"
         ):
             errors.append("beisen_j14460_display_regression")
+    smart_drug = [
+        role
+        for role in roles
+        if role.get("role_id") == "ROLE-B0A80F962CFE85AD"
+    ]
+    if len(smart_drug) != 1:
+        errors.append("smart_drug_role_missing")
+    else:
+        role = smart_drug[0]
+        if (
+            role.get("official_title_raw") != "智慧药物平台实验技术岗位"
+            or role.get("display_title_en")
+            != "Smart Drug Platform Laboratory Technical Role"
+            or "rsc.bjmu.edu.cn/rczp/jfxz/"
+            not in str(role.get("official_role_url") or "")
+        ):
+            errors.append("smart_drug_role_regression")
+    serialized_titles = "\n".join(
+        str(role.get("official_title_raw") or "") for role in roles
+    )
+    for forbidden_title in (
+        "工业智能体技术项目",
+        "经营规划、记忆评估",
+        "科学平台智能体系统工程师",
+    ):
+        if forbidden_title in serialized_titles:
+            errors.append(f"known_false_title_reintroduced:{forbidden_title}")
     return errors
 
 
@@ -556,6 +642,7 @@ def site_errors() -> list[str]:
         'id="filter-category"',
         'id="filter-remote"',
         'id="filter-grade"',
+        'id="filter-confidence"',
         'id="filter-team-state"',
         'id="lang-zh"',
         'id="lang-en"',
@@ -628,6 +715,8 @@ def site_errors() -> list[str]:
         "display_location_en",
         "work_arrangement",
         "work_arrangement_basis",
+        "public_confidence_tier",
+        '"filter-confidence"',
         'params.set("lang", state.lang)',
         "document.documentElement.lang",
         "const I18N",
@@ -752,6 +841,12 @@ def run_default() -> dict[str, Any]:
                 or row.get("citation_supports_title") is not True
             ):
                 errors.append(f"current_role_title_mismatch:{row['role_id']}")
+            if (
+                role.get("public_confidence_tier") != "verified"
+                or role.get("recovery_origin") != "existing_role_revalidated"
+                or role.get("eligible_for_strict_current") is not True
+            ):
+                errors.append(f"current_role_confidence_mismatch:{row['role_id']}")
     errors.extend(scan_text_safety())
     errors.extend(scan_csv_formula())
     errors.extend(workflow_errors())
@@ -805,6 +900,19 @@ def run_self_test() -> dict[str, Any]:
     tests.append(("workflow_write_permission", bool(re.search(r"contents:\s*write", "permissions:\n contents: write"))))
     tests.append(("telemetry_domain", "posthog.capture" in "posthog.capture('query')"))
     tests.append(("evidence_current_conflation", "7,217 个当前岗位" in "本项目有 7,217 个当前岗位"))
+    tests.append(
+        (
+            "probable_current_pollution",
+            "probable" in PUBLIC_CONFIDENCE_TIERS and False is not True,
+        )
+    )
+    tests.append(
+        (
+            "known_false_title_fixture",
+            "工业智能体技术项目"
+            in "清华大学工业智能体技术项目（错误合成标题）",
+        )
+    )
     tests.append(
         (
             "location_residue_chinese",

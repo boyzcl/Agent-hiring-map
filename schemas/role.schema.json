@@ -33,7 +33,13 @@
     "title_source_recheck_attempted_at",
     "title_source_observation_status",
     "title_current_eligible_after_gate",
-    "title_translation_status"
+    "title_translation_status",
+    "role_recovery_status",
+    "role_recovery_confidence",
+    "public_confidence_tier",
+    "recovery_origin",
+    "eligible_for_job_list",
+    "eligible_for_strict_current"
   ],
   "properties": {
     "schema_version": {"const": "agent-hiring-map-public/1.0"},
@@ -47,6 +53,8 @@
     "job_locations": {"type": "array", "items": {"type": "string"}},
     "remote_scope": {"type": ["string", "null"]},
     "agent_specific_quote": {"type": ["string", "null"], "maxLength": 300},
+    "agent_relevance_summary": {"type": ["string", "null"], "maxLength": 500},
+    "agent_relevance_evidence_type": {"type": ["string", "null"]},
     "official_role_url": {"type": ["string", "null"], "format": "uri"},
     "first_seen_at": {"type": ["string", "null"]},
     "last_seen_at": {"type": ["string", "null"]},
@@ -90,13 +98,7 @@
         "disputed"
       ]
     },
-    "title_provenance": {
-      "enum": [
-        "manual_official_source_review",
-        "public_source_metadata",
-        "no_supported_title"
-      ]
-    },
+    "title_provenance": {"type": "string", "minLength": 1},
     "title_source_url": {"type": ["string", "null"], "format": "uri"},
     "title_source_granularity": {
       "enum": [
@@ -127,8 +129,17 @@
       "enum": [
         "verified_translation",
         "source_language_preserved",
-        "not_translated"
+        "not_translated",
+        "deterministic_bilingual_translation_v1"
       ]
-    }
+    },
+    "role_recovery_status": {"enum": ["verified_job", "probable_job"]},
+    "role_recovery_confidence": {"type": "number", "minimum": 0, "maximum": 1},
+    "public_confidence_tier": {"enum": ["verified", "probable"]},
+    "recovery_origin": {
+      "enum": ["existing_role_revalidated", "unlinked_evidence_recovered"]
+    },
+    "eligible_for_job_list": {"const": true},
+    "eligible_for_strict_current": {"type": "boolean"}
   }
 }

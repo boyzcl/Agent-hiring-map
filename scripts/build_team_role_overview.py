@@ -204,6 +204,10 @@ ACCESS_LABELS = {
     "user_assisted_auth": "需要用户协助认证",
     "paid_or_private_blocked": "付费或私人来源、禁止进入当前岗位",
 }
+CONFIDENCE_LABELS = {
+    "verified": "已核实岗位",
+    "probable": "高概率岗位",
+}
 
 
 def load_json(path: Path) -> dict[str, Any]:
@@ -384,10 +388,14 @@ def build_document() -> str:
     evidence_counts = Counter(
         opportunity.get("evidence_grade") or "（未记录）" for opportunity in current
     )
+    confidence_counts = Counter(
+        role.get("public_confidence_tier") or "（未记录）" for role in roles
+    )
     remote_counts = Counter(
         "明确标注远程或混合办公"
-        if role_by_id[opportunity["role_id"]].get("remote_scope")
-        else "未记录远程或混合办公范围"
+        if role_by_id[opportunity["role_id"]].get("work_arrangement")
+        == "remote_or_hybrid"
+        else "现场办公（来源未标远程或混合时按规则默认）"
         for opportunity in current
     )
     geography_counts = Counter(opportunity["geography"] for opportunity in current)
@@ -412,13 +420,14 @@ def build_document() -> str:
         f"| 没有地图岗位记录的团队 | {teams_without_map_roles} | 仍保留团队及其证据关系 |",
         f"| 有当前岗位的团队 | {teams_with_current} | 至少有 1 条记录进入当前岗位视图 |",
         f"| 当前岗位为 0 的团队 | {teams_without_current} | 不等于该团队永久不招聘 |",
-        f"| 地图岗位记录 | {len(roles)} | 标准化 Role 对象，包含当前、过期、关闭或争议记录 |",
+        f"| 地图岗位记录 | {len(roles)} | 仅含已核实或高概率的标准化 Role 对象 |",
         f"| 当前岗位 | {len(current)} | 通过本次公开快照的日期、来源和访问门 |",
         f"| 安全证据索引 | {metadata['evidence_rows']} | **不是岗位数，也不是招聘人数** |",
         "",
         "## 统计口径",
         "",
         "- **地图岗位记录**：`data/map/roles.jsonl` 中的标准化 Role 对象。它是岗位记录，不代表仍在招聘，也不代表招聘人数。",
+        "- **已核实岗位 / 高概率岗位**：前者通过完整岗位真实性门；后者有官方标题和稳定定位，但仍缺少一项非核心事实。高概率岗位不会进入严格当前岗位视图。",
         "- **当前岗位**：`data/current/current-opportunities.jsonl` 中通过当前性、官方来源、日期、证据和访问要求门的岗位。",
         "- **每团队岗位数**：岗位通过唯一 `team_id` 计入一个团队，因此不会因产品关系或证据行重复计数。",
         "- **当前岗位为 0**：只表示当前快照中没有岗位通过当前视图门；不能推断团队不存在、停止运营或永久不招聘。",
@@ -461,6 +470,13 @@ def build_document() -> str:
             ),
             "",
             *distribution_table(
+                "地图岗位可信度",
+                confidence_counts,
+                CONFIDENCE_LABELS,
+                len(roles),
+            ),
+            "",
+            *distribution_table(
                 "地图岗位记录的当前状态",
                 currentness_counts,
                 CURRENTNESS_LABELS,
@@ -468,7 +484,7 @@ def build_document() -> str:
             ),
             "",
             "> 注意：地图 Role 中标为“很可能当前有效”的记录，仍可能因为公开发布时的期限、访问或结构门"
-            "而没有进入 911 条当前岗位；求职检索应以当前岗位视图为准。",
+            f"而没有进入 {len(current)} 条当前岗位；求职检索应以当前岗位视图为准。",
             "",
             *distribution_table(
                 "当前岗位证据等级",
@@ -491,7 +507,7 @@ def build_document() -> str:
                 len(current),
             ),
             "",
-            "> “未记录远程或混合办公范围”不等于必须到岗办公，只表示现有结构化字段没有可靠记录。",
+            "> 未明确写远程或混合办公的岗位，按本项目已确认规则归为现场办公；卡片会披露这一判断依据。",
             "",
             "## 团队的当前岗位规模分布",
             "",

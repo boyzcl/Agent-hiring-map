@@ -56,12 +56,13 @@ const I18N = Object.freeze({
     categoryLabel: "阅读用岗位类别",
     workArrangementLabel: "办公方式",
     evidenceGradeLabel: "证据等级",
+    confidenceLabel: "岗位可信度",
     teamCurrentRolesLabel: "团队当前岗位",
     sortLabel: "排序",
     clearFilters: "清除筛选",
     loadingPublicData: "正在载入公开数据……",
     currentScopeNote: "仅显示官方岗位标题可核验，并通过当前性、日期、来源粒度和访问要求门的岗位。",
-    allScopeNote: "展示全部地图岗位记录；未进入当前视图的记录不代表仍在招聘。",
+    allScopeNote: "展示已核实和高概率岗位；高概率岗位有独立标签，未进入当前视图不代表仍在招聘。",
     teamCurrentScopeNote: "团队列表保持完整；类别摘要按当前岗位计算。",
     teamAllScopeNote: "团队列表保持完整；类别摘要按全部地图岗位记录计算。",
     loadErrorTitle: "数据暂时无法载入",
@@ -96,6 +97,9 @@ const I18N = Object.freeze({
     arrangementRemoteHybrid: "远程或混合办公",
     gradeAll: "全部等级",
     gradeOption: "{grade}级",
+    confidenceAll: "全部可信度",
+    confidenceVerified: "已核实岗位",
+    confidenceProbable: "高概率岗位",
     teamStateAll: "全部团队",
     teamStateActive: "有当前岗位",
     teamStateZero: "当前岗位为 0",
@@ -220,12 +224,13 @@ const I18N = Object.freeze({
     categoryLabel: "Reading category",
     workArrangementLabel: "Work arrangement",
     evidenceGradeLabel: "Evidence grade",
+    confidenceLabel: "Role confidence",
     teamCurrentRolesLabel: "Team current-role status",
     sortLabel: "Sort",
     clearFilters: "Clear filters",
     loadingPublicData: "Loading public data…",
     currentScopeNote: "Only roles with a verifiable official title that pass currentness, date, source-granularity, and access gates are shown.",
-    allScopeNote: "All map role records are shown; records outside the current view are not necessarily still hiring.",
+    allScopeNote: "Shows verified and probable roles. Probable roles are labeled, and records outside Current are not necessarily still hiring.",
     teamCurrentScopeNote: "The team list stays complete; category summaries use current roles.",
     teamAllScopeNote: "The team list stays complete; category summaries use all map role records.",
     loadErrorTitle: "Data is temporarily unavailable",
@@ -260,6 +265,9 @@ const I18N = Object.freeze({
     arrangementRemoteHybrid: "Remote or hybrid",
     gradeAll: "All grades",
     gradeOption: "Grade {grade}",
+    confidenceAll: "All confidence tiers",
+    confidenceVerified: "Verified role",
+    confidenceProbable: "Probable role",
     teamStateAll: "All teams",
     teamStateActive: "Has current roles",
     teamStateZero: "Zero current roles",
@@ -408,6 +416,7 @@ const state = {
   category: "all",
   remote: "all",
   grade: "all",
+  confidence: "all",
   teamState: "all",
   sort: "verified_desc",
   page: 1,
@@ -594,6 +603,7 @@ function buildStore(raw) {
       geographies,
       evidenceGrade:
         current?.evidence_grade || role.evidence_grade || t("notRecorded"),
+      confidenceTier: role.public_confidence_tier || "probable",
       accessRequirement:
         current?.access_requirement ||
         role.access_requirement ||
@@ -719,6 +729,7 @@ function bindElements() {
     "filter-category",
     "filter-remote",
     "filter-grade",
+    "filter-confidence",
     "filter-team-state",
     "filter-sort",
     "reset-filters",
@@ -765,6 +776,11 @@ function populateFilterOptions() {
       grade,
       t("gradeOption", { grade }),
     ]),
+  ]);
+  setOptions(elements["filter-confidence"], [
+    ["all", t("confidenceAll")],
+    ["verified", t("confidenceVerified")],
+    ["probable", t("confidenceProbable")],
   ]);
   setOptions(elements["filter-team-state"], [
     ["all", t("teamStateAll")],
@@ -840,6 +856,7 @@ function applyStateToControls() {
   elements["filter-category"].value = state.category;
   elements["filter-remote"].value = state.remote;
   elements["filter-grade"].value = state.grade;
+  elements["filter-confidence"].value = state.confidence;
   elements["filter-team-state"].value = state.teamState;
   elements["tab-jobs"].classList.toggle("is-active", state.view === "jobs");
   elements["tab-teams"].classList.toggle("is-active", state.view === "teams");
@@ -882,6 +899,10 @@ function filteredJobs() {
       return false;
     }
     if (state.grade !== "all" && job.evidenceGrade !== state.grade) return false;
+    if (
+      state.confidence !== "all" &&
+      job.confidenceTier !== state.confidence
+    ) return false;
     if (query && !job.searchText.includes(query)) return false;
     return true;
   });
@@ -1013,6 +1034,13 @@ function renderJobCard(job) {
     topline,
     job.isCurrent ? t("currentRole") : t("notInCurrentView"),
     job.isCurrent ? "chip-current" : "chip-muted",
+  );
+  appendChip(
+    topline,
+    job.confidenceTier === "verified"
+      ? t("confidenceVerified")
+      : t("confidenceProbable"),
+    job.confidenceTier === "verified" ? "chip-current" : "chip-probable",
   );
   appendChip(topline, geographyLabel(job.geographies), "chip-muted");
   appendChip(
@@ -1171,6 +1199,9 @@ function updateUrl() {
   if (state.category !== "all") params.set("category", state.category);
   if (state.remote !== "all") params.set("remote", state.remote);
   if (state.grade !== "all") params.set("grade", state.grade);
+  if (state.confidence !== "all") {
+    params.set("confidence", state.confidence);
+  }
   if (state.teamState !== "all") params.set("teams", state.teamState);
   const query = params.toString();
   const nextUrl = `${window.location.pathname}?${query}${window.location.hash}`;
@@ -1243,6 +1274,7 @@ function resetFilters() {
     category: "all",
     remote: "all",
     grade: "all",
+    confidence: "all",
     teamState: "all",
     sort: state.view === "jobs" ? "verified_desc" : "current_desc",
     page: 1,
@@ -1267,6 +1299,7 @@ function bindEvents() {
     ["filter-category", "category"],
     ["filter-remote", "remote"],
     ["filter-grade", "grade"],
+    ["filter-confidence", "confidence"],
     ["filter-team-state", "teamState"],
     ["filter-sort", "sort"],
   ];
@@ -1301,6 +1334,7 @@ function readUrlState() {
     category: params.get("category"),
     remote: params.get("remote"),
     grade: params.get("grade"),
+    confidence: params.get("confidence"),
     teamState: params.get("teams"),
   };
   if (["zh", "en"].includes(candidates.lang)) state.lang = candidates.lang;
@@ -1325,6 +1359,9 @@ function readUrlState() {
   }
   if (["all", "A", "B", "C", "E"].includes(candidates.grade)) {
     state.grade = candidates.grade;
+  }
+  if (["all", "verified", "probable"].includes(candidates.confidence)) {
+    state.confidence = candidates.confidence;
   }
   if (["all", "active", "zero"].includes(candidates.teamState)) {
     state.teamState = candidates.teamState;

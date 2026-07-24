@@ -6,20 +6,24 @@
   "canonical_counts": {
     "organizations": 1194,
     "products": 2554,
-    "relations": 9991,
-    "roles": 1148,
+    "relations": 9445,
+    "roles": 966,
     "teams": 1424
   },
   "current_opportunities": {
-    "candidate_input_rows": 920,
-    "excluded_by_all_current_gates": 383,
-    "excluded_time_anomalies_or_expired": 0,
-    "excluded_title_authenticity": 383,
+    "candidate_input_rows": 496,
+    "excluded_duplicate_role_records": 2,
+    "excluded_restricted_access": 3,
+    "excluded_restricted_access_role_ids": [
+      "ROLE-28CB4EA8D0C4B013",
+      "ROLE-B297C06B60D93C1D",
+      "ROLE-DF72C228F5621EB1"
+    ],
     "geography": {
-      "China": 282,
-      "United States": 255
+      "China": 277,
+      "United States": 214
     },
-    "rows": 537,
+    "rows": 491,
     "ttl_days": 14
   },
   "evidence_rows": 7217,
@@ -36,8 +40,23 @@
     "published_at": "2026-07-23",
     "repository_url": "https://github.com/boyzcl/Agent-hiring-map"
   },
+  "recovery": {
+    "duplicate_role_records_suppressed": 2,
+    "existing_records_demoted_to_leads": 445,
+    "existing_roles_accepted_before_public_dedupe": 703,
+    "existing_roles_audited": 1148,
+    "existing_roles_retained": 701,
+    "new_probable_roles": 265,
+    "new_roles_admitted_to_strict_current": 0,
+    "public_confidence_tier": {
+      "probable": 332,
+      "verified": 634
+    },
+    "public_role_records": 966,
+    "version": "agent-hiring-map-evidence-recovery/1.0"
+  },
   "release_as_of": "2026-07-24",
-  "review_queue_rows": 1666,
+  "review_queue_rows": 728,
   "role_display": {
     "default_rule": "roles without explicit remote or hybrid signals are classified as onsite",
     "languages": [
@@ -45,20 +64,20 @@
       "en"
     ],
     "location_data_status": {
-      "company_or_context_only": 33,
-      "normalized_or_descriptive": 603,
-      "official_role_title_location_reviewed": 9,
-      "pending_review": 503
+      "company_or_context_only": 9,
+      "normalized_or_descriptive": 590,
+      "official_role_title_location_reviewed": 1,
+      "pending_review": 366
     },
     "version": "agent-hiring-map-role-display/1.0",
     "work_arrangement": {
-      "onsite": 1004,
-      "remote_or_hybrid": 144
+      "onsite": 844,
+      "remote_or_hybrid": 122
     },
     "work_arrangement_basis": {
-      "default_onsite_no_remote_signal": 990,
-      "explicit_onsite": 14,
-      "explicit_remote_or_hybrid": 144
+      "default_onsite_no_remote_signal": 837,
+      "explicit_onsite": 7,
+      "explicit_remote_or_hybrid": 122
     }
   },
   "schema_version": "agent-hiring-map-public/1.0",
@@ -68,6 +87,7 @@
     "data_published": true,
     "demand_proven": false,
     "external_business_writes_enabled": false,
+    "external_writes_enabled": false,
     "p4_observation_active": true,
     "p4_passed": false,
     "scale_proven": false
@@ -75,12 +95,9 @@
   "title_authenticity": {
     "current_title_citation_support": "100%",
     "role_family_used_as_title_fallback": 0,
-    "roles_audited": 1148,
+    "roles_audited": 966,
     "status": {
-      "pending_title_review": 320,
-      "source_granularity_insufficient": 91,
-      "verified_official_listing": 49,
-      "verified_official_title": 688
+      "verified_official_title": 966
     },
     "version": "agent-hiring-map-title-authenticity/1.0"
   }

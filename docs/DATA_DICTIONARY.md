@@ -42,6 +42,14 @@ Evidence 是一条公开来源观察的稳定索引。它可能只是产品页�
 
 Role 仍只有一套正式记录。岗位标题与岗位类别严格分开：`role_family` 只表示阅读用类别，不能填入 `title` 或 `display_title_*`。
 
+公开岗位列表只接收两种可信度：
+
+- `public_confidence_tier=verified`：已核实岗位，标题、组织、官方来源和稳定岗位定位均通过完整门；
+- `public_confidence_tier=probable`：高概率岗位，官方标题和稳定定位成立，但仍缺一项非核心事实；`eligible_for_strict_current` 必须为 `false`。
+
+`recovery_origin` 区分 `existing_role_revalidated`（旧 Role 重新验收后保留）和
+`unlinked_evidence_recovered`（从未转 Evidence 恢复）。待追溯线索不再拥有公开岗位卡，也不计入 966 条岗位记录。
+
 岗位标题真实性字段：
 
 - `official_title_raw`：官方来源中的岗位标题原文；无法证明时为 `null`；
@@ -58,8 +66,8 @@ Role 仍只有一套正式记录。岗位标题与岗位类别严格分开：`ro
 以下字段是同一记录中的双语和地点展示，不是第二套岗位事实：
 
 - `role_display_version`：展示派生规则版本；
-- `display_title_zh`：中文界面岗位标题；无法证明时显示带 Role ID 的待复核文案；
-- `display_title_en`：英文界面岗位标题；无法证明时显示带 Role ID 的待复核文案；
+- `display_title_zh`：中文界面岗位标题；
+- `display_title_en`：英文界面岗位标题；
 - `display_location_zh`：中文地点显示；
 - `display_location_en`：英文地点显示；
 - `location_data_status`：地点数据状态；
@@ -95,7 +103,7 @@ Role 仍只有一套正式记录。岗位标题与岗位类别严格分开：`ro
 - `current_verified`：有充分一手证据确认当前；
 - `current_probable`：在冻结期限内、证据足够但仍保留边界。
 
-此外必须同时满足：标题已核验、引用支持标题、来源为具体岗位页或带稳定岗位定位的官方列表、无需付费或私人访问。
+此外必须同时满足：`public_confidence_tier=verified`、标题已核验、引用支持标题、来源为具体岗位页或带稳定岗位定位的官方列表、无需登录公开访问。高概率岗位、新恢复岗位和需要协助认证的岗位均不能进入本次公开 Current。
 
 以下状态不能进入当前岗位：
 
