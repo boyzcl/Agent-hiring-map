@@ -31,6 +31,7 @@
 用中文查看全部团队、每团队岗位数和整体分类分布：
 
 - [团队与岗位全景总览](docs/TEAM_ROLE_OVERVIEW.md)
+- [数据规模、统计口径与全球线索恢复空间](docs/DATA_SCALE_AND_SCOPE.md)
 
 网页直接读取仓库中的正式数据文件。以后组织、团队、产品、岗位和当前岗位经过既有审核与验证流程更新并进入 `main` 后，网页会随 GitHub Pages 的重新发布自动显示新增数据，无需人工逐条维护页面。
 
@@ -154,6 +155,7 @@ python3 scripts/validate_submission.py examples/submissions/valid-china-role.jso
 
 - [规则权威](docs/AUTHORITY.md)
 - [字段和状态](docs/DATA_DICTIONARY.md)
+- [数据规模、统计口径与全球线索恢复空间](docs/DATA_SCALE_AND_SCOPE.md)
 - [团队与岗位全景总览](docs/TEAM_ROLE_OVERVIEW.md)
 - [在线筛选网页](https://boyzcl.github.io/Agent-hiring-map/)
 - [贡献指南](docs/CONTRIBUTING.md)

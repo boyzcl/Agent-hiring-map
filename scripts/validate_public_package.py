@@ -100,6 +100,7 @@ REQUIRED_FILES = [
     "NOTICE",
     "SECURITY.md",
     "docs/AUTHORITY.md",
+    "docs/DATA_SCALE_AND_SCOPE.md",
     "docs/DATA_DICTIONARY.md",
     "docs/CONTRIBUTING.md",
     "docs/MAINTENANCE.md",
@@ -118,6 +119,7 @@ REQUIRED_FILES = [
     ".github/workflows/validate.yml",
     ".github/workflows/weekly-review.yml",
     "data/metadata/release-metadata.json",
+    "data/metadata/global-recovery-summary.json",
     "data/metadata/release-delta.json",
     "data/review/source-batches.json",
 ]
@@ -772,6 +774,75 @@ def overview_errors() -> list[str]:
     return [f"team_role_overview:{detail or 'check_failed'}"]
 
 
+def scale_doc_errors(
+    datasets: dict[str, list[dict[str, Any]]], metadata: dict[str, Any]
+) -> list[str]:
+    summary = json.loads(
+        (ROOT / "data" / "metadata" / "global-recovery-summary.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    document = (ROOT / "docs" / "DATA_SCALE_AND_SCOPE.md").read_text(
+        encoding="utf-8"
+    )
+    errors: list[str] = []
+    evidence = summary.get("evidence", {})
+    terminal = summary.get("terminal_status", {})
+    network = summary.get("network", {})
+    projection = summary.get("projection", {})
+    exploration = summary.get("exploration", {})
+    recovery = metadata.get("recovery", {})
+    canonical = metadata.get("canonical_counts", {})
+
+    if summary.get("as_of_date") != metadata.get("release_as_of"):
+        errors.append("scale_summary_release_date")
+    if evidence.get("ledger_rows") != metadata.get("evidence_rows"):
+        errors.append("scale_summary_evidence_rows")
+    if evidence.get("global_frozen_rows") != recovery.get(
+        "global_frozen_evidence_terminalized"
+    ):
+        errors.append("scale_summary_global_frozen_rows")
+    if sum(terminal.values()) != evidence.get("global_frozen_rows"):
+        errors.append("scale_summary_terminal_partition")
+    if sum(network.get("adapter_triggers", {}).values()) != network.get("triggers"):
+        errors.append("scale_summary_network_partition")
+    for summary_key, recovery_key in (
+        ("new_unique_roles", "global_new_roles"),
+        ("new_strict_current", "global_new_current_opportunities"),
+        ("new_organizations", "global_new_organizations"),
+    ):
+        if projection.get(summary_key) != recovery.get(recovery_key):
+            errors.append(f"scale_summary_projection:{summary_key}")
+    if sum(exploration.get("high_signal_recheck_definition", {}).values()) != exploration.get(
+        "high_signal_recheck_rows"
+    ):
+        errors.append("scale_summary_high_signal_partition")
+
+    current_teams = len(
+        {
+            row.get("team_id")
+            for row in datasets.get("current-opportunities", [])
+            if row.get("team_id")
+        }
+    )
+    expected_doc_tokens = {
+        f"数据快照：{metadata['release_as_of']}": "release_date",
+        f"{metadata['evidence_rows']:,} 条证据": "evidence_rows",
+        f"{evidence['global_frozen_rows']:,} 条": "global_frozen_rows",
+        f"{canonical['roles']:,} 个岗位": "role_rows",
+        f"{metadata['current_opportunities']['rows']:,} 个确认当前开放": "current_rows",
+        f"{current_teams:,} 个有当前岗位的团队": "current_teams",
+        f"{canonical['organizations']:,} | 组织": "organizations",
+        f"{canonical['teams']:,} | 团队": "teams",
+        f"{canonical['products']:,} | 产品": "products",
+        f"{canonical['relations']:,} | 关系": "relations",
+    }
+    for token, code in expected_doc_tokens.items():
+        if token not in document:
+            errors.append(f"scale_doc_stale:{code}")
+    return errors
+
+
 def manifest_errors() -> list[str]:
     path = ROOT / "manifest.json"
     if not path.exists():
@@ -877,6 +948,7 @@ def run_default() -> dict[str, Any]:
     errors.extend(honest_state_errors())
     errors.extend(site_errors())
     errors.extend(overview_errors())
+    errors.extend(scale_doc_errors(datasets, metadata))
     errors = sorted(set(errors))
     return {
         "validator": "agent-hiring-map-public-package/1.0",

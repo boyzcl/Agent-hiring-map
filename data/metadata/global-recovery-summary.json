@@ -1,0 +1,95 @@
+{
+  "schema_version": "agent-hiring-map-global-recovery-public-summary/1.0",
+  "as_of_date": "2026-07-24",
+  "evidence": {
+    "ledger_rows": 7217,
+    "global_frozen_rows": 4643,
+    "other_global": 3867,
+    "unknown": 776,
+    "remaining_non_global_frozen_rows": 2574,
+    "deleted": 0
+  },
+  "terminal_status": {
+    "non_role_signal": 1849,
+    "insufficient_role_specificity": 1372,
+    "blocked_or_auth_required": 819,
+    "verified_job": 255,
+    "geography_unresolved": 172,
+    "probable_job": 94,
+    "source_unavailable_or_changed": 81,
+    "duplicate_existing_role": 1
+  },
+  "network": {
+    "triggers": 527,
+    "unique_boards": 251,
+    "unique_domains": 8,
+    "holdout_rows": 295,
+    "adapter_triggers": {
+      "ashby": 258,
+      "greenhouse": 132,
+      "smartrecruiters": 87,
+      "lever": 46,
+      "jsonld": 4
+    },
+    "structured_ats": {
+      "ashby_greenhouse_lever_triggers": 436,
+      "board_requests": 234,
+      "board_success": 222,
+      "board_http_404": 5,
+      "board_network_error": 7,
+      "current_exact_job": 352,
+      "job_not_on_current_board": 64,
+      "board_fetch_failed": 20
+    },
+    "smartrecruiters": {
+      "companies": 14,
+      "requests": 76,
+      "current_exact_job": 87
+    },
+    "jsonld": {
+      "exact_job_observed": 3,
+      "page_without_job_facts": 1
+    }
+  },
+  "projection": {
+    "observation_decisions": 528,
+    "job_list_decisions": 351,
+    "new_unique_roles": 349,
+    "new_verified_roles": 254,
+    "new_probable_roles": 95,
+    "new_strict_current": 254,
+    "new_organizations": 161,
+    "reused_existing_organizations": 16,
+    "new_teams": 317,
+    "new_products": 317,
+    "new_relations": 1998
+  },
+  "exploration": {
+    "potentially_unresolved_rows": 2444,
+    "high_signal_recheck_rows": 371,
+    "official_hiring_leads_needing_locator": 323,
+    "third_party_or_registry_leads": 759,
+    "non_role_default_no_recheck": 1849,
+    "high_signal_recheck_definition": {
+      "official_exact_signal_needs_locator": 170,
+      "structured_exact_candidate_insufficient": 80,
+      "source_unavailable_or_changed": 81,
+      "structured_board_without_exact_role": 36,
+      "structured_relevance_conflict": 4
+    }
+  },
+  "quality": {
+    "title_or_locator_errors": 0,
+    "wrong_cross_group_merges": 0,
+    "duplicate_role_url_errors": 0,
+    "current_pollution": 0,
+    "unknown_forced_geography": 0,
+    "verified_precision": 1.0,
+    "probable_precision": 1.0
+  },
+  "limitations": [
+    "terminal_coverage_is_not_job_recall",
+    "frozen_evidence_coverage_is_not_global_market_completeness",
+    "counts_are_role_records_not_headcount"
+  ]
+}
