@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'"
     >
     <meta
+      id="meta-description"
       name="description"
       content="基于公开来源、可追溯的中国与美国 Agent 岗位筛选地图。"
     >
@@ -17,94 +18,127 @@
     <title>中美 Agent 岗位地图</title>
   </head>
   <body>
-    <a class="skip-link" href="#explorer">跳到岗位筛选</a>
+    <a class="skip-link" href="#explorer" data-i18n="skipToExplorer">跳到岗位筛选</a>
 
     <header class="site-header">
-      <a class="brand" href="./" aria-label="中美 Agent 岗位地图首页">
+      <a
+        class="brand"
+        href="./"
+        data-i18n-aria-label="brandHomeLabel"
+        aria-label="中美 Agent 岗位地图首页"
+      >
         <span class="brand-mark" aria-hidden="true">A</span>
         <span>
           <strong>Agent Hiring Map</strong>
-          <small>中美公开岗位地图</small>
+          <small data-i18n="brandSubtitle">中美公开岗位地图</small>
         </span>
       </a>
-      <nav aria-label="项目导航">
-        <a href="#explorer">筛选岗位</a>
-        <a
-          href="https://github.com/boyzcl/Agent-hiring-map/blob/main/docs/TEAM_ROLE_OVERVIEW.md"
-          rel="noreferrer"
-        >文本总览</a>
-        <a
-          href="https://github.com/boyzcl/Agent-hiring-map"
-          rel="noreferrer"
-        >GitHub</a>
-      </nav>
+      <div class="header-actions">
+        <nav data-i18n-aria-label="projectNavigation" aria-label="项目导航">
+          <a href="#explorer" data-i18n="navExplore">筛选岗位</a>
+          <a
+            href="https://github.com/boyzcl/Agent-hiring-map/blob/main/docs/TEAM_ROLE_OVERVIEW.md"
+            rel="noreferrer"
+            data-i18n="navOverview"
+          >文本总览</a>
+          <a
+            href="https://github.com/boyzcl/Agent-hiring-map"
+            rel="noreferrer"
+          >GitHub</a>
+        </nav>
+        <div
+          class="language-switcher"
+          role="group"
+          data-i18n-aria-label="languageSwitcherLabel"
+          aria-label="界面语言"
+        >
+          <button id="lang-zh" type="button" lang="zh-CN" aria-pressed="true">中文</button>
+          <span aria-hidden="true">/</span>
+          <button id="lang-en" type="button" lang="en" aria-pressed="false">English</button>
+        </div>
+      </div>
     </header>
 
     <main>
       <section class="hero" aria-labelledby="page-title">
         <div class="hero-copy">
-          <p class="eyebrow">中国 × 美国 · 公开来源</p>
-          <h1 id="page-title">找到真正和<br><span>Agent</span> 有关的工作。</h1>
-          <p class="hero-lead">
-            从团队、岗位类别、地域和证据状态出发，筛选中国与美国公开来源中的
-            Agent 岗位。每条当前岗位都能回到官方来源。
+          <p class="eyebrow" data-i18n="heroEyebrow">中国 × 美国 · 公开来源</p>
+          <h1 id="page-title">
+            <span data-i18n="heroTitleLead">找到真正和</span><br>
+            <span class="hero-agent">Agent</span>
+            <span data-i18n="heroTitleTail">有关的工作。</span>
+          </h1>
+          <p class="hero-lead" data-i18n="heroLead">
+            从团队、岗位类别、地域和证据状态出发，筛选中国与美国公开来源中的 Agent
+            岗位。每条当前岗位都能回到官方来源。
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#explorer">开始筛选</a>
+            <a class="button button-primary" href="#explorer" data-i18n="startFiltering">开始筛选</a>
             <a
               class="button button-secondary"
               href="https://github.com/boyzcl/Agent-hiring-map/blob/main/docs/METHODOLOGY.md"
               rel="noreferrer"
+              data-i18n="learnMethod"
             >了解方法与限制</a>
           </div>
         </div>
-        <aside class="hero-note" aria-label="重要口径">
+        <aside
+          class="hero-note"
+          data-i18n-aria-label="importantDefinition"
+          aria-label="重要口径"
+        >
           <span class="note-index">01</span>
-          <p>证据行不是岗位数。</p>
+          <p data-i18n="evidenceNotJobs">证据行不是岗位数。</p>
           <strong id="evidence-count">—</strong>
-          <small>
+          <small data-i18n="evidenceExplanation">
             条安全证据索引用于溯源，可能包含产品页、招聘入口、过期记录或定位线索。
           </small>
         </aside>
       </section>
 
-      <section class="stats" aria-label="数据概况">
+      <section class="stats" data-i18n-aria-label="dataSummary" aria-label="数据概况">
         <article>
-          <span>当前岗位</span>
+          <span data-i18n="statCurrentLabel">当前岗位</span>
           <strong id="stat-current">—</strong>
-          <small>默认检索范围</small>
+          <small data-i18n="statCurrentNote">默认检索范围</small>
         </article>
         <article>
-          <span>地图岗位记录</span>
+          <span data-i18n="statRolesLabel">地图岗位记录</span>
           <strong id="stat-roles">—</strong>
-          <small>不等于招聘人数</small>
+          <small data-i18n="statRolesNote">不等于招聘人数</small>
         </article>
         <article>
-          <span>已收录团队</span>
+          <span data-i18n="statTeamsLabel">已收录团队</span>
           <strong id="stat-teams">—</strong>
-          <small>包括当前岗位为 0</small>
+          <small data-i18n="statTeamsNote">包括当前岗位为 0</small>
         </article>
         <article>
-          <span>有当前岗位的团队</span>
+          <span data-i18n="statActiveTeamsLabel">有当前岗位的团队</span>
           <strong id="stat-active-teams">—</strong>
-          <small>按当前快照计算</small>
+          <small data-i18n="statActiveTeamsNote">按当前快照计算</small>
         </article>
       </section>
 
       <section id="explorer" class="explorer" aria-labelledby="explorer-title">
         <div class="explorer-heading">
           <div>
-            <p class="section-index">02 · 探索岗位地图</p>
-            <h2 id="explorer-title">筛选岗位，也看团队全貌</h2>
+            <p class="section-index" data-i18n="explorerIndex">02 · 探索岗位地图</p>
+            <h2 id="explorer-title" data-i18n="explorerTitle">筛选岗位，也看团队全貌</h2>
           </div>
           <p class="release-line">
-            数据快照：<time id="release-date">载入中</time>
+            <span data-i18n="snapshotLabel">数据快照：</span>
+            <time id="release-date" data-i18n="loading">载入中</time>
             <span aria-hidden="true">·</span>
-            页面随正式数据自动更新
+            <span data-i18n="autoUpdateNote">页面随正式数据自动更新</span>
           </p>
         </div>
 
-        <div class="view-tabs" role="tablist" aria-label="选择视图">
+        <div
+          class="view-tabs"
+          role="tablist"
+          data-i18n-aria-label="viewSelector"
+          aria-label="选择视图"
+        >
           <button
             id="tab-jobs"
             class="view-tab is-active"
@@ -114,8 +148,8 @@
             aria-controls="results"
             data-view="jobs"
           >
-            <span>岗位视图</span>
-            <small>按具体岗位筛选</small>
+            <span data-i18n="jobsView">岗位视图</span>
+            <small data-i18n="jobsViewNote">按具体岗位筛选</small>
           </button>
           <button
             id="tab-teams"
@@ -126,128 +160,120 @@
             aria-controls="results"
             data-view="teams"
           >
-            <span>团队视图</span>
-            <small>查看每个团队的岗位数</small>
+            <span data-i18n="teamsView">团队视图</span>
+            <small data-i18n="teamsViewNote">查看每个团队的岗位数</small>
           </button>
         </div>
 
-        <div class="filter-panel" aria-label="筛选条件">
+        <div
+          class="filter-panel"
+          data-i18n-aria-label="filterConditions"
+          aria-label="筛选条件"
+        >
           <label class="filter-search">
-            <span>搜索</span>
+            <span data-i18n="searchLabel">搜索</span>
             <input
               id="filter-query"
               type="search"
               autocomplete="off"
+              data-i18n-placeholder="searchPlaceholder"
               placeholder="搜索岗位、组织、团队、产品或地点"
             >
           </label>
 
           <label>
-            <span>数据范围</span>
-            <select id="filter-scope">
-              <option value="current">当前岗位</option>
-              <option value="all">全部地图岗位记录</option>
-            </select>
+            <span data-i18n="scopeLabel">数据范围</span>
+            <select id="filter-scope"></select>
           </label>
 
           <label>
-            <span>国家或地区</span>
-            <select id="filter-geography">
-              <option value="all">中国和美国</option>
-              <option value="China">中国</option>
-              <option value="United States">美国</option>
-            </select>
+            <span data-i18n="geographyLabel">国家或地区</span>
+            <select id="filter-geography"></select>
           </label>
 
           <label>
-            <span>阅读用岗位类别</span>
-            <select id="filter-category">
-              <option value="all">全部类别</option>
-            </select>
+            <span data-i18n="categoryLabel">阅读用岗位类别</span>
+            <select id="filter-category"></select>
           </label>
 
           <label class="job-only">
-            <span>远程信息</span>
-            <select id="filter-remote">
-              <option value="all">不限</option>
-              <option value="declared">明确远程或混合办公</option>
-              <option value="unknown">未记录远程范围</option>
-            </select>
+            <span data-i18n="workArrangementLabel">办公方式</span>
+            <select id="filter-remote"></select>
           </label>
 
           <label class="job-only">
-            <span>证据等级</span>
-            <select id="filter-grade">
-              <option value="all">全部等级</option>
-              <option value="A">A级</option>
-              <option value="B">B级</option>
-              <option value="C">C级</option>
-              <option value="E">E级</option>
-            </select>
+            <span data-i18n="evidenceGradeLabel">证据等级</span>
+            <select id="filter-grade"></select>
           </label>
 
           <label class="team-only" hidden>
-            <span>团队当前岗位</span>
-            <select id="filter-team-state">
-              <option value="all">全部团队</option>
-              <option value="active">有当前岗位</option>
-              <option value="zero">当前岗位为 0</option>
-            </select>
+            <span data-i18n="teamCurrentRolesLabel">团队当前岗位</span>
+            <select id="filter-team-state"></select>
           </label>
 
           <label>
-            <span>排序</span>
+            <span data-i18n="sortLabel">排序</span>
             <select id="filter-sort"></select>
           </label>
 
-          <button id="reset-filters" class="reset-button" type="button">
+          <button id="reset-filters" class="reset-button" type="button" data-i18n="clearFilters">
             清除筛选
           </button>
         </div>
 
         <div class="results-toolbar">
-          <p id="result-status" role="status" aria-live="polite">正在载入公开数据……</p>
-          <p id="scope-note">仅显示通过当前性、日期、来源和访问要求门的岗位。</p>
+          <p id="result-status" role="status" aria-live="polite" data-i18n="loadingPublicData">
+            正在载入公开数据……
+          </p>
+          <p id="scope-note" data-i18n="currentScopeNote">
+            仅显示通过当前性、日期、来源和访问要求门的岗位。
+          </p>
         </div>
 
         <div id="error-panel" class="error-panel" hidden>
-          <strong>数据暂时无法载入</strong>
-          <p id="error-message">请稍后刷新页面，或从 GitHub 下载公开数据。</p>
-          <a href="https://github.com/boyzcl/Agent-hiring-map">前往 GitHub 仓库</a>
+          <strong data-i18n="loadErrorTitle">数据暂时无法载入</strong>
+          <p id="error-message" data-i18n="loadErrorFallback">请稍后刷新页面，或从 GitHub 下载公开数据。</p>
+          <a href="https://github.com/boyzcl/Agent-hiring-map" data-i18n="goToRepository">前往 GitHub 仓库</a>
         </div>
 
         <div id="results" class="results" role="tabpanel" aria-labelledby="tab-jobs"></div>
 
-        <nav id="pagination" class="pagination" aria-label="结果分页" hidden>
-          <button id="previous-page" type="button">上一页</button>
+        <nav
+          id="pagination"
+          class="pagination"
+          data-i18n-aria-label="paginationLabel"
+          aria-label="结果分页"
+          hidden
+        >
+          <button id="previous-page" type="button" data-i18n="previousPage">上一页</button>
           <span id="page-status">第 1 页</span>
-          <button id="next-page" type="button">下一页</button>
+          <button id="next-page" type="button" data-i18n="nextPage">下一页</button>
         </nav>
       </section>
 
       <section class="principles" aria-labelledby="principles-title">
-        <p class="section-index">03 · 阅读须知</p>
-        <h2 id="principles-title">清楚知道这里有什么，也知道没有什么。</h2>
+        <p class="section-index" data-i18n="principlesIndex">03 · 阅读须知</p>
+        <h2 id="principles-title" data-i18n="principlesTitle">清楚知道这里有什么，也知道没有什么。</h2>
         <div class="principle-grid">
           <article>
             <span>01</span>
-            <h3>当前不等于永久</h3>
-            <p>页面展示的是有日期边界的公开快照。求职前仍应打开官方链接重新确认。</p>
+            <h3 data-i18n="principleCurrentTitle">当前不等于永久</h3>
+            <p data-i18n="principleCurrentBody">页面展示的是有日期边界的公开快照。求职前仍应打开官方链接重新确认。</p>
           </article>
           <article>
             <span>02</span>
-            <h3>记录不等于人数</h3>
-            <p>一条标准化岗位记录不是招聘名额、在职人数或市场规模。</p>
+            <h3 data-i18n="principleCountTitle">记录不等于人数</h3>
+            <p data-i18n="principleCountBody">一条标准化岗位记录不是招聘名额、在职人数或市场规模。</p>
           </article>
           <article>
             <span>03</span>
-            <h3>类别用于阅读</h3>
-            <p>高层类别由已有岗位族标签确定性生成，只用于筛选，不改写正式数据。</p>
+            <h3 data-i18n="principleCategoryTitle">类别用于阅读</h3>
+            <p data-i18n="principleCategoryBody">高层类别由已有岗位族标签确定性生成，只用于筛选，不改写正式数据。</p>
           </article>
           <article>
             <span>04</span>
-            <h3>范围只有中美</h3>
-            <p>标准化地图和当前岗位只覆盖中国与美国，不代表其他地区没有相关岗位。</p>
+            <h3 data-i18n="principleScopeTitle">范围只有中美</h3>
+            <p data-i18n="principleScopeBody">标准化地图和当前岗位只覆盖中国与美国，不代表其他地区没有相关岗位。</p>
           </article>
         </div>
       </section>
@@ -256,14 +282,14 @@
     <footer>
       <div>
         <strong>Agent Hiring Map</strong>
-        <p>中国与美国公开来源 P4 只读开源试点。</p>
+        <p data-i18n="footerDescription">中国与美国公开来源 P4 只读开源试点。</p>
       </div>
       <div class="footer-links">
-        <a href="https://github.com/boyzcl/Agent-hiring-map/blob/main/README.md">项目说明</a>
-        <a href="https://github.com/boyzcl/Agent-hiring-map/blob/main/docs/DATA_DICTIONARY.md">字段说明</a>
-        <a href="https://github.com/boyzcl/Agent-hiring-map/blob/main/SECURITY.md">安全政策</a>
+        <a href="https://github.com/boyzcl/Agent-hiring-map/blob/main/README.md" data-i18n="footerReadme">项目说明</a>
+        <a href="https://github.com/boyzcl/Agent-hiring-map/blob/main/docs/DATA_DICTIONARY.md" data-i18n="footerFields">字段说明</a>
+        <a href="https://github.com/boyzcl/Agent-hiring-map/blob/main/SECURITY.md" data-i18n="footerSecurity">安全政策</a>
       </div>
-      <p class="footer-state">
+      <p class="footer-state" data-i18n="footerState">
         无追踪 · 无登录 · 无业务写入
       </p>
     </footer>

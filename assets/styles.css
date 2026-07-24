@@ -131,6 +131,12 @@ select {
   gap: 28px;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
 .site-header nav a,
 .footer-links a {
   color: var(--ink-soft);
@@ -143,6 +149,35 @@ select {
 .footer-links a:hover {
   color: var(--ink);
   border-color: currentColor;
+}
+
+.language-switcher {
+  min-height: 38px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 5px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: var(--surface);
+  white-space: nowrap;
+}
+
+.language-switcher button {
+  min-height: 30px;
+  padding: 0 9px;
+  border: 0;
+  border-radius: 999px;
+  color: var(--ink-soft);
+  background: transparent;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 750;
+}
+
+.language-switcher button[aria-pressed="true"] {
+  color: white;
+  background: var(--ink);
 }
 
 main,
@@ -178,7 +213,7 @@ footer {
   font-weight: 850;
 }
 
-.hero h1 span {
+.hero h1 .hero-agent {
   color: var(--blue);
 }
 
@@ -416,6 +451,20 @@ footer {
   border-radius: 8px;
   color: var(--ink);
   background: var(--surface);
+}
+
+.filter-panel select {
+  appearance: none;
+  padding-right: 44px;
+  background-image: url("./icons/chevron-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 16px 16px;
+  cursor: pointer;
+}
+
+.filter-panel select::-ms-expand {
+  display: none;
 }
 
 .filter-panel input:hover,
@@ -820,6 +869,14 @@ footer p {
 }
 
 @media (max-width: 1050px) {
+  .site-header nav {
+    gap: 18px;
+  }
+
+  .header-actions {
+    gap: 16px;
+  }
+
   .hero {
     grid-template-columns: 1fr;
     gap: 46px;
@@ -873,10 +930,15 @@ footer p {
 
   .site-header {
     min-height: 78px;
+    gap: 16px;
   }
 
   .site-header nav a:not(:last-child) {
     display: none;
+  }
+
+  .header-actions {
+    gap: 10px;
   }
 
   .hero {
@@ -974,6 +1036,20 @@ footer p {
 
   .footer-state {
     text-align: left;
+  }
+}
+
+@media (max-width: 520px) {
+  .site-header nav {
+    display: none;
+  }
+
+  .brand small {
+    max-width: 120px;
+  }
+
+  .language-switcher button {
+    padding-inline: 7px;
   }
 }
 

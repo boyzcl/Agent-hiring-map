@@ -14,7 +14,19 @@
       "queued_role_references": 1
     },
     {
+      "domain": "a4x-paas.jobs.feishu.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "agirobot.jobs.feishu.cn",
+      "queued_role_references": 1
+    },
+    {
       "domain": "aipower.zhiye.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "air.tsinghua.edu.cn",
       "queued_role_references": 1
     },
     {
@@ -39,11 +51,15 @@
     },
     {
       "domain": "app.mokahr.com",
-      "queued_role_references": 55
+      "queued_role_references": 57
     },
     {
       "domain": "apply.workable.com",
       "queued_role_references": 3
+    },
+    {
+      "domain": "augustodigital.freshteam.com",
+      "queued_role_references": 1
     },
     {
       "domain": "autohand.ai",
@@ -63,6 +79,10 @@
     },
     {
       "domain": "big.cas.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "bjzkj.zhiye.com",
       "queued_role_references": 1
     },
     {
@@ -90,11 +110,19 @@
       "queued_role_references": 4
     },
     {
+      "domain": "careers-appliedsystems.icims.com",
+      "queued_role_references": 1
+    },
+    {
       "domain": "careers-inc.nttdata.com",
       "queued_role_references": 1
     },
     {
       "domain": "careers.americanexpress.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "careers.boozallen.com",
       "queued_role_references": 1
     },
     {
@@ -106,12 +134,16 @@
       "queued_role_references": 1
     },
     {
+      "domain": "careers.leonardodrs.com",
+      "queued_role_references": 1
+    },
+    {
       "domain": "careers.oppo.com",
       "queued_role_references": 1
     },
     {
       "domain": "careers.paramount.com",
-      "queued_role_references": 1
+      "queued_role_references": 2
     },
     {
       "domain": "careers.pddglobalhr.com",
@@ -122,7 +154,31 @@
       "queued_role_references": 3
     },
     {
+      "domain": "careers.travelers.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "careers.wsgr.com",
+      "queued_role_references": 1
+    },
+    {
       "domain": "casic.zhiye.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "ccccltd.zhiye.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "cg.sandia.gov",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "chemeng.dlut.edu.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "cicc.zhiye.com",
       "queued_role_references": 1
     },
     {
@@ -152,6 +208,14 @@
     {
       "domain": "cq6qe6bvfr6.jobs.feishu.cn",
       "queued_role_references": 7
+    },
+    {
+      "domain": "cscnrczp.zhiye.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "cudataintelligence.zhiye.com",
+      "queued_role_references": 2
     },
     {
       "domain": "cursor.com",
@@ -194,7 +258,15 @@
       "queued_role_references": 1
     },
     {
+      "domain": "fa-exvu-saasfaprod1.fa.ocs.oraclecloud.com",
+      "queued_role_references": 1
+    },
+    {
       "domain": "fastbase.jobs.feishu.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "fervoenergy.com",
       "queued_role_references": 1
     },
     {
@@ -207,6 +279,10 @@
     },
     {
       "domain": "geovis.zhiye.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "gilead.yello.co",
       "queued_role_references": 1
     },
     {
@@ -238,6 +314,10 @@
       "queued_role_references": 1
     },
     {
+      "domain": "inspiregroup.jobs.feishu.cn",
+      "queued_role_references": 1
+    },
+    {
       "domain": "intuigenceai.com",
       "queued_role_references": 1
     },
@@ -247,7 +327,11 @@
     },
     {
       "domain": "job-boards.greenhouse.io",
-      "queued_role_references": 76
+      "queued_role_references": 77
+    },
+    {
+      "domain": "job.lzu.edu.cn",
+      "queued_role_references": 1
     },
     {
       "domain": "job.xiaohongshu.com",
@@ -255,11 +339,15 @@
     },
     {
       "domain": "jobs.ashbyhq.com",
-      "queued_role_references": 72
+      "queued_role_references": 73
     },
     {
       "domain": "jobs.bytedance.com",
       "queued_role_references": 24
+    },
+    {
+      "domain": "jobs.dayzim.com",
+      "queued_role_references": 1
     },
     {
       "domain": "jobs.gusto.com",
@@ -268,6 +356,10 @@
     {
       "domain": "jobs.lever.co",
       "queued_role_references": 7
+    },
+    {
+      "domain": "jobs.lifepointhealth.net",
+      "queued_role_references": 1
     },
     {
       "domain": "jobs.paloaltonetworks.com",
@@ -310,11 +402,19 @@
       "queued_role_references": 1
     },
     {
+      "domain": "li.jobs.feishu.cn",
+      "queued_role_references": 1
+    },
+    {
       "domain": "liner.com",
       "queued_role_references": 11
     },
     {
       "domain": "m.easthospital.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "maimai.jobs.feishu.cn",
       "queued_role_references": 1
     },
     {
@@ -350,6 +450,14 @@
       "queued_role_references": 1
     },
     {
+      "domain": "qiyuanzp.zhiye.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "rcn5rohr98sn.jobs.feishu.cn",
+      "queued_role_references": 1
+    },
+    {
       "domain": "rczp.nju.edu.cn",
       "queued_role_references": 1
     },
@@ -374,7 +482,15 @@
       "queued_role_references": 1
     },
     {
+      "domain": "see-long.com",
+      "queued_role_references": 1
+    },
+    {
       "domain": "shengshu.jobs.feishu.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "sii-czxy.jobs.feishu.cn",
       "queued_role_references": 1
     },
     {
@@ -410,7 +526,19 @@
       "queued_role_references": 1
     },
     {
+      "domain": "trilongroup.pinpointhq.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "tsinghua-eiri.zhiye.com",
+      "queued_role_references": 1
+    },
+    {
       "domain": "uniphore.wd503.myworkdayjobs.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "vacatia.hrmdirect.com",
       "queued_role_references": 1
     },
     {
@@ -426,11 +554,19 @@
       "queued_role_references": 3
     },
     {
+      "domain": "wilmactech.com",
+      "queued_role_references": 1
+    },
+    {
       "domain": "www.ahjzu.edu.cn",
       "queued_role_references": 1
     },
     {
       "domain": "www.bladeai.com.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "www.careers-page.com",
       "queued_role_references": 1
     },
     {
@@ -443,6 +579,14 @@
     },
     {
       "domain": "www.comeet.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "www.dce.com.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "www.dlwhcyjt.com",
       "queued_role_references": 1
     },
     {
@@ -462,7 +606,23 @@
       "queued_role_references": 8
     },
     {
+      "domain": "www.gzw.sh.gov.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "www.healiom.com",
+      "queued_role_references": 1
+    },
+    {
       "domain": "www.heygen.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "www.hnhbck.com:443",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "www.hqzg.cloud",
       "queued_role_references": 1
     },
     {
@@ -471,6 +631,26 @@
     },
     {
       "domain": "www.inforbus.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "www.inplusday.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "www.insightlex.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "www.jc2006.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "www.jhatc.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "www.jiyuaninfo.com",
       "queued_role_references": 1
     },
     {
@@ -483,6 +663,18 @@
     },
     {
       "domain": "www.opt.ac.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "www.pgcareers.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "www.risoai.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "www.sail-cloud.com",
       "queued_role_references": 1
     },
     {
@@ -506,7 +698,19 @@
       "queued_role_references": 1
     },
     {
+      "domain": "www.succaiss.com",
+      "queued_role_references": 1
+    },
+    {
       "domain": "www.terton.com.cn",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "www.ventus.ai",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "www.xiaoyicom.cn",
       "queued_role_references": 1
     },
     {
@@ -515,6 +719,10 @@
     },
     {
       "domain": "www.ycombinator.com",
+      "queued_role_references": 2
+    },
+    {
+      "domain": "www.yicloud.com",
       "queued_role_references": 1
     },
     {
@@ -564,11 +772,14 @@
   ],
   "network_recheck_performed": false,
   "schema_version": "agent-hiring-map-public/1.0",
-  "unique_domain_count": 140,
-  "unique_url_count": 716,
+  "unique_domain_count": 192,
+  "unique_url_count": 773,
   "urls": [
     "http://fnii-shenzhen.cn/recruitment",
+    "http://see-long.com/",
     "http://www.bladeai.com.cn/contact1/2.html",
+    "http://www.dce.com.cn/dce/content/2025/dlftcsjsyxgs/18624041.html",
+    "http://www.hnhbck.com:443/join/18",
     "http://www.sim.cas.cn/rczpw/rczp2017/shzp2017/202607/t20260702_8237224.html",
     "http://www.sinoinnosoft.com/layout/view/a1",
     "http://www.slai.edu.cn/zh-hans/recruitment/388",
@@ -589,19 +800,25 @@
     "https://01ai.jobs.feishu.cn/index/position/7658185706783607081/detail",
     "https://3h1china.com/index.php?a=show&c=content&id=425",
     "https://611.zhiye.com/zpdetail/351580468",
+    "https://a4x-paas.jobs.feishu.cn/500117/position/7623349336336615731/detail",
+    "https://agirobot.jobs.feishu.cn/campusrecruitment/position/7661985370938706214/detail",
     "https://aipower.zhiye.com/campus/detail?jobAdId=75ca6817-0999-49c5-a08e-e9183894620d",
+    "https://air.tsinghua.edu.cn/info/1029/2338.htm",
     "https://airs.zhiye.com/social/detail?jobAdId=a8ffafd8-51fd-456e-8218-6ef55a919c95",
     "https://aispeech.zhiye.com/jobs?KeyWords=",
     "https://alteryx.wd108.myworkdayjobs.com/en-US/AlteryxCareers/job/Product-Marketing-Manager--Agent---Application-Experiences_R12218",
     "https://anker-in.jobs.feishu.cn/index/position/7513829459096471862/detail",
     "https://answermyq.com/careers",
     "https://app.mokahr.com/apply/moonshot/148506",
+    "https://app.mokahr.com/social-recruitment/bigai-ai/102639",
     "https://app.mokahr.com/social-recruitment/moka/118263",
+    "https://app.mokahr.com/social-recruitment/smartmore/40505",
     "https://app.mokahr.com/social-recruitment/step/94904",
     "https://app.mokahr.com/social-recruitment/zphz/148983?locale=zh-CN",
     "https://apply.workable.com/bolderapps/jobs/view/D05CEF4B15.md",
     "https://apply.workable.com/geodelphi/jobs/view/E8A22CF275.md",
     "https://apply.workable.com/trilagen/jobs/view/3EAD630FE8.md",
+    "https://augustodigital.freshteam.com/jobs/3yvP65MslPVn/ai-workflow-engineer-and-developer-remote",
     "https://autohand.ai/careers/rl-researcher",
     "https://autohand.ai/careers/staff-ai-engineer",
     "https://baicgroup.zhiye.com/social/jobs",
@@ -614,6 +831,7 @@
     "https://beisen.zhiye.com/social/detail?jobAdId=e2156e56-a03d-405d-b9ef-f8269c0e5608",
     "https://beisen.zhiye.com/social/detail?jobAdId=fcd97a81-2ab4-4028-a4b9-1149cca44251",
     "https://big.cas.cn/rczp/202604/t20260408_8182900.html",
+    "https://bjzkj.zhiye.com/social/jobs",
     "https://bluefocus.jobs.feishu.cn/index/position/7530918742840477990/detail",
     "https://bluefocus.jobs.feishu.cn/index/position/7575785572691364137/detail",
     "https://boe.zhiye.com/api/Jobad/GetJobAdPageList?KeyWords=%E6%99%BA%E8%83%BD%E4%BD%93&PortalId=e71a8ad7-a321-4305-80db-73f2f18f8d22",
@@ -685,17 +903,26 @@
     "https://career.yonyou.com/SU67ac41886202cc7916ae3029/pb/posDetail.html?postId=6a2fe82ce49e0e559f8dfa7a&postType=society",
     "https://career.yonyou.com/SU67ac41886202cc7916ae3029/pb/posDetail.html?postId=6a2fe920e49e0e559f8dfa9e&postType=society",
     "https://career.yonyou.com/SU67ac41886202cc7916ae3029/pb/posDetail.html?postId=6a3a04bdc7606e0d83c4a8e7&postType=society",
+    "https://careers-appliedsystems.icims.com/jobs/7656/principal-technical-consultant/job",
     "https://careers-inc.nttdata.com/job/Dallas-Senior-AI-Engineer-Remote-TX-75201/1381744800",
     "https://careers.americanexpress.com/en/sites/CX_1/job/26010339",
+    "https://careers.boozallen.com/careers/JobDetail/Washington-Backend-Infrastructure-Agentic-AI-Software-Engineer-R0243893/127097",
     "https://careers.extraspace.com/job/Corporate/sr-ai-engineer/Salt-Lake-City-Utah/Extra%20Space%20Storage/R-79663",
     "https://careers.intelepeer.ai/jobs/578273-ai-agent-engineer",
+    "https://careers.leonardodrs.com/job/Huntsville-AI-&-Business-Automation-Intern-%28Fall-2026%29-AL-35808/1395969000",
     "https://careers.oppo.com/university/oppo/campus/post/1430?recruitType=doctor",
     "https://careers.paramount.com/job/Burbank-Senior-Machine-Learning-Operations-Engineer%2C-Agentic-Systems-Platform-Engineering-CA-91505/1387818000",
     "https://careers.pddglobalhr.com/jobs/detail",
     "https://careers.tencent.com/tencentcareer/api/post/ByPostId?postId=1925398818564710400",
     "https://careers.tencent.com/tencentcareer/api/post/ByPostId?postId=2055555661177204736",
     "https://careers.tencent.com/tencentcareer/api/post/ByPostId?postId=2063134243537731584",
+    "https://careers.travelers.com/job/23589750/software-engineer-ii-enterprise-ai-products-hartford-ct",
+    "https://careers.wsgr.com/openings/senior-ai-security-engineer",
     "https://casic.zhiye.com/xiangqing?jobId=151080978",
+    "https://ccccltd.zhiye.com/custom/fszxq?fname=lvchengzgkg&hideMenu=1&jobAdId=453c7897-d274-4d2c-9fbf-78d76f1b02d6",
+    "https://cg.sandia.gov/psc/applicant/EMPLOYEE/HRMS/c/HRS_HRAM_FL.HRS_CG_SEARCH_FL.GBL?Action=U&Page=HRS_APP_SCHJOB_FL",
+    "https://chemeng.dlut.edu.cn/info/1049/30994.htm",
+    "https://cicc.zhiye.com/custom/socialxq?hideMenu=1&jc=1&jobAdId=6a87978e-d4b9-4e44-83c5-927693d45198",
     "https://cigai.ai/c/jrwm.html",
     "https://claf.ac.cn/rczp/202505/t20250522_545314.html",
     "https://cmhk.zhiye.com/api/JobAd/GetJobAdInfo?jobAdId=de1c6b4f-8844-417f-9c0d-bc2787094b17&portalId=ad6df64e-8702-483f-a2ec-c44deefceec4",
@@ -709,6 +936,8 @@
     "https://cq6qe6bvfr6.jobs.feishu.cn/baichuanzhaopin/position/7621077065886812462/detail",
     "https://cq6qe6bvfr6.jobs.feishu.cn/baichuanzhaopin/position/7644411591471352073/detail",
     "https://cq6qe6bvfr6.jobs.feishu.cn/baichuanzhaopin/position/7654879972347152650/detail",
+    "https://cscnrczp.zhiye.com/campus/detail?jobAdId=0ba74f52-4e9b-46d4-a851-87d3e283e0c3",
+    "https://cudataintelligence.zhiye.com/jobs?KeyWords=",
     "https://cursor.com/careers/gtm-systems-support-and-agentic-engineer",
     "https://cursor.com/careers/software-engineer-agent-evaluation-and-quality",
     "https://cursor.com/careers/software-engineer-agent-harness",
@@ -727,10 +956,13 @@
     "https://engineering.westlake.edu.cn/Recuitment/202509/t20250916_59065.shtml",
     "https://engineering.westlake.edu.cn/Recuitment/202606/t20260602_67512.shtml",
     "https://et.airchina.com.cn/cn/about_us/recruitment/ground_crew_info/184618.shtml",
+    "https://fa-exvu-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/260251",
     "https://fastbase.jobs.feishu.cn/referral/campus/position/7619270023261948198/detail",
+    "https://fervoenergy.com/career/agentic-ai-engineer",
     "https://fosunpharma.zhiye.com/internxq?jobId=561143915",
     "https://fosunpharma.zhiye.com/internxq?jobId=561265883",
     "https://geovis.zhiye.com/jobs?KeyWords=",
+    "https://gilead.yello.co/jobs/6kQOFLJIOh3EsqnH4r2UcQ?locale=en",
     "https://hr.163.com/job-detail.html?id=76697",
     "https://hr.fudan.edu.cn/86/ec/c15370a755436/page.htm?_refluxos=a10",
     "https://hr.sensetime.com/exp/position/7641115537258711305/detail",
@@ -745,6 +977,7 @@
     "https://iflytek.zhiye.com/api/Jobad/GetJobAdPageList?KeyWords=Agent&PortalId=6e2235dc-4b88-4698-b96a-5a73c705d8db",
     "https://ihep.cas.cn/tfyzx/rczp/202509/t20250902_7956895.html",
     "https://insforge.dev/careers/devrel-engineer",
+    "https://inspiregroup.jobs.feishu.cn/referral/position/7615543670096529683/detail",
     "https://intuigenceai.com/careers/full-stack-engineer",
     "https://iwhalecloud1.zhiye.com/api/JobAd/GetJobAdInfo?jobAdId=a6621abf-aa65-4e0a-8116-c7c75dff492a&portalId=792964a1-5b16-4806-8f35-c3662525d8d8",
     "https://job-boards.greenhouse.io/anthropic/jobs/4017331008",
@@ -816,6 +1049,7 @@
     "https://job-boards.greenhouse.io/komodohealth/jobs/8569468002",
     "https://job-boards.greenhouse.io/liveviewtechnologiesinc/jobs/5268398008",
     "https://job-boards.greenhouse.io/machinifyinc/jobs/4146862009",
+    "https://job-boards.greenhouse.io/medeloop/jobs/4236722009",
     "https://job-boards.greenhouse.io/taxbit/jobs/6111068004",
     "https://job-boards.greenhouse.io/thealleninstitute/jobs/7872683",
     "https://job-boards.greenhouse.io/vercel/jobs/5806749004",
@@ -823,6 +1057,7 @@
     "https://job-boards.greenhouse.io/vercel/jobs/5810285004",
     "https://job-boards.greenhouse.io/vercel/jobs/6011651004",
     "https://job-boards.greenhouse.io/vercel/jobs/6011904004",
+    "https://job.lzu.edu.cn/html/22/article/2025/85039.html",
     "https://job.xiaohongshu.com/websiterecruit/position/queryPositionDetail?positionId=20183",
     "https://jobs.ashbyhq.com/1mind/052ca544-28c4-4fcb-a0a2-63140ccf0212",
     "https://jobs.ashbyhq.com/1mind/0dfbe31e-89ef-4f54-b0f9-f51f29c3c083",
@@ -850,6 +1085,7 @@
     "https://jobs.ashbyhq.com/Juicebox/fd329c43-55f2-4890-a3d3-7a1a4b28cb80",
     "https://jobs.ashbyhq.com/Lance/0f86cbc1-f89e-49e7-bf31-c112b223c87d",
     "https://jobs.ashbyhq.com/Tsenta/6f260369-fb1b-4025-abd3-ec48c2087c14",
+    "https://jobs.ashbyhq.com/acquisition/9789dd49-c6bd-4672-8cd3-9f67f2dea7c1",
     "https://jobs.ashbyhq.com/automat/032d1a16-fe7d-4c78-86d5-5d9ae2d95f17",
     "https://jobs.ashbyhq.com/automat/5c9a8eae-0705-48b6-9b7a-8d752146feb0",
     "https://jobs.ashbyhq.com/automat/a4172515-0353-47ec-9c71-631a294aa137",
@@ -920,6 +1156,7 @@
     "https://jobs.bytedance.com/api/v1/job/posts/7644401394539759877",
     "https://jobs.bytedance.com/api/v1/job/posts/7656745923674229045",
     "https://jobs.bytedance.com/campus/m/position/detail/7628867718565300485",
+    "https://jobs.dayzim.com/job/AIML-Engineer-2/3430-en_US",
     "https://jobs.gusto.com/postings/loman-ai-forward-deployed-engineer-3362f353-fda7-43ce-92b3-9dfc911bb236",
     "https://jobs.lever.co/appzen/a280ec03-9d0e-4a08-84ef-0bab09cc61c4",
     "https://jobs.lever.co/blencorp/4b2e3689-9720-4785-b0fe-d09bd5325f74",
@@ -928,6 +1165,7 @@
     "https://jobs.lever.co/field-ai/c56e6bc4-23d9-4ed1-9349-fee74e35c264",
     "https://jobs.lever.co/getzuma/3dd732f9-e4a6-4f38-8ec3-aa80434b261d",
     "https://jobs.lever.co/mangolanguage/f00af1eb-2641-44fb-9065-9cbbde381a6e",
+    "https://jobs.lifepointhealth.net/job/engineer-backend-integration-ai-transformation/brentwood-tn/348997",
     "https://jobs.paloaltonetworks.com/en/job/sofia/senior-software-engineer-secure-ai-agent/47263/96174879872",
     "https://jobs.signatureaviation.com/en/sites/CX_1/job/16018",
     "https://jobs.smartrecruiters.com/AbbVie/3743990012925490-strategic-product-manager-knowledge-integration-articulation-hybrid-",
@@ -1002,6 +1240,7 @@
     "https://laiye.zhiye.com/social/jobs",
     "https://lcn7t8bwtgww.jobs.feishu.cn/index/position/7585080543353882886/detail",
     "https://leiniao-ibg.jobs.feishu.cn/index/position/7459302085524670783/detail",
+    "https://li.jobs.feishu.cn/referral/position/7593261465529076019/detail",
     "https://liner.com/careers/jobs/116653",
     "https://liner.com/careers/jobs/188851",
     "https://liner.com/careers/jobs/189417",
@@ -1014,6 +1253,7 @@
     "https://liner.com/careers/jobs/226290",
     "https://liner.com/careers/jobs/227845",
     "https://m.easthospital.cn/news/content/fid/4932",
+    "https://maimai.jobs.feishu.cn/index/position/7651933141997766958/detail",
     "https://mindverse.jobs.feishu.cn/766573/position/7615192662900476201/detail",
     "https://mininglamp.zhiye.com/social/detail?jobAdId=101d1be2-ec60-48b3-b4d3-8789b85646df",
     "https://modelbest.jobs.feishu.cn/career/position/7516640987126974730/detail",
@@ -1083,6 +1323,8 @@
     "https://nio.jobs.feishu.cn/index/position/7660807494290540826/detail",
     "https://oseasy.zhiye.com/social/jobs",
     "https://poizon.jobs.feishu.cn/578078/position/7623981843205654810/detail",
+    "https://qiyuanzp.zhiye.com/jobs",
+    "https://rcn5rohr98sn.jobs.feishu.cn/index",
     "https://rczp.nju.edu.cn/glgwjqt/sybzry/bwry/20260716/i402049.html",
     "https://rczpw.suat-sz.edu.cn/info/1012/1357.htm",
     "https://rlzyb.zy91.com/apply/getNotice.action?keycode=65dfc16c-5681-496a-899e-76de5357de14",
@@ -1090,6 +1332,7 @@
     "https://rsc.bjmu.edu.cn/rczp/jfxz/4f3585eaae994c4495180df954a7c926.htm",
     "https://sda-software-defined-automation-gmbh.jobs.personio.de/job/2549026?language=en",
     "https://shengshu.jobs.feishu.cn/index/position/7615833662533290246/detail",
+    "https://sii-czxy.jobs.feishu.cn/campus/position/7623600780461394222/detail",
     "https://skit.keka.com/careers/jobdetails/137357",
     "https://taichuai.jobs.feishu.cn/index/position/7618913915698710803/detail",
     "https://talent.antgroup.com/off-campus?keywords=Agent&search=Agent",
@@ -1148,7 +1391,10 @@
     "https://talent.dingtalk.com/off-campus/position-detail?positionId=100021400009",
     "https://tib.cas.cn/rcdw/rczp/zyjszp/t_8227670.html",
     "https://torchv.com/docs/hr/jd",
+    "https://trilongroup.pinpointhq.com/postings/98b78be6-7263-4456-8295-6eda26a4b828",
+    "https://tsinghua-eiri.zhiye.com/campus/jobs",
     "https://uniphore.wd503.myworkdayjobs.com/Uniphore/job/USA---CA---Palo-Alto/Director--AI-Advisory_JR100900",
+    "https://vacatia.hrmdirect.com/employment/job-opening.php?req=3741138",
     "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7203339313111058725/detail",
     "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7229256814943209765/detail",
     "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7494586225161046282/detail",
@@ -1181,10 +1427,13 @@
     "https://weikezhijia.jobs.feishu.cn/MSXF0619/position/7532787752207993114/detail",
     "https://weikezhijia.jobs.feishu.cn/MSXF0619/position/7532787759049099558/detail",
     "https://weikezhijia.jobs.feishu.cn/MSXF0619/position/7543912202676259115/detail",
+    "https://wilmactech.com/about/careers/open-position-ai-engineer",
     "https://www.ahjzu.edu.cn/hnxy/2026/0506/c6234a269518/page.htm",
+    "https://www.careers-page.com/titan-holdings/job/93R4V366",
     "https://www.chinasofti.com/pages/careers/detail.html?id=1",
     "https://www.cnis.ac.cn/rczp/qyb/202509/t20250915_61666.html",
     "https://www.comeet.com/jobs/coralogix/06.004/forward-deployed-engineer/CE.B66",
+    "https://www.dlwhcyjt.com/news_detail?id=4407",
     "https://www.epicgames.com/site/careers/jobs/5996485004",
     "https://www.filevine.com/jobs/6eaa2f55-5678-4e6c-be86-27e5d5ceef62",
     "https://www.filevine.com/jobs/cc9e0224-2deb-4a21-9a1f-79cfae365bab",
@@ -1197,12 +1446,23 @@
     "https://www.greptile.com/careers/infrastructure-engineer",
     "https://www.greptile.com/careers/product-marketing-manager",
     "https://www.greptile.com/careers/research-engineer",
+    "https://www.gzw.sh.gov.cn/shgzw_xxgk_cqzp/20250605/a9bc44ae26c549838c0f7499f18a9a21.html",
+    "https://www.healiom.com/careers/software-engineer-remote",
     "https://www.heygen.com/careers/5113387007",
+    "https://www.hqzg.cloud/careers",
     "https://www.info2soft.cn/joinus/social-recruitment/ai-product-rd-architect",
     "https://www.inforbus.com/about/careers",
+    "https://www.inplusday.com/jrwm",
+    "https://www.insightlex.cn/careers",
+    "https://www.jc2006.com/career.html",
+    "https://www.jhatc.cn/html/web/hr/zhaopinxinxi/1998212151935885313.html",
+    "https://www.jiyuaninfo.com/about/join",
     "https://www.jxfhgc.com/jxfhgc/shzp/202603/a67d0960e4554ba39b05d079ddb505fa.shtml",
     "https://www.opendoor.com/careers/open-positions/jobs/agentic-analytics-engineer-61e10868-0439-4bff-adc3-ef4e8afdf644",
     "https://www.opt.ac.cn/gb2019/kydw/rczp/202607/t20260703_8237711.html",
+    "https://www.pgcareers.com/eu/en/job/R000147966/Sr-Data-Scientist-AI-ML",
+    "https://www.risoai.com/joinus.html",
+    "https://www.sail-cloud.com/join-us",
     "https://www.shlab.org.cn/joinus/detail/7446322333617670441?mode=social",
     "https://www.shlab.org.cn/joinus/detail/7506817514979428617?mode=social",
     "https://www.shlab.org.cn/joinus/detail/7551721191871432998?mode=social",
@@ -1227,9 +1487,14 @@
     "https://www.shlab.org.cn/joinus/detail/7633726167145007403?mode=campus",
     "https://www.shlab.org.cn/joinus/detail/7657846659330558259?mode=social",
     "https://www.shuyouyinli.com/job-details.html?id=ai-algorithm",
+    "https://www.succaiss.com/zh-CN/joinus",
     "https://www.terton.com.cn/gytrt/rczp",
+    "https://www.ventus.ai/careers",
+    "https://www.xiaoyicom.cn/lists/189",
     "https://www.xydigit.com/content/zte-dt/cn/joinus.html",
     "https://www.ycombinator.com/companies/allus-ai/jobs/AcYMVC9-founding-ai-agent-engineer",
+    "https://www.ycombinator.com/companies/manufact/jobs/Dh6PYP5-senior-infrastructure-engineer",
+    "https://www.yicloud.com/recruit",
     "https://www.zerith.com/join?id=1",
     "https://x2-robot.jobs.feishu.cn/index/position/7660732025301240110/detail",
     "https://xiaopeng.jobs.feishu.cn/index/position/7461916101904484659/detail",

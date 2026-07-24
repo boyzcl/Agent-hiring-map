@@ -4,7 +4,22 @@
   "title": "Role",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schema_version", "role_id", "organization_id", "title", "official_role_url", "evidence_ids"],
+  "required": [
+    "schema_version",
+    "role_id",
+    "organization_id",
+    "title",
+    "official_role_url",
+    "evidence_ids",
+    "role_display_version",
+    "display_title_zh",
+    "display_title_en",
+    "display_location_zh",
+    "display_location_en",
+    "location_data_status",
+    "work_arrangement",
+    "work_arrangement_basis"
+  ],
   "properties": {
     "schema_version": {"const": "agent-hiring-map-public/1.0"},
     "role_id": {"type": "string"},
@@ -25,6 +40,27 @@
     "evidence_grade": {"type": ["string", "null"]},
     "supersedes_role_id": {"type": ["string", "null"]},
     "evidence_ids": {"type": "array", "items": {"type": "string", "pattern": "^AMC-[0-9]{4}$"}},
-    "version": {"type": "integer", "minimum": 1}
+    "version": {"type": "integer", "minimum": 1},
+    "role_display_version": {"const": "agent-hiring-map-role-display/1.0"},
+    "display_title_zh": {"type": "string", "minLength": 1, "maxLength": 300},
+    "display_title_en": {"type": "string", "minLength": 1, "maxLength": 300},
+    "display_location_zh": {"type": "string", "minLength": 1, "maxLength": 500},
+    "display_location_en": {"type": "string", "minLength": 1, "maxLength": 500},
+    "location_data_status": {
+      "enum": [
+        "normalized_or_descriptive",
+        "official_role_title_location_reviewed",
+        "company_or_context_only",
+        "pending_review"
+      ]
+    },
+    "work_arrangement": {"enum": ["onsite", "remote_or_hybrid"]},
+    "work_arrangement_basis": {
+      "enum": [
+        "explicit_remote_or_hybrid",
+        "explicit_onsite",
+        "default_onsite_no_remote_signal"
+      ]
+    }
   }
 }

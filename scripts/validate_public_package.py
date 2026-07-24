@@ -35,6 +35,39 @@ ABSOLUTE_PATH_PATTERNS = [
     re.compile(r"(?<![A-Za-z0-9.:])/home/[^/\s]+/"),
     re.compile(r"[A-Za-z]:\\\\Users\\\\"),
 ]
+ROLE_DISPLAY_VERSION = "agent-hiring-map-role-display/1.0"
+LOCATION_STATUSES = {
+    "normalized_or_descriptive",
+    "official_role_title_location_reviewed",
+    "company_or_context_only",
+    "pending_review",
+}
+WORK_ARRANGEMENTS = {"onsite", "remote_or_hybrid"}
+WORK_ARRANGEMENT_BASES = {
+    "explicit_remote_or_hybrid",
+    "explicit_onsite",
+    "default_onsite_no_remote_signal",
+}
+LOCATION_RESIDUE_ZH = re.compile(
+    r"(?i)(?:"
+    r"\b(?:current|roles?|job|remote|hybrid|onsite|on-site|full-time|"
+    r"social|campus|preferred|candidates?|work|office|team|exact|"
+    r"location|listing|context|requirement|headquarters)\b|"
+    r"岗位|职位|角色|当前|招聘|截止|招满|公告|长期|实习|全日制|全职|"
+    r"兼职|现场|驻场|偏僻的|动力|优先|候选人|工作授权|营业时间|"
+    r"每季度|办公室|总部|通知|未解决"
+    r")"
+)
+LOCATION_RESIDUE_EN = re.compile(
+    r"(?i)(?:"
+    r"\b(?:current|roles?|job|remote|hybrid|onsite|on-site|full-time|"
+    r"part-time|social|campus|preferred|candidates?|work|"
+    r"office|team|exact|listing|context|requirement|headquarters|"
+    r"recruitment|recruited|hiring|opening|internship|expired|deadline|"
+    r"valid until|until filled|notice|unresolved)\b|"
+    r"[\u4e00-\u9fff]"
+    r")"
+)
 DATASET_SPECS = {
     "data/evidence/evidence-ledger-safe": 7217,
     "data/map/organizations": 1194,
@@ -50,6 +83,7 @@ REQUIRED_FILES = [
     "index.html",
     "assets/app.js",
     "assets/styles.css",
+    "assets/icons/chevron-down.svg",
     "README.md",
     "LICENSE-CODE",
     "LICENSE-DATA",
@@ -297,6 +331,126 @@ def map_errors(datasets: dict[str, list[dict[str, Any]]], evidence_ids: set[str]
     return errors
 
 
+def role_display_errors(
+    roles: list[dict[str, Any]], metadata: dict[str, Any]
+) -> list[str]:
+    errors: list[str] = []
+    arrangement_counts: dict[str, int] = {}
+    basis_counts: dict[str, int] = {}
+    location_counts: dict[str, int] = {}
+    required_text = (
+        "display_title_zh",
+        "display_title_en",
+        "display_location_zh",
+        "display_location_en",
+    )
+    for role in roles:
+        role_id = role.get("role_id", "missing")
+        if role.get("role_display_version") != ROLE_DISPLAY_VERSION:
+            errors.append(f"role_display_version:{role_id}")
+        if any(
+            not isinstance(role.get(field), str) or not role.get(field).strip()
+            for field in required_text
+        ):
+            errors.append(f"role_display_missing_bilingual_text:{role_id}")
+        arrangement = role.get("work_arrangement")
+        basis = role.get("work_arrangement_basis")
+        location_status = role.get("location_data_status")
+        if arrangement not in WORK_ARRANGEMENTS:
+            errors.append(f"role_work_arrangement:{role_id}")
+        else:
+            arrangement_counts[arrangement] = arrangement_counts.get(arrangement, 0) + 1
+        if basis not in WORK_ARRANGEMENT_BASES:
+            errors.append(f"role_work_arrangement_basis:{role_id}")
+        else:
+            basis_counts[basis] = basis_counts.get(basis, 0) + 1
+        if (
+            arrangement == "remote_or_hybrid"
+            and basis != "explicit_remote_or_hybrid"
+        ):
+            errors.append(f"role_remote_basis_mismatch:{role_id}")
+        if (
+            arrangement == "onsite"
+            and basis not in {"explicit_onsite", "default_onsite_no_remote_signal"}
+        ):
+            errors.append(f"role_onsite_basis_mismatch:{role_id}")
+        if location_status not in LOCATION_STATUSES:
+            errors.append(f"role_location_status:{role_id}")
+            continue
+        location_counts[location_status] = location_counts.get(location_status, 0) + 1
+        locations = role.get("job_locations")
+        if not isinstance(locations, list):
+            errors.append(f"role_job_locations_not_list:{role_id}")
+        elif location_status in {
+            "normalized_or_descriptive",
+            "official_role_title_location_reviewed",
+        }:
+            if locations != [role.get("display_location_en")]:
+                errors.append(f"role_job_location_display_mismatch:{role_id}")
+            if (
+                LOCATION_RESIDUE_ZH.search(role.get("display_location_zh", ""))
+                or LOCATION_RESIDUE_EN.search(role.get("display_location_en", ""))
+                or "，，" in role.get("display_location_zh", "")
+                or re.search(r"[A-Za-z]{3,}", role.get("display_location_zh", ""))
+            ):
+                errors.append(f"role_location_residue:{role_id}")
+        elif locations:
+            errors.append(f"role_unverified_location_published:{role_id}")
+        if location_status == "pending_review" and (
+            role.get("display_location_zh") != "地点待复核"
+            or role.get("display_location_en") != "Location pending review"
+        ):
+            errors.append(f"role_pending_location_label:{role_id}")
+        if location_status == "company_or_context_only" and (
+            role.get("display_location_zh")
+            != "岗位地点待复核（来源仅列出公司或团队地点）"
+            or role.get("display_location_en")
+            != "Role location pending review (source only lists company or team locations)"
+        ):
+            errors.append(f"role_context_location_label:{role_id}")
+
+    display_metadata = metadata.get("role_display", {})
+    if display_metadata.get("version") != ROLE_DISPLAY_VERSION:
+        errors.append("role_display_metadata_version")
+    if display_metadata.get("languages") != ["zh", "en"]:
+        errors.append("role_display_metadata_languages")
+    if display_metadata.get("work_arrangement") != dict(sorted(arrangement_counts.items())):
+        errors.append("role_display_metadata_arrangement_counts")
+    if display_metadata.get("work_arrangement_basis") != dict(sorted(basis_counts.items())):
+        errors.append("role_display_metadata_basis_counts")
+    if display_metadata.get("location_data_status") != dict(sorted(location_counts.items())):
+        errors.append("role_display_metadata_location_counts")
+    if (
+        display_metadata.get("default_rule")
+        != "roles without explicit remote or hybrid signals are classified as onsite"
+    ):
+        errors.append("role_display_metadata_default_rule")
+
+    beisen = [
+        role
+        for role in roles
+        if "ed135f65-0e42-47ac-8c1d-abc76940cfb3"
+        in str(role.get("official_role_url") or "")
+    ]
+    if len(beisen) != 1:
+        errors.append("beisen_j14460_missing_or_duplicate")
+    else:
+        role = beisen[0]
+        if (
+            role.get("display_title_zh")
+            != "高级产品经理（AI人才发展方向）（PBG / 北京）（J14460）"
+            or role.get("display_title_en")
+            != "Senior Product Manager, AI Talent Development (PBG / Beijing) (J14460)"
+            or role.get("display_location_zh") != "北京"
+            or role.get("display_location_en") != "Beijing"
+            or role.get("work_arrangement") != "onsite"
+            or role.get("work_arrangement_basis")
+            != "default_onsite_no_remote_signal"
+        ):
+            errors.append("beisen_j14460_display_regression")
+    return errors
+
+
 def workflow_errors() -> list[str]:
     errors: list[str] = []
     for name in ("validate.yml", "weekly-review.yml"):
@@ -350,6 +504,9 @@ def site_errors() -> list[str]:
         'id="filter-remote"',
         'id="filter-grade"',
         'id="filter-team-state"',
+        'id="lang-zh"',
+        'id="lang-en"',
+        'data-i18n="heroLead"',
         'id="results"',
         'src="./assets/app.js"',
         'href="./assets/styles.css"',
@@ -369,6 +526,8 @@ def site_errors() -> list[str]:
     for path in required_data_paths:
         if path not in app:
             errors.append(f"site_missing_dynamic_data_path:{path}")
+        if app.count(path) != 1:
+            errors.append(f"site_duplicate_dynamic_data_path:{path}")
 
     if re.search(r"<script(?![^>]*\bsrc=)[^>]*>", html, flags=re.IGNORECASE):
         errors.append("site_inline_script")
@@ -409,10 +568,42 @@ def site_errors() -> list[str]:
         errors.append("site_fetch_not_same_origin")
     if 'document.addEventListener("DOMContentLoaded", load)' not in app:
         errors.append("site_missing_load_entrypoint")
+    for token in (
+        "display_title_zh",
+        "display_title_en",
+        "display_location_zh",
+        "display_location_en",
+        "work_arrangement",
+        "work_arrangement_basis",
+        'params.set("lang", state.lang)',
+        "document.documentElement.lang",
+        "const I18N",
+        "zh:",
+        "en:",
+    ):
+        if token not in app:
+            errors.append(f"site_missing_localization_contract:{token}")
+    if any(
+        token in app.lower()
+        for token in (
+            "translate.googleapis.com",
+            "api.deepl.com",
+            "api.cognitive.microsofttranslator.com",
+        )
+    ):
+        errors.append("site_runtime_translation_service")
     if "@media (max-width:" not in styles:
         errors.append("site_missing_responsive_layout")
     if "@media (prefers-reduced-motion: reduce)" not in styles:
         errors.append("site_missing_reduced_motion")
+    for token in (
+        'background-image: url("./icons/chevron-down.svg")',
+        "appearance: none",
+        "padding-right: 44px",
+        "background-position: right 15px center",
+    ):
+        if token not in styles:
+            errors.append(f"site_select_spacing_contract:{token}")
     return errors
 
 
@@ -483,6 +674,8 @@ def run_default() -> dict[str, Any]:
         errors.extend(evidence_errors(datasets["evidence-ledger-safe"]))
     if "current-opportunities" in datasets:
         errors.extend(current_errors(datasets["current-opportunities"], metadata))
+    if "roles" in datasets:
+        errors.extend(role_display_errors(datasets["roles"], metadata))
     required_map = {"organizations", "teams", "products", "roles", "relations"}
     if required_map.issubset(datasets) and "evidence-ledger-safe" in datasets:
         errors.extend(
@@ -551,6 +744,26 @@ def run_self_test() -> dict[str, Any]:
     tests.append(("evidence_current_conflation", "7,217 个当前岗位" in "本项目有 7,217 个当前岗位"))
     tests.append(
         (
+            "location_residue_chinese",
+            bool(LOCATION_RESIDUE_ZH.search("北京市；长期招聘")),
+        )
+    )
+    tests.append(
+        (
+            "location_residue_english",
+            bool(LOCATION_RESIDUE_EN.search("Beijing; full-time social recruitment")),
+        )
+    )
+    tests.append(
+        (
+            "default_onsite_contract",
+            "default_onsite_no_remote_signal"
+            in WORK_ARRANGEMENT_BASES
+            and "onsite" in WORK_ARRANGEMENTS,
+        )
+    )
+    tests.append(
+        (
             "site_inline_script",
             bool(
                 re.search(
@@ -598,6 +811,20 @@ def run_self_test() -> dict[str, Any]:
         (
             "site_safe_text_rendering",
             ".innerHTML" not in site_app and "textContent" in site_app,
+        )
+    )
+    tests.append(
+        (
+            "site_bilingual_contract",
+            all(
+                token in site_app
+                for token in (
+                    "const I18N",
+                    "display_title_zh",
+                    "display_title_en",
+                    'params.set("lang", state.lang)',
+                )
+            ),
         )
     )
     with tempfile.TemporaryDirectory() as tmp:
