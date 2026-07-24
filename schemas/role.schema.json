@@ -137,8 +137,13 @@
     "role_recovery_confidence": {"type": "number", "minimum": 0, "maximum": 1},
     "public_confidence_tier": {"enum": ["verified", "probable"]},
     "recovery_origin": {
-      "enum": ["existing_role_revalidated", "unlinked_evidence_recovered"]
+      "enum": [
+        "existing_role_revalidated",
+        "unlinked_evidence_recovered",
+        "global_deferred_evidence_recovered"
+      ]
     },
+    "geography": {"type": "string", "minLength": 1, "maxLength": 80},
     "eligible_for_job_list": {"const": true},
     "eligible_for_strict_current": {"type": "boolean"}
   }

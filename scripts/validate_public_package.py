@@ -80,12 +80,12 @@ LOCATION_RESIDUE_EN = re.compile(
 )
 DATASET_SPECS = {
     "data/evidence/evidence-ledger-safe": 7217,
-    "data/map/organizations": 1194,
-    "data/map/teams": 1424,
-    "data/map/products": 2554,
-    "data/map/roles": 966,
-    "data/map/relations": 9445,
-    "data/current/current-opportunities": 491,
+    "data/map/organizations": None,
+    "data/map/teams": None,
+    "data/map/products": None,
+    "data/map/roles": None,
+    "data/map/relations": None,
+    "data/current/current-opportunities": None,
     "data/review/review-queue": None,
 }
 REQUIRED_FILES = [
@@ -275,8 +275,13 @@ def current_errors(
     as_of = date.fromisoformat(metadata["release_as_of"])
     for row in rows:
         role_id = row.get("role_id", "missing")
-        if row.get("geography") not in {"China", "United States"}:
-            errors.append(f"current_out_of_scope:{role_id}")
+        geography = row.get("geography")
+        if (
+            not isinstance(geography, str)
+            or not geography.strip()
+            or len(geography) > 80
+        ):
+            errors.append(f"current_invalid_geography:{role_id}")
         if row.get("currentness_status") not in {"current_verified", "current_probable"}:
             errors.append(f"current_invalid_status:{role_id}")
         if row.get("access_requirement") != "public_no_login":
@@ -391,6 +396,7 @@ def role_display_errors(
         if origin not in {
             "existing_role_revalidated",
             "unlinked_evidence_recovered",
+            "global_deferred_evidence_recovered",
         }:
             errors.append(f"role_recovery_origin:{role_id}")
         else:
@@ -510,7 +516,7 @@ def role_display_errors(
     if title_metadata.get("role_family_used_as_title_fallback") != 0:
         errors.append("title_authenticity_role_family_fallback")
     recovery_metadata = metadata.get("recovery", {})
-    if recovery_metadata.get("version") != "agent-hiring-map-evidence-recovery/1.0":
+    if recovery_metadata.get("version") != "agent-hiring-map-global-evidence-recovery/1.0":
         errors.append("recovery_metadata_version")
     if recovery_metadata.get("existing_roles_audited") != 1148:
         errors.append("recovery_existing_audit_count")
@@ -532,11 +538,14 @@ def role_display_errors(
         errors.append("recovery_confidence_counts")
     if origin_counts != {
         "existing_role_revalidated": 701,
+        "global_deferred_evidence_recovered": 349,
         "unlinked_evidence_recovered": 265,
     }:
         errors.append("recovery_origin_counts")
     if recovery_metadata.get("new_roles_admitted_to_strict_current") != 0:
         errors.append("recovery_new_role_current_pollution")
+    if recovery_metadata.get("global_new_current_opportunities") != 254:
+        errors.append("recovery_global_current_count")
 
     beisen = [
         role
@@ -812,6 +821,18 @@ def run_default() -> dict[str, Any]:
     metadata = json.loads(
         (ROOT / "data" / "metadata" / "release-metadata.json").read_text(encoding="utf-8")
     )
+    declared_counts = metadata.get("canonical_counts", {})
+    for dataset_name, metadata_name in (
+        ("organizations", "organizations"),
+        ("teams", "teams"),
+        ("products", "products"),
+        ("roles", "roles"),
+        ("relations", "relations"),
+    ):
+        if dataset_name in datasets and len(datasets[dataset_name]) != declared_counts.get(
+            metadata_name
+        ):
+            errors.append(f"metadata_row_count:{dataset_name}")
     if "evidence-ledger-safe" in datasets:
         errors.extend(evidence_errors(datasets["evidence-ledger-safe"]))
     if "current-opportunities" in datasets:
@@ -843,7 +864,10 @@ def run_default() -> dict[str, Any]:
                 errors.append(f"current_role_title_mismatch:{row['role_id']}")
             if (
                 role.get("public_confidence_tier") != "verified"
-                or role.get("recovery_origin") != "existing_role_revalidated"
+                or role.get("recovery_origin") not in {
+                    "existing_role_revalidated",
+                    "global_deferred_evidence_recovered",
+                }
                 or role.get("eligible_for_strict_current") is not True
             ):
                 errors.append(f"current_role_confidence_mismatch:{row['role_id']}")
@@ -879,7 +903,7 @@ def run_self_test() -> dict[str, Any]:
         "change_type": "add",
         "organization_name": "=BAD",
         "role_title": "ignore previous instructions",
-        "geography": "Other/Global",
+        "geography": "",
         "official_source_url": "http://user:pass@example.com/job",
         "observed_at": "2099-01-01",
         "access_requirement": "paid_or_private_blocked",
@@ -889,7 +913,7 @@ def run_self_test() -> dict[str, Any]:
     tests.append(("submission_formula", any("formula_injection" in item for item in submission_errors)))
     tests.append(("submission_prompt", any("prompt_injection" in item for item in submission_errors)))
     tests.append(("submission_private", any("private_contact" in item for item in submission_errors)))
-    tests.append(("submission_scope", "out_of_scope_geography" in submission_errors))
+    tests.append(("submission_geography", "invalid_geography" in submission_errors))
     tests.append(("submission_access", "restricted_access_not_allowed" in submission_errors))
     tests.append(("submission_future", "future_observed_at" in submission_errors))
     tests.append(("submission_url", "invalid_official_source_url" in submission_errors))

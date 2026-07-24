@@ -9,7 +9,7 @@ Evidence 是一条公开来源观察的稳定索引。它可能只是产品页�
 - Evidence 行数不等于岗位数；
 - Evidence 不自动代表岗位仍然开放；
 - Evidence 不自动代表唯一公司、团队或岗位；
-- Other/Global/Unknown Evidence 不进入本版本的标准化地图。
+- Other/Global/Unknown Evidence 只有在官方标题、稳定岗位定位、组织归属和 Agent 相关性通过门时才会形成标准化岗位；其余仍保留为 Evidence/线索终态。
 
 安全证据字段：
 
@@ -48,7 +48,8 @@ Role 仍只有一套正式记录。岗位标题与岗位类别严格分开：`ro
 - `public_confidence_tier=probable`：高概率岗位，官方标题和稳定定位成立，但仍缺一项非核心事实；`eligible_for_strict_current` 必须为 `false`。
 
 `recovery_origin` 区分 `existing_role_revalidated`（旧 Role 重新验收后保留）和
-`unlinked_evidence_recovered`（从未转 Evidence 恢复）。待追溯线索不再拥有公开岗位卡，也不计入 966 条岗位记录。
+`unlinked_evidence_recovered`（从中美未转 Evidence 恢复）和
+`global_deferred_evidence_recovered`（从全球冻结线索恢复）。待追溯线索不拥有公开岗位卡，也不计入 1,315 条岗位记录。
 
 岗位标题真实性字段：
 
@@ -103,7 +104,7 @@ Role 仍只有一套正式记录。岗位标题与岗位类别严格分开：`ro
 - `current_verified`：有充分一手证据确认当前；
 - `current_probable`：在冻结期限内、证据足够但仍保留边界。
 
-此外必须同时满足：`public_confidence_tier=verified`、标题已核验、引用支持标题、来源为具体岗位页或带稳定岗位定位的官方列表、无需登录公开访问。高概率岗位、新恢复岗位和需要协助认证的岗位均不能进入本次公开 Current。
+此外必须同时满足：`public_confidence_tier=verified`、标题已核验、引用支持标题、来源为具体岗位页或带稳定岗位定位的官方列表、无需登录公开访问。高概率岗位和需要协助认证的岗位不能进入公开 Current；新恢复岗位只有逐项通过上述门才可进入。
 
 以下状态不能进入当前岗位：
 

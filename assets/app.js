@@ -11,19 +11,19 @@ const DATA_PATHS = Object.freeze({
 
 const I18N = Object.freeze({
   zh: Object.freeze({
-    metaDescription: "基于公开来源、可追溯的中国与美国 Agent 岗位筛选地图。",
-    pageTitle: "中美 Agent 岗位地图",
+    metaDescription: "基于公开来源、可追溯的全球 Agent 岗位筛选地图；中国与美国为优先验证地区。",
+    pageTitle: "全球 Agent 岗位地图",
     skipToExplorer: "跳到岗位筛选",
-    brandHomeLabel: "中美 Agent 岗位地图首页",
-    brandSubtitle: "中美公开岗位地图",
+    brandHomeLabel: "全球 Agent 岗位地图首页",
+    brandSubtitle: "全球公开岗位地图",
     projectNavigation: "项目导航",
     navExplore: "筛选岗位",
     navOverview: "文本总览",
     languageSwitcherLabel: "界面语言",
-    heroEyebrow: "中国 × 美国 · 公开来源",
+    heroEyebrow: "全球范围 · 公开来源 · 中美优先",
     heroTitleLead: "找到真正和",
     heroTitleTail: "有关的工作。",
-    heroLead: "从团队、岗位类别、地域和证据状态出发，筛选中国与美国公开来源中的 Agent 岗位。每条当前岗位都能回到官方来源。",
+    heroLead: "从团队、岗位类别、地域和证据状态出发，筛选全球公开来源中的 Agent 岗位。中国与美国是优先验证地区，每条当前岗位都能回到官方来源。",
     startFiltering: "开始筛选",
     learnMethod: "了解方法与限制",
     importantDefinition: "重要口径",
@@ -79,16 +79,16 @@ const I18N = Object.freeze({
     principleCountBody: "一条标准化岗位记录不是招聘名额、在职人数或市场规模。",
     principleCategoryTitle: "类别用于阅读",
     principleCategoryBody: "高层类别由已有岗位族标签确定性生成，只用于筛选，不改写正式数据。",
-    principleScopeTitle: "范围只有中美",
-    principleScopeBody: "标准化地图和当前岗位只覆盖中国与美国，不代表其他地区没有相关岗位。",
-    footerDescription: "中国与美国公开来源 P4 只读开源试点。",
+    principleScopeTitle: "全球恢复不等于全球完整",
+    principleScopeBody: "地图已扩展到全球公开来源，但来自冻结线索的有界恢复；中国与美国仍是优先验证地区，不代表绝对市场完整。",
+    footerDescription: "全球公开来源 P4 只读开源试点；中国与美国优先验证。",
     footerReadme: "项目说明",
     footerFields: "字段说明",
     footerSecurity: "安全政策",
     footerState: "无追踪 · 无登录 · 无业务写入",
     scopeCurrent: "当前岗位",
     scopeAll: "全部地图岗位记录",
-    geographyAll: "中国和美国",
+    geographyAll: "全部国家和地区",
     geographyChina: "中国",
     geographyUnitedStates: "美国",
     filterAllCategories: "全部类别",
@@ -179,19 +179,19 @@ const I18N = Object.freeze({
     currentDisputed: "存在争议",
   }),
   en: Object.freeze({
-    metaDescription: "A traceable public-source map of Agent roles in China and the United States.",
-    pageTitle: "China–United States Agent Hiring Map",
+    metaDescription: "A traceable global public-source map of Agent roles, with China and the United States as priority validated regions.",
+    pageTitle: "Global Agent Hiring Map",
     skipToExplorer: "Skip to role filters",
     brandHomeLabel: "Agent Hiring Map home",
-    brandSubtitle: "China–United States public role map",
+    brandSubtitle: "Global public role map",
     projectNavigation: "Project navigation",
     navExplore: "Explore roles",
     navOverview: "Text overview",
     languageSwitcherLabel: "Interface language",
-    heroEyebrow: "China × United States · Public sources",
+    heroEyebrow: "Global · Public sources · China and US priority",
     heroTitleLead: "Find work truly about",
     heroTitleTail: "roles.",
-    heroLead: "Filter public-source Agent roles in China and the United States by team, role category, geography, and evidence status. Every current role links back to an official source.",
+    heroLead: "Filter global public-source Agent roles by team, category, geography, and evidence status. China and the United States are the priority validated regions, and every current role links to an official source.",
     startFiltering: "Start filtering",
     learnMethod: "Method and limitations",
     importantDefinition: "Important definition",
@@ -247,16 +247,16 @@ const I18N = Object.freeze({
     principleCountBody: "A normalized role record is not an opening count, employee count, or market-size estimate.",
     principleCategoryTitle: "Categories aid reading",
     principleCategoryBody: "High-level categories are derived deterministically from existing role-family labels and do not rewrite formal data.",
-    principleScopeTitle: "The map is bounded to two countries",
-    principleScopeBody: "The canonical map and current role view cover China and the United States only. Other regions may also have relevant roles.",
-    footerDescription: "China and United States public-source P4 read-only open-source pilot.",
+    principleScopeTitle: "Global recovery is not global completeness",
+    principleScopeBody: "The map now includes a bounded global recovery from frozen leads. China and the United States remain the priority validated regions; this is not an exhaustive market census.",
+    footerDescription: "Global public-source P4 read-only open-source pilot; China and US prioritized.",
     footerReadme: "Project guide",
     footerFields: "Field guide",
     footerSecurity: "Security policy",
     footerState: "No tracking · No login · No business writes",
     scopeCurrent: "Current roles",
     scopeAll: "All map role records",
-    geographyAll: "China and the United States",
+    geographyAll: "All countries and regions",
     geographyChina: "China",
     geographyUnitedStates: "United States",
     filterAllCategories: "All categories",
@@ -406,6 +406,29 @@ const TITLE_SOURCE_LABEL_KEYS = Object.freeze({
 });
 
 const PAGE_SIZE = Object.freeze({ jobs: 24, teams: 30 });
+const GEOGRAPHY_ZH = Object.freeze({
+  Argentina: "阿根廷",
+  Australia: "澳大利亚",
+  Canada: "加拿大",
+  China: "中国",
+  France: "法国",
+  Germany: "德国",
+  India: "印度",
+  Israel: "以色列",
+  Malaysia: "马来西亚",
+  Mexico: "墨西哥",
+  Oman: "阿曼",
+  "Other/Global": "其他地区或全球岗位",
+  Pakistan: "巴基斯坦",
+  Poland: "波兰",
+  Portugal: "葡萄牙",
+  Singapore: "新加坡",
+  Spain: "西班牙",
+  "Sri Lanka": "斯里兰卡",
+  "United Kingdom": "英国",
+  "United States": "美国",
+  Unknown: "国家或地区待复核",
+});
 
 const state = {
   lang: "zh",
@@ -506,12 +529,12 @@ function geographyValues(team, current) {
 }
 
 function geographyLabel(values) {
-  const hasChina = values.includes("China");
-  const hasUnitedStates = values.includes("United States");
-  if (hasChina && hasUnitedStates) return t("geographyBoth");
-  if (hasChina) return t("geographyChina");
-  if (hasUnitedStates) return t("geographyUnitedStates");
-  return t("geographyUnknown");
+  const unique = [...new Set(values.filter(Boolean))];
+  if (!unique.length) return t("geographyUnknown");
+  return unique
+    .map((value) =>
+      state.lang === "zh" ? GEOGRAPHY_ZH[value] || value : value)
+    .join(state.lang === "zh" ? "、" : ", ");
 }
 
 function compactText(values) {
@@ -753,10 +776,17 @@ function populateFilterOptions() {
     ["current", t("scopeCurrent")],
     ["all", t("scopeAll")],
   ]);
+  const geographies = store.loaded
+    ? [...new Set([
+        ...store.jobs.flatMap((job) => job.geographies),
+        ...store.teams.flatMap((team) => team.geographies),
+      ].filter(Boolean))]
+    : [];
+  geographies.sort((left, right) =>
+    collator().compare(geographyLabel([left]), geographyLabel([right])));
   setOptions(elements["filter-geography"], [
     ["all", t("geographyAll")],
-    ["China", t("geographyChina")],
-    ["United States", t("geographyUnitedStates")],
+    ...geographies.map((value) => [value, geographyLabel([value])]),
   ]);
   setOptions(elements["filter-category"], [
     ["all", t("filterAllCategories")],
@@ -1341,7 +1371,13 @@ function readUrlState() {
   if (["jobs", "teams"].includes(candidates.view)) state.view = candidates.view;
   if (["current", "all"].includes(candidates.scope)) state.scope = candidates.scope;
   if (candidates.query) state.query = candidates.query.slice(0, 200);
-  if (["all", "China", "United States"].includes(candidates.geography)) {
+  if (
+    candidates.geography === "all" ||
+    (
+      typeof candidates.geography === "string" &&
+      candidates.geography.length <= 100
+    )
+  ) {
     state.geography = candidates.geography;
   }
   const categoryId =
@@ -1401,6 +1437,8 @@ async function load() {
       roles,
       current,
     });
+    applyTranslations();
+    applyStateToControls();
     updateSummary();
     render();
   } catch (error) {

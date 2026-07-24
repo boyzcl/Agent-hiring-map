@@ -11,7 +11,7 @@
     "canonical_name": {"type": "string"},
     "group_id": {"type": ["string", "null"]},
     "official_domains": {"type": "array", "items": {"type": "string"}},
-    "geography": {"type": "array", "items": {"enum": ["China", "United States"]}},
+    "geography": {"type": "array", "items": {"type": "string", "minLength": 1, "maxLength": 80}},
     "aliases": {"type": "array", "items": {"type": "string"}},
     "status": {"type": ["string", "null"]},
     "confidence": {"type": "number", "minimum": 0, "maximum": 1},

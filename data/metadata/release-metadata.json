@@ -1,16 +1,35 @@
 {
   "bounded_scope": [
-    "China",
-    "United States"
+    "Argentina",
+    "Australia",
+    "Canada",
+    "France",
+    "Germany",
+    "India",
+    "Israel",
+    "Malaysia",
+    "Mexico",
+    "Other/Global",
+    "Pakistan",
+    "Poland",
+    "Portugal",
+    "Singapore",
+    "Spain",
+    "Sri Lanka",
+    "United Kingdom",
+    "United States",
+    "Unknown"
   ],
   "canonical_counts": {
-    "organizations": 1194,
-    "products": 2554,
-    "relations": 9445,
-    "roles": 966,
-    "teams": 1424
+    "organizations": 1355,
+    "products": 2871,
+    "relations": 11443,
+    "roles": 1315,
+    "teams": 1741
   },
+  "coverage_statement": "Global public-source recovery from the frozen Cycle 213 evidence ledger; China and the United States remain the priority validated strata.",
   "current_opportunities": {
+    "added_by_global_recovery": 254,
     "candidate_input_rows": 496,
     "excluded_duplicate_role_records": 2,
     "excluded_restricted_access": 3,
@@ -20,10 +39,25 @@
       "ROLE-DF72C228F5621EB1"
     ],
     "geography": {
+      "Australia": 1,
+      "Canada": 3,
       "China": 277,
-      "United States": 214
+      "France": 5,
+      "Germany": 7,
+      "India": 13,
+      "Israel": 3,
+      "Malaysia": 3,
+      "Other/Global": 65,
+      "Pakistan": 3,
+      "Poland": 1,
+      "Portugal": 1,
+      "Spain": 2,
+      "Sri Lanka": 5,
+      "United Kingdom": 10,
+      "United States": 220,
+      "Unknown": 126
     },
-    "rows": 491,
+    "rows": 745,
     "ttl_days": 14
   },
   "evidence_rows": 7217,
@@ -46,17 +80,21 @@
     "existing_roles_accepted_before_public_dedupe": 703,
     "existing_roles_audited": 1148,
     "existing_roles_retained": 701,
+    "global_frozen_evidence_terminalized": 4643,
+    "global_new_current_opportunities": 254,
+    "global_new_organizations": 161,
+    "global_new_roles": 349,
     "new_probable_roles": 265,
     "new_roles_admitted_to_strict_current": 0,
     "public_confidence_tier": {
-      "probable": 332,
-      "verified": 634
+      "probable": 427,
+      "verified": 888
     },
-    "public_role_records": 966,
-    "version": "agent-hiring-map-evidence-recovery/1.0"
+    "public_role_records": 1315,
+    "version": "agent-hiring-map-global-evidence-recovery/1.0"
   },
   "release_as_of": "2026-07-24",
-  "review_queue_rows": 728,
+  "review_queue_rows": 856,
   "role_display": {
     "default_rule": "roles without explicit remote or hybrid signals are classified as onsite",
     "languages": [
@@ -65,22 +103,43 @@
     ],
     "location_data_status": {
       "company_or_context_only": 9,
-      "normalized_or_descriptive": 590,
+      "normalized_or_descriptive": 906,
       "official_role_title_location_reviewed": 1,
-      "pending_review": 366
+      "pending_review": 399
     },
     "version": "agent-hiring-map-role-display/1.0",
     "work_arrangement": {
-      "onsite": 844,
-      "remote_or_hybrid": 122
+      "onsite": 1022,
+      "remote_or_hybrid": 293
     },
     "work_arrangement_basis": {
-      "default_onsite_no_remote_signal": 837,
+      "default_onsite_no_remote_signal": 1015,
       "explicit_onsite": 7,
-      "explicit_remote_or_hybrid": 122
+      "explicit_remote_or_hybrid": 293
     }
   },
-  "schema_version": "agent-hiring-map-public/1.0",
+  "role_geography": {
+    "Argentina": 1,
+    "Australia": 1,
+    "Canada": 3,
+    "France": 6,
+    "Germany": 10,
+    "India": 14,
+    "Israel": 3,
+    "Malaysia": 3,
+    "Mexico": 1,
+    "Other/Global": 73,
+    "Pakistan": 3,
+    "Poland": 1,
+    "Portugal": 1,
+    "Singapore": 2,
+    "Spain": 3,
+    "Sri Lanka": 6,
+    "United Kingdom": 11,
+    "United States": 7,
+    "Unknown": 1166
+  },
+  "schema_version": "agent-hiring-map-public/1.1",
   "state": {
     "candidate_ready": false,
     "claim_api_write_enabled": false,
@@ -95,9 +154,9 @@
   "title_authenticity": {
     "current_title_citation_support": "100%",
     "role_family_used_as_title_fallback": 0,
-    "roles_audited": 966,
+    "roles_audited": 1315,
     "status": {
-      "verified_official_title": 966
+      "verified_official_title": 1315
     },
     "version": "agent-hiring-map-title-authenticity/1.0"
   }

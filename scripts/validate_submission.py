@@ -70,8 +70,13 @@ def validate(payload: dict) -> list[str]:
         errors.append("invalid_schema_version")
     if payload.get("change_type") not in CHANGE_TYPES:
         errors.append("invalid_change_type")
-    if payload.get("geography") not in {"China", "United States"}:
-        errors.append("out_of_scope_geography")
+    geography = payload.get("geography")
+    if (
+        not isinstance(geography, str)
+        or not geography.strip()
+        or len(geography) > 80
+    ):
+        errors.append("invalid_geography")
     if payload.get("access_requirement") != "public_no_login":
         errors.append("restricted_access_not_allowed")
     try:
@@ -143,4 +148,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

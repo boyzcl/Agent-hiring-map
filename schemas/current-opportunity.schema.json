@@ -44,9 +44,9 @@
     },
     "citation_supports_title": {"const": true},
     "title_translation_status": {
-      "enum": ["verified_translation", "source_language_preserved"]
+      "enum": ["verified_translation", "source_language_preserved", "deterministic_bilingual_translation_v1"]
     },
-    "geography": {"enum": ["China", "United States"]},
+    "geography": {"type": "string", "minLength": 1, "maxLength": 80},
     "currentness_status": {
       "enum": ["current_verified", "current_probable"]
     },

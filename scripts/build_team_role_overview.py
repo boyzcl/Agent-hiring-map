@@ -187,9 +187,27 @@ CATEGORY_RULES: tuple[tuple[str, tuple[str, ...]], ...] = (
 
 CATEGORY_ORDER = tuple(name for name, _ in CATEGORY_RULES) + ("其他或边界岗位",)
 GEOGRAPHY_LABELS = {
-    ("China",): "中国",
-    ("United States",): "美国",
-    ("China", "United States"): "中国、美国",
+    "Argentina": "阿根廷",
+    "Australia": "澳大利亚",
+    "Canada": "加拿大",
+    "China": "中国",
+    "France": "法国",
+    "Germany": "德国",
+    "India": "印度",
+    "Israel": "以色列",
+    "Malaysia": "马来西亚",
+    "Mexico": "墨西哥",
+    "Oman": "阿曼",
+    "Other/Global": "其他地区或全球岗位",
+    "Pakistan": "巴基斯坦",
+    "Poland": "波兰",
+    "Portugal": "葡萄牙",
+    "Singapore": "新加坡",
+    "Spain": "西班牙",
+    "Sri Lanka": "斯里兰卡",
+    "United Kingdom": "英国",
+    "United States": "美国",
+    "Unknown": "国家或地区待复核",
 }
 CURRENTNESS_LABELS = {
     "current_verified": "已确认当前有效",
@@ -276,10 +294,12 @@ def size_band(count: int) -> str:
 
 
 def geography_label(values: list[str]) -> str:
-    key = tuple(sorted(values, key=("China", "United States").index))
-    if key not in GEOGRAPHY_LABELS:
-        raise ValueError(f"unsupported team geography: {values}")
-    return GEOGRAPHY_LABELS[key]
+    if not values:
+        return "国家或地区待复核"
+    return "、".join(
+        GEOGRAPHY_LABELS.get(value, value)
+        for value in sorted(set(values))
+    )
 
 
 def category_table(
@@ -415,7 +435,7 @@ def build_document() -> str:
         "",
         "| 指标 | 数量 | 说明 |",
         "| --- | ---: | --- |",
-        f"| 团队总数 | {len(teams)} | 中国、美国及 3 个同时标注中美地域的团队 |",
+        f"| 团队总数 | {len(teams)} | 全球公开来源有界恢复；中国与美国为优先验证地区 |",
         f"| 有地图岗位记录的团队 | {teams_with_map_roles} | 至少关联 1 条标准化 Role 记录 |",
         f"| 没有地图岗位记录的团队 | {teams_without_map_roles} | 仍保留团队及其证据关系 |",
         f"| 有当前岗位的团队 | {teams_with_current} | 至少有 1 条记录进入当前岗位视图 |",
@@ -465,7 +485,7 @@ def build_document() -> str:
             *distribution_table(
                 "当前岗位地域",
                 geography_counts,
-                {"China": "中国", "United States": "美国"},
+                GEOGRAPHY_LABELS,
                 len(current),
             ),
             "",
@@ -537,6 +557,7 @@ def build_document() -> str:
         key=lambda team: (
             0 if team["team_geography"] == ["China"] else
             1 if team["team_geography"] == ["United States"] else 2,
+            geography_label(team["team_geography"]),
             organization_by_id[team["organization_id"]]["canonical_name"].casefold(),
             team["team_name"].casefold(),
             team["team_id"],
@@ -589,7 +610,7 @@ def build_document() -> str:
             "",
             "## 限制",
             "",
-            "- 这是中国和美国公开来源的有界快照，不是绝对市场完整清单。",
+            "- 这是全球公开来源的有界恢复快照，中国与美国为优先验证地区；不是绝对市场完整清单。",
             "- 一条 Role 是一个标准化岗位记录，不是招聘名额或人数。",
             "- 7,217 条安全证据索引可能包含产品页、招聘入口、过期记录或定位线索，不能用于推算当前岗位数。",
             "- 派生岗位类别适合总览和导航，不替代岗位原始标题、原始岗位族标签或人工判断。",
