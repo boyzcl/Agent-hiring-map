@@ -60,7 +60,7 @@ const I18N = Object.freeze({
     sortLabel: "排序",
     clearFilters: "清除筛选",
     loadingPublicData: "正在载入公开数据……",
-    currentScopeNote: "仅显示通过当前性、日期、来源和访问要求门的岗位。",
+    currentScopeNote: "仅显示官方岗位标题可核验，并通过当前性、日期、来源粒度和访问要求门的岗位。",
     allScopeNote: "展示全部地图岗位记录；未进入当前视图的记录不代表仍在招聘。",
     teamCurrentScopeNote: "团队列表保持完整；类别摘要按当前岗位计算。",
     teamAllScopeNote: "团队列表保持完整；类别摘要按全部地图岗位记录计算。",
@@ -118,6 +118,17 @@ const I18N = Object.freeze({
     workLocation: "工作地点",
     lastVerified: "最后复核",
     evidenceAndAccess: "证据与访问",
+    titleAuthenticity: "岗位标题真实性",
+    titleVerified: "官方具体岗位标题已核验",
+    titleListingVerified: "官方稳定列表标题已核验",
+    titlePending: "岗位标题待复核",
+    titleSourceInsufficient: "来源粒度不足，不能证明具体岗位标题",
+    titleDisputed: "岗位标题存在争议",
+    sourceDirectRole: "官方具体岗位页",
+    sourceStableListing: "带稳定岗位定位的官方列表",
+    sourceGeneralEntry: "招聘总入口",
+    sourceOfficialListing: "普通官方列表或路径",
+    sourceUnclassified: "来源粒度未确认",
     openOfficialSource: "打开官方来源 ↗",
     noPublicRoleLink: "未公开岗位链接",
     arrangementOnsiteExplicit: "现场办公（来源明确）",
@@ -213,7 +224,7 @@ const I18N = Object.freeze({
     sortLabel: "Sort",
     clearFilters: "Clear filters",
     loadingPublicData: "Loading public data…",
-    currentScopeNote: "Only roles that pass currentness, date, source, and access gates are shown.",
+    currentScopeNote: "Only roles with a verifiable official title that pass currentness, date, source-granularity, and access gates are shown.",
     allScopeNote: "All map role records are shown; records outside the current view are not necessarily still hiring.",
     teamCurrentScopeNote: "The team list stays complete; category summaries use current roles.",
     teamAllScopeNote: "The team list stays complete; category summaries use all map role records.",
@@ -271,6 +282,17 @@ const I18N = Object.freeze({
     workLocation: "Work location",
     lastVerified: "Last verified",
     evidenceAndAccess: "Evidence and access",
+    titleAuthenticity: "Role-title authenticity",
+    titleVerified: "Verified official role-detail title",
+    titleListingVerified: "Verified title at a stable official listing locator",
+    titlePending: "Role title pending review",
+    titleSourceInsufficient: "Source is too broad to prove a specific role title",
+    titleDisputed: "Role title is disputed",
+    sourceDirectRole: "Official role-detail page",
+    sourceStableListing: "Official listing with a stable role locator",
+    sourceGeneralEntry: "General recruiting entry",
+    sourceOfficialListing: "General official listing or path",
+    sourceUnclassified: "Source granularity unconfirmed",
     openOfficialSource: "Open official source ↗",
     noPublicRoleLink: "No public role link",
     arrangementOnsiteExplicit: "On-site (explicitly stated by source)",
@@ -357,6 +379,22 @@ const CURRENTNESS_LABEL_KEYS = Object.freeze({
   stale_unverified: "currentStale",
   closed_verified: "currentClosed",
   disputed: "currentDisputed",
+});
+
+const TITLE_SUPPORT_LABEL_KEYS = Object.freeze({
+  verified_official_title: "titleVerified",
+  verified_official_listing: "titleListingVerified",
+  pending_title_review: "titlePending",
+  source_granularity_insufficient: "titleSourceInsufficient",
+  disputed: "titleDisputed",
+});
+
+const TITLE_SOURCE_LABEL_KEYS = Object.freeze({
+  direct_role_detail: "sourceDirectRole",
+  stable_official_listing_locator: "sourceStableListing",
+  general_recruiting_entry: "sourceGeneralEntry",
+  official_listing_or_slug: "sourceOfficialListing",
+  unclassified: "sourceUnclassified",
 });
 
 const PAGE_SIZE = Object.freeze({ jobs: 24, teams: 30 });
@@ -510,7 +548,11 @@ function buildStore(raw) {
     const product = productById.get(role.product_id) || null;
     const geographies = geographyValues(team, current);
     const sourceCandidate =
-      current?.source_urls?.[0] || role.official_role_url || null;
+      role.title_source_url ||
+      current?.title_source_url ||
+      current?.source_urls?.[0] ||
+      role.official_role_url ||
+      null;
     const category = roleCategory(role);
     const organizationName =
       organization?.canonical_name || t("organizationUnknown");
@@ -558,7 +600,13 @@ function buildStore(raw) {
         t("notRecorded"),
       currentnessStatus: role.currentness_status || "",
       lastVerifiedAt:
-        current?.last_verified_at || role.last_verified_at || "",
+        current?.last_verified_at ||
+        role.title_source_observed_at ||
+        role.last_verified_at ||
+        "",
+      titleSupportStatus: role.title_support_status || "pending_title_review",
+      titleSourceGranularity:
+        role.title_source_granularity || "unclassified",
       isCurrent: Boolean(current),
       sourceUrl: safePublicUrl(sourceCandidate),
       searchText,
@@ -939,6 +987,15 @@ function accessLabel(value) {
   return key ? t(key) : value || t("notRecorded");
 }
 
+function titleAuthenticityLabel(job) {
+  const statusKey =
+    TITLE_SUPPORT_LABEL_KEYS[job.titleSupportStatus] || "titlePending";
+  const sourceKey =
+    TITLE_SOURCE_LABEL_KEYS[job.titleSourceGranularity] ||
+    "sourceUnclassified";
+  return `${t(statusKey)} · ${t(sourceKey)}`;
+}
+
 function jobDetail(label, value) {
   const wrapper = document.createElement("div");
   wrapper.append(
@@ -958,6 +1015,11 @@ function renderJobCard(job) {
     job.isCurrent ? "chip-current" : "chip-muted",
   );
   appendChip(topline, geographyLabel(job.geographies), "chip-muted");
+  appendChip(
+    topline,
+    t(TITLE_SUPPORT_LABEL_KEYS[job.titleSupportStatus] || "titlePending"),
+    job.isCurrent ? "chip-current" : "chip-muted",
+  );
 
   const title = createElement("h3", "", displayTitle(job));
   const organization = createElement(
@@ -983,6 +1045,7 @@ function renderJobCard(job) {
     jobDetail(t("workLocation"), displayLocation(job)),
     jobDetail(t("workArrangementLabel"), workArrangementLabel(job)),
     jobDetail(t("lastVerified"), formatDate(job.lastVerifiedAt)),
+    jobDetail(t("titleAuthenticity"), titleAuthenticityLabel(job)),
     jobDetail(t("evidenceAndAccess"), evidenceText),
   );
 

@@ -9,6 +9,13 @@
     "role_id",
     "organization_id",
     "title",
+    "display_title_zh",
+    "display_title_en",
+    "title_support_status",
+    "title_source_url",
+    "title_source_granularity",
+    "citation_supports_title",
+    "title_translation_status",
     "geography",
     "currentness_status",
     "last_verified_at",
@@ -26,6 +33,19 @@
     "team_id": {"type": ["string", "null"]},
     "product_id": {"type": ["string", "null"]},
     "title": {"type": "string", "minLength": 1, "maxLength": 300},
+    "display_title_zh": {"type": "string", "minLength": 1, "maxLength": 300},
+    "display_title_en": {"type": "string", "minLength": 1, "maxLength": 300},
+    "title_support_status": {
+      "enum": ["verified_official_title", "verified_official_listing"]
+    },
+    "title_source_url": {"type": "string", "format": "uri"},
+    "title_source_granularity": {
+      "enum": ["direct_role_detail", "stable_official_listing_locator"]
+    },
+    "citation_supports_title": {"const": true},
+    "title_translation_status": {
+      "enum": ["verified_translation", "source_language_preserved"]
+    },
     "geography": {"enum": ["China", "United States"]},
     "currentness_status": {
       "enum": ["current_verified", "current_probable"]

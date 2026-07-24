@@ -12,12 +12,14 @@
   },
   "current_opportunities": {
     "candidate_input_rows": 920,
-    "excluded_time_anomalies_or_expired": 9,
+    "excluded_by_all_current_gates": 383,
+    "excluded_time_anomalies_or_expired": 0,
+    "excluded_title_authenticity": 383,
     "geography": {
-      "China": 601,
-      "United States": 310
+      "China": 282,
+      "United States": 255
     },
-    "rows": 911,
+    "rows": 537,
     "ttl_days": 14
   },
   "evidence_rows": 7217,
@@ -34,8 +36,8 @@
     "published_at": "2026-07-23",
     "repository_url": "https://github.com/boyzcl/Agent-hiring-map"
   },
-  "release_as_of": "2026-07-23",
-  "review_queue_rows": 1283,
+  "release_as_of": "2026-07-24",
+  "review_queue_rows": 1666,
   "role_display": {
     "default_rule": "roles without explicit remote or hybrid signals are classified as onsite",
     "languages": [
@@ -69,5 +71,17 @@
     "p4_observation_active": true,
     "p4_passed": false,
     "scale_proven": false
+  },
+  "title_authenticity": {
+    "current_title_citation_support": "100%",
+    "role_family_used_as_title_fallback": 0,
+    "roles_audited": 1148,
+    "status": {
+      "pending_title_review": 320,
+      "source_granularity_insufficient": 91,
+      "verified_official_listing": 49,
+      "verified_official_title": 688
+    },
+    "version": "agent-hiring-map-title-authenticity/1.0"
   }
 }

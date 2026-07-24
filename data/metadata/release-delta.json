@@ -1,10 +1,298 @@
 {
-  "as_of_date": "2026-07-23",
+  "as_of_date": "2026-07-24",
   "excluded": [
     {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-976F5BDED4AEFD8E",
+      "source_urls": [
+        "https://rczpw.suat-sz.edu.cn/info/1012/1357.htm"
+      ]
+    },
+    {
       "geography": "United States",
-      "last_verified_at": "2026-09-22",
-      "reason": "future_last_verified_at",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
+      "role_id": "ROLE-B67928B039BA3B6D",
+      "source_urls": [
+        "https://zenity.io/careers/hybrid-phoenix-az-united-states/senior-forward-deployed-engineer/91.E6C"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
+      "role_id": "ROLE-8B55FEA1980FAB07",
+      "source_urls": [
+        "https://jobs.lifepointhealth.net/job/engineer-backend-integration-ai-transformation/brentwood-tn/348997"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-2ED550D0E60E59B9",
+      "source_urls": [
+        "https://jobs.ashbyhq.com/v7labs.com/00d9239d-17ab-499e-ab59-6e1fb7b1ef20"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-DFC90D316F41D5AC",
+      "source_urls": [
+        "https://jobs.ashbyhq.com/mintmcp/cd5d5aa3-a7d3-4e85-bdc9-19d42da1eccc"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-F842FA997F26D7AC",
+      "source_urls": [
+        "https://jobs.ashbyhq.com/acquisition/9789dd49-c6bd-4672-8cd3-9f67f2dea7c1"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-AAB929B54FCBD599",
+      "source_urls": [
+        "https://answermyq.com/careers"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-3B560D00F9ECF8E2",
+      "source_urls": [
+        "https://intuigenceai.com/careers/full-stack-engineer"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-F9D2CFD8B0402F29",
+      "source_urls": [
+        "https://talent.baidu.com/jobs/detail/SOCIAL/069db2ba-2318-4887-9867-1449f6c17035"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-AB763F0D065CB4BF",
+      "source_urls": [
+        "https://talent.baidu.com/jobs/detail/SOCIAL/1f31d2bc-9fe1-419c-848b-4e886eefe5ce"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-DF7981E206CA18EF",
+      "source_urls": [
+        "https://talent.baidu.com/jobs/detail/SOCIAL/77b0400e-129d-41fc-a671-ebe8d9e7bffc"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-FBEC7267AC791C49",
+      "source_urls": [
+        "https://talent.baidu.com/jobs/detail/SOCIAL/81dc2738-9bcd-4e4c-9841-2ccfc37f3b26"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-94A0C0CDA7565B6B",
+      "source_urls": [
+        "https://talent.baidu.com/jobs/detail/SOCIAL/8f9bbee9-a2bd-484e-bfd4-26a243fd66a3"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-717493220D8A4E15",
+      "source_urls": [
+        "https://talent.baidu.com/jobs/detail/SOCIAL/c3c957f1-1707-4a05-b01b-4fe6c1285066"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-94743EEF119CA730",
+      "source_urls": [
+        "https://talent.baidu.com/jobs/detail/SOCIAL/d51ecddb-6948-42e9-b904-384966cac8fd"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-C15E23F763761A8C",
+      "source_urls": [
+        "https://talent.baidu.com/jobs/detail/SOCIAL/eb48374e-272f-4cdd-abfe-e616f84ae3a4"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-0A5200B47BDBDABB",
+      "source_urls": [
+        "https://talent.baidu.com/jobs/detail/SOCIAL/ed67a452-d65b-4be1-9b5c-3bb1ab3cb5a2"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-8537E67541B2840C",
+      "source_urls": [
+        "https://chinalife.zhiye.com/custom/zwxq?ClassificationOne=%E5%85%B6%E4%BB%96%E7%B1%BB&ClassificationTwo=%E5%B9%BF%E5%8F%91%E9%93%B6%E8%A1%8C%E6%80%BB%E8%A1%8C&hideMenu=1&jc=1&jobAdId=bb44bd85-46a3-4fd6-8e15-6e65897bfb59"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
+      "role_id": "ROLE-58F3C62EB3285A88",
+      "source_urls": [
+        "https://www.dlwhcyjt.com/news_detail?id=4407"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-7DEDC6E2A2945231",
+      "source_urls": [
+        "https://hr.163.com/job-detail.html?id=76697"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-A1F52F093E825F5A",
+      "source_urls": [
+        "https://xpertai.cn/jobs"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-CE53A900E22BAF5C",
+      "source_urls": [
+        "https://www.terton.com.cn/gytrt/rczp"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-6D730D7B233BC9AC",
+      "source_urls": [
+        "https://careers.pddglobalhr.com/jobs/detail"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-DB79B37D95D1B371",
+      "source_urls": [
+        "https://career.yonyou.com/SU67ac41886202cc7916ae3029/pb/posDetail.html?postId=6a028b39e49e0e559f645e97&postType=society"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-510AA13B78B8F685",
+      "source_urls": [
+        "https://career.yonyou.com/SU67ac41886202cc7916ae3029/pb/posDetail.html?postId=6a2fe82ce49e0e559f8dfa7a&postType=society"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-C2717728A446A994",
+      "source_urls": [
+        "https://career.yonyou.com/SU67ac41886202cc7916ae3029/pb/posDetail.html?postId=6a2fe920e49e0e559f8dfa9e&postType=society"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-249CCB7DD5E4A34E",
+      "source_urls": [
+        "https://career.yonyou.com/SU67ac41886202cc7916ae3029/pb/posDetail.html?postId=6a3a04bdc7606e0d83c4a8e7&postType=society"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
+      "role_id": "ROLE-733F51C40ABAD38F",
+      "source_urls": [
+        "https://hr.fudan.edu.cn/86/ec/c15370a755436/page.htm?_refluxos=a10"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-6716F9CB9436C138",
+      "source_urls": [
+        "https://rcn5rohr98sn.jobs.feishu.cn/index"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-2E15C86EA45BA5BF",
+      "source_urls": [
+        "https://tsinghua-eiri.zhiye.com/campus/jobs"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-A21FC4F13BDF47D3",
+      "source_urls": [
+        "https://www.zerith.com/join?id=1"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-B52F3F9162014C54",
+      "source_urls": [
+        "https://www.gzw.sh.gov.cn/shgzw_xxgk_cqzp/20250605/a9bc44ae26c549838c0f7499f18a9a21.html"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
       "role_id": "ROLE-71DBB1A418151277",
       "source_urls": [
         "https://careers.extraspace.com/job/Corporate/sr-ai-engineer/Salt-Lake-City-Utah/Extra%20Space%20Storage/R-79663"
@@ -12,8 +300,179 @@
     },
     {
       "geography": "China",
-      "last_verified_at": "2026-08-31",
-      "reason": "future_last_verified_at",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-37839E37B65CAA4B",
+      "source_urls": [
+        "https://aispeech.zhiye.com/jobs?KeyWords="
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-A06E998330E6CCEC",
+      "source_urls": [
+        "https://jobs.gusto.com/postings/loman-ai-forward-deployed-engineer-3362f353-fda7-43ce-92b3-9dfc911bb236"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-88621574227803D5",
+      "source_urls": [
+        "https://cudataintelligence.zhiye.com/jobs?KeyWords="
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-412516388682399E",
+      "source_urls": [
+        "https://cudataintelligence.zhiye.com/jobs?KeyWords="
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-D52134BF86F46262",
+      "source_urls": [
+        "https://autohand.ai/careers/rl-researcher"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-F4CBD6EF89ECC237",
+      "source_urls": [
+        "https://autohand.ai/careers/staff-ai-engineer"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
+      "role_id": "ROLE-D2D53E6963B6F985",
+      "source_urls": [
+        "https://www.comeet.com/jobs/coralogix/06.004/forward-deployed-engineer/CE.B66"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-F032D69B9B98D82A",
+      "source_urls": [
+        "https://job.lzu.edu.cn/html/22/article/2025/85039.html"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
+      "role_id": "ROLE-AF30D9C28534E832",
+      "source_urls": [
+        "https://jobs.intuit.com/job/mountain-view/staff-product-manager-ai-native-developer-platform-platform-developer-experience/27595/97850406528"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
+      "role_id": "ROLE-709DC594B645056F",
+      "source_urls": [
+        "https://www.cnis.ac.cn/rczp/qyb/202509/t20250915_61666.html"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
+      "role_id": "ROLE-0AE270FD62867303",
+      "source_urls": [
+        "https://torchv.com/docs/hr/jd"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-D0DBBB0DC3FA1FD7",
+      "source_urls": [
+        "https://www.inplusday.com/jrwm"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-0A4DC818390FAE30",
+      "source_urls": [
+        "https://laiye.zhiye.com/social/jobs"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-2044424948B2E10B",
+      "source_urls": [
+        "https://iwhalecloud1.zhiye.com/api/JobAd/GetJobAdInfo?jobAdId=a6621abf-aa65-4e0a-8116-c7c75dff492a&portalId=792964a1-5b16-4806-8f35-c3662525d8d8"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-E66D942207B01E5E",
+      "source_urls": [
+        "https://boe.zhiye.com/api/Jobad/GetJobAdPageList?KeyWords=%E6%99%BA%E8%83%BD%E4%BD%93&PortalId=e71a8ad7-a321-4305-80db-73f2f18f8d22"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-E6FCEF76C083CCD2",
+      "source_urls": [
+        "https://banma.zhiye.com/social/jobs"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-8A94652499D0681F",
+      "source_urls": [
+        "https://jobs.ashbyhq.com/Archy/18aa3a15-1637-4667-a059-1a95fcaee870"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-BA9C245525EA8798",
+      "source_urls": [
+        "https://jobs.ashbyhq.com/Archy/5750a13d-c342-4618-9d9a-ccc6dda2481a"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-D2DD1B5D74313712",
+      "source_urls": [
+        "https://jobs.ashbyhq.com/Archy/e6091485-6c59-487c-be7a-20ea62770ed9"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
       "role_id": "ROLE-E35FE54ACE83A52F",
       "source_urls": [
         "https://www.opt.ac.cn/gb2019/kydw/rczp/202607/t20260703_8237711.html"
@@ -21,8 +480,314 @@
     },
     {
       "geography": "China",
-      "last_verified_at": "2026-07-31",
-      "reason": "future_last_verified_at",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-14E2125C923DB049",
+      "source_urls": [
+        "https://fosunpharma.zhiye.com/internxq?jobId=561143915"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-FB43C24EFEAAC955",
+      "source_urls": [
+        "https://fosunpharma.zhiye.com/internxq?jobId=561265883"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-F25CE4A358729CEE",
+      "source_urls": [
+        "https://raytrontek.zhiye.com/campus/jobs"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": null,
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-9A156786978AA4F8",
+      "source_urls": [
+        "https://careers-appliedsystems.icims.com/jobs/7656/principal-technical-consultant/job"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
+      "role_id": "ROLE-26240FDD272DF07C",
+      "source_urls": [
+        "https://cocoindex.io/careers"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
+      "role_id": "ROLE-591EDD9178995FB1",
+      "source_urls": [
+        "https://cocoindex.io/careers"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-E076E20EBD093B4B",
+      "source_urls": [
+        "https://talent.antgroup.com/off-campus?keywords=Agent&search=Agent"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-DD0BFFFEC6084B6C",
+      "source_urls": [
+        "https://talent.antgroup.com/off-campus?keywords=Agent&search=Agent"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-6CA1D8D7FFE1B79B",
+      "source_urls": [
+        "https://talent.antgroup.com/off-campus?keywords=Agent&search=Agent"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-CEA209AE21E570BA",
+      "source_urls": [
+        "https://talent.antgroup.com/off-campus?keywords=Agent&search=Agent"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-E9A71BA8C7865210",
+      "source_urls": [
+        "https://talent.antgroup.com/off-campus?keywords=Agent&search=Agent"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-E2659CF15C95F44F",
+      "source_urls": [
+        "https://talent.antgroup.com/off-campus?keywords=Agent&search=Agent"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-5CA15F99C7937F3A",
+      "source_urls": [
+        "https://talent.antgroup.com/off-campus?keywords=Agent&search=Agent"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-05CAF319CD1CE4D7",
+      "source_urls": [
+        "https://talent.antgroup.com/off-campus?keywords=Agent&search=Agent"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-4DEFB717A780D1D1",
+      "source_urls": [
+        "https://talent.antgroup.com/off-campus?keywords=Agent&search=Agent"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-2A18404386DC49EE",
+      "source_urls": [
+        "https://talent.antgroup.com/off-campus?keywords=Agent&search=Agent"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-6235A486303E6F57",
+      "source_urls": [
+        "https://talent.antgroup.com/off-campus?keywords=Agent&search=Agent"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-B2CE9F060BE8674E",
+      "source_urls": [
+        "https://talent.antgroup.com/off-campus?keywords=Agent&search=Agent"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-114FA407435AE224",
+      "source_urls": [
+        "https://talent.antgroup.com/off-campus?keywords=Agent&search=Agent"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-32FDA550CEB0FD4D",
+      "source_urls": [
+        "https://talent.antgroup.com/off-campus?keywords=Agent&search=Agent"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-B02DF572ABF98201",
+      "source_urls": [
+        "https://talent.antgroup.com/off-campus?keywords=Agent&search=Agent"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-7649C09F41A7C971",
+      "source_urls": [
+        "https://talent.antgroup.com/off-campus?keywords=Agent&search=Agent"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-B69B27847D5B5144",
+      "source_urls": [
+        "https://talent.antgroup.com/off-campus?keywords=Agent&search=Agent"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-90E97CB458CA7ED6",
+      "source_urls": [
+        "https://talent.antgroup.com/off-campus?keywords=Agent&search=Agent"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-081AE504489AE0DB",
+      "source_urls": [
+        "https://talent.antgroup.com/off-campus?keywords=Agent&search=Agent"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-CD55A45DB7434601",
+      "source_urls": [
+        "https://www.xiaoyicom.cn/lists/189"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-CB06C6C43A0FB48E",
+      "source_urls": [
+        "https://cicc.zhiye.com/custom/socialxq?hideMenu=1&jc=1&jobAdId=6a87978e-d4b9-4e44-83c5-927693d45198"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-F9B0B455A96CCE54",
+      "source_urls": [
+        "https://anker-in.jobs.feishu.cn/index/position/7513829459096471862/detail"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-991AE3A971A97680",
+      "source_urls": [
+        "https://www.tenfong.cn/join"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-2E16D2623374D7AB",
+      "source_urls": [
+        "https://www.risoai.com/joinus.html"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-A8F88DF6E66F7E76",
+      "source_urls": [
+        "https://www.yicloud.com/recruit"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-FBF45BD746C70CEC",
+      "source_urls": [
+        "https://app.mokahr.com/social-recruitment/bigai-ai/102639"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
+      "role_id": "ROLE-013B655343DC7325",
+      "source_urls": [
+        "https://www.info2soft.cn/joinus/social-recruitment/ai-product-rd-architect"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
+      "role_id": "ROLE-B6105F5EF4E1BDD5",
+      "source_urls": [
+        "https://uniphore.wd503.myworkdayjobs.com/Uniphore/job/USA---CA---Palo-Alto/Director--AI-Advisory_JR100900"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_title",
       "role_id": "ROLE-B0A80F962CFE85AD",
       "source_urls": [
         "https://rsc.bjmu.edu.cn/rczp/jfxz/4f3585eaae994c4495180df954a7c926.htm"
@@ -30,17 +795,539 @@
     },
     {
       "geography": "China",
-      "last_verified_at": "2027-02-01",
-      "reason": "future_last_verified_at",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-615D66D264C1E26A",
+      "source_urls": [
+        "https://cscnrczp.zhiye.com/campus/detail?jobAdId=0ba74f52-4e9b-46d4-a851-87d3e283e0c3"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": null,
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-1C1D223CC867E847",
+      "source_urls": [
+        "https://skit.keka.com/careers/jobdetails/137357"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-FF7F0B7FB75405D5",
+      "source_urls": [
+        "https://rokid.zhiye.com/jobs"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-529D8394E99D86CD",
+      "source_urls": [
+        "https://www.jc2006.com/career.html"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-A1181A076D719D48",
+      "source_urls": [
+        "http://www.jihualab.com/rczp/shzp/202604/t20260417_831122.html"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
       "role_id": "ROLE-A0CB92AB90AFE9D5",
       "source_urls": [
         "https://611.zhiye.com/zpdetail/351580468"
       ]
     },
     {
+      "geography": "United States",
+      "last_verified_at": null,
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-84F5010E3D130515",
+      "source_urls": [
+        "https://careers.boozallen.com/careers/JobDetail/Washington-Backend-Infrastructure-Agentic-AI-Software-Engineer-R0243893/127097"
+      ]
+    },
+    {
       "geography": "China",
-      "last_verified_at": "2026-08-30",
-      "reason": "future_last_verified_at",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-4107711E5DD698AD",
+      "source_urls": [
+        "https://www.jxfhgc.com/jxfhgc/shzp/202603/a67d0960e4554ba39b05d079ddb505fa.shtml"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-52BE7DB5D83B1337",
+      "source_urls": [
+        "https://www.epicgames.com/site/careers/jobs/5996485004"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-FF002326830E88D9",
+      "source_urls": [
+        "https://cigai.ai/c/jrwm.html"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-F42BEE6D5018E05F",
+      "source_urls": [
+        "https://rlzyb.zy91.com/apply/getNotice.action?keycode=65dfc16c-5681-496a-899e-76de5357de14"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-91E242C90D1D3DF7",
+      "source_urls": [
+        "https://ihep.cas.cn/tfyzx/rczp/202509/t20250902_7956895.html"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
+      "role_id": "ROLE-0E5BFBE0E8F5729A",
+      "source_urls": [
+        "https://careers.travelers.com/job/23589750/software-engineer-ii-enterprise-ai-products-hartford-ct"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-ED88C7B35116EAFC",
+      "source_urls": [
+        "https://boke.jobs.feishu.cn/index/position/7661946354172823849/detail"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-9F641B1397E37CBE",
+      "source_urls": [
+        "https://csvw.zhiye.com/jobs"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
+      "role_id": "ROLE-1E6C7FE701F7AE69",
+      "source_urls": [
+        "https://talent.stjude.org/careers/JobDetail/Agentic-AI-Scientist-Office-of-Data-Science-JR7117/4997"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-BFE5FBBEEFAF996B",
+      "source_urls": [
+        "https://kotei.zhiye.com/campus/jobs?1=%5B%7B%22id%22%3A%224%22%2C%22label%22%3A%22%E5%BC%80%E5%8F%91%E7%B1%BB%22%7D%5D"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-0F06BD78D087568B",
+      "source_urls": [
+        "https://www.xydigit.com/content/zte-dt/cn/joinus.html"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-30AB7FC604C876E9",
+      "source_urls": [
+        "https://intel.wd1.myworkdayjobs.com/en-US/External/job/Software-Engineer---Agent-Harness_JR0284869"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-DF7EE4B306A3CAA7",
+      "source_urls": [
+        "https://talent.didiglobal.com/social/p/63396"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-C165B9173AAB0700",
+      "source_urls": [
+        "https://chemeng.dlut.edu.cn/info/1049/30994.htm"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-26EAA6FFD97AF8C7",
+      "source_urls": [
+        "https://jobs.bytedance.com/campus/m/position/detail/7628867718565300485"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-724B821F11C776DE",
+      "source_urls": [
+        "https://airs.zhiye.com/social/detail?jobAdId=a8ffafd8-51fd-456e-8218-6ef55a919c95"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-5C4C6747FE07CBD0",
+      "source_urls": [
+        "https://app.mokahr.com/social-recruitment/smartmore/40505"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-0D7B49E5EEFE774A",
+      "source_urls": [
+        "https://big.cas.cn/rczp/202604/t20260408_8182900.html"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-D608898F4752CDBE",
+      "source_urls": [
+        "https://app.mokahr.com/social-recruitment/step/94904"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-DC67F8C585EDF844",
+      "source_urls": [
+        "https://app.mokahr.com/social-recruitment/step/94904"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-E5398E64414468A8",
+      "source_urls": [
+        "https://app.mokahr.com/social-recruitment/step/94904"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-FBAC3574EFCD7F9A",
+      "source_urls": [
+        "https://app.mokahr.com/social-recruitment/step/94904"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-8B9D2359273CE91C",
+      "source_urls": [
+        "https://app.mokahr.com/social-recruitment/step/94904"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-DD0AB96143898341",
+      "source_urls": [
+        "https://app.mokahr.com/social-recruitment/step/94904"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-85175B2F2AFCA09D",
+      "source_urls": [
+        "https://app.mokahr.com/social-recruitment/step/94904"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-4561C6FE2DFDDCD8",
+      "source_urls": [
+        "https://app.mokahr.com/social-recruitment/step/94904"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-F401A6314D368C84",
+      "source_urls": [
+        "https://app.mokahr.com/social-recruitment/step/94904"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-BDC78312EE95F008",
+      "source_urls": [
+        "https://app.mokahr.com/social-recruitment/step/94904"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-890942D0CEB0A5D2",
+      "source_urls": [
+        "https://app.mokahr.com/social-recruitment/step/94904"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-40E500F412A0B84A",
+      "source_urls": [
+        "https://app.mokahr.com/social-recruitment/step/94904"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-0A8BB890375344E3",
+      "source_urls": [
+        "https://app.mokahr.com/social-recruitment/step/94904"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-F872C928D51F2FBD",
+      "source_urls": [
+        "https://app.mokahr.com/social-recruitment/step/94904"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-7E7BB4B47D31D603",
+      "source_urls": [
+        "https://app.mokahr.com/social-recruitment/step/94904"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-6D82C7F1E7EA62D9",
+      "source_urls": [
+        "https://app.mokahr.com/social-recruitment/step/94904"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-0560EAB0A3D57411",
+      "source_urls": [
+        "https://app.mokahr.com/social-recruitment/step/94904"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-30735B028F62489C",
+      "source_urls": [
+        "https://app.mokahr.com/social-recruitment/step/94904"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-766F36020D40FC75",
+      "source_urls": [
+        "https://app.mokahr.com/social-recruitment/step/94904"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-7020AE510927E320",
+      "source_urls": [
+        "https://app.mokahr.com/social-recruitment/step/94904"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-361F3F2B8712DF2A",
+      "source_urls": [
+        "https://app.mokahr.com/social-recruitment/step/94904"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-82A81F419F581C22",
+      "source_urls": [
+        "https://app.mokahr.com/social-recruitment/step/94904"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-2E91B26DAAC90C5F",
+      "source_urls": [
+        "https://app.mokahr.com/social-recruitment/step/94904"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-FD80ADDC945542E8",
+      "source_urls": [
+        "https://app.mokahr.com/social-recruitment/step/94904"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-8198D11363D2F0FA",
+      "source_urls": [
+        "https://app.mokahr.com/social-recruitment/step/94904"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-84D92FBB0A7CBF23",
+      "source_urls": [
+        "https://app.mokahr.com/social-recruitment/step/94904"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-0EA012497920D140",
+      "source_urls": [
+        "https://app.mokahr.com/social-recruitment/step/94904"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-72950D371F3CE99E",
+      "source_urls": [
+        "https://app.mokahr.com/social-recruitment/step/94904"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-D43B98029B2EFB8B",
+      "source_urls": [
+        "https://app.mokahr.com/social-recruitment/step/94904"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-926700A469433310",
+      "source_urls": [
+        "https://app.mokahr.com/social-recruitment/step/94904"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-57505DA6B6CEFD22",
+      "source_urls": [
+        "https://app.mokahr.com/social-recruitment/step/94904"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-CE28853E46E3ECB6",
+      "source_urls": [
+        "https://app.mokahr.com/social-recruitment/step/94904"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-D39015CCDDAD18D0",
+      "source_urls": [
+        "https://app.mokahr.com/social-recruitment/step/94904"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-7BD8965BD2DBD74E",
+      "source_urls": [
+        "https://app.mokahr.com/social-recruitment/step/94904"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
       "role_id": "ROLE-D2A9EC5EF54A83B0",
       "source_urls": [
         "https://ehr.zju.edu.cn/vuejs/recruitment/position-detail.htm?id=N1870031994385072142"
@@ -48,8 +1335,1178 @@
     },
     {
       "geography": "China",
-      "last_verified_at": "2026-08-11",
-      "reason": "future_last_verified_at",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-465112004695052D",
+      "source_urls": [
+        "https://join.dify.ai/roles.html"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-0174E4050C9E0059",
+      "source_urls": [
+        "https://join.dify.ai/roles.html"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-7C69B5166744A98A",
+      "source_urls": [
+        "https://join.dify.ai/roles.html"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-1D76FD9335FCC401",
+      "source_urls": [
+        "https://cursor.com/careers/gtm-systems-support-and-agentic-engineer"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-B6A843172129669F",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199903540001"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-886AC62EC491194B",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199904520003"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-670BB93F71160E36",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199905800007"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-4BD3C9684F0FD197",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199905800008"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-9F5E58DE9B026471",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199905800009"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-1967DB385433DD62",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199905840006"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-20FF16F28956F45C",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199905880003"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-B12EAF57E9DFC8B4",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199905940001"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-AB7EA130FC660CFE",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199905980001"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-0473DAF056984D9C",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199905980002"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-F5863614762E801C",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906040002"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-CB224A395EB66A79",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906040006"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-5DA035DF1FD8FE92",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906040011"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-5DD5F61218C4FD87",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906040015"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-6486B7622314801C",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906040016"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-58B1C28A76158BCE",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906060002"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-B12277BB918453DF",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906060007"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-1C03DDD0CAA609E9",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906080013"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-2E8CB2AC7A00352F",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906100003"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-2623FDE02409055B",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906100004"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-E27CEEE86641101B",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906100008"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-1B21F910A82EEA69",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906100017"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-B55258FB40CE759D",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906120007"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-F65D0ED047BDA4B0",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906120013"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-31E2F1281A911B3E",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906120014"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-61CF69F11B7586FE",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906140002"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-741AD9F2E2288411",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906140003"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-279480D8CB18DC4F",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906740002"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-A146EE8CB11AB173",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906800002"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-17B8E46F3309D443",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906800007"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-50B18A5292AEA02E",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906800008"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-74547094D034B1DD",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906820003"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-B79F4C04C65FC6E8",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906820005"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-C268664D5725CA90",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906820006"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-5E42EE0A8798864E",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906820007"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-6EB55430AF49D9A3",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906820010"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-7F1FF3E0D5C2AFC0",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906820011"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-FCD80344A5F84ECF",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906840003"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-CE3F7580572883A6",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906840007"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-937D2C67ED446014",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906840010"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-9EC73F9C3FFF8E2A",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906860003"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-102568D871052B17",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906860008"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-7BD4CB16AC0EAD34",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906860009"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-36DD863984484895",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906860014"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-A25EA63597013B36",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906880007"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-604AA9FE0B44930A",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906880008"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-397DB81C0A6789B0",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906900001"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-42C3ED59C4EC659A",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906900004"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-2ABBD2D42751999C",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906900012"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-3489E4208F9C4255",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906920002"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-7F61ABBC76DB1710",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906920003"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-5BE0B2E20AF9C1FE",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906920006"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-06C1A314D6DC358C",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906920007"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-62E45649E253BED1",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906940002"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-6484FC4AC969B277",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906940003"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-9593F17B919B15D5",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906960001"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-DF5F4B38E6FAD817",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906960005"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-F62CD1BC4DA3DCFA",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906980001"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-B09503862F0193D5",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906980002"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-4CF08665340D8552",
+      "source_urls": [
+        "https://campus-talent.alibaba.com/campus/position/199906980007"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-51A475652B9C45CC",
+      "source_urls": [
+        "https://talent.dingtalk.com/off-campus/position-detail?positionId=100021400009"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-BF7BA5FD2635ED54",
+      "source_urls": [
+        "https://zhaopin.kuaishou.cn/"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-0993429AF4CBB408",
+      "source_urls": [
+        "https://zhaopin.kuaishou.cn/"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-D2047B20551CD69A",
+      "source_urls": [
+        "https://zhaopin.kuaishou.cn/"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-42244A80C17283D1",
+      "source_urls": [
+        "https://zhaopin.kuaishou.cn/"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-BA0614A7589F7D63",
+      "source_urls": [
+        "https://zhaopin.kuaishou.cn/"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-8F8AFFD5226977AD",
+      "source_urls": [
+        "https://zhaopin.kuaishou.cn/"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-54A16A9B17C1B80A",
+      "source_urls": [
+        "https://zhaopin.kuaishou.cn/"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-DC5E1E0F6BF4B4E9",
+      "source_urls": [
+        "https://zhaopin.kuaishou.cn/"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-E87AA3C9E7DA4ECF",
+      "source_urls": [
+        "https://zhaopin.kuaishou.cn/"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-81E3A70E502BF57A",
+      "source_urls": [
+        "https://zhaopin.kuaishou.cn/"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-A376ECC592B8D921",
+      "source_urls": [
+        "https://zhaopin.kuaishou.cn/"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-1AA1B5A9A87BD47B",
+      "source_urls": [
+        "https://zhaopin.kuaishou.cn/"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-7C21E8CBD805BCD5",
+      "source_urls": [
+        "https://zhaopin.kuaishou.cn/"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-E54F7CEE242BB159",
+      "source_urls": [
+        "https://zhaopin.kuaishou.cn/"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-EDD1853F74DDBFBA",
+      "source_urls": [
+        "https://zhaopin.kuaishou.cn/"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-62DA01987A31F90D",
+      "source_urls": [
+        "https://zhaopin.kuaishou.cn/"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-EBC2E5BDEA91D0A7",
+      "source_urls": [
+        "https://zhaopin.kuaishou.cn/"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-1FA9BA5755245031",
+      "source_urls": [
+        "https://zhaopin.kuaishou.cn/"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-9A4C6F475E71016A",
+      "source_urls": [
+        "https://zhaopin.kuaishou.cn/"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-123CBB01DDE843D4",
+      "source_urls": [
+        "https://zhaopin.kuaishou.cn/"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-DCFED82A249B6639",
+      "source_urls": [
+        "https://zhaopin.kuaishou.cn/"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-422C5BF38386F986",
+      "source_urls": [
+        "https://zhaopin.kuaishou.cn/"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-D2D3119301800A38",
+      "source_urls": [
+        "https://zhaopin.kuaishou.cn/"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-B02C5D5700E167CF",
+      "source_urls": [
+        "https://zhaopin.kuaishou.cn/"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-CCB9F159449DF75D",
+      "source_urls": [
+        "https://zhaopin.kuaishou.cn/"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-00C70F3C7A5A49C8",
+      "source_urls": [
+        "https://zhaopin.kuaishou.cn/"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-32BAAF907D3CB4D5",
+      "source_urls": [
+        "https://zhaopin.kuaishou.cn/"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-AA3921E98C12A424",
+      "source_urls": [
+        "https://zhaopin.kuaishou.cn/"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-34222AAD5B7BCB1C",
+      "source_urls": [
+        "https://zhaopin.kuaishou.cn/"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-32450A74BF754248",
+      "source_urls": [
+        "https://zhaopin.kuaishou.cn/"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-1824C66BE64B24B2",
+      "source_urls": [
+        "https://zhaopin.kuaishou.cn/"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-712656E00979F3A4",
+      "source_urls": [
+        "https://zhaopin.kuaishou.cn/"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-10E279C34864FBF0",
+      "source_urls": [
+        "https://zhaopin.kuaishou.cn/"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-A7CF19A0439FC76F",
+      "source_urls": [
+        "https://zhaopin.kuaishou.cn/"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-4656A0B55A950C50",
+      "source_urls": [
+        "https://zhaopin.kuaishou.cn/"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-97BD1CAD08EDE164",
+      "source_urls": [
+        "https://zhaopin.kuaishou.cn/"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-8F5C81ABCF0625EA",
+      "source_urls": [
+        "https://zhaopin.kuaishou.cn/"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-98F81954D33ABA43",
+      "source_urls": [
+        "https://zhaopin.kuaishou.cn/"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-324BB717B5F8EBA9",
+      "source_urls": [
+        "https://zhaopin.kuaishou.cn/"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-033E97AFD2C79A7C",
+      "source_urls": [
+        "https://zhaopin.kuaishou.cn/"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-DFBB4D472EDCD686",
+      "source_urls": [
+        "https://zhaopin.kuaishou.cn/"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-5D3B41351AA87D85",
+      "source_urls": [
+        "https://apply.workable.com/trilagen/jobs/view/3EAD630FE8.md"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
+      "role_id": "ROLE-72B2A708592FF4FD",
+      "source_urls": [
+        "https://tib.cas.cn/rcdw/rczp/zyjszp/t_8227670.html"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-59CF7DD46EAA4FDA",
+      "source_urls": [
+        "http://www.bladeai.com.cn/contact1/2.html"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-BAA62D4381B53E1E",
+      "source_urls": [
+        "https://iaii.cas.cn/rcdw/rczp/202606/t20260630_8235793.html"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
+      "role_id": "ROLE-DA3FB2EB62EA38F5",
+      "source_urls": [
+        "http://www.sim.cas.cn/rczpw/rczp2017/shzp2017/202607/t20260702_8237224.html"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-2F3CCF44DFD49C70",
+      "source_urls": [
+        "https://careers.tencent.com/tencentcareer/api/post/ByPostId?postId=1925398818564710400"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-D92387EA45685E40",
+      "source_urls": [
+        "https://careers.tencent.com/tencentcareer/api/post/ByPostId?postId=2055555661177204736"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-9F03BB3248A0362B",
+      "source_urls": [
+        "https://careers.tencent.com/tencentcareer/api/post/ByPostId?postId=2063134243537731584"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-97B5521F694940FA",
+      "source_urls": [
+        "https://job-boards.greenhouse.io/anthropic/jobs/4673416008"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-E913AD1F6F3BF729",
+      "source_urls": [
+        "https://job-boards.greenhouse.io/anthropic/jobs/5159608008"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-FEE14E714CA3EB0F",
+      "source_urls": [
+        "https://job-boards.greenhouse.io/anthropic/jobs/5278065008"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-4C0E1EE9E24F0924",
+      "source_urls": [
+        "https://job-boards.greenhouse.io/anthropic/jobs/5285250008"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-973BAF73146A5CF5",
+      "source_urls": [
+        "https://job-boards.greenhouse.io/anthropic/jobs/5290837008"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
+      "role_id": "ROLE-AD2C1B9CC02B40D3",
+      "source_urls": [
+        "https://jobs.signatureaviation.com/en/sites/CX_1/job/16018"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
+      "role_id": "ROLE-9982C29A0194447D",
+      "source_urls": [
+        "https://daytonaio.notion.site/Senior-System-Engineer-25729a8a0d018003b6d4e503c41eec3e"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-E5B148CCB8F08382",
+      "source_urls": [
+        "https://bgigc.zhiye.com/campusxq?jobId=311065171"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
+      "role_id": "ROLE-D39664A21F1536E3",
+      "source_urls": [
+        "https://3h1china.com/index.php?a=show&c=content&id=425"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
+      "role_id": "ROLE-A26D545F9915A646",
+      "source_urls": [
+        "https://fervoenergy.com/career/agentic-ai-engineer"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-BB466E12E3EB38EA",
+      "source_urls": [
+        "https://jobs.ashbyhq.com/gigaml/7f70df01-8b1f-4368-a51a-801ed21833f3"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-28C1582A0A0DFA0C",
+      "source_urls": [
+        "https://fastbase.jobs.feishu.cn/referral/campus/position/7619270023261948198/detail"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-AC39FE9F58716BDA",
+      "source_urls": [
+        "https://app.mokahr.com/social-recruitment/moka/118263"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-88D5A47CDCAEDCED",
+      "source_urls": [
+        "https://app.mokahr.com/social-recruitment/moka/118263"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-4B648ED688FCC869",
+      "source_urls": [
+        "https://app.mokahr.com/social-recruitment/moka/118263"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
+      "role_id": "ROLE-CFAD966C3483DE51",
+      "source_urls": [
+        "https://air.tsinghua.edu.cn/info/1029/2338.htm"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
       "role_id": "ROLE-118F04B71472690C",
       "source_urls": [
         "https://jobs.tsinghua.edu.cn/project/qhdx/pages/recruit_new"
@@ -57,35 +2514,944 @@
     },
     {
       "geography": "China",
-      "last_verified_at": "2026-07-29",
-      "reason": "future_last_verified_at",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
+      "role_id": "ROLE-352B1052D297B083",
+      "source_urls": [
+        "https://www.ee.tsinghua.edu.cn/rczp/bshzp.htm"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-542C7C9F6CFE83BD",
+      "source_urls": [
+        "https://apply.workable.com/bolderapps/jobs/view/D05CEF4B15.md"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-0C62F5F70FFFABAD",
+      "source_urls": [
+        "https://myjobs.adp.com/wwtsoftchoicecareersite/cx/job-details?reqId=5001194717500"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-BD52219C632E06B1",
+      "source_urls": [
+        "https://career.huawei.com/cn/job-details?advertisementId=34522&lang=zh_CN"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-C0F980A4C7406460",
+      "source_urls": [
+        "http://see-long.com/"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-C5DDC34C15482C37",
+      "source_urls": [
+        "https://baicgroup.zhiye.com/social/jobs"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-D6DA1086C8524125",
+      "source_urls": [
+        "https://cmhk.zhiye.com/api/JobAd/GetJobAdInfo?jobAdId=de1c6b4f-8844-417f-9c0d-bc2787094b17&portalId=ad6df64e-8702-483f-a2ec-c44deefceec4"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-E54ABD18184AB51F",
+      "source_urls": [
+        "https://cmhk.zhiye.com/custom/xq?ClassificationTwo=%E6%8B%9B%E5%95%86%E4%BA%A4%E7%A7%91&hideAll=true&jc=1&jobAdId=f4c0e65f-49c6-4110-b7ba-da76e485ca8d"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-729976503644A708",
+      "source_urls": [
+        "https://qiyuanzp.zhiye.com/jobs"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-3E2230CE1AF88FB7",
+      "source_urls": [
+        "https://zyhy.zhiye.com/jobs"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
+      "role_id": "ROLE-0EFC119C09FF1397",
+      "source_urls": [
+        "http://nb.zju.edu.cn/_t1561/2026/0402/c26625a3147122/page.psp"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
+      "role_id": "ROLE-3819661B8A41024F",
+      "source_urls": [
+        "https://jobs.slalom.com/en_US/careersmarketplace/JobDetail/Agentic-AI-Architect-Intelligence-Engineering-Central/2904"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-10114DCD995800D7",
+      "source_urls": [
+        "https://bjzkj.zhiye.com/social/jobs"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
+      "role_id": "ROLE-7EAB60BF66938DC1",
+      "source_urls": [
+        "https://www.amazon.jobs/en/jobs/10447433/ai-builder-ring"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
+      "role_id": "ROLE-31BCC5BB3C80ACC0",
+      "source_urls": [
+        "https://www.jhatc.cn/html/web/hr/zhaopinxinxi/1998212151935885313.html"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-5F9E6E1CC83E7534",
+      "source_urls": [
+        "https://m.easthospital.cn/news/content/fid/4932"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-F08DA2C98308D059",
+      "source_urls": [
+        "https://mininglamp.zhiye.com/social/detail?jobAdId=101d1be2-ec60-48b3-b4d3-8789b85646df"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-9DD9C9E4F8C6CA8F",
+      "source_urls": [
+        "https://oseasy.zhiye.com/social/jobs"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-1ED9479A7495710D",
+      "source_urls": [
+        "https://app.mokahr.com/social-recruitment/zphz/148983?locale=zh-CN"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-1C49954AFF39FEFA",
+      "source_urls": [
+        "https://app.mokahr.com/social-recruitment/zphz/148983?locale=zh-CN"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-BE0D3CA0204A2A85",
+      "source_urls": [
+        "http://www.dce.com.cn/dce/content/2025/dlftcsjsyxgs/18624041.html"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-D94FEDC3C14202C1",
+      "source_urls": [
+        "https://idt.eitech.edu.cn/2333.html"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-13A93A43CA1BE226",
+      "source_urls": [
+        "https://ccccltd.zhiye.com/custom/fszxq?fname=lvchengzgkg&hideMenu=1&jobAdId=453c7897-d274-4d2c-9fbf-78d76f1b02d6"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
+      "role_id": "ROLE-3E1EA6A51DDF08EB",
+      "source_urls": [
+        "http://zftii.com/talent/846f3927138d4d2a95c2857a0baa3f1f.html"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": null,
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-9289726A78C975AC",
+      "source_urls": [
+        "https://apply.workable.com/geodelphi/jobs/view/E8A22CF275.md"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-970979EDA471542A",
+      "source_urls": [
+        "https://beisen.zhiye.com/social/detail?jobAdId=07895a41-2cb8-4594-9d57-a93131d498df"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-6685C3BF0835A8A4",
+      "source_urls": [
+        "https://beisen.zhiye.com/social/detail?jobAdId=2f18ec1f-ae90-447d-ae87-3da21ed4d91b"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-620E2EED301472CE",
+      "source_urls": [
+        "https://beisen.zhiye.com/social/detail?jobAdId=51a4aaac-9f50-4ce4-a5b5-7770a9c8c8cb"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-F38D7CB6FADB95EB",
+      "source_urls": [
+        "https://beisen.zhiye.com/social/detail?jobAdId=81ca9265-d54b-4ca1-9560-2e6f0c677bdc"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-688ECFEF4AAE66BF",
+      "source_urls": [
+        "https://beisen.zhiye.com/social/detail?jobAdId=a40d2a78-eb92-4587-8617-e8796c3fd02c"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-AF488E9EF45256E1",
+      "source_urls": [
+        "https://beisen.zhiye.com/social/detail?jobAdId=e2156e56-a03d-405d-b9ef-f8269c0e5608"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-B7C83AC5CCD496F4",
+      "source_urls": [
+        "https://beisen.zhiye.com/social/detail?jobAdId=fcd97a81-2ab4-4028-a4b9-1149cca44251"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
+      "role_id": "ROLE-8699B37D9E043739",
+      "source_urls": [
+        "https://et.airchina.com.cn/cn/about_us/recruitment/ground_crew_info/184618.shtml"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-47166ABA4CA8364E",
+      "source_urls": [
+        "https://claf.ac.cn/rczp/202505/t20250522_545314.html"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-75FEC8D648155E70",
+      "source_urls": [
+        "https://www.jiyuaninfo.com/about/join"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-72D2EF16146F47BB",
+      "source_urls": [
+        "https://iflytek.zhiye.com/api/Jobad/GetJobAdPageList?KeyWords=Agent&PortalId=6e2235dc-4b88-4698-b96a-5a73c705d8db"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-E7A3E81F582E5ADE",
+      "source_urls": [
+        "https://casic.zhiye.com/xiangqing?jobId=151080978"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-2C7D8A60C74ABF75",
+      "source_urls": [
+        "http://jitrihust.com/chengpin.asp"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-D1C8DDF30B856BE6",
+      "source_urls": [
+        "https://cg.sandia.gov/psc/applicant/EMPLOYEE/HRMS/c/HRS_HRAM_FL.HRS_CG_SEARCH_FL.GBL?Action=U&Page=HRS_APP_SCHJOB_FL"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
+      "role_id": "ROLE-10C25CC5FC07005D",
+      "source_urls": [
+        "https://careers.wsgr.com/openings/senior-ai-security-engineer"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-85E1B5E877B3C966",
+      "source_urls": [
+        "https://jobs.ashbyhq.com/1mind/052ca544-28c4-4fcb-a0a2-63140ccf0212"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
       "role_id": "ROLE-D6F119EBB07AE584",
       "source_urls": [
         "https://rczp.nju.edu.cn/glgwjqt/sybzry/bwry/20260716/i402049.html"
       ]
     },
     {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-AD7A40F1B7CCCCC2",
+      "source_urls": [
+        "https://deepzero.zhiye.com/jobs?KeyWords="
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-A8F292EDC06FB608",
+      "source_urls": [
+        "https://www.hqzg.cloud/careers"
+      ]
+    },
+    {
       "geography": "United States",
-      "last_verified_at": "2026-07-27",
-      "reason": "future_last_verified_at",
+      "last_verified_at": null,
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-2BA64B3222C10495",
+      "source_urls": [
+        "https://cogniify.ai/careers"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-B1862A3BD71F71B5",
+      "source_urls": [
+        "https://www.succaiss.com/zh-CN/joinus"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
+      "role_id": "ROLE-DFE5A85316DA5EF3",
+      "source_urls": [
+        "http://www.sinoinnosoft.com/layout/view/a1"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-0D2F5B05C62576F0",
+      "source_urls": [
+        "https://ccccltd.zhiye.com/custom/fszxq?fname=lvchengzgkg&hideMenu=1&jobAdId=453c7897-d274-4d2c-9fbf-78d76f1b02d6"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
+      "role_id": "ROLE-B5358B333AEB99E2",
+      "source_urls": [
+        "https://jobs.paloaltonetworks.com/en/job/sofia/senior-software-engineer-secure-ai-agent/47263/96174879872"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-E948E4D74508C8AE",
+      "source_urls": [
+        "https://aipower.zhiye.com/campus/detail?jobAdId=75ca6817-0999-49c5-a08e-e9183894620d"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-8B5A413D647B2884",
+      "source_urls": [
+        "https://app.mokahr.com/apply/moonshot/148506"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-735CF54A776E3C03",
+      "source_urls": [
+        "https://app.mokahr.com/apply/moonshot/148506"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-A0E9922F07094197",
+      "source_urls": [
+        "https://app.mokahr.com/apply/moonshot/148506"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-D48BA499AFDC98CC",
+      "source_urls": [
+        "https://app.mokahr.com/apply/moonshot/148506"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-57E1A67181752197",
+      "source_urls": [
+        "https://app.mokahr.com/apply/moonshot/148506"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-7A79A76F09F51B5E",
+      "source_urls": [
+        "https://app.mokahr.com/apply/moonshot/148506"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-30A2620CE30B1175",
+      "source_urls": [
+        "https://app.mokahr.com/apply/moonshot/148506"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-999A77D80E72783F",
+      "source_urls": [
+        "https://app.mokahr.com/apply/moonshot/148506"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-D37914A1EA853B67",
+      "source_urls": [
+        "https://app.mokahr.com/apply/moonshot/148506"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-3725E3B1A0C1F162",
+      "source_urls": [
+        "https://app.mokahr.com/apply/moonshot/148506"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-46CA9C7A88873F73",
+      "source_urls": [
+        "https://app.mokahr.com/apply/moonshot/148506"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-2942D03D0E74F4EB",
+      "source_urls": [
+        "https://app.mokahr.com/apply/moonshot/148506"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-56196A1CDA009C6B",
+      "source_urls": [
+        "https://app.mokahr.com/apply/moonshot/148506"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-B582C7DB7DF10AD4",
+      "source_urls": [
+        "https://app.mokahr.com/apply/moonshot/148506"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-B0C0C93743E31635",
+      "source_urls": [
+        "https://app.mokahr.com/apply/moonshot/148506"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-11643F9ADCBAA9B1",
+      "source_urls": [
+        "https://app.mokahr.com/apply/moonshot/148506"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-B925B51005A954AF",
+      "source_urls": [
+        "https://www.inforbus.com/about/careers"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-6FC88D22FA0AF547",
+      "source_urls": [
+        "https://jobs.lever.co/copilotkit/d134b481-f042-45b1-b908-dd38ff72fdd0"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
+      "role_id": "ROLE-7E17909EE8D4E643",
+      "source_urls": [
+        "https://augustodigital.freshteam.com/jobs/3yvP65MslPVn/ai-workflow-engineer-and-developer-remote"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
+      "role_id": "ROLE-CC504E8A34CF60B6",
+      "source_urls": [
+        "https://jobs.dayzim.com/job/AIML-Engineer-2/3430-en_US"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-B907771C92B20738",
+      "source_urls": [
+        "https://www.ventus.ai/careers"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-F57B1EA55F515C9C",
+      "source_urls": [
+        "http://www.slai.edu.cn/zh-hans/recruitment/388"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
+      "role_id": "ROLE-FB4670BE6DCE1FC3",
+      "source_urls": [
+        "https://www.ahjzu.edu.cn/hnxy/2026/0506/c6234a269518/page.htm"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-491053E76CC4B38D",
+      "source_urls": [
+        "https://geovis.zhiye.com/jobs?KeyWords="
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-E85EB8E416700ADE",
+      "source_urls": [
+        "https://www.sail-cloud.com/join-us"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
+      "role_id": "ROLE-E95E688F065F7ED7",
+      "source_urls": [
+        "https://hbbq.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/4122"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-7357649EF1941162",
+      "source_urls": [
+        "http://fnii-shenzhen.cn/recruitment"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-22921DF3008CE3CC",
+      "source_urls": [
+        "https://www.shlab.org.cn/joinus/detail/7576251600356821284?mode=social"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-C5D57727ABA16308",
+      "source_urls": [
+        "https://www.shlab.org.cn/joinus/detail/7576494298850593043?mode=social"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-D40C6292AB2C7D13",
+      "source_urls": [
+        "https://www.shlab.org.cn/joinus/detail/7579213575362595114?mode=social"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-AF0310A2743523F9",
+      "source_urls": [
+        "https://www.shlab.org.cn/joinus/detail/7591846263403202852?mode=social"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-92487D7ADC3F9DD2",
+      "source_urls": [
+        "https://www.shlab.org.cn/joinus/detail/7600665649429629220?mode=social"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-6E26CD42EE9EDE50",
+      "source_urls": [
+        "https://www.shlab.org.cn/joinus/detail/7626656342182332682?mode=social"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-6B8051CFCED60C84",
+      "source_urls": [
+        "https://msunsoft.zhiye.com/jobs"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-6F6D068CA83E113F",
+      "source_urls": [
+        "https://www.insightlex.cn/careers"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_title",
       "role_id": "ROLE-A6596BDAF4814496",
       "source_urls": [
         "https://careers.americanexpress.com/en/sites/CX_1/job/26010339"
       ]
     },
     {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-4F2C836D2D0EA797",
+      "source_urls": [
+        "https://careers.oppo.com/university/oppo/campus/post/1430?recruitType=doctor"
+      ]
+    },
+    {
       "geography": "United States",
-      "last_verified_at": "2026-07-31",
-      "reason": "future_last_verified_at",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
+      "role_id": "ROLE-452ADBAFA79C4F4F",
+      "source_urls": [
+        "https://vacatia.hrmdirect.com/employment/job-opening.php?req=3741138"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
+      "role_id": "ROLE-4956E4BB16670A5B",
+      "source_urls": [
+        "http://www.hnhbck.com:443/join/18"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-3A1F1EDE4792A586",
+      "source_urls": [
+        "https://www.shuyouyinli.com/job-details.html?id=ai-algorithm"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-586E2C3FC8A8DF14",
+      "source_urls": [
+        "https://ke.zhiye.com/intern/detail?jobAdId=5cd6e3fe-ce55-45bf-bc7f-201aefedb75b"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
+      "role_id": "ROLE-747F71A4C4489AEB",
+      "source_urls": [
+        "https://kiongroup.wd3.myworkdayjobs.com/de-DE/KIONGroup/job/Atlanta-GA-United-States/AI-Application-Engineer_JR-0087751-1"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-E871BBA4406B6E95",
+      "source_urls": [
+        "https://zhaopin.meituan.com/web/position/detail?highlightType=social&jobUnionId=3093645365"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
+      "role_id": "ROLE-2B4CC40D84D3CA03",
+      "source_urls": [
+        "https://www.pgcareers.com/eu/en/job/R000147966/Sr-Data-Scientist-AI-ML"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-6C06BC58B8C84004",
+      "source_urls": [
+        "https://dobot.zhiye.com/jobs?KeyWords="
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-D84228B464C621AB",
+      "source_urls": [
+        "https://td-tech.zhiye.com/jobs"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": null,
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-7162D3179EACF0A2",
+      "source_urls": [
+        "https://www.gientech.com/job_detail.html?PositionId=724533457207466"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
+      "role_id": "ROLE-1AD6A2CC58348069",
+      "source_urls": [
+        "https://job-boards.greenhouse.io/bridgewater89/jobs/8499417002"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-0A64D146D2DC7525",
+      "source_urls": [
+        "https://znvhr.zhiye.com/campus/jobs"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-76A10CB3AD0D6C5C",
+      "source_urls": [
+        "https://znvhr.zhiye.com/campus/jobs"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
+      "role_id": "ROLE-01CEC468C6C9699A",
+      "source_urls": [
+        "https://engineering.westlake.edu.cn/Recuitment/202509/t20250916_59065.shtml"
+      ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:verified_official_listing",
+      "role_id": "ROLE-49E151A05D104712",
+      "source_urls": [
+        "https://engineering.westlake.edu.cn/Recuitment/202606/t20260602_67512.shtml"
+      ]
+    },
+    {
+      "geography": "United States",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:pending_title_review",
       "role_id": "ROLE-316C6E00BADDEE5E",
       "source_urls": [
         "https://cottonholdings.pinpointhq.com/postings/20a4ed84-9b73-4514-bdeb-a97e7c70525a"
       ]
+    },
+    {
+      "geography": "China",
+      "last_verified_at": "2026-07-24",
+      "reason": "title_authenticity:source_granularity_insufficient",
+      "role_id": "ROLE-974592600B887ACE",
+      "source_urls": [
+        "https://2345.zhiye.com/social/jobs"
+      ]
     }
   ],
-  "excluded_rows": 9,
+  "excluded_rows": 383,
   "p0_p3_current_candidate_rows": 920,
-  "public_current_rows": 911,
-  "rule": "future, missing/invalid, or TTL-expired last_verified_at cannot enter public current view",
+  "public_current_rows": 537,
+  "rule": "Only publicly accessible Roles with a supported official title, specific stable source and non-future in-TTL observation enter the public current view.",
   "schema_version": "agent-hiring-map-public/1.0"
 }

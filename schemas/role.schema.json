@@ -18,7 +18,22 @@
     "display_location_en",
     "location_data_status",
     "work_arrangement",
-    "work_arrangement_basis"
+    "work_arrangement_basis",
+    "title_authenticity_version",
+    "official_title_raw",
+    "title_source_language",
+    "title_support_status",
+    "title_provenance",
+    "title_source_url",
+    "title_source_granularity",
+    "stable_role_locator",
+    "citation_supports_title",
+    "title_source_observed_at",
+    "title_source_recheck_performed",
+    "title_source_recheck_attempted_at",
+    "title_source_observation_status",
+    "title_current_eligible_after_gate",
+    "title_translation_status"
   ],
   "properties": {
     "schema_version": {"const": "agent-hiring-map-public/1.0"},
@@ -26,7 +41,8 @@
     "organization_id": {"type": "string"},
     "team_id": {"type": ["string", "null"]},
     "product_id": {"type": ["string", "null"]},
-    "title": {"type": "string"},
+    "title": {"type": ["string", "null"]},
+    "source_role_descriptor": {"type": ["string", "null"]},
     "role_family": {"type": ["string", "null"]},
     "job_locations": {"type": "array", "items": {"type": "string"}},
     "remote_scope": {"type": ["string", "null"]},
@@ -60,6 +76,58 @@
         "explicit_remote_or_hybrid",
         "explicit_onsite",
         "default_onsite_no_remote_signal"
+      ]
+    },
+    "title_authenticity_version": {"const": "agent-hiring-map-title-authenticity/1.0"},
+    "official_title_raw": {"type": ["string", "null"], "maxLength": 300},
+    "title_source_language": {"enum": ["zh", "en", "unknown"]},
+    "title_support_status": {
+      "enum": [
+        "verified_official_title",
+        "verified_official_listing",
+        "pending_title_review",
+        "source_granularity_insufficient",
+        "disputed"
+      ]
+    },
+    "title_provenance": {
+      "enum": [
+        "manual_official_source_review",
+        "public_source_metadata",
+        "no_supported_title"
+      ]
+    },
+    "title_source_url": {"type": ["string", "null"], "format": "uri"},
+    "title_source_granularity": {
+      "enum": [
+        "direct_role_detail",
+        "stable_official_listing_locator",
+        "general_recruiting_entry",
+        "official_listing_or_slug",
+        "unclassified"
+      ]
+    },
+    "stable_role_locator": {"type": ["string", "null"]},
+    "citation_supports_title": {"type": "boolean"},
+    "title_source_observed_at": {"type": ["string", "null"], "format": "date"},
+    "title_source_recheck_performed": {"type": "boolean"},
+    "title_source_recheck_attempted_at": {"type": ["string", "null"], "format": "date"},
+    "title_source_observation_status": {
+      "enum": [
+        "fetched",
+        "fetched_success",
+        "http_error",
+        "temporary_error",
+        "held_without_fetch",
+        "not_attempted"
+      ]
+    },
+    "title_current_eligible_after_gate": {"type": "boolean"},
+    "title_translation_status": {
+      "enum": [
+        "verified_translation",
+        "source_language_preserved",
+        "not_translated"
       ]
     }
   }

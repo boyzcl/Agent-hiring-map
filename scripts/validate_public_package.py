@@ -36,6 +36,15 @@ ABSOLUTE_PATH_PATTERNS = [
     re.compile(r"[A-Za-z]:\\\\Users\\\\"),
 ]
 ROLE_DISPLAY_VERSION = "agent-hiring-map-role-display/1.0"
+TITLE_AUTHENTICITY_VERSION = "agent-hiring-map-title-authenticity/1.0"
+VERIFIED_TITLE_STATUSES = {
+    "verified_official_title",
+    "verified_official_listing",
+}
+CURRENT_TITLE_GRANULARITIES = {
+    "direct_role_detail",
+    "stable_official_listing_locator",
+}
 LOCATION_STATUSES = {
     "normalized_or_descriptive",
     "official_role_title_location_reviewed",
@@ -270,6 +279,18 @@ def current_errors(
             errors.append(f"current_invalid_status:{role_id}")
         if row.get("access_requirement") != "public_no_login":
             errors.append(f"current_restricted_access:{role_id}")
+        if row.get("title_support_status") not in VERIFIED_TITLE_STATUSES:
+            errors.append(f"current_unverified_title:{role_id}")
+        if row.get("title_source_granularity") not in CURRENT_TITLE_GRANULARITIES:
+            errors.append(f"current_weak_title_source:{role_id}")
+        if row.get("citation_supports_title") is not True:
+            errors.append(f"current_unsupported_title:{role_id}")
+        if not row.get("title") or not row.get("display_title_zh") or not row.get(
+            "display_title_en"
+        ):
+            errors.append(f"current_missing_title:{role_id}")
+        if not valid_public_url(str(row.get("title_source_url") or "")):
+            errors.append(f"current_invalid_title_source:{role_id}")
         try:
             verified = date.fromisoformat(row["last_verified_at"])
             age = (as_of - verified).days
@@ -338,6 +359,7 @@ def role_display_errors(
     arrangement_counts: dict[str, int] = {}
     basis_counts: dict[str, int] = {}
     location_counts: dict[str, int] = {}
+    title_status_counts: dict[str, int] = {}
     required_text = (
         "display_title_zh",
         "display_title_en",
@@ -348,6 +370,28 @@ def role_display_errors(
         role_id = role.get("role_id", "missing")
         if role.get("role_display_version") != ROLE_DISPLAY_VERSION:
             errors.append(f"role_display_version:{role_id}")
+        if role.get("title_authenticity_version") != TITLE_AUTHENTICITY_VERSION:
+            errors.append(f"role_title_authenticity_version:{role_id}")
+        title_status = role.get("title_support_status")
+        title_status_counts[title_status] = title_status_counts.get(
+            title_status, 0
+        ) + 1
+        if role.get("title_provenance") == "role_family":
+            errors.append(f"role_family_used_as_title:{role_id}")
+        if title_status in VERIFIED_TITLE_STATUSES:
+            if (
+                not role.get("official_title_raw")
+                or role.get("title") != role.get("official_title_raw")
+                or role.get("citation_supports_title") is not True
+                or not valid_public_url(str(role.get("title_source_url") or ""))
+                or not role.get("title_source_observed_at")
+            ):
+                errors.append(f"role_verified_title_incomplete:{role_id}")
+        else:
+            if role.get("official_title_raw") is not None or role.get("title") is not None:
+                errors.append(f"role_unverified_title_published:{role_id}")
+            if role_id not in role.get("display_title_zh", ""):
+                errors.append(f"role_pending_title_not_traceable:{role_id}")
         if any(
             not isinstance(role.get(field), str) or not role.get(field).strip()
             for field in required_text
@@ -425,6 +469,15 @@ def role_display_errors(
         != "roles without explicit remote or hybrid signals are classified as onsite"
     ):
         errors.append("role_display_metadata_default_rule")
+    title_metadata = metadata.get("title_authenticity", {})
+    if title_metadata.get("version") != TITLE_AUTHENTICITY_VERSION:
+        errors.append("title_authenticity_metadata_version")
+    if title_metadata.get("roles_audited") != len(roles):
+        errors.append("title_authenticity_metadata_role_count")
+    if title_metadata.get("status") != dict(sorted(title_status_counts.items())):
+        errors.append("title_authenticity_metadata_status_counts")
+    if title_metadata.get("role_family_used_as_title_fallback") != 0:
+        errors.append("title_authenticity_role_family_fallback")
 
     beisen = [
         role
@@ -685,10 +738,20 @@ def run_default() -> dict[str, Any]:
             )
         )
     if "current-opportunities" in datasets and "roles" in datasets:
-        role_ids = {row["role_id"] for row in datasets["roles"]}
+        role_by_id = {row["role_id"]: row for row in datasets["roles"]}
         for row in datasets["current-opportunities"]:
-            if row["role_id"] not in role_ids:
+            role = role_by_id.get(row["role_id"])
+            if role is None:
                 errors.append(f"current_role_missing:{row['role_id']}")
+                continue
+            if (
+                row.get("title") != role.get("official_title_raw")
+                or row.get("title_source_url") != role.get("title_source_url")
+                or row.get("title_support_status")
+                != role.get("title_support_status")
+                or row.get("citation_supports_title") is not True
+            ):
+                errors.append(f"current_role_title_mismatch:{row['role_id']}")
     errors.extend(scan_text_safety())
     errors.extend(scan_csv_formula())
     errors.extend(workflow_errors())

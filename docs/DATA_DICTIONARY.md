@@ -38,13 +38,28 @@ Evidence 是一条公开来源观察的稳定索引。它可能只是产品页�
 
 每个对象都通过 `evidence_ids` 回到 Evidence。
 
-## Role 双语与地点派生字段
+## Role 岗位标题真实性、双语与地点字段
 
-Role 仍只有一套正式记录。以下字段是同一记录中的确定性展示派生，不是第二套岗位事实：
+Role 仍只有一套正式记录。岗位标题与岗位类别严格分开：`role_family` 只表示阅读用类别，不能填入 `title` 或 `display_title_*`。
+
+岗位标题真实性字段：
+
+- `official_title_raw`：官方来源中的岗位标题原文；无法证明时为 `null`；
+- `title_support_status`：`verified_official_title`、`verified_official_listing`、`pending_title_review`、`source_granularity_insufficient` 或 `disputed`；
+- `title_source_url`：支持标题判断的官方来源；
+- `title_source_granularity`：具体岗位详情、稳定岗位定位、普通列表、招聘总入口或未分类；
+- `stable_role_locator`：岗位编号或稳定定位参数；
+- `citation_supports_title`：该来源是否真的支持当前标题；
+- `title_source_observed_at`：成功读取该来源并核对标题的日期；
+- `title_source_recheck_performed`、`title_source_recheck_attempted_at`、`title_source_observation_status`：复核是否执行、时间和结果；
+- `title_current_eligible_after_gate`：是否通过标题真实性 Current 门；
+- `source_role_descriptor`：历史证据中的工作面描述，仅供溯源，不能当作岗位标题。
+
+以下字段是同一记录中的双语和地点展示，不是第二套岗位事实：
 
 - `role_display_version`：展示派生规则版本；
-- `display_title_zh`：中文岗位方向显示；
-- `display_title_en`：英文岗位方向显示；
+- `display_title_zh`：中文界面岗位标题；无法证明时显示带 Role ID 的待复核文案；
+- `display_title_en`：英文界面岗位标题；无法证明时显示带 Role ID 的待复核文案；
 - `display_location_zh`：中文地点显示；
 - `display_location_en`：英文地点显示；
 - `location_data_status`：地点数据状态；
@@ -79,6 +94,8 @@ Role 仍只有一套正式记录。以下字段是同一记录中的确定性展
 
 - `current_verified`：有充分一手证据确认当前；
 - `current_probable`：在冻结期限内、证据足够但仍保留边界。
+
+此外必须同时满足：标题已核验、引用支持标题、来源为具体岗位页或带稳定岗位定位的官方列表、无需付费或私人访问。
 
 以下状态不能进入当前岗位：
 

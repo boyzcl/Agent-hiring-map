@@ -1,6 +1,6 @@
 # 团队与岗位全景总览
 
-> 数据快照日期：2026-07-23。本页由 `scripts/build_team_role_overview.py` 从公开 JSONL 数据确定性生成；底层数据仍是唯一权威来源。
+> 数据快照日期：2026-07-24。本页由 `scripts/build_team_role_overview.py` 从公开 JSONL 数据确定性生成；底层数据仍是唯一权威来源。
 
 ## 先看结论
 
@@ -9,10 +9,10 @@
 | 团队总数 | 1424 | 中国、美国及 3 个同时标注中美地域的团队 |
 | 有地图岗位记录的团队 | 398 | 至少关联 1 条标准化 Role 记录 |
 | 没有地图岗位记录的团队 | 1026 | 仍保留团队及其证据关系 |
-| 有当前岗位的团队 | 349 | 至少有 1 条记录进入当前岗位视图 |
-| 当前岗位为 0 的团队 | 1075 | 不等于该团队永久不招聘 |
+| 有当前岗位的团队 | 171 | 至少有 1 条记录进入当前岗位视图 |
+| 当前岗位为 0 的团队 | 1253 | 不等于该团队永久不招聘 |
 | 地图岗位记录 | 1148 | 标准化 Role 对象，包含当前、过期、关闭或争议记录 |
-| 当前岗位 | 911 | 通过本次公开快照的日期、来源和访问门 |
+| 当前岗位 | 537 | 通过本次公开快照的日期、来源和访问门 |
 | 安全证据索引 | 7217 | **不是岗位数，也不是招聘人数** |
 
 ## 统计口径
@@ -30,17 +30,17 @@
 
 | 阅读用岗位类别 | 地图岗位记录 | 占地图岗位 | 当前岗位 | 占当前岗位 |
 | --- | ---: | ---: | ---: | ---: |
-| 安全、治理与合规 | 81 | 7.1% | 73 | 8.0% |
-| 评测、测试与质量 | 106 | 9.2% | 82 | 9.0% |
-| 产品与设计 | 194 | 16.9% | 148 | 16.2% |
-| 商务、市场与合作 | 34 | 3.0% | 30 | 3.3% |
-| 客户解决方案与交付 | 98 | 8.5% | 76 | 8.3% |
-| 运营、项目与职能 | 20 | 1.7% | 19 | 2.1% |
-| 算法、研究与模型 | 235 | 20.5% | 191 | 21.0% |
-| 平台、基础设施与数据 | 136 | 11.8% | 122 | 13.4% |
-| 工程与应用开发 | 188 | 16.4% | 142 | 15.6% |
-| 其他或边界岗位 | 56 | 4.9% | 28 | 3.1% |
-| **合计** | **1148** | **100.0%** | **911** | **100.0%** |
+| 安全、治理与合规 | 81 | 7.1% | 38 | 7.1% |
+| 评测、测试与质量 | 106 | 9.2% | 51 | 9.5% |
+| 产品与设计 | 194 | 16.9% | 90 | 16.8% |
+| 商务、市场与合作 | 34 | 3.0% | 26 | 4.8% |
+| 客户解决方案与交付 | 98 | 8.5% | 50 | 9.3% |
+| 运营、项目与职能 | 20 | 1.7% | 13 | 2.4% |
+| 算法、研究与模型 | 235 | 20.5% | 90 | 16.8% |
+| 平台、基础设施与数据 | 136 | 11.8% | 64 | 11.9% |
+| 工程与应用开发 | 188 | 16.4% | 103 | 19.2% |
+| 其他或边界岗位 | 56 | 4.9% | 12 | 2.2% |
+| **合计** | **1148** | **100.0%** | **537** | **100.0%** |
 
 ### 原始岗位族标签（前 25 项）
 
@@ -80,8 +80,8 @@
 
 | 类型 | 数量 | 占比 |
 | --- | ---: | ---: |
-| 中国 | 601 | 66.0% |
-| 美国 | 310 | 34.0% |
+| 中国 | 282 | 52.5% |
+| 美国 | 255 | 47.5% |
 
 ### 地图岗位记录的当前状态
 
@@ -98,22 +98,21 @@
 
 | 类型 | 数量 | 占比 |
 | --- | ---: | ---: |
-| A | 888 | 97.5% |
-| B | 18 | 2.0% |
-| C | 5 | 0.5% |
+| A | 529 | 98.5% |
+| B | 8 | 1.5% |
 
 ### 当前岗位访问方式
 
 | 类型 | 数量 | 占比 |
 | --- | ---: | ---: |
-| 公开网页、无需登录 | 911 | 100.0% |
+| 公开网页、无需登录 | 537 | 100.0% |
 
 ### 当前岗位远程/混合办公字段
 
 | 类型 | 数量 | 占比 |
 | --- | ---: | ---: |
-| 未记录远程或混合办公范围 | 800 | 87.8% |
-| 明确标注远程或混合办公 | 111 | 12.2% |
+| 未记录远程或混合办公范围 | 501 | 93.3% |
+| 明确标注远程或混合办公 | 36 | 6.7% |
 
 > “未记录远程或混合办公范围”不等于必须到岗办公，只表示现有结构化字段没有可靠记录。
 
@@ -121,11 +120,11 @@
 
 | 每团队当前岗位数 | 团队数 | 占全部团队 |
 | --- | ---: | ---: |
-| 0 | 1075 | 75.5% |
-| 1 | 295 | 20.7% |
-| 2–4 | 24 | 1.7% |
-| 5–9 | 15 | 1.1% |
-| 10 及以上 | 15 | 1.1% |
+| 0 | 1253 | 88.0% |
+| 1 | 137 | 9.6% |
+| 2–4 | 14 | 1.0% |
+| 5–9 | 10 | 0.7% |
+| 10 及以上 | 10 | 0.7% |
 
 ## 全部团队完整列表
 
@@ -147,17 +146,17 @@
 | 12 | AI2 Robotics | AI2 Robotics | 中国 | 0 | 0 | — | — | `TEAM-56F9D90D66ECE70A` |
 | 13 | Aix-DB | Aix-DB | 中国 | 0 | 0 | — | — | `TEAM-41DE945A19711321` |
 | 14 | Alibaba / Qwen | Alibaba Group / 阿里巴巴 | 中国 | 0 | 0 | — | — | `TEAM-191C6BA4851C0F80` |
-| 15 | Alibaba Cloud | Alibaba Group / 阿里巴巴 | 中国 | 8 | 8 | 平台、基础设施与数据 5；算法、研究与模型 3 | 平台、基础设施与数据 5；算法、研究与模型 3 | `TEAM-E93396C29114E0C1` |
-| 16 | Alibaba Cloud / 阿里云 | Alibaba Group / 阿里巴巴 | 中国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-7EACDF71A5FB0EF1` |
+| 15 | Alibaba Cloud | Alibaba Group / 阿里巴巴 | 中国 | 8 | 0 | — | 平台、基础设施与数据 5；算法、研究与模型 3 | `TEAM-E93396C29114E0C1` |
+| 16 | Alibaba Cloud / 阿里云 | Alibaba Group / 阿里巴巴 | 中国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-7EACDF71A5FB0EF1` |
 | 17 | Alibaba Cloud Bailian Memory | Alibaba Group / 阿里巴巴 | 中国 | 0 | 0 | — | — | `TEAM-4F3D62E4B08C19EA` |
 | 18 | Alibaba Cloud Data Agent | Alibaba Group / 阿里巴巴 | 中国 | 0 | 0 | — | — | `TEAM-05FC474D88D0048A` |
 | 19 | Alibaba DAMO | Alibaba Group / 阿里巴巴 | 中国 | 1 | 0 | — | 产品与设计 1 | `TEAM-2F587405E1CCE99E` |
-| 20 | Alibaba DAMO / Healthcare AI | Alibaba Group / 阿里巴巴 | 中国 | 2 | 2 | 算法、研究与模型 2 | 算法、研究与模型 2 | `TEAM-E2D79180E8F8E22E` |
-| 21 | Alibaba Group | Alibaba Group / 阿里巴巴 | 中国 | 35 | 35 | 算法、研究与模型 23；平台、基础设施与数据 12 | 算法、研究与模型 23；平台、基础设施与数据 12 | `TEAM-9B39C2D354110033` |
-| 22 | Alibaba Group / 阿里巴巴集团 | Alibaba Group / 阿里巴巴 | 中国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-D451DFA1EE470739` |
-| 23 | Alibaba International / Taobao | Alibaba Group / 阿里巴巴 | 中国 | 8 | 8 | 算法、研究与模型 8 | 算法、研究与模型 8 | `TEAM-796B22C2D17CC606` |
-| 24 | Alibaba Security | Alibaba Group / 阿里巴巴 | 中国 | 5 | 5 | 安全、治理与合规 5 | 安全、治理与合规 5 | `TEAM-BFEBFE01C4C08D95` |
-| 25 | DingTalk / 钉钉 | Alibaba Group / 阿里巴巴 | 中国 | 1 | 1 | 安全、治理与合规 1 | 安全、治理与合规 1 | `TEAM-1970815962963262` |
+| 20 | Alibaba DAMO / Healthcare AI | Alibaba Group / 阿里巴巴 | 中国 | 2 | 0 | — | 算法、研究与模型 2 | `TEAM-E2D79180E8F8E22E` |
+| 21 | Alibaba Group | Alibaba Group / 阿里巴巴 | 中国 | 35 | 0 | — | 算法、研究与模型 23；平台、基础设施与数据 12 | `TEAM-9B39C2D354110033` |
+| 22 | Alibaba Group / 阿里巴巴集团 | Alibaba Group / 阿里巴巴 | 中国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-D451DFA1EE470739` |
+| 23 | Alibaba International / Taobao | Alibaba Group / 阿里巴巴 | 中国 | 8 | 0 | — | 算法、研究与模型 8 | `TEAM-796B22C2D17CC606` |
+| 24 | Alibaba Security | Alibaba Group / 阿里巴巴 | 中国 | 5 | 0 | — | 安全、治理与合规 5 | `TEAM-BFEBFE01C4C08D95` |
+| 25 | DingTalk / 钉钉 | Alibaba Group / 阿里巴巴 | 中国 | 1 | 0 | — | 安全、治理与合规 1 | `TEAM-1970815962963262` |
 | 26 | Nacos / Alibaba | Alibaba Group / 阿里巴巴 | 中国 | 0 | 0 | — | — | `TEAM-F166A36943FD76C6` |
 | 27 | PolarDB for AI DB Agent | Alibaba Group / 阿里巴巴 | 中国 | 0 | 0 | — | — | `TEAM-DE701396CBAAC08A` |
 | 28 | Qoder CN / 通义灵码 | Alibaba Group / 阿里巴巴 | 中国 | 0 | 0 | — | — | `TEAM-5115B2D1287C72C5` |
@@ -172,11 +171,11 @@
 | 37 | 阿里云百炼 | Alibaba Group / 阿里巴巴 | 中国 | 0 | 0 | — | — | `TEAM-CA817346EC8588A0` |
 | 38 | 阿里巴巴达摩院 | Alibaba Group / 阿里巴巴 | 中国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-9B106EA6E56D919F` |
 | 39 | alinesno-infrastructure | alinesno-infrastructure | 中国 | 0 | 0 | — | — | `TEAM-0B792ACBE83E00D2` |
-| 40 | Anker Innovations / 安克创新科技股份有限公司 | Anker Innovations / 安克创新科技股份有限公司 | 中国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-3F1A3714FC833596` |
+| 40 | Anker Innovations / 安克创新科技股份有限公司 | Anker Innovations / 安克创新科技股份有限公司 | 中国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-3F1A3714FC833596` |
 | 41 | Anspire | Anspire | 中国 | 0 | 0 | — | — | `TEAM-3C0C4F90451D0CC4` |
 | 42 | agentUniverse | Ant Group / 蚂蚁集团 | 中国 | 0 | 0 | — | — | `TEAM-D07D0DBD405A2C1A` |
 | 43 | Alipay AI Agent Payments | Ant Group / 蚂蚁集团 | 中国 | 0 | 0 | — | — | `TEAM-2E3029BF92B55974` |
-| 44 | Ant Group / 蚂蚁集团 | Ant Group / 蚂蚁集团 | 中国 | 19 | 19 | 安全、治理与合规 5；算法、研究与模型 5；其他或边界岗位 3；工程与应用开发 2；评测、测试与质量 1；产品与设计 1；客户解决方案与交付 1；平台、基础设施与数据 1 | 安全、治理与合规 5；算法、研究与模型 5；其他或边界岗位 3；工程与应用开发 2；评测、测试与质量 1；产品与设计 1；客户解决方案与交付 1；平台、基础设施与数据 1 | `TEAM-4EB90FAA9CA3D00B` |
+| 44 | Ant Group / 蚂蚁集团 | Ant Group / 蚂蚁集团 | 中国 | 19 | 0 | — | 安全、治理与合规 5；算法、研究与模型 5；其他或边界岗位 3；工程与应用开发 2；评测、测试与质量 1；产品与设计 1；客户解决方案与交付 1；平台、基础设施与数据 1 | `TEAM-4EB90FAA9CA3D00B` |
 | 45 | AntV AI Visualization Team | Ant Group / 蚂蚁集团 | 中国 | 0 | 0 | — | — | `TEAM-66A49BA3F33C06E6` |
 | 46 | InclusionAI / Ant Group | Ant Group / 蚂蚁集团 | 中国 | 0 | 0 | — | — | `TEAM-4E410FE4A196DA1C` |
 | 47 | 蚂蚁数字科技 / Ant Digital | Ant Group / 蚂蚁集团 | 中国 | 0 | 0 | — | — | `TEAM-1CF0136C7EA345A0` |
@@ -186,8 +185,8 @@
 | 51 | 百川智能 | Baichuan Intelligence / 百川智能 | 中国 | 0 | 0 | — | — | `TEAM-9A976AD93BA42646` |
 | 52 | Baidu ACG Agent Product GTM | Baidu / 百度 | 中国 | 1 | 1 | 商务、市场与合作 1 | 商务、市场与合作 1 | `TEAM-8BDA57274A79792F` |
 | 53 | Baidu ACG AI Coding Adoption | Baidu / 百度 | 中国 | 0 | 0 | — | — | `TEAM-2C25CF2963AC1862` |
-| 54 | Baidu Agent Data Security Platform | Baidu / 百度 | 中国 | 1 | 1 | 安全、治理与合规 1 | 安全、治理与合规 1 | `TEAM-15BF12C8BF2FB6DF` |
-| 55 | Baidu AI-Native Monitoring Agent / ACG | Baidu / 百度 | 中国 | 1 | 1 | 平台、基础设施与数据 1 | 平台、基础设施与数据 1 | `TEAM-F269807922697440` |
+| 54 | Baidu Agent Data Security Platform | Baidu / 百度 | 中国 | 1 | 0 | — | 安全、治理与合规 1 | `TEAM-15BF12C8BF2FB6DF` |
+| 55 | Baidu AI-Native Monitoring Agent / ACG | Baidu / 百度 | 中国 | 1 | 0 | — | 平台、基础设施与数据 1 | `TEAM-F269807922697440` |
 | 56 | Baidu Application Model R&D | Baidu / 百度 | 中国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-11C07887C6CEBAF5` |
 | 57 | Baidu Brand Advertising Agent Strategy / MEG | Baidu / 百度 | 中国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-E754EA4690AC9C55` |
 | 58 | Baidu Cloud Agent Infra / ACG | Baidu / 百度 | 中国 | 1 | 1 | 平台、基础设施与数据 1 | 平台、基础设施与数据 1 | `TEAM-6A0E00EAAAE75C03` |
@@ -197,11 +196,11 @@
 | 62 | Baidu Customer-Service QA Agent Adoption / PSIG | Baidu / 百度 | 中国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-BBD4396F87DDFB5D` |
 | 63 | Baidu Data Intelligence Agent Platform / ACG | Baidu / 百度 | 中国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-8225105C76267E0B` |
 | 64 | Baidu DuMate Agent Ecosystem / ACG | Baidu / 百度 | 中国 | 1 | 1 | 运营、项目与职能 1 | 运营、项目与职能 1 | `TEAM-524DF651E26D40C0` |
-| 65 | Baidu DuMate Agent Evaluation / ACG | Baidu / 百度 | 中国 | 1 | 1 | 评测、测试与质量 1 | 评测、测试与质量 1 | `TEAM-3240F4EC74CE1776` |
-| 66 | Baidu DuMate Agent Platform / ACG | Baidu / 百度 | 中国 | 1 | 1 | 平台、基础设施与数据 1 | 平台、基础设施与数据 1 | `TEAM-5619B2FCC094E8EC` |
-| 67 | Baidu DuMate Agent Runtime / ACG | Baidu / 百度 | 中国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-2D0F6E9599DCFDF1` |
+| 65 | Baidu DuMate Agent Evaluation / ACG | Baidu / 百度 | 中国 | 1 | 0 | — | 评测、测试与质量 1 | `TEAM-3240F4EC74CE1776` |
+| 66 | Baidu DuMate Agent Platform / ACG | Baidu / 百度 | 中国 | 1 | 0 | — | 平台、基础设施与数据 1 | `TEAM-5619B2FCC094E8EC` |
+| 67 | Baidu DuMate Agent Runtime / ACG | Baidu / 百度 | 中国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-2D0F6E9599DCFDF1` |
 | 68 | Baidu DuMate Product Management / ACG | Baidu / 百度 | 中国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-2E62B4592CE8C811` |
-| 69 | Baidu DuMate User And Growth Operations / ACG | Baidu / 百度 | 中国 | 1 | 1 | 商务、市场与合作 1 | 商务、市场与合作 1 | `TEAM-67F2FB6DFB914EA5` |
+| 69 | Baidu DuMate User And Growth Operations / ACG | Baidu / 百度 | 中国 | 1 | 0 | — | 商务、市场与合作 1 | `TEAM-67F2FB6DFB914EA5` |
 | 70 | Baidu Ecommerce Agent Product / MEG | Baidu / 百度 | 中国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-7982881A9CB9AC8B` |
 | 71 | Baidu Famou / ACG | Baidu / 百度 | 中国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-FBF5FCBD04B1E2E2` |
 | 72 | Baidu Famou Agent Growth Operations / ACG | Baidu / 百度 | 中国 | 1 | 1 | 商务、市场与合作 1 | 商务、市场与合作 1 | `TEAM-E6A4A31E67C03679` |
@@ -209,7 +208,7 @@
 | 74 | Baidu Foundation Model Code Agent | Baidu / 百度 | 中国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-4DE686E58481773D` |
 | 75 | Baidu Health / MEG | Baidu / 百度 | 中国 | 4 | 4 | 产品与设计 4 | 产品与设计 4 | `TEAM-B795F5DA51F4B07B` |
 | 76 | Baidu Health Agent Evaluation / MEG | Baidu / 百度 | 中国 | 1 | 1 | 评测、测试与质量 1 | 评测、测试与质量 1 | `TEAM-EFF5143E64F1EEDA` |
-| 77 | Baidu IDG Voice and Vehicle Agent | Baidu / 百度 | 中国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-59E1B3A16A9B95E4` |
+| 77 | Baidu IDG Voice and Vehicle Agent | Baidu / 百度 | 中国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-59E1B3A16A9B95E4` |
 | 78 | Baidu Intelligent Operations LLM System / ACG | Baidu / 百度 | 中国 | 0 | 0 | — | — | `TEAM-CF4918E4A9BD8B68` |
 | 79 | Baidu Large-Model Application Platform / ACG | Baidu / 百度 | 中国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-F40C9A807DDCBDEB` |
 | 80 | Baidu Maps Agent Adoption / IDG | Baidu / 百度 | 中国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-DCA0815D9A8F9DCD` |
@@ -224,10 +223,10 @@
 | 89 | Baidu PSIG Code Agent | Baidu / 百度 | 中国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-4EE541AB0F3C016B` |
 | 90 | Baidu PSIG Multi-Agent Architecture | Baidu / 百度 | 中国 | 1 | 1 | 客户解决方案与交付 1 | 客户解决方案与交付 1 | `TEAM-DCC51275C3E9AD90` |
 | 91 | Baidu PSIG Office Agent | Baidu / 百度 | 中国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-8DC1D0091D6FE69F` |
-| 92 | Baidu Qianfan Agent And Tools Platform / ACG | Baidu / 百度 | 中国 | 1 | 1 | 平台、基础设施与数据 1 | 平台、基础设施与数据 1 | `TEAM-98E028F340F44F34` |
+| 92 | Baidu Qianfan Agent And Tools Platform / ACG | Baidu / 百度 | 中国 | 1 | 0 | — | 平台、基础设施与数据 1 | `TEAM-98E028F340F44F34` |
 | 93 | Baidu Qianfan AppBuilder | Baidu / 百度 | 中国 | 1 | 1 | 客户解决方案与交付 1 | 客户解决方案与交付 1 | `TEAM-18F4FF7B7EB405FB` |
 | 94 | Baidu Qianfan Financial AI Solutions / ACG | Baidu / 百度 | 中国 | 1 | 1 | 客户解决方案与交付 1 | 客户解决方案与交付 1 | `TEAM-F7C26F3598F459E8` |
-| 95 | Baidu Qianfan Next-Generation Agent Backend / ACG | Baidu / 百度 | 中国 | 1 | 1 | 平台、基础设施与数据 1 | 平台、基础设施与数据 1 | `TEAM-DBA2F4C0774A2C76` |
+| 95 | Baidu Qianfan Next-Generation Agent Backend / ACG | Baidu / 百度 | 中国 | 1 | 0 | — | 平台、基础设施与数据 1 | `TEAM-DBA2F4C0774A2C76` |
 | 96 | Baidu Sales Data Analysis Agent / MEG | Baidu / 百度 | 中国 | 1 | 1 | 平台、基础设施与数据 1 | 平台、基础设施与数据 1 | `TEAM-A68E972CCC6A1B37` |
 | 97 | Baidu Search DuMate / ACG | Baidu / 百度 | 中国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-D2AFA6826EB5080B` |
 | 98 | Baidu Security & Enterprise Efficiency Platform | Baidu / 百度 | 中国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-13E09E0C7F2A9CF5` |
@@ -241,7 +240,7 @@
 | 106 | 百度文心快码 Comate | Baidu / 百度 | 中国 | 0 | 0 | — | — | `TEAM-F83095E35FF6A918` |
 | 107 | 百度智能云客悦 | Baidu / 百度 | 中国 | 0 | 0 | — | — | `TEAM-28EB631E4BE09686` |
 | 108 | 百度智能云曦灵数字人 | Baidu / 百度 | 中国 | 0 | 0 | — | — | `TEAM-574C7BBF02D1DD76` |
-| 109 | Beike / 贝壳 | Beike / 贝壳 | 中国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-5D1A631E81D07B62` |
+| 109 | Beike / 贝壳 | Beike / 贝壳 | 中国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-5D1A631E81D07B62` |
 | 110 | BlueFocus Group / 蓝色光标集团 | BlueFocus Group / 蓝色光标集团 | 中国 | 2 | 2 | 产品与设计 1；工程与应用开发 1 | 产品与设计 1；工程与应用开发 1 | `TEAM-A5F79437673A2BD4` |
 | 111 | Bocha AI Search | Bocha | 中国 | 0 | 0 | — | — | `TEAM-87A1A9849239B358` |
 | 112 | ArkClaw / ByteDance | ByteDance / 字节跳动 | 中国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-A53BD0E7DFCC42B9` |
@@ -284,30 +283,30 @@
 | 149 | 火山引擎 / 字节跳动 | ByteDance / 字节跳动 | 中国 | 0 | 0 | — | — | `TEAM-3E5C13A18A592EED` |
 | 150 | 火山引擎 HiAgent | ByteDance / 字节跳动 | 中国 | 0 | 0 | — | — | `TEAM-CAC22D01A38A0272` |
 | 151 | 火山方舟 | ByteDance / 字节跳动 | 中国 | 0 | 0 | — | — | `TEAM-02DCFC7FE5ED320C` |
-| 152 | 飞书 AI / 字节跳动 | ByteDance / 字节跳动 | 中国 | 1 | 1 | 评测、测试与质量 1 | 评测、测试与质量 1 | `TEAM-876CF740DEDE88B0` |
+| 152 | 飞书 AI / 字节跳动 | ByteDance / 字节跳动 | 中国 | 1 | 0 | — | 评测、测试与质量 1 | `TEAM-876CF740DEDE88B0` |
 | 153 | 飞书 aily | ByteDance / 字节跳动 | 中国 | 0 | 0 | — | — | `TEAM-DB2151F0338299B7` |
 | 154 | 飞书 Aily 工作助手 | ByteDance / 字节跳动 | 中国 | 0 | 0 | — | — | `TEAM-1E3CB03E4E63B937` |
 | 155 | 飞书 OpenClaw | ByteDance / 字节跳动 | 中国 | 0 | 0 | — | — | `TEAM-28BC619C44F8261D` |
 | 156 | 飞书招聘 AI 模板 | ByteDance / 字节跳动 | 中国 | 0 | 0 | — | — | `TEAM-633140B272D446AB` |
 | 157 | Chengdu Aircraft Design and Research Institute / 成都飞机设计研究所 | Chengdu Aircraft Design and Research Institute / 成都飞机设计研究所 | 中国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-E2C0A021F5D540FD` |
 | 158 | Chengdu RockBase Technology Co., Ltd. | Chengdu RockBase Technology Co., Ltd. | 中国 | 0 | 0 | — | — | `TEAM-0570EFB16C89960D` |
-| 159 | China Aerospace Science and Industry Corporation / 中国航天科工集团 | China Aerospace Science and Industry Corporation / 中国航天科工集团 | 中国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-6E745D050E756DEE` |
-| 160 | Shanghai Zhenhua Heavy Industries / 上海振华重工 | China Communications Construction Company / 中国交建 | 中国 | 1 | 1 | 客户解决方案与交付 1 | 客户解决方案与交付 1 | `TEAM-A3A15106B4F1D066` |
-| 161 | 中金资本 | China International Capital Corporation / 中金公司 | 中国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-E9D14ED755DF5C13` |
-| 162 | China Guangfa Bank / 广发银行 | China Life Insurance (Group) Company / 中国人寿保险（集团）公司 | 中国 | 1 | 1 | 客户解决方案与交付 1 | 客户解决方案与交付 1 | `TEAM-81C1CEE23B575988` |
+| 159 | China Aerospace Science and Industry Corporation / 中国航天科工集团 | China Aerospace Science and Industry Corporation / 中国航天科工集团 | 中国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-6E745D050E756DEE` |
+| 160 | Shanghai Zhenhua Heavy Industries / 上海振华重工 | China Communications Construction Company / 中国交建 | 中国 | 1 | 0 | — | 客户解决方案与交付 1 | `TEAM-A3A15106B4F1D066` |
+| 161 | 中金资本 | China International Capital Corporation / 中金公司 | 中国 | 1 | 0 | — | 产品与设计 1 | `TEAM-E9D14ED755DF5C13` |
+| 162 | China Guangfa Bank / 广发银行 | China Life Insurance (Group) Company / 中国人寿保险（集团）公司 | 中国 | 1 | 0 | — | 客户解决方案与交付 1 | `TEAM-81C1CEE23B575988` |
 | 163 | China Literature / 阅文集团 | China Literature / 阅文集团 | 中国 | 0 | 0 | — | — | `TEAM-10701887A10D0295` |
 | 164 | China Merchants Fintech / 招商金科 | China Merchants Group / 招商局集团 | 中国 | 0 | 0 | — | — | `TEAM-1124AE101524F67B` |
-| 165 | China Merchants Group / 招商局集团 | China Merchants Group / 招商局集团 | 中国 | 1 | 1 | 平台、基础设施与数据 1 | 平台、基础设施与数据 1 | `TEAM-4C1227E332C30402` |
+| 165 | China Merchants Group / 招商局集团 | China Merchants Group / 招商局集团 | 中国 | 1 | 0 | — | 平台、基础设施与数据 1 | `TEAM-4C1227E332C30402` |
 | 166 | Lion Rock Laboratory / 狮子山实验室 | China Merchants Group / 招商局集团 | 中国 | 0 | 0 | — | — | `TEAM-461321604EE29F3C` |
-| 167 | 招商交科 | China Merchants Group / 招商局集团 | 中国 | 1 | 1 | 运营、项目与职能 1 | 运营、项目与职能 1 | `TEAM-915C0BA216431001` |
+| 167 | 招商交科 | China Merchants Group / 招商局集团 | 中国 | 1 | 0 | — | 运营、项目与职能 1 | `TEAM-915C0BA216431001` |
 | 168 | 中国电信人工智能研究院（TeleAI） | China Telecom | 中国 | 0 | 0 | — | — | `TEAM-111290911E5FFA1F` |
 | 169 | China Unicom AI / 中国联通人工智能创新中心 | China Unicom | 中国 | 0 | 0 | — | — | `TEAM-09762ED30A6CD9C7` |
 | 170 | 中国联通软件研究院 | China Unicom | 中国 | 0 | 0 | — | — | `TEAM-178FB0B19A6C0F11` |
-| 171 | China Unicom Data Intelligence / 联通数据智能有限公司 | China Unicom Data Intelligence / 联通数据智能有限公司 | 中国 | 2 | 2 | 评测、测试与质量 1；平台、基础设施与数据 1 | 评测、测试与质量 1；平台、基础设施与数据 1 | `TEAM-7C813ECA7D98B383` |
+| 171 | China Unicom Data Intelligence / 联通数据智能有限公司 | China Unicom Data Intelligence / 联通数据智能有限公司 | 中国 | 2 | 0 | — | 评测、测试与质量 1；平台、基础设施与数据 1 | `TEAM-7C813ECA7D98B383` |
 | 172 | CAS-SIAT XinHai / 中国科学院深圳先进技术研究院心海团队 | Chinese Academy of Sciences | 中国 | 0 | 0 | — | — | `TEAM-2DF841E6C7F769A0` |
-| 173 | Chinese Academy of Sciences Institute of Industrial AI / 中国科学院工业人工智能研究所 | Chinese Academy of Sciences | 中国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-EF3961CEC6861694` |
+| 173 | Chinese Academy of Sciences Institute of Industrial AI / 中国科学院工业人工智能研究所 | Chinese Academy of Sciences | 中国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-EF3961CEC6861694` |
 | 174 | Computer Network Information Center, Chinese Academy of Sciences / 中国科学院计算机网络信息中心 | Chinese Academy of Sciences | 中国 | 0 | 0 | — | — | `TEAM-91734E3B5EF88E75` |
-| 175 | 中国科学院上海微系统与信息技术研究所仿生视觉系统实验室 | Chinese Academy of Sciences | 中国 | 1 | 1 | 平台、基础设施与数据 1 | 平台、基础设施与数据 1 | `TEAM-D6F27F3B5244CE17` |
+| 175 | 中国科学院上海微系统与信息技术研究所仿生视觉系统实验室 | Chinese Academy of Sciences | 中国 | 1 | 0 | — | 平台、基础设施与数据 1 | `TEAM-D6F27F3B5244CE17` |
 | 176 | CicadaRelay / Deconstruction Lab | CicadaRelay / Deconstruction Lab | 中国 | 0 | 0 | — | — | `TEAM-14D2CAF2F6CACB8D` |
 | 177 | Claude Code Stock Deep Research Agent / liangdabiao | Claude Code Stock Deep Research Agent / liangdabiao | 中国 | 0 | 0 | — | — | `TEAM-8B304FCA5A9A0FF7` |
 | 178 | CodeFuse | CodeFuse | 中国 | 0 | 0 | — | — | `TEAM-F1949EB0527B2B2E` |
@@ -334,22 +333,22 @@
 | 199 | Fanruan / 帆软 | Fanruan / 帆软 | 中国 | 0 | 0 | — | — | `TEAM-621A3D417822CADF` |
 | 200 | 帆软 FineChatBI | Fanruan / 帆软 | 中国 | 0 | 0 | — | — | `TEAM-CD2B2B7E8D1DACD3` |
 | 201 | FastGPT | FastGPT | 中国 | 0 | 0 | — | — | `TEAM-D38FA220CBBC0894` |
-| 202 | Fastlane | Fastlane | 中国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-99818182A816A9E1` |
+| 202 | Fastlane | Fastlane | 中国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-99818182A816A9E1` |
 | 203 | Fellou | Fellou | 中国 | 0 | 0 | — | — | `TEAM-E1080118709F5BFD` |
 | 204 | fisher-admin / FisherQuant | fisher-admin / FisherQuant | 中国 | 0 | 0 | — | — | `TEAM-2C552D9E7E7C79A9` |
 | 205 | MaxKB | FIT2CLOUD 飞致云 | 中国 | 0 | 0 | — | — | `TEAM-B9A50F8996603726` |
 | 206 | Fitten Code | Fitten Code | 中国 | 0 | 0 | — | — | `TEAM-A83272728AA0978B` |
 | 207 | Flowith | Flowith | 中国 | 0 | 0 | — | — | `TEAM-0018D46E3A1C45D0` |
-| 208 | Fosun Pharma / 复星医药 | Fosun Pharma | 中国 | 2 | 2 | 评测、测试与质量 1；产品与设计 1 | 评测、测试与质量 1；产品与设计 1 | `TEAM-DF858E57CF922BC2` |
+| 208 | Fosun Pharma / 复星医药 | Fosun Pharma | 中国 | 2 | 0 | — | 评测、测试与质量 1；产品与设计 1 | `TEAM-DF858E57CF922BC2` |
 | 209 | FOTILE / 方太集团 | FOTILE / 方太集团 | 中国 | 0 | 0 | — | — | `TEAM-4C3691E77F787BCD` |
 | 210 | OpenManus / FoundationAgents | FoundationAgents / MetaGPT contributor team | 中国 | 0 | 0 | — | — | `TEAM-4BA1122E78A5E701` |
 | 211 | Galaxea AI | Galaxea AI | 中国 | 0 | 0 | — | — | `TEAM-3A266173EBAE2B01` |
 | 212 | GeminiLight / MindOS | GeminiLight / MindOS | 中国 | 0 | 0 | — | — | `TEAM-E48AF22B87F5DD2E` |
-| 213 | GienTech / 中电金信 | GienTech / 中电金信 | 中国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-D4125845A7A4E50A` |
+| 213 | GienTech / 中电金信 | GienTech / 中电金信 | 中国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-D4125845A7A4E50A` |
 | 214 | GraphFlow / Roarpeng | GraphFlow / Roarpeng | 中国 | 0 | 0 | — | — | `TEAM-FEACA6372AC55E46` |
 | 215 | Hisense | Hisense | 中国 | 0 | 0 | — | — | `TEAM-B5EA6FB7C97707CE` |
 | 216 | Home Assistant China (unofficial) | Home Assistant China (unofficial) | 中国 | 0 | 0 | — | — | `TEAM-D43F9F98C20C1896` |
-| 217 | Huawei | Huawei / 华为 | 中国 | 1 | 1 | 安全、治理与合规 1 | 安全、治理与合规 1 | `TEAM-B0D2AD7D55FEA28A` |
+| 217 | Huawei | Huawei / 华为 | 中国 | 1 | 0 | — | 安全、治理与合规 1 | `TEAM-B0D2AD7D55FEA28A` |
 | 218 | 仓颉编程语言 / Cangjie Team | Huawei / 华为 | 中国 | 0 | 0 | — | — | `TEAM-66249E445BCC8582` |
 | 219 | 华为云 | Huawei / 华为 | 中国 | 0 | 0 | — | — | `TEAM-D077810FC68F0C28` |
 | 220 | 华为云 Agent 开发平台 | Huawei / 华为 | 中国 | 0 | 0 | — | — | `TEAM-FE2A0FD55B772469` |
@@ -361,7 +360,7 @@
 | 226 | IDEA Digital Economy Institute / IDEA数字经济研究院 | IDEA Digital Economy Institute / IDEA数字经济研究院 | 中国 | 0 | 0 | — | — | `TEAM-BF575E05DA9490C2` |
 | 227 | IdeaSeek | IdeaSeek | 中国 | 0 | 0 | — | — | `TEAM-340E58CA55E8B36F` |
 | 228 | iFlyCode | iFlyCode | 中国 | 0 | 0 | — | — | `TEAM-D872FBA37029D858` |
-| 229 | 科大讯飞 / iFlytek | iFlytek / 科大讯飞 | 中国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-889A367F8936B71F` |
+| 229 | 科大讯飞 / iFlytek | iFlytek / 科大讯飞 | 中国 | 1 | 0 | — | 产品与设计 1 | `TEAM-889A367F8936B71F` |
 | 230 | 讯飞 AstronClaw | iFlytek / 科大讯飞 | 中国 | 0 | 0 | — | — | `TEAM-0312DCA1B4A62D88` |
 | 231 | 讯飞听见 AI | iFlytek / 科大讯飞 | 中国 | 0 | 0 | — | — | `TEAM-09DF1BD40239D62A` |
 | 232 | 讯飞星火 | iFlytek / 科大讯飞 | 中国 | 0 | 0 | — | — | `TEAM-FF0F8ACEB1E9FA95` |
@@ -372,8 +371,8 @@
 | 237 | imcp / imcp.pro | imcp / imcp.pro | 中国 | 0 | 0 | — | — | `TEAM-FC286DBF02C5C96E` |
 | 238 | Inspire Group / 英湃数字科技 | Inspire Group / 英湃数字科技 | 中国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-D2C49B2C1B824800` |
 | 239 | itongban ChatBI | itongban | 中国 | 0 | 0 | — | — | `TEAM-5CA9969A518DA06B` |
-| 240 | iWhaleCloud / 浩鲸科技 | iWhaleCloud / 浩鲸科技 | 中国 | 1 | 1 | 客户解决方案与交付 1 | 客户解决方案与交付 1 | `TEAM-0266AED0EA91186B` |
-| 241 | BOE / 京东方 | JD.com / 京东 | 中国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-6F48E6D594A605A0` |
+| 240 | iWhaleCloud / 浩鲸科技 | iWhaleCloud / 浩鲸科技 | 中国 | 1 | 0 | — | 客户解决方案与交付 1 | `TEAM-0266AED0EA91186B` |
+| 241 | BOE / 京东方 | JD.com / 京东 | 中国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-6F48E6D594A605A0` |
 | 242 | JD Group | JD.com / 京东 | 中国 | 0 | 0 | — | — | `TEAM-86AE0137DCDBEECD` |
 | 243 | JD Health | JD.com / 京东 | 中国 | 0 | 0 | — | — | `TEAM-A6FDC52687472CD4` |
 | 244 | JD Technology | JD.com / 京东 | 中国 | 0 | 0 | — | — | `TEAM-D436BE460C446641` |
@@ -384,11 +383,11 @@
 | 249 | WPS AI / WPS 灵犀 | Kingsoft Office / 金山办公 | 中国 | 0 | 0 | — | — | `TEAM-7A58272A7BB0DA2E` |
 | 250 | 金山办公 AI 简历助手 | Kingsoft Office / 金山办公 | 中国 | 0 | 0 | — | — | `TEAM-1FF95733B8D6027F` |
 | 251 | KittLabs / KittLabsAI | KittLabs / KittLabsAI | 中国 | 0 | 0 | — | — | `TEAM-0C02C7F2DE47823C` |
-| 252 | Kuaishou | Kuaishou / 快手 | 中国 | 41 | 41 | 产品与设计 21；算法、研究与模型 11；平台、基础设施与数据 6；安全、治理与合规 3 | 产品与设计 21；算法、研究与模型 11；平台、基础设施与数据 6；安全、治理与合规 3 | `TEAM-7CBEFC2F5E1FCB9A` |
+| 252 | Kuaishou | Kuaishou / 快手 | 中国 | 41 | 0 | — | 产品与设计 21；算法、研究与模型 11；平台、基础设施与数据 6；安全、治理与合规 3 | `TEAM-7CBEFC2F5E1FCB9A` |
 | 253 | Kuehne+Nagel / 德迅 | Kuehne+Nagel / 德迅 | 中国 | 0 | 0 | — | — | `TEAM-FC7881FCC95461D7` |
 | 254 | Kyligence Zen | Kyligence Zen | 中国 | 0 | 0 | — | — | `TEAM-C975E37C673A64A7` |
-| 255 | Laiye / 来也科技 | Laiye / 来也科技 | 中国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-E89F3F39C8602535` |
-| 256 | Dify / LangGenius | LangGenius | 中国 | 3 | 3 | 产品与设计 2；平台、基础设施与数据 1 | 产品与设计 2；平台、基础设施与数据 1 | `TEAM-168FBE3E61DABA2A` |
+| 255 | Laiye / 来也科技 | Laiye / 来也科技 | 中国 | 1 | 0 | — | 产品与设计 1 | `TEAM-E89F3F39C8602535` |
+| 256 | Dify / LangGenius | LangGenius | 中国 | 3 | 0 | — | 产品与设计 2；平台、基础设施与数据 1 | `TEAM-168FBE3E61DABA2A` |
 | 257 | Leapmotor / 浙江零跑科技股份有限公司 | Leapmotor / 浙江零跑科技股份有限公司 | 中国 | 2 | 0 | — | 算法、研究与模型 1；工程与应用开发 1 | `TEAM-0EB69C82191FFC33` |
 | 258 | Li Auto / 理想汽车 | Li Auto / 理想汽车 | 中国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-E7EA10B1C04ACE7D` |
 | 259 | Lulula | Lulula | 中国 | 0 | 0 | — | — | `TEAM-B4698E64FF2A4B6B` |
@@ -400,7 +399,7 @@
 | 265 | MEACHEAL Research Center / MRC Data | MEACHEAL Research Center / MRC Data | 中国 | 0 | 0 | — | — | `TEAM-633C727B2BFA1D36` |
 | 266 | Meitu / 美图 | Meitu / 美图 | 中国 | 0 | 0 | — | — | `TEAM-26CA945764BFA751` |
 | 267 | Meituan / 美团 | Meituan / 美团 | 中国 | 0 | 0 | — | — | `TEAM-72B0D4802A76E095` |
-| 268 | Meituan Core Local Commerce | Meituan / 美团 | 中国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-65C206EB78C72700` |
+| 268 | Meituan Core Local Commerce | Meituan / 美团 | 中国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-65C206EB78C72700` |
 | 269 | Meituan Platform | Meituan / 美团 | 中国 | 0 | 0 | — | — | `TEAM-810E49C2F995B9E7` |
 | 270 | Meituan Restaurant SaaS Platform | Meituan / 美团 | 中国 | 0 | 0 | — | — | `TEAM-4AD3673324FD655C` |
 | 271 | MemOS / OpenMem (MemTensor org) | MemTensor | 中国 | 0 | 0 | — | — | `TEAM-8C38CA2C127A52FA` |
@@ -410,20 +409,20 @@
 | 275 | MiniMax | MiniMax | 中国 | 28 | 28 | 平台、基础设施与数据 7；工程与应用开发 7；评测、测试与质量 4；产品与设计 4；客户解决方案与交付 3；安全、治理与合规 1；算法、研究与模型 1；其他或边界岗位 1 | 平台、基础设施与数据 7；工程与应用开发 7；评测、测试与质量 4；产品与设计 4；客户解决方案与交付 3；安全、治理与合规 1；算法、研究与模型 1；其他或边界岗位 1 | `TEAM-CA43507C9674341D` |
 | 276 | MiniMax Agent | MiniMax | 中国 | 0 | 0 | — | — | `TEAM-9B5332F90EC1D267` |
 | 277 | MiniMax Code | MiniMax | 中国 | 0 | 0 | — | — | `TEAM-D7F9250FE721EE0E` |
-| 278 | Mininglamp Technology / 明略科技 | Mininglamp Technology / 明略科技 | 中国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-37BCBC1B0B905942` |
+| 278 | Mininglamp Technology / 明略科技 | Mininglamp Technology / 明略科技 | 中国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-37BCBC1B0B905942` |
 | 279 | ModelBest / 面壁智能 | ModelBest / 面壁智能 | 中国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-CCF3F15BB0083947` |
 | 280 | ModelScope / 魔搭 | ModelScope / 魔搭 | 中国 | 0 | 0 | — | — | `TEAM-9A9B9F80FDC3D972` |
 | 281 | ModelScope AgentScope | ModelScope AgentScope | 中国 | 0 | 0 | — | — | `TEAM-BCCDC5B2CAE95059` |
-| 282 | Moka / 北京希瑞亚斯科技有限公司 | Moka / 北京希瑞亚斯科技有限公司 | 中国 | 4 | 3 | 客户解决方案与交付 1；平台、基础设施与数据 1；工程与应用开发 1 | 客户解决方案与交付 1；平台、基础设施与数据 1；工程与应用开发 1；其他或边界岗位 1 | `TEAM-D786573431C98A46` |
+| 282 | Moka / 北京希瑞亚斯科技有限公司 | Moka / 北京希瑞亚斯科技有限公司 | 中国 | 4 | 0 | — | 客户解决方案与交付 1；平台、基础设施与数据 1；工程与应用开发 1；其他或边界岗位 1 | `TEAM-D786573431C98A46` |
 | 283 | Moka AI | Moka AI | 中国 | 0 | 0 | — | — | `TEAM-B286549211894671` |
 | 284 | Momenta | Momenta | 中国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-6DAFFA2656E93E53` |
 | 285 | Kimi / Moonshot AI | Moonshot AI / 月之暗面 | 中国 | 0 | 0 | — | — | `TEAM-61987EE17F2DAC44` |
 | 286 | Kimi Code | Moonshot AI / 月之暗面 | 中国 | 0 | 0 | — | — | `TEAM-4F76BC3A43227B02` |
-| 287 | Moonshot AI / Kimi | Moonshot AI / 月之暗面 | 中国 | 16 | 16 | 算法、研究与模型 5；工程与应用开发 5；产品与设计 2；平台、基础设施与数据 2；安全、治理与合规 1；商务、市场与合作 1 | 算法、研究与模型 5；工程与应用开发 5；产品与设计 2；平台、基础设施与数据 2；安全、治理与合规 1；商务、市场与合作 1 | `TEAM-CC6AC36EAB07A189` |
+| 287 | Moonshot AI / Kimi | Moonshot AI / 月之暗面 | 中国 | 16 | 0 | — | 算法、研究与模型 5；工程与应用开发 5；产品与设计 2；平台、基础设施与数据 2；安全、治理与合规 1；商务、市场与合作 1 | `TEAM-CC6AC36EAB07A189` |
 | 288 | MorphixAI / Morphicai | MorphixAI / Morphicai | 中国 | 0 | 0 | — | — | `TEAM-F523096B29FBF0F8` |
 | 289 | Naoli / 脑利 | Naoli / 脑利 | 中国 | 1 | 1 | 评测、测试与质量 1 | 评测、测试与质量 1 | `TEAM-69CBFDD7714FF326` |
 | 290 | Nebutra Intelligence / 无锡 Nebutra Intelligence | Nebutra Intelligence / 无锡 Nebutra Intelligence | 中国 | 0 | 0 | — | — | `TEAM-0DE709FC4D1BDB56` |
-| 291 | 网易严选 | NetEase / 网易 | 中国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-25AEFA73B96ED7B5` |
+| 291 | 网易严选 | NetEase / 网易 | 中国 | 1 | 0 | — | 产品与设计 1 | `TEAM-25AEFA73B96ED7B5` |
 | 292 | 网易云音乐 | NetEase / 网易 | 中国 | 0 | 0 | — | — | `TEAM-CEFC0248E1AE2590` |
 | 293 | 网易伏羲 | NetEase / 网易 | 中国 | 0 | 0 | — | — | `TEAM-45A5F8E063367E82` |
 | 294 | 网易元气 | NetEase / 网易 | 中国 | 0 | 0 | — | — | `TEAM-0BBB7BC4116E2868` |
@@ -442,12 +441,12 @@
 | 307 | openEuler / SIG-Intelligence | OpenAtom Foundation / 开放原子开源基金会 | 中国 | 0 | 0 | — | — | `TEAM-974B50AEDBFBD27C` |
 | 308 | OpenCSG / 北京开放传神科技有限公司 | OpenCSG / 北京开放传神科技有限公司 | 中国 | 0 | 0 | — | — | `TEAM-98104ED059611AEE` |
 | 309 | JiuwenSwarm / openJiuwen | openJiuwen community | 中国 | 0 | 0 | — | — | `TEAM-C4E876DE57987A92` |
-| 310 | OPPO | OPPO | 中国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-79B064F0669BC157` |
+| 310 | OPPO | OPPO | 中国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-79B064F0669BC157` |
 | 311 | OrcaKIT AI / OrcaAgent-AI | OrcaKIT AI / OrcaAgent-AI | 中国 | 0 | 0 | — | — | `TEAM-D1D079EB373B98AA` |
 | 312 | PartMe AI | PartMe AI | 中国 | 0 | 0 | — | — | `TEAM-39FC57014C491C6B` |
 | 313 | PATEO | PATEO | 中国 | 0 | 0 | — | — | `TEAM-19DC42A80EC63948` |
 | 314 | PaXini | PaXini | 中国 | 0 | 0 | — | — | `TEAM-0C8E27D2FE006073` |
-| 315 | PDD / 拼多多集团 | PDD / 拼多多集团 | 中国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-38F8A66808D13BDF` |
+| 315 | PDD / 拼多多集团 | PDD / 拼多多集团 | 中国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-38F8A66808D13BDF` |
 | 316 | Peking University Health Science Center / 北京大学医学部 | Peking University | 中国 | 1 | 0 | — | 平台、基础设施与数据 1 | `TEAM-651FF195CC75E748` |
 | 317 | Peking University Institute of Artificial Intelligence / 北京大学人工智能研究院 | Peking University | 中国 | 0 | 0 | — | — | `TEAM-F6ECBD35F7D7B825` |
 | 318 | Petnest AI / 宠巢智能 | Petnest AI / 宠巢智能 | 中国 | 0 | 0 | — | — | `TEAM-CFEC81FB7E4787E4` |
@@ -464,7 +463,7 @@
 | 329 | RayNeo / 雷鸟创新 | RayNeo / 雷鸟创新 | 中国 | 1 | 1 | 平台、基础设施与数据 1 | 平台、基础设施与数据 1 | `TEAM-7B6FCEC8DE70DFC9` |
 | 330 | Raytone.AI / Raytone AI Labs | Raytone.AI / Raytone AI Labs | 中国 | 0 | 0 | — | — | `TEAM-DB1D6740752136D1` |
 | 331 | ReachAI / EnterpriseAgentFramework | ReachAI / EnterpriseAgentFramework | 中国 | 0 | 0 | — | — | `TEAM-F3140568D0AE1511` |
-| 332 | Rokid | Rokid | 中国 | 1 | 1 | 客户解决方案与交付 1 | 客户解决方案与交付 1 | `TEAM-41A0D32543E782E5` |
+| 332 | Rokid | Rokid | 中国 | 1 | 0 | — | 客户解决方案与交付 1 | `TEAM-41A0D32543E782E5` |
 | 333 | Ronbay Group / 容百集团 | Ronbay Group / 容百集团 | 中国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-7E5ACDA3494D02E7` |
 | 334 | RubikSQL | RubikSQL | 中国 | 0 | 0 | — | — | `TEAM-0556AF919CD35FB6` |
 | 335 | RuoYi AI | RuoYi AI | 中国 | 0 | 0 | — | — | `TEAM-5DEA320E52BB70DD` |
@@ -477,7 +476,7 @@
 | 342 | Shanghai Sudu Technology / 上海苏度科技有限公司 | Shanghai Sudu Technology / 上海苏度科技有限公司 | 中国 | 1 | 1 | 平台、基础设施与数据 1 | 平台、基础设施与数据 1 | `TEAM-B1DD3CF89771A2BE` |
 | 343 | ShellWard / jnMetaCode | ShellWard / jnMetaCode | 中国 | 0 | 0 | — | — | `TEAM-01F3AE483E07BE5C` |
 | 344 | ShengShu Technology / 生数科技 | ShengShu Technology / 生数科技 | 中国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-1BFC0DEA147F89D2` |
-| 345 | Shenzhen Institute of Artificial Intelligence and Robotics for Society / AIRS | Shenzhen Institute of Artificial Intelligence and Robotics for Society / AIRS | 中国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-14993C2985B76E5D` |
+| 345 | Shenzhen Institute of Artificial Intelligence and Robotics for Society / AIRS | Shenzhen Institute of Artificial Intelligence and Robotics for Society / AIRS | 中国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-14993C2985B76E5D` |
 | 346 | SigmaZ | SigmaZ | 中国 | 0 | 0 | — | — | `TEAM-9BF0BFFE22DF36FE` |
 | 347 | SIMIAIOS / 龙虾手机 | SIMIAIOS / 龙虾手机 | 中国 | 0 | 0 | — | — | `TEAM-0678B1CFC492202E` |
 | 348 | SingTown | SingTown | 中国 | 0 | 0 | — | — | `TEAM-423AD7842CECB7F1` |
@@ -486,18 +485,18 @@
 | 351 | sre-agents | sre-agents | 中国 | 0 | 0 | — | — | `TEAM-84A243856FE4450E` |
 | 352 | StellarLink / 重庆星纬智联科技 | StellarLink / 重庆星纬智联科技 | 中国 | 0 | 0 | — | — | `TEAM-A9FAEBA09C17CCAC` |
 | 353 | StepFun / 阶跃星辰 | StepFun / 阶跃星辰 | 中国 | 0 | 0 | — | — | `TEAM-A5869B4A43BCBE75` |
-| 354 | 阶跃星辰 / StepFun | StepFun / 阶跃星辰 | 中国 | 46 | 34 | 算法、研究与模型 8；平台、基础设施与数据 8；产品与设计 5；评测、测试与质量 4；客户解决方案与交付 2；工程与应用开发 2；其他或边界岗位 2；安全、治理与合规 1；商务、市场与合作 1；运营、项目与职能 1 | 其他或边界岗位 14；算法、研究与模型 8；平台、基础设施与数据 8；产品与设计 5；评测、测试与质量 4；客户解决方案与交付 2；工程与应用开发 2；安全、治理与合规 1；商务、市场与合作 1；运营、项目与职能 1 | `TEAM-D7991F7B1A510C76` |
+| 354 | 阶跃星辰 / StepFun | StepFun / 阶跃星辰 | 中国 | 46 | 0 | — | 其他或边界岗位 14；算法、研究与模型 8；平台、基础设施与数据 8；产品与设计 5；评测、测试与质量 4；客户解决方案与交付 2；工程与应用开发 2；安全、治理与合规 1；商务、市场与合作 1；运营、项目与职能 1 | `TEAM-D7991F7B1A510C76` |
 | 355 | 阶跃星辰开放平台 | StepFun / 阶跃星辰 | 中国 | 0 | 0 | — | — | `TEAM-6DDDB97F9B609D9C` |
 | 356 | superun (知擎信息) | superun (知擎信息) | 中国 | 0 | 0 | — | — | `TEAM-598F0D64CF58CAB8` |
 | 357 | SuperX | SuperX | 中国 | 0 | 0 | — | — | `TEAM-A5AB6D5F7AB588DD` |
 | 358 | Talkdesk / 拓德（武汉）软件有限公司 | Talkdesk / 拓德（武汉）软件有限公司 | 中国 | 0 | 0 | — | — | `TEAM-98310F88B6CB1A7B` |
 | 359 | CubeSandbox / Tencent Cloud | Tencent / 腾讯 | 中国 | 0 | 0 | — | — | `TEAM-6371A11D6FC6C4C8` |
 | 360 | Tencent | Tencent / 腾讯 | 中国 | 0 | 0 | — | — | `TEAM-2678CDD785533E86` |
-| 361 | Tencent ClawPet | Tencent / 腾讯 | 中国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-055002F8FDC27AE7` |
-| 362 | Tencent Cloud | Tencent / 腾讯 | 中国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-4462DBD28E518F15` |
+| 361 | Tencent ClawPet | Tencent / 腾讯 | 中国 | 1 | 0 | — | 产品与设计 1 | `TEAM-055002F8FDC27AE7` |
+| 362 | Tencent Cloud | Tencent / 腾讯 | 中国 | 1 | 0 | — | 产品与设计 1 | `TEAM-4462DBD28E518F15` |
 | 363 | Tencent RTC Conversational AI | Tencent / 腾讯 | 中国 | 0 | 0 | — | — | `TEAM-9856E741B89A5F71` |
 | 364 | Tencent tRPC | Tencent / 腾讯 | 中国 | 0 | 0 | — | — | `TEAM-12B9E5B0826E555F` |
-| 365 | Tencent Yuanbao / 腾讯元宝 | Tencent / 腾讯 | 中国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-EAEF736C020A8045` |
+| 365 | Tencent Yuanbao / 腾讯元宝 | Tencent / 腾讯 | 中国 | 1 | 0 | — | 产品与设计 1 | `TEAM-EAEF736C020A8045` |
 | 366 | 企业微信 / WeCom | Tencent / 腾讯 | 中国 | 0 | 0 | — | — | `TEAM-899D678B44617C61` |
 | 367 | 企业微信 AI | Tencent / 腾讯 | 中国 | 0 | 0 | — | — | `TEAM-970515F10808644A` |
 | 368 | 腾讯 TEG | Tencent / 腾讯 | 中国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-6F09D0ED97DA3DF0` |
@@ -532,32 +531,32 @@
 | 397 | Xiaomi / 小米 | Xiaomi / 小米 | 中国 | 2 | 0 | — | 评测、测试与质量 2 | `TEAM-098C48CA29B7C627` |
 | 398 | Xiaomi Auto / 小米汽车 | Xiaomi / 小米 | 中国 | 0 | 0 | — | — | `TEAM-0836C08769F5BFE8` |
 | 399 | XPeng / 小鹏汽车 | XPeng / 小鹏汽车 | 中国 | 107 | 41 | 工程与应用开发 14；算法、研究与模型 11；客户解决方案与交付 10；产品与设计 5；评测、测试与质量 1 | 算法、研究与模型 34；工程与应用开发 26；客户解决方案与交付 18；产品与设计 15；评测、测试与质量 11；安全、治理与合规 3 | `TEAM-729BC98A1D8C89EA` |
-| 400 | Yidian Intelligent Computing / 仪电智算 | Yidian Intelligent Computing / 仪电智算 | 中国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-107AEB3CC67BD0A8` |
+| 400 | Yidian Intelligent Computing / 仪电智算 | Yidian Intelligent Computing / 仪电智算 | 中国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-107AEB3CC67BD0A8` |
 | 401 | 用友 / BIP企业AI | Yonyou / 用友 | 中国 | 0 | 0 | — | — | `TEAM-58938B0966B271B0` |
-| 402 | 用友 / Yonyou | Yonyou / 用友 | 中国 | 6 | 4 | 产品与设计 2；客户解决方案与交付 2 | 产品与设计 2；客户解决方案与交付 2；运营、项目与职能 1；工程与应用开发 1 | `TEAM-8813467FBE5FEC90` |
+| 402 | 用友 / Yonyou | Yonyou / 用友 | 中国 | 6 | 0 | — | 产品与设计 2；客户解决方案与交付 2；运营、项目与职能 1；工程与应用开发 1 | `TEAM-8813467FBE5FEC90` |
 | 403 | 用友 YonYou | Yonyou / 用友 | 中国 | 0 | 0 | — | — | `TEAM-C2DC136E3CBF9CDB` |
 | 404 | 用友YonSuite / 智能体市场 | Yonyou / 用友 | 中国 | 0 | 0 | — | — | `TEAM-B07846946D0B38C7` |
 | 405 | Z.ai | Z.ai | 中国 | 0 | 0 | — | — | `TEAM-C7A729DC0F6E31CD` |
 | 406 | Zeroclave | Zeroclave | 中国 | 0 | 0 | — | — | `TEAM-C02F9BF97303D805` |
 | 407 | ZetaZeroHub / ζ0Hub | ZetaZeroHub / ζ0Hub | 中国 | 0 | 0 | — | — | `TEAM-A894FAB41C875DE0` |
 | 408 | ZJUNLP Knowledge Engine Lab | Zhejiang University | 中国 | 0 | 0 | — | — | `TEAM-A27AAE0E0AAD864A` |
-| 409 | Zhipu AI / 智谱 | Zhipu AI / 智谱 | 中国 | 14 | 2 | 评测、测试与质量 1；算法、研究与模型 1 | 算法、研究与模型 6；评测、测试与质量 3；平台、基础设施与数据 3；客户解决方案与交付 1；工程与应用开发 1 | `TEAM-9423D4B1B5315FD6` |
+| 409 | Zhipu AI / 智谱 | Zhipu AI / 智谱 | 中国 | 14 | 0 | — | 算法、研究与模型 6；评测、测试与质量 3；平台、基础设施与数据 3；客户解决方案与交付 1；工程与应用开发 1 | `TEAM-9423D4B1B5315FD6` |
 | 410 | 智谱 AutoGLM | Zhipu AI / 智谱 | 中国 | 0 | 0 | — | — | `TEAM-AF2B7813EEF54BB9` |
 | 411 | 一湾生命科技 / BayOne Life Sciences | 一湾生命科技 / BayOne Life Sciences | 中国 | 0 | 0 | — | — | `TEAM-20258AFC52C5B37F` |
 | 412 | 七牛云 / Qiniu Cloud | 七牛云 / Qiniu Cloud | 中国 | 0 | 0 | — | — | `TEAM-8B6EDC7E33F9683F` |
-| 413 | 上汽大众汽车有限公司 | 上汽大众汽车有限公司 | 中国 | 1 | 1 | 客户解决方案与交付 1 | 客户解决方案与交付 1 | `TEAM-E4492C6A907C8962` |
-| 414 | 上海二三四五网络科技有限公司 | 上海二三四五网络科技有限公司 | 中国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-CCC72D540E9C09EF` |
+| 413 | 上汽大众汽车有限公司 | 上汽大众汽车有限公司 | 中国 | 1 | 0 | — | 客户解决方案与交付 1 | `TEAM-E4492C6A907C8962` |
+| 414 | 上海二三四五网络科技有限公司 | 上海二三四五网络科技有限公司 | 中国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-CCC72D540E9C09EF` |
 | 415 | 上海交通大学机械与动力工程学院邵雷来团队 | 上海交通大学 | 中国 | 0 | 0 | — | — | `TEAM-180D02701DD1B4F9` |
 | 416 | AI45Research / 上海人工智能实验室安全可信AI中心 | 上海人工智能实验室 | 中国 | 0 | 0 | — | — | `TEAM-1AC0064DC1D885AD` |
 | 417 | InternScience / 上海人工智能实验室 AI For Science中心 | 上海人工智能实验室 | 中国 | 0 | 0 | — | — | `TEAM-FFF369DC296446D7` |
-| 418 | Shanghai Artificial Intelligence Laboratory / 上海人工智能实验室 | 上海人工智能实验室 | 中国 | 23 | 23 | 算法、研究与模型 12；安全、治理与合规 3；工程与应用开发 3；评测、测试与质量 2；产品与设计 1；客户解决方案与交付 1；平台、基础设施与数据 1 | 算法、研究与模型 12；安全、治理与合规 3；工程与应用开发 3；评测、测试与质量 2；产品与设计 1；客户解决方案与交付 1；平台、基础设施与数据 1 | `TEAM-9628695203F5AF8B` |
+| 418 | Shanghai Artificial Intelligence Laboratory / 上海人工智能实验室 | 上海人工智能实验室 | 中国 | 23 | 17 | 算法、研究与模型 10；工程与应用开发 3；安全、治理与合规 2；评测、测试与质量 2 | 算法、研究与模型 12；安全、治理与合规 3；工程与应用开发 3；评测、测试与质量 2；产品与设计 1；客户解决方案与交付 1；平台、基础设施与数据 1 | `TEAM-9628695203F5AF8B` |
 | 419 | 上海六信合投资 | 上海六信合投资 | 中国 | 0 | 0 | — | — | `TEAM-B185196ECA89C31F` |
-| 420 | 上海农村商业银行股份有限公司 | 上海农村商业银行股份有限公司 | 中国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-DC49FC30DAF8CABC` |
+| 420 | 上海农村商业银行股份有限公司 | 上海农村商业银行股份有限公司 | 中国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-DC49FC30DAF8CABC` |
 | 421 | 上海创智学院 | 上海创智学院 | 中国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-70048D1AA164851D` |
-| 422 | 上海埃迪希科技服务有限公司 / 仪电智算云 | 上海埃迪希科技服务有限公司 / 仪电智算云 | 中国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-D7AB16936F915A3D` |
+| 422 | 上海埃迪希科技服务有限公司 / 仪电智算云 | 上海埃迪希科技服务有限公司 / 仪电智算云 | 中国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-D7AB16936F915A3D` |
 | 423 | 上海外服广东 / 佳才聘 | 上海外服广东 / 佳才聘 | 中国 | 0 | 0 | — | — | `TEAM-1A4036233ABCF9EE` |
-| 424 | 同济大学附属东方医院医学人工智能创新中心 | 上海市东方医院 | 中国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-FE4C5B12386022B6` |
-| 425 | 上海帆一尚行科技有限公司 / SAIL-Cloud | 上海帆一尚行科技有限公司 / SAIL-Cloud | 中国 | 1 | 1 | 平台、基础设施与数据 1 | 平台、基础设施与数据 1 | `TEAM-491C268321FC620D` |
+| 424 | 同济大学附属东方医院医学人工智能创新中心 | 上海市东方医院 | 中国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-FE4C5B12386022B6` |
+| 425 | 上海帆一尚行科技有限公司 / SAIL-Cloud | 上海帆一尚行科技有限公司 / SAIL-Cloud | 中国 | 1 | 0 | — | 平台、基础设施与数据 1 | `TEAM-491C268321FC620D` |
 | 426 | 上海数绎智能科技有限公司 / biMetaverse | 上海数绎智能科技有限公司 / biMetaverse | 中国 | 0 | 0 | — | — | `TEAM-84BC93339BBA32BE` |
 | 427 | 上海科技大学信息科学与技术学院视觉与数据智能中心 / VDI | 上海科技大学 | 中国 | 0 | 0 | — | — | `TEAM-A2E52A014FB1E02F` |
 | 428 | 上海科技大学信息科学与技术学院智能网络中心（NICE） / ShanghaiTech SIST Network Intelligence Center | 上海科技大学 / ShanghaiTech University | 中国 | 0 | 0 | — | — | `TEAM-7D986C5E0632CE65` |
@@ -565,34 +564,34 @@
 | 430 | 上海纽酷信息科技有限公司 / Newker | 上海纽酷信息科技有限公司 / Newker | 中国 | 0 | 0 | — | — | `TEAM-576A77C3CC3ECB15` |
 | 431 | 胜算云 / SSYCloud | 上海胜算速惠云科技有限公司 | 中国 | 0 | 0 | — | — | `TEAM-59A2778D0AE83076` |
 | 432 | 上海艺赛旗软件股份有限公司 | 上海艺赛旗软件股份有限公司 | 中国 | 0 | 0 | — | — | `TEAM-1E12F8913F5E0497` |
-| 433 | 上海英方软件股份有限公司 / Info2Soft | 上海英方软件股份有限公司 / Info2Soft | 中国 | 1 | 1 | 评测、测试与质量 1 | 评测、测试与质量 1 | `TEAM-0804BBE9293B487E` |
+| 433 | 上海英方软件股份有限公司 / Info2Soft | 上海英方软件股份有限公司 / Info2Soft | 中国 | 1 | 0 | — | 评测、测试与质量 1 | `TEAM-0804BBE9293B487E` |
 | 434 | 上海非凸智能科技有限公司 / FTShare | 上海非凸智能科技有限公司 / FTShare | 中国 | 0 | 0 | — | — | `TEAM-05543D62979F53C6` |
 | 435 | 世窗信息股份有限公司 / Saitron | 世窗信息股份有限公司 / Saitron | 中国 | 0 | 0 | — | — | `TEAM-C6DF0785D4112A24` |
 | 436 | 世纪恒通科技股份有限公司 | 世纪恒通科技股份有限公司 | 中国 | 0 | 0 | — | — | `TEAM-4D94C3A182C13044` |
 | 437 | 东莞市大湾区高等研究院智能计算研究中心 / Greater Bay Area Institute of Advanced Research Intelligent Computing Research Center | 东莞市大湾区高等研究院智能计算研究中心 / Greater Bay Area Institute of Advanced Research Intelligent Computing Research Center | 中国 | 0 | 0 | — | — | `TEAM-9DA571008E67A74F` |
-| 438 | 中关村科金 / ZKJ Technology | 中关村科金 / ZKJ Technology | 中国 | 1 | 1 | 评测、测试与质量 1 | 评测、测试与质量 1 | `TEAM-56FA03CC1333BCC8` |
+| 438 | 中关村科金 / ZKJ Technology | 中关村科金 / ZKJ Technology | 中国 | 1 | 0 | — | 评测、测试与质量 1 | `TEAM-56FA03CC1333BCC8` |
 | 439 | 中南大学姜守勇团队 | 中南大学 | 中国 | 0 | 0 | — | — | `TEAM-C9D42BCEF552501E` |
-| 440 | 上海振华重工（集团）股份有限公司 / ZPMC | 中国交通建设股份有限公司 / CCCC | 中国 | 1 | 1 | 客户解决方案与交付 1 | 客户解决方案与交付 1 | `TEAM-07E0FD9DE8704B5B` |
+| 440 | 上海振华重工（集团）股份有限公司 / ZPMC | 中国交通建设股份有限公司 / CCCC | 中国 | 1 | 0 | — | 客户解决方案与交付 1 | `TEAM-07E0FD9DE8704B5B` |
 | 441 | 中国北方车辆研究所（中国兵器第一研究院） | 中国兵器工业集团 | 中国 | 0 | 0 | — | — | `TEAM-A2FE13086539A3BA` |
-| 442 | 中国星网数字科技有限公司 | 中国卫星网络集团有限公司 | 中国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-5BF74A62E30FB70A` |
-| 443 | 中国标准化研究院高新技术标准化研究所 | 中国标准化研究院 | 中国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-781E42936511A142` |
+| 442 | 中国星网数字科技有限公司 | 中国卫星网络集团有限公司 | 中国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-5BF74A62E30FB70A` |
+| 443 | 中国标准化研究院高新技术标准化研究所 | 中国标准化研究院 | 中国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-781E42936511A142` |
 | 444 | 中国科学院大连化学物理研究所人工智能应用中心 | 中国科学院 | 中国 | 0 | 0 | — | — | `TEAM-25D69A2FA86035A2` |
 | 445 | 中国科学院自动化研究所 / CASIA | 中国科学院 | 中国 | 0 | 0 | — | — | `TEAM-5DD17803119F1ADE` |
-| 446 | 国家生物信息中心数据资源部 | 中国科学院北京基因组研究所 | 中国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-9FE8678813DEE594` |
-| 447 | 生物设计中心 | 中国科学院天津工业生物技术研究所 | 中国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-983C33E209C22216` |
-| 448 | 数据智能与可视化课题组 / 人类细胞谱系大科学研究设施 | 中国科学院广州生物医药与健康研究院 | 中国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-080ABC34F0B3E9A8` |
+| 446 | 国家生物信息中心数据资源部 | 中国科学院北京基因组研究所 | 中国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-9FE8678813DEE594` |
+| 447 | 生物设计中心 | 中国科学院天津工业生物技术研究所 | 中国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-983C33E209C22216` |
+| 448 | 数据智能与可视化课题组 / 人类细胞谱系大科学研究设施 | 中国科学院广州生物医药与健康研究院 | 中国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-080ABC34F0B3E9A8` |
 | 449 | 中国科学院西安光机所大数据与人工智能中心 | 中国科学院西安光学精密机械研究所 | 中国 | 1 | 0 | — | 产品与设计 1 | `TEAM-0E9504BF8715B6D5` |
-| 450 | 天府宇宙线研究中心数字化团队 | 中国科学院高能物理研究所 | 中国 | 1 | 1 | 平台、基础设施与数据 1 | 平台、基础设施与数据 1 | `TEAM-15C6440CF578C7DB` |
-| 451 | 中移（杭州）信息技术有限公司 | 中国移动 | 中国 | 1 | 1 | 评测、测试与质量 1 | 评测、测试与质量 1 | `TEAM-6C870AE750A8A49D` |
+| 450 | 天府宇宙线研究中心数字化团队 | 中国科学院高能物理研究所 | 中国 | 1 | 0 | — | 平台、基础设施与数据 1 | `TEAM-15C6440CF578C7DB` |
+| 451 | 中移（杭州）信息技术有限公司 | 中国移动 | 中国 | 1 | 0 | — | 评测、测试与质量 1 | `TEAM-6C870AE750A8A49D` |
 | 452 | 中国能建电力规划总院 / 中能智新公司 | 中国能源建设集团（股份）有限公司 | 中国 | 0 | 0 | — | — | `TEAM-9D56782C78363E9F` |
-| 453 | 中航集团（国航股份） | 中国航空集团有限公司 | 中国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-AB1CDAEFD78917FC` |
+| 453 | 中航集团（国航股份） | 中国航空集团有限公司 | 中国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-AB1CDAEFD78917FC` |
 | 454 | 中国银联 / China UnionPay | 中国银联 / China UnionPay | 中国 | 0 | 0 | — | — | `TEAM-ED98D115D78F6331` |
 | 455 | 中安云科科技发展(山东)有限公司 | 中安云科科技发展(山东)有限公司 | 中国 | 0 | 0 | — | — | `TEAM-F0912DC92FC58AAB` |
-| 456 | 中富通集团 / ZFTII | 中富通集团股份有限公司 | 中国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-1B20E993AD0E4F45` |
+| 456 | 中富通集团 / ZFTII | 中富通集团股份有限公司 | 中国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-1B20E993AD0E4F45` |
 | 457 | 中山大学先进制造学院先进智造实验室 | 中山大学 | 中国 | 0 | 0 | — | — | `TEAM-D8D56BE4719A4957` |
 | 458 | 中山大学计算机学院刘咏梅研究组 | 中山大学 | 中国 | 0 | 0 | — | — | `TEAM-35D3A8E20B319344` |
 | 459 | 中硅星云科技（广州）有限公司 | 中硅星云科技（广州）有限公司 | 中国 | 0 | 0 | — | — | `TEAM-122085B3090D1002` |
-| 460 | 中科星图股份有限公司 | 中科星图股份有限公司 | 中国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-6BDDBD421E40636C` |
+| 460 | 中科星图股份有限公司 | 中科星图股份有限公司 | 中国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-6BDDBD421E40636C` |
 | 461 | 中科智源 / Zhongke Zhiyuan | 中科智源 / Zhongke Zhiyuan | 中国 | 0 | 0 | — | — | `TEAM-624A0F831C482A6B` |
 | 462 | 中科紫东太初 | 中科紫东太初 | 中国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-B19E23F877034D2D` |
 | 463 | 中软国际有限公司 | 中软国际有限公司 | 中国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-C92C085817526D51` |
@@ -607,10 +606,10 @@
 | 472 | 仟寻 MoSeeker 招聘智能体 | 仟寻 MoSeeker 招聘智能体 | 中国 | 0 | 0 | — | — | `TEAM-750FFBA609F51453` |
 | 473 | 企查查智能体数据平台 / qcc-agent-cli | 企查查科技股份有限公司 | 中国 | 0 | 0 | — | — | `TEAM-00FAEC4F32A00A79` |
 | 474 | 众数信科 / CrowdDigital | 众数（厦门）信息科技有限公司 | 中国 | 0 | 0 | — | — | `TEAM-9B012F1A96C4F09F` |
-| 475 | 众阳健康集团 | 众阳健康集团 | 中国 | 1 | 1 | 安全、治理与合规 1 | 安全、治理与合规 1 | `TEAM-E26EACE700E3B883` |
+| 475 | 众阳健康集团 | 众阳健康集团 | 中国 | 1 | 0 | — | 安全、治理与合规 1 | `TEAM-E26EACE700E3B883` |
 | 476 | 优匠时代智能科技（东莞）有限公司 / Youjiang Era Intelligent Technology (Dongguan) | 优匠时代智能科技（东莞）有限公司 / Youjiang Era Intelligent Technology (Dongguan) | 中国 | 0 | 0 | — | — | `TEAM-E06F7468021085A2` |
 | 477 | 佛山市斜杠无界信息科技有限公司 / 斜杠无界 | 佛山市斜杠无界信息科技有限公司 / 斜杠无界 | 中国 | 0 | 0 | — | — | `TEAM-333D63DD76D57D0E` |
-| 478 | 佳昊创想（深圳）科技有限公司 | 佳昊创想（深圳）科技有限公司 | 中国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-2718ED1F69C28E25` |
+| 478 | 佳昊创想（深圳）科技有限公司 | 佳昊创想（深圳）科技有限公司 | 中国 | 1 | 0 | — | 产品与设计 1 | `TEAM-2718ED1F69C28E25` |
 | 479 | 依图科技 / YITU | 依图科技 / YITU | 中国 | 0 | 0 | — | — | `TEAM-E3B611A1771AEA06` |
 | 480 | 信息高铁研究院 / 算力网原生龙虾智能体 | 信息高铁研究院 / 算力网原生龙虾智能体 | 中国 | 0 | 0 | — | — | `TEAM-9F1CE9B94EE92874` |
 | 481 | 健康萧山 / 区一医院伦理审查智能体 | 健康萧山 / 区一医院伦理审查智能体 | 中国 | 0 | 0 | — | — | `TEAM-42308C44812A41EC` |
@@ -619,8 +618,8 @@
 | 484 | 全球搜 / AI建站智能体 | 创贸科技（深圳）集团有限公司 | 中国 | 0 | 0 | — | — | `TEAM-03BAE5682F33DA42` |
 | 485 | 前端程序设计 / 多数字人智能体协作办公系统 | 前端程序设计 / 多数字人智能体协作办公系统 | 中国 | 0 | 0 | — | — | `TEAM-8A927CBA2C6A124A` |
 | 486 | 剑及智能科技 | 剑及智能科技 | 中国 | 0 | 0 | — | — | `TEAM-71AD800748F52C7B` |
-| 487 | 北京京橙创意网络科技有限公司 / 京橙科技 | 北京京橙创意网络科技有限公司 / 京橙科技 | 中国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-EF6CAFC357CC754F` |
-| 488 | 北京兴云数科技术有限公司 | 北京兴云数科技术有限公司 | 中国 | 1 | 1 | 客户解决方案与交付 1 | 客户解决方案与交付 1 | `TEAM-6BA7830166FC60C5` |
+| 487 | 北京京橙创意网络科技有限公司 / 京橙科技 | 北京京橙创意网络科技有限公司 / 京橙科技 | 中国 | 1 | 0 | — | 产品与设计 1 | `TEAM-EF6CAFC357CC754F` |
+| 488 | 北京兴云数科技术有限公司 | 北京兴云数科技术有限公司 | 中国 | 1 | 0 | — | 客户解决方案与交付 1 | `TEAM-6BA7830166FC60C5` |
 | 489 | 北京华胜天成科技股份有限公司 / Teamsun | 北京华胜天成科技股份有限公司 / Teamsun | 中国 | 0 | 0 | — | — | `TEAM-27E72C3BA8D2C319` |
 | 490 | 北京博研智通科技有限公司 / BeyondTraffic | 北京博研智通科技有限公司 / BeyondTraffic | 中国 | 0 | 0 | — | — | `TEAM-F58843A122D55B18` |
 | 491 | 北京博雅睿视科技有限公司 / Realscene | 北京博雅睿视科技有限公司 / Realscene | 中国 | 0 | 0 | — | — | `TEAM-1AE4583CD5AE918B` |
@@ -630,12 +629,12 @@
 | 495 | 北京寄云鼎城科技有限公司（寄云科技） | 北京寄云鼎城科技有限公司（寄云科技） | 中国 | 0 | 0 | — | — | `TEAM-6E884AC8FA8A2645` |
 | 496 | 左手医生 | 北京左医科技有限公司 | 中国 | 0 | 0 | — | — | `TEAM-6066E58CF1CE57AF` |
 | 497 | 北京微语天下科技有限公司 | 北京微语天下科技有限公司 | 中国 | 0 | 0 | — | — | `TEAM-AB2B1578D859F69F` |
-| 498 | 北京斯朗科技有限公司 / See-Long | 北京斯朗科技有限公司 / See-Long | 中国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-37626BF6BEAF108C` |
+| 498 | 北京斯朗科技有限公司 / See-Long | 北京斯朗科技有限公司 / See-Long | 中国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-37626BF6BEAF108C` |
 | 499 | 北京智体纪元科技有限公司 / AgentEra | 北京智体纪元科技有限公司 / AgentEra | 中国 | 0 | 0 | — | — | `TEAM-DC67FF580ECB08C1` |
-| 500 | 北京深演智能科技股份有限公司 | 北京深演智能科技股份有限公司 | 中国 | 1 | 1 | 客户解决方案与交付 1 | 客户解决方案与交付 1 | `TEAM-E9FA803F4C34454A` |
+| 500 | 北京深演智能科技股份有限公司 | 北京深演智能科技股份有限公司 | 中国 | 1 | 0 | — | 客户解决方案与交付 1 | `TEAM-E9FA803F4C34454A` |
 | 501 | 北京彩智科技有限公司 / 深知智能 | 北京深知智新科技有限公司 | 中国 | 0 | 0 | — | — | `TEAM-6D59A5AC98541399` |
 | 502 | 北京深维智信科技有限公司 / OmniMay | 北京深维智信科技有限公司 / OmniMay | 中国 | 0 | 0 | — | — | `TEAM-5955CC0BAD01EF4E` |
-| 503 | 北京瑞索科技有限公司 | 北京瑞索科技有限公司 | 中国 | 1 | 1 | 客户解决方案与交付 1 | 客户解决方案与交付 1 | `TEAM-F0B339F82DC7B204` |
+| 503 | 北京瑞索科技有限公司 | 北京瑞索科技有限公司 | 中国 | 1 | 0 | — | 客户解决方案与交付 1 | `TEAM-F0B339F82DC7B204` |
 | 504 | 北京百炼智能科技有限公司 / 百炼智能 | 北京百炼智能科技有限公司 / 百炼智能 | 中国 | 0 | 0 | — | — | `TEAM-70EB844F9FC2CA3C` |
 | 505 | 北京睿来智能体技术有限公司 / Reliable Agent | 北京睿来智能体技术有限公司 / Reliable Agent | 中国 | 0 | 0 | — | — | `TEAM-6C3E583128AD642D` |
 | 506 | 墨刀 / Modao | 北京磨刀刻石科技有限公司 | 中国 | 0 | 0 | — | — | `TEAM-C5C04DCAB1958194` |
@@ -644,9 +643,9 @@
 | 509 | 行旅国际 / Auvgo | 北京艾优薇文化科技有限公司 | 中国 | 0 | 0 | — | — | `TEAM-3741A93773B9FC2E` |
 | 510 | 北京超图软件股份有限公司 / SuperMap | 北京超图软件股份有限公司 / SuperMap | 中国 | 0 | 0 | — | — | `TEAM-DEED5B555E30AE99` |
 | 511 | 北京跨赴科技有限公司 | 北京跨赴科技有限公司 | 中国 | 0 | 0 | — | — | `TEAM-15BDA0D837C68382` |
-| 512 | 北京通用人工智能研究院 / BIGAI | 北京通用人工智能研究院 / BIGAI | 中国 | 1 | 1 | 客户解决方案与交付 1 | 客户解决方案与交付 1 | `TEAM-ECBD45D87AA6BF28` |
-| 513 | 北森 Beisen | 北森 Beisen | 中国 | 9 | 7 | 产品与设计 4；评测、测试与质量 2；客户解决方案与交付 1 | 产品与设计 6；评测、测试与质量 2；客户解决方案与交付 1 | `TEAM-ABECF44E032573CA` |
-| 514 | 北京汽车研究总院有限公司 | 北汽集团 | 中国 | 1 | 1 | 平台、基础设施与数据 1 | 平台、基础设施与数据 1 | `TEAM-D42C496B8E33E6D0` |
+| 512 | 北京通用人工智能研究院 / BIGAI | 北京通用人工智能研究院 / BIGAI | 中国 | 1 | 0 | — | 客户解决方案与交付 1 | `TEAM-ECBD45D87AA6BF28` |
+| 513 | 北森 Beisen | 北森 Beisen | 中国 | 9 | 0 | — | 产品与设计 6；评测、测试与质量 2；客户解决方案与交付 1 | `TEAM-ABECF44E032573CA` |
+| 514 | 北京汽车研究总院有限公司 | 北汽集团 | 中国 | 1 | 0 | — | 平台、基础设施与数据 1 | `TEAM-D42C496B8E33E6D0` |
 | 515 | 医联 MedGPT | 医联 MedGPT | 中国 | 0 | 0 | — | — | `TEAM-346FFA1A5D129A3F` |
 | 516 | 十镜科技 / Spiro | 十镜科技 / Spiro | 中国 | 0 | 0 | — | — | `TEAM-F821AE380D1111A7` |
 | 517 | 华中师范大学人工智能教育学部 | 华中师范大学人工智能教育学部 | 中国 | 0 | 0 | — | — | `TEAM-8AC4E1E113D672E4` |
@@ -655,7 +654,7 @@
 | 520 | 南京上智涌现科技有限公司 / MindSparks AI | 南京上智涌现科技有限公司 / MindSparks AI | 中国 | 0 | 0 | — | — | `TEAM-67C4FE1C4DE6491E` |
 | 521 | 南京伊克罗德信息科技有限公司 | 南京伊克罗德信息科技有限公司 | 中国 | 0 | 0 | — | — | `TEAM-F153AC08BCF7FAF7` |
 | 522 | 南京众智维信息科技有限公司 / OpenXorg | 南京众智维信息科技有限公司 / OpenXorg | 中国 | 0 | 0 | — | — | `TEAM-1A3D6AB0205D4E28` |
-| 523 | 南京元数信息技术有限公司 | 南京元数信息技术有限公司 | 中国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-FE22C16A40DCA03E` |
+| 523 | 南京元数信息技术有限公司 | 南京元数信息技术有限公司 | 中国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-FE22C16A40DCA03E` |
 | 524 | 南京大学 / Nanjing University | 南京大学 / Nanjing University | 中国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-CC83CCF8E695C953` |
 | 525 | 南京大学智能科学与技术学院 / Nanjing University School of Intelligent Science and Technology | 南京大学 / Nanjing University | 中国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-0FB18D186F691E2E` |
 | 526 | 南京大学大规模智能与知识实验室 / NJU-LINK | 南京大学大规模智能与知识实验室 / NJU-LINK | 中国 | 0 | 0 | — | — | `TEAM-61944BAADD6BA991` |
@@ -668,31 +667,31 @@
 | 533 | 厦门大学未来海洋生物智造前沿研究中心 / XMU OceanBioX FutureLab | 厦门大学 / Xiamen University | 中国 | 0 | 0 | — | — | `TEAM-C9EDBA4C965F2B95` |
 | 534 | 厦门市拾光信维科技有限公司 / Opstime | 厦门市拾光信维科技有限公司 / Opstime | 中国 | 0 | 0 | — | — | `TEAM-9D2C4A4A7985A52C` |
 | 535 | 厦门雅迅智联科技股份有限公司 | 厦门雅迅智联科技股份有限公司 | 中国 | 0 | 0 | — | — | `TEAM-A60342136A27B7C5` |
-| 536 | 合肥中科类脑智能技术有限公司 | 合肥中科类脑智能技术有限公司 | 中国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-89DB579E9FA353AA` |
+| 536 | 合肥中科类脑智能技术有限公司 | 合肥中科类脑智能技术有限公司 | 中国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-89DB579E9FA353AA` |
 | 537 | 合肥工业大学白羽团队 | 合肥工业大学 | 中国 | 0 | 0 | — | — | `TEAM-0E2837857D875960` |
-| 538 | 吉林省济元信息科技有限公司 / Jiyuan Information | 吉林省济元信息科技有限公司 / Jiyuan Information | 中国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-E6A0A21199134802` |
+| 538 | 吉林省济元信息科技有限公司 / Jiyuan Information | 吉林省济元信息科技有限公司 / Jiyuan Information | 中国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-E6A0A21199134802` |
 | 539 | 同花顺问财 | 同花顺问财 | 中国 | 0 | 0 | — | — | `TEAM-5D40604A6D1F40BB` |
-| 540 | 启元实验室 | 启元实验室 | 中国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-7B8901399A21C916` |
+| 540 | 启元实验室 | 启元实验室 | 中国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-7B8901399A21C916` |
 | 541 | 呆码信息技术研究院 / 呆马区块链网络科技有限公司 | 呆码信息技术研究院 / 呆马区块链网络科技有限公司 | 中国 | 0 | 0 | — | — | `TEAM-E7B1DEA626E195FE` |
 | 542 | 品览（杭州）科技有限公司 | 品览（杭州）科技有限公司 | 中国 | 0 | 0 | — | — | `TEAM-4FEE41E13F1FB4CB` |
 | 543 | 哈尔滨工业大学数据智能安全课题组 / Sun Xinyue team | 哈尔滨工业大学数据智能安全课题组 / Sun Xinyue team | 中国 | 0 | 0 | — | — | `TEAM-F23F5DCF4C6F181C` |
 | 544 | 喆塔科技 / ZetaTech | 喆塔科技 / ZetaTech | 中国 | 0 | 0 | — | — | `TEAM-A164FD3E44A06891` |
-| 545 | 噢易云 | 噢易云 | 中国 | 1 | 1 | 评测、测试与质量 1 | 评测、测试与质量 1 | `TEAM-0B43BC4752726452` |
-| 546 | 四川华鲲振宇智能科技有限责任公司 | 四川华鲲振宇智能科技有限责任公司 | 中国 | 1 | 1 | 平台、基础设施与数据 1 | 平台、基础设施与数据 1 | `TEAM-6EA36DFB3F039778` |
-| 547 | 复旦大学类脑智能科学与技术研究院 | 复旦大学 | 中国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-8A87601D3E360562` |
+| 545 | 噢易云 | 噢易云 | 中国 | 1 | 0 | — | 评测、测试与质量 1 | `TEAM-0B43BC4752726452` |
+| 546 | 四川华鲲振宇智能科技有限责任公司 | 四川华鲲振宇智能科技有限责任公司 | 中国 | 1 | 0 | — | 平台、基础设施与数据 1 | `TEAM-6EA36DFB3F039778` |
+| 547 | 复旦大学类脑智能科学与技术研究院 | 复旦大学 | 中国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-8A87601D3E360562` |
 | 548 | 大汉软件股份有限公司 / Hanweb | 大汉软件股份有限公司 / Hanweb | 中国 | 0 | 0 | — | — | `TEAM-46BBB441CA7C0F39` |
 | 549 | 大连久元鼎晟科技有限公司 | 大连久元鼎晟科技有限公司 | 中国 | 0 | 0 | — | — | `TEAM-A161E4DBE8283E5E` |
-| 550 | 大商所飞泰测试技术有限公司 | 大连商品交易所 | 中国 | 1 | 1 | 评测、测试与质量 1 | 评测、测试与质量 1 | `TEAM-DE077B553B0A4035` |
-| 551 | 大连文产教育科技有限公司 | 大连文化教育产业集团有限公司 | 中国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-8D79449F49809A15` |
-| 552 | 大连理工大学化工学院张博宇团队 | 大连理工大学 | 中国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-92B5125CA8902357` |
+| 550 | 大商所飞泰测试技术有限公司 | 大连商品交易所 | 中国 | 1 | 0 | — | 评测、测试与质量 1 | `TEAM-DE077B553B0A4035` |
+| 551 | 大连文产教育科技有限公司 | 大连文化教育产业集团有限公司 | 中国 | 1 | 0 | — | 产品与设计 1 | `TEAM-8D79449F49809A15` |
+| 552 | 大连理工大学化工学院张博宇团队 | 大连理工大学 | 中国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-92B5125CA8902357` |
 | 553 | 大连理工大学软件学院 WISDOM实验室 | 大连理工大学 | 中国 | 0 | 0 | — | — | `TEAM-1E8E3F0370FDDF67` |
 | 554 | 天工 AI | 天工 AI | 中国 | 0 | 0 | — | — | `TEAM-5CE4A15782E47C72` |
 | 555 | 天津大学佟鑫宇团队 | 天津大学 | 中国 | 0 | 0 | — | — | `TEAM-17B3C281EDFAAACB` |
 | 556 | 妙盈科技 | 妙盈科技 | 中国 | 0 | 0 | — | — | `TEAM-1BDF5D6486D2AE92` |
-| 557 | 季华实验室 / Ji Hua Laboratory | 季华实验室 / Ji Hua Laboratory | 中国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-4730F5AAAA841CCC` |
-| 558 | 宁波数字孪生（东方理工）研究院 / Ningbo Institute of Digital Twin | 宁波东方理工大学 / Eastern Institute of Technology Ningbo | 中国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-85647681D66F0063` |
+| 557 | 季华实验室 / Ji Hua Laboratory | 季华实验室 / Ji Hua Laboratory | 中国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-4730F5AAAA841CCC` |
+| 558 | 宁波数字孪生（东方理工）研究院 / Ningbo Institute of Digital Twin | 宁波东方理工大学 / Eastern Institute of Technology Ningbo | 中国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-85647681D66F0063` |
 | 559 | 它石智航 / TARS | 它石智航 / TARS | 中国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-5FEB18689E84BDE1` |
-| 560 | 安徽三禾一信息科技有限公司 | 安徽三禾一信息科技有限公司 | 中国 | 1 | 1 | 平台、基础设施与数据 1 | 平台、基础设施与数据 1 | `TEAM-D2182937C1A57DE6` |
+| 560 | 安徽三禾一信息科技有限公司 | 安徽三禾一信息科技有限公司 | 中国 | 1 | 0 | — | 平台、基础设施与数据 1 | `TEAM-D2182937C1A57DE6` |
 | 561 | 安徽百得思维信息科技有限公司 / iBestServices | 安徽百得思维信息科技有限公司 / iBestServices | 中国 | 0 | 0 | — | — | `TEAM-31133DAE1AB2CD6E` |
 | 562 | 安诺优达 / Annoroad | 安诺优达基因科技（北京）股份有限公司 | 中国 | 0 | 0 | — | — | `TEAM-2C9D687E2A188490` |
 | 563 | 实在智能 | 实在智能 | 中国 | 0 | 0 | — | — | `TEAM-B5AB1211ABE01CE2` |
@@ -700,7 +699,7 @@
 | 565 | 小i机器人 华藏大模型 | 小i机器人 华藏大模型 | 中国 | 0 | 0 | — | — | `TEAM-7943FDD582D8637A` |
 | 566 | 小多科技 | 小多科技 | 中国 | 0 | 0 | — | — | `TEAM-E8A4BBF525B1B717` |
 | 567 | 小马智行 / Pony.ai | 小马智行 / Pony.ai | 中国 | 1 | 1 | 评测、测试与质量 1 | 评测、测试与质量 1 | `TEAM-FB53C4EF499FB7E0` |
-| 568 | 山东中创软件商用中间件股份有限公司 | 山东中创软件商用中间件股份有限公司 | 中国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-D011C1D4F1736FBC` |
+| 568 | 山东中创软件商用中间件股份有限公司 | 山东中创软件商用中间件股份有限公司 | 中国 | 1 | 0 | — | 产品与设计 1 | `TEAM-D011C1D4F1736FBC` |
 | 569 | 山东华越智能科技有限公司 / Huayue Intelligent | 山东华越智能科技有限公司 / Huayue Intelligent | 中国 | 0 | 0 | — | — | `TEAM-392851C5B5E4279C` |
 | 570 | 山东大学通用智能实验室 | 山东大学通用智能实验室 | 中国 | 0 | 0 | — | — | `TEAM-A066E5269B682597` |
 | 571 | 山东恒远智能科技有限公司 / Hengyuan Technology | 山东恒远智能科技有限公司 / Hengyuan Technology | 中国 | 0 | 0 | — | — | `TEAM-5200091C5E8B118C` |
@@ -714,26 +713,26 @@
 | 579 | 广东南粤 / 粤聘云 | 广东南粤 / 粤聘云 | 中国 | 0 | 0 | — | — | `TEAM-878A69B0D4D4808B` |
 | 580 | 广州迅易科技有限公司 | 广州迅易科技有限公司 | 中国 | 0 | 0 | — | — | `TEAM-3BCB75E2F9D37C3B` |
 | 581 | 广州金域医学检验集团股份有限公司 / KingMed Diagnostics | 广州金域医学检验集团股份有限公司 / KingMed Diagnostics | 中国 | 0 | 0 | — | — | `TEAM-A201703F1718FB9A` |
-| 582 | 广西北投信创科技投资集团有限公司 | 广西北部湾投资集团有限公司 | 中国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-AD4F0D4222C6016C` |
+| 582 | 广西北投信创科技投资集团有限公司 | 广西北部湾投资集团有限公司 | 中国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-AD4F0D4222C6016C` |
 | 583 | 广西天起人工智能科技有限公司 / 天起 AI | 广西天起科技集团有限公司 | 中国 | 0 | 0 | — | — | `TEAM-83217E75D593CE27` |
 | 584 | 廖品正中医眼科技术创新研究院 / 传承智能体 | 廖品正中医眼科技术创新研究院 / 传承智能体 | 中国 | 0 | 0 | — | — | `TEAM-384860BCC2A9E32C` |
 | 585 | 影刀 AI | 影刀 AI | 中国 | 0 | 0 | — | — | `TEAM-267ED89E9E4DF506` |
 | 586 | 徐州重型机械有限公司 / Xuzhou Heavy Machinery | 徐工集团 / XCMG | 中国 | 0 | 0 | — | — | `TEAM-7A56921EAF4FA072` |
 | 587 | 得理法搜 | 得理法搜 | 中国 | 0 | 0 | — | — | `TEAM-A5DB8473947474E0` |
 | 588 | 微脉技术有限公司 | 微脉技术有限公司 | 中国 | 0 | 0 | — | — | `TEAM-3F1BF07DC6BC65C6` |
-| 589 | 思必驰科技股份有限公司 | 思必驰科技股份有限公司 | 中国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-825856773B3052AD` |
-| 590 | 成都数有引力科技有限公司 | 成都数有引力科技有限公司 | 中国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-26027A360931BB94` |
+| 589 | 思必驰科技股份有限公司 | 思必驰科技股份有限公司 | 中国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-825856773B3052AD` |
+| 590 | 成都数有引力科技有限公司 | 成都数有引力科技有限公司 | 中国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-26027A360931BB94` |
 | 591 | 摩尔元数 / Morewis | 摩尔元数 / Morewis | 中国 | 0 | 0 | — | — | `TEAM-3CE5A7BA081F5D15` |
 | 592 | 数库科技 | 数库科技 | 中国 | 0 | 0 | — | — | `TEAM-1AFE7D8D7CD27A84` |
 | 593 | 数睿数据 / Smardaten | 数睿数据 / Smardaten | 中国 | 0 | 0 | — | — | `TEAM-C7456D66617FD2AD` |
 | 594 | BetterYeah | 斑头雁（杭州）智能科技有限责任公司 | 中国 | 0 | 0 | — | — | `TEAM-D1697E4E74A4F0C6` |
-| 595 | 斑马网络 | 斑马网络 | 中国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-3193205D25CE6DE5` |
+| 595 | 斑马网络 | 斑马网络 | 中国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-3193205D25CE6DE5` |
 | 596 | 新华三集团 / H3C | 新华三集团 / H3C | 中国 | 0 | 0 | — | — | `TEAM-BB70C2D3EBC9A5AA` |
 | 597 | 新奥科技发展有限公司 / 新奥能源研究院 | 新奥集团 | 中国 | 0 | 0 | — | — | `TEAM-2513989A81589845` |
 | 598 | 新潮传媒集团 | 新潮传媒集团 | 中国 | 0 | 0 | — | — | `TEAM-31FE5CCF6627B76D` |
 | 599 | 旷世传声传媒科技有限责任公司 | 旷世传声传媒科技有限责任公司 | 中国 | 1 | 1 | 客户解决方案与交付 1 | 客户解决方案与交付 1 | `TEAM-A7029FDD8CDB3E8E` |
 | 600 | 明道云 AI Agent | 明道云 AI Agent | 中国 | 0 | 0 | — | — | `TEAM-21BD424E864CA721` |
-| 601 | 明鉴智律 / InsightLex.AI | 明鉴智律 / InsightLex.AI | 中国 | 1 | 1 | 安全、治理与合规 1 | 安全、治理与合规 1 | `TEAM-036AF8D7802F522A` |
+| 601 | 明鉴智律 / InsightLex.AI | 明鉴智律 / InsightLex.AI | 中国 | 1 | 0 | — | 安全、治理与合规 1 | `TEAM-036AF8D7802F522A` |
 | 602 | 易路 eRoad | 易路 eRoad | 中国 | 0 | 0 | — | — | `TEAM-842CEB84559134DE` |
 | 603 | 星驰智驾 / ShineAuto | 星驰智驾 / ShineAuto | 中国 | 0 | 0 | — | — | `TEAM-D26F1B2444D3F629` |
 | 604 | 春客科技集团 | 春客科技集团 | 中国 | 0 | 0 | — | — | `TEAM-12F8839C47CF800C` |
@@ -746,21 +745,21 @@
 | 611 | 来也 APA Creator | 来也 APA Creator | 中国 | 0 | 0 | — | — | `TEAM-33FEF12346FC04A8` |
 | 612 | 杭州叙简科技股份有限公司 / Scooper | 杭州叙简科技股份有限公司 / Scooper | 中国 | 0 | 0 | — | — | `TEAM-F0FA6F4A0E01B998` |
 | 613 | 杭州星舟渡科技有限公司 / DevStudio AI | 杭州星舟渡科技有限公司 / DevStudio AI | 中国 | 0 | 0 | — | — | `TEAM-6CDE84E7ADA6361F` |
-| 614 | TorchV / 杭州萌嘉网络科技有限公司 | 杭州萌嘉网络科技有限公司 | 中国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-C69059B62B75CB90` |
+| 614 | TorchV / 杭州萌嘉网络科技有限公司 | 杭州萌嘉网络科技有限公司 | 中国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-C69059B62B75CB90` |
 | 615 | 极熵科技 / Maxtropy | 极熵科技 / Maxtropy | 中国 | 0 | 0 | — | — | `TEAM-CF9D08DBA7F85744` |
-| 616 | 武汉光庭信息技术股份有限公司 | 武汉光庭信息技术股份有限公司 | 中国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-E418A27BAE5EBC04` |
+| 616 | 武汉光庭信息技术股份有限公司 | 武汉光庭信息技术股份有限公司 | 中国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-E418A27BAE5EBC04` |
 | 617 | 武汉智跃创达科技有限公司 | 武汉智跃创达科技有限公司 | 中国 | 0 | 0 | — | — | `TEAM-AE16F221705AE3CB` |
-| 618 | 江淮前沿技术协同创新中心（江淮实验室） | 江淮前沿技术协同创新中心（江淮实验室） | 中国 | 1 | 1 | 安全、治理与合规 1 | 安全、治理与合规 1 | `TEAM-240D29DA8B509779` |
+| 618 | 江淮前沿技术协同创新中心（江淮实验室） | 江淮前沿技术协同创新中心（江淮实验室） | 中国 | 1 | 0 | — | 安全、治理与合规 1 | `TEAM-240D29DA8B509779` |
 | 619 | 江苏千桐科技有限公司 | 江苏千桐科技有限公司 | 中国 | 0 | 0 | — | — | `TEAM-C9CDF262C9560A51` |
 | 620 | 江苏经发信息科技服务有限公司 | 江苏经发阳湖数据服务有限公司 | 中国 | 0 | 0 | — | — | `TEAM-617EB2FEB977875B` |
 | 621 | 江苏赞奇科技股份有限公司 | 江苏赞奇科技股份有限公司 | 中国 | 0 | 0 | — | — | `TEAM-A00D3029D5C44B4D` |
-| 622 | 江苏集萃华科智能装备科技有限公司 / JITRI Huake Intelligent Equipment | 江苏集萃华科智能装备科技有限公司 / JITRI Huake Intelligent Equipment | 中国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-94F502B48A84D10F` |
-| 623 | 江西省金控科技产业集团有限公司 / 金信数科公司 | 江西省金融控股集团有限公司 | 中国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-226244BE640B7F75` |
-| 624 | 河南宏博测控技术有限公司 / Henan Hongbo Measurement and Control | 河南宏博测控技术有限公司 / Henan Hongbo Measurement and Control | 中国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-4EA9915E6024B6BD` |
+| 622 | 江苏集萃华科智能装备科技有限公司 / JITRI Huake Intelligent Equipment | 江苏集萃华科智能装备科技有限公司 / JITRI Huake Intelligent Equipment | 中国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-94F502B48A84D10F` |
+| 623 | 江西省金控科技产业集团有限公司 / 金信数科公司 | 江西省金融控股集团有限公司 | 中国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-226244BE640B7F75` |
+| 624 | 河南宏博测控技术有限公司 / Henan Hongbo Measurement and Control | 河南宏博测控技术有限公司 / Henan Hongbo Measurement and Control | 中国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-4EA9915E6024B6BD` |
 | 625 | 河南日报报业集团有限公司 | 河南日报报业集团有限公司 | 中国 | 0 | 0 | — | — | `TEAM-3A8B4692A8304042` |
 | 626 | 河钢集团有限公司 / HBIS Group | 河钢集团有限公司 / HBIS Group | 中国 | 0 | 0 | — | — | `TEAM-0C0829DA97B7891C` |
 | 627 | 法大大 iTerms | 法大大 iTerms | 中国 | 0 | 0 | — | — | `TEAM-B7F7E9253B43CDA0` |
-| 628 | 波克 / Boke | 波克 / Boke | 中国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-D6CC7C4A43A711CD` |
+| 628 | 波克 / Boke | 波克 / Boke | 中国 | 1 | 0 | — | 产品与设计 1 | `TEAM-D6CC7C4A43A711CD` |
 | 629 | 泰华智慧产业集团股份有限公司 / Telchina | 泰华智慧产业集团股份有限公司 / Telchina | 中国 | 0 | 0 | — | — | `TEAM-938663BC741531B1` |
 | 630 | 洛阳灵睿网络技术有限公司 | 洛阳灵睿网络技术有限公司 | 中国 | 0 | 0 | — | — | `TEAM-F01146162B011539` |
 | 631 | 津渡生科 / OxTium Technology | 津渡生科 / OxTium Technology | 中国 | 0 | 0 | — | — | `TEAM-8C6AD2D89FF32087` |
@@ -768,37 +767,37 @@
 | 633 | 济南数字进化网络技术有限公司 | 济南数字进化网络技术有限公司 | 中国 | 0 | 0 | — | — | `TEAM-717BC131A004D060` |
 | 634 | 浙江中医药大学金华研究院 / 浙中实验室 | 浙江中医药大学 / 金华市人民政府 | 中国 | 0 | 0 | — | — | `TEAM-098CF12A4D72DD7E` |
 | 635 | 浙江大学智能感知与集群控制团队 | 浙江大学 | 中国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-BBFF6FF802C215DD` |
-| 636 | 浙江大学医学院附属第一医院医学人工智能研究与转化平台 | 浙江大学医学院附属第一医院 | 中国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-B87D851346D505DE` |
-| 637 | 浙江大学宁波国际科创中心未来计算技术创新中心 | 浙江大学宁波国际科创中心未来计算技术创新中心 | 中国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-BC4F035B6003E0E3` |
+| 636 | 浙江大学医学院附属第一医院医学人工智能研究与转化平台 | 浙江大学医学院附属第一医院 | 中国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-B87D851346D505DE` |
+| 637 | 浙江大学宁波国际科创中心未来计算技术创新中心 | 浙江大学宁波国际科创中心未来计算技术创新中心 | 中国 | 1 | 0 | — | 产品与设计 1 | `TEAM-BC4F035B6003E0E3` |
 | 638 | 浙江太美医疗科技股份有限公司 / Taimei Medical Technology | 浙江太美医疗科技股份有限公司 / Taimei Medical Technology | 中国 | 0 | 0 | — | — | `TEAM-9C5FC34ED3541F22` |
 | 639 | 实在 Agent | 浙江实在智能科技有限公司 | 中国 | 0 | 0 | — | — | `TEAM-37448A1F5D3A94D5` |
 | 640 | 浙江米奥兰特商务会展股份有限公司 / Meorient | 浙江米奥兰特商务会展股份有限公司 / Meorient | 中国 | 0 | 0 | — | — | `TEAM-149FA70F13222BF0` |
 | 641 | 浙江纳里数智健康科技股份有限公司 / 纳里健康 | 浙江纳里数智健康科技股份有限公司 / 纳里健康 | 中国 | 0 | 0 | — | — | `TEAM-7AFB64EA7FF0FE95` |
 | 642 | 浮点涌现 / SellMate | 浮点涌现 / SellMate | 中国 | 0 | 0 | — | — | `TEAM-F046A3742B7A6133` |
 | 643 | 润开鸿 / 鸿境 | 润开鸿 / 鸿境 | 中国 | 0 | 0 | — | — | `TEAM-F835C5011CCA30AD` |
-| 644 | 深圳力维智联技术有限公司 | 深圳力维智联技术有限公司 | 中国 | 2 | 2 | 评测、测试与质量 1；算法、研究与模型 1 | 评测、测试与质量 1；算法、研究与模型 1 | `TEAM-C2834C585C0CAD4C` |
-| 645 | 深圳十沣科技有限公司 / Tenfong | 深圳十沣科技有限公司 / Tenfong | 中国 | 1 | 1 | 客户解决方案与交付 1 | 客户解决方案与交付 1 | `TEAM-0FE8537254636752` |
+| 644 | 深圳力维智联技术有限公司 | 深圳力维智联技术有限公司 | 中国 | 2 | 0 | — | 评测、测试与质量 1；算法、研究与模型 1 | `TEAM-C2834C585C0CAD4C` |
+| 645 | 深圳十沣科技有限公司 / Tenfong | 深圳十沣科技有限公司 / Tenfong | 中国 | 1 | 0 | — | 客户解决方案与交付 1 | `TEAM-0FE8537254636752` |
 | 646 | 深圳大学明德书院 | 深圳大学 | 中国 | 0 | 0 | — | — | `TEAM-2858823FC4DEAACD` |
 | 647 | 模力方舟（Gitee AI） | 深圳奥思研工智能科技有限公司 | 中国 | 0 | 0 | — | — | `TEAM-F1A4C30744F8EA99` |
 | 648 | 深圳市明心数智科技有限公司 / Mingxin Digital Intelligence | 深圳市明心数智科技有限公司 / Mingxin Digital Intelligence | 中国 | 0 | 0 | — | — | `TEAM-40EB854EE5DEBDBC` |
-| 649 | 深圳市未来智联网络研究院 | 深圳市未来智联网络研究院 | 中国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-83D874C3AFA8624C` |
+| 649 | 深圳市未来智联网络研究院 | 深圳市未来智联网络研究院 | 中国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-83D874C3AFA8624C` |
 | 650 | 深圳市磅旗科技智能发展有限公司 / Bangqi Technology | 深圳市磅旗科技智能发展有限公司 / Bangqi Technology | 中国 | 0 | 0 | — | — | `TEAM-9BF9FD12FC290FB2` |
-| 651 | 思谋科技 / SmartMore | 深圳思谋信息科技有限公司 | 中国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-A18A0B44B8B83931` |
-| 652 | 深圳河套学院教育人工智能创新中心 | 深圳河套学院 | 中国 | 1 | 1 | 平台、基础设施与数据 1 | 平台、基础设施与数据 1 | `TEAM-184B65F44F41A2AA` |
-| 653 | 深圳理工大学 | 深圳理工大学 | 中国 | 1 | 1 | 安全、治理与合规 1 | 安全、治理与合规 1 | `TEAM-E9F3D28C1A0064D3` |
-| 654 | 深圳甄才智能科技有限公司 / succAIss | 深圳甄才智能科技有限公司 / succAIss | 中国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-8306875679250C6E` |
+| 651 | 思谋科技 / SmartMore | 深圳思谋信息科技有限公司 | 中国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-A18A0B44B8B83931` |
+| 652 | 深圳河套学院教育人工智能创新中心 | 深圳河套学院 | 中国 | 1 | 0 | — | 平台、基础设施与数据 1 | `TEAM-184B65F44F41A2AA` |
+| 653 | 深圳理工大学 | 深圳理工大学 | 中国 | 1 | 0 | — | 安全、治理与合规 1 | `TEAM-E9F3D28C1A0064D3` |
+| 654 | 深圳甄才智能科技有限公司 / succAIss | 深圳甄才智能科技有限公司 / succAIss | 中国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-8306875679250C6E` |
 | 655 | 深圳远方有光科技有限公司 / Stoke Voltaics | 深圳远方有光科技有限公司 / Stoke Voltaics | 中国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-027A3B6CA3F0C87E` |
 | 656 | 深度动力 / 智能体系统标准参编团队 | 深度动力 / 智能体系统标准参编团队 | 中国 | 0 | 0 | — | — | `TEAM-D647CF4982852E84` |
-| 657 | 清华四川能源互联网研究院 | 清华四川能源互联网研究院 | 中国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-0B6C68722A839BCD` |
-| 658 | 清华大学智能产业研究院 / Tsinghua AIR | 清华大学 / Tsinghua University | 中国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-6E161D9AC6D6D712` |
-| 659 | 清华大学电子工程系 / Tsinghua University Department of Electronic Engineering | 清华大学 / Tsinghua University | 中国 | 2 | 1 | 算法、研究与模型 1 | 客户解决方案与交付 1；算法、研究与模型 1 | `TEAM-F89DF96C0085255C` |
+| 657 | 清华四川能源互联网研究院 | 清华四川能源互联网研究院 | 中国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-0B6C68722A839BCD` |
+| 658 | 清华大学智能产业研究院 / Tsinghua AIR | 清华大学 / Tsinghua University | 中国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-6E161D9AC6D6D712` |
+| 659 | 清华大学电子工程系 / Tsinghua University Department of Electronic Engineering | 清华大学 / Tsinghua University | 中国 | 2 | 0 | — | 客户解决方案与交付 1；算法、研究与模型 1 | `TEAM-F89DF96C0085255C` |
 | 660 | 温州科技职业学院（温州市农业科学研究院） / Wenzhou Vocational College of Science and Technology | 温州科技职业学院（温州市农业科学研究院） / Wenzhou Vocational College of Science and Technology | 中国 | 0 | 0 | — | — | `TEAM-9D2335824C0953FC` |
 | 661 | 湖北省生态环境科学研究院 / Hubei Academy of Environmental Sciences | 湖北省生态环境厅 / Hubei Department of Ecology and Environment | 中国 | 0 | 0 | — | — | `TEAM-528899D3450A53A1` |
 | 662 | 湖南中南智能装备有限公司 / Hunan Zhongnan Intelligent Equipment | 湖南中南智能装备有限公司 / Hunan Zhongnan Intelligent Equipment | 中国 | 0 | 0 | — | — | `TEAM-81564033BE39F093` |
 | 663 | 湖南大学金敏团队 | 湖南大学 | 中国 | 0 | 0 | — | — | `TEAM-08F3405B01EBFD89` |
 | 664 | 湖南工商大学计算机学院 AI大模型与智能体研究团队 | 湖南工商大学 | 中国 | 0 | 0 | — | — | `TEAM-239503AD34DF10A1` |
 | 665 | 湖南涉外经济学院 / Hunan International Economics University | 湖南涉外经济学院 / Hunan International Economics University | 中国 | 0 | 0 | — | — | `TEAM-99F351A3BB0E2F6D` |
-| 666 | Didi / 滴滴 | 滴滴全球股份有限公司 | 中国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-E2B9BB1E6A3C96E4` |
+| 666 | Didi / 滴滴 | 滴滴全球股份有限公司 | 中国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-E2B9BB1E6A3C96E4` |
 | 667 | 潜入梦科技 infiDive | 潜入梦科技 infiDive | 中国 | 0 | 0 | — | — | `TEAM-3CB8E15941D6E15B` |
 | 668 | 煜象科技（杭州）有限公司 | 煜象科技（杭州）有限公司 | 中国 | 0 | 0 | — | — | `TEAM-8576D99E10244411` |
 | 669 | 牛客企业版 | 牛客企业版 | 中国 | 0 | 0 | — | — | `TEAM-9CB7F23E92465B97` |
@@ -807,9 +806,9 @@
 | 672 | 珍岛信息技术（上海）股份有限公司 / Marketingforce | 珍岛信息技术（上海）股份有限公司 / Marketingforce | 中国 | 0 | 0 | — | — | `TEAM-71CBB1904E8F9452` |
 | 673 | 用AI伴学 / 教育智能体产品群 | 用AI伴学 / 教育智能体产品群 | 中国 | 0 | 0 | — | — | `TEAM-0A3647E873CB19A7` |
 | 674 | 瘦吧健康产业集团 / 招聘智能体 | 瘦吧健康产业集团 / 招聘智能体 | 中国 | 0 | 0 | — | — | `TEAM-D7A306AE18CF1282` |
-| 675 | 睿创微纳 / Raytron Technology | 睿创微纳 / Raytron Technology | 中国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-53E35F3C8D10C357` |
+| 675 | 睿创微纳 / Raytron Technology | 睿创微纳 / Raytron Technology | 中国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-53E35F3C8D10C357` |
 | 676 | 福州软件职业技术学院 | 福州软件职业技术学院 | 中国 | 0 | 0 | — | — | `TEAM-5B7D5E031EF24721` |
-| 677 | 福建拓尔通软件有限公司 | 福建拓尔通软件有限公司 | 中国 | 1 | 1 | 评测、测试与质量 1 | 评测、测试与质量 1 | `TEAM-B483057A24015210` |
+| 677 | 福建拓尔通软件有限公司 | 福建拓尔通软件有限公司 | 中国 | 1 | 0 | — | 评测、测试与质量 1 | `TEAM-B483057A24015210` |
 | 678 | 科创苏州 / 苏小研 | 科创苏州 / 苏小研 | 中国 | 0 | 0 | — | — | `TEAM-D0174F1BDD7A9DE7` |
 | 679 | 科迈生物 / Click.mAb. | 科迈生物 / Click.mAb. | 中国 | 0 | 0 | — | — | `TEAM-35F54DACA1FD0103` |
 | 680 | 秘塔 AI 搜索 | 秘塔 AI 搜索 | 中国 | 0 | 0 | — | — | `TEAM-ABFE152C5A3FE639` |
@@ -829,45 +828,45 @@
 | 694 | 西南财经大学赵宇通用人工智能与数字经济创新团队 | 西南财经大学 | 中国 | 0 | 0 | — | — | `TEAM-3305596BBC220E60` |
 | 695 | 西安众邦网络科技有限公司 | 西安众邦网络科技有限公司 | 中国 | 0 | 0 | — | — | `TEAM-E1D5BB867198FDE3` |
 | 696 | 西安电子科技大学智能软件工程技术实验室 / ISET Lab | 西安电子科技大学 | 中国 | 0 | 0 | — | — | `TEAM-4847DAF2A7E9B2C7` |
-| 697 | 西安领铄智能科技有限公司 | 西安领铄智能科技有限公司 | 中国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-967070685D3E251D` |
-| 698 | 西湖大学工学院张驰实验室 | 西湖大学 | 中国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-AFA0EF3BBF4D9772` |
-| 699 | 西湖大学工学院金耀初实验室 | 西湖大学 | 中国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-5A05461C5A0B09D5` |
+| 697 | 西安领铄智能科技有限公司 | 西安领铄智能科技有限公司 | 中国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-967070685D3E251D` |
+| 698 | 西湖大学工学院张驰实验室 | 西湖大学 | 中国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-AFA0EF3BBF4D9772` |
+| 699 | 西湖大学工学院金耀初实验室 | 西湖大学 | 中国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-5A05461C5A0B09D5` |
 | 700 | 观远数据 ChatBI | 观远数据 ChatBI | 中国 | 0 | 0 | — | — | `TEAM-FE332DC7485855D8` |
 | 701 | 谐云科技 / HarmonyCloud | 谐云科技 / HarmonyCloud | 中国 | 0 | 0 | — | — | `TEAM-9AD2270E45FECBF1` |
 | 702 | 豆包 | 豆包 | 中国 | 0 | 0 | — | — | `TEAM-DA73563CF61577FA` |
 | 703 | 贵阳恒智网络科技 / Hengzhi Network | 贵阳恒智网络科技 / Hengzhi Network | 中国 | 0 | 0 | — | — | `TEAM-B761264118D5B01F` |
 | 704 | 赛尔网络 / CERNET | 赛尔网络有限公司 | 中国 | 0 | 0 | — | — | `TEAM-16EC121A8DA97664` |
 | 705 | WonderClaw / ClawCV | 超级简历 WonderCV | 中国 | 0 | 0 | — | — | `TEAM-30384FA41858AFA7` |
-| 706 | 越疆机器人 | 越疆机器人 | 中国 | 1 | 1 | 评测、测试与质量 1 | 评测、测试与质量 1 | `TEAM-B76847F7672332ED` |
+| 706 | 越疆机器人 | 越疆机器人 | 中国 | 1 | 0 | — | 评测、测试与质量 1 | `TEAM-B76847F7672332ED` |
 | 707 | 跃盟科技 / Deepleaper Technology | 跃盟科技 / Deepleaper Technology | 中国 | 0 | 0 | — | — | `TEAM-5D448AC0A04C94D8` |
 | 708 | 跨越速运 | 跨越速运 | 中国 | 0 | 0 | — | — | `TEAM-5591D93252EB4706` |
 | 709 | 软通智慧科技有限公司 / iSoftStone Smart | 软通智慧科技有限公司 / iSoftStone Smart | 中国 | 0 | 0 | — | — | `TEAM-F35318012D70B4C6` |
-| 710 | 辽宁华擎智工云计算有限公司 | 辽宁华擎智工云计算有限公司 | 中国 | 1 | 1 | 客户解决方案与交付 1 | 客户解决方案与交付 1 | `TEAM-5F5AD88C6A80325C` |
+| 710 | 辽宁华擎智工云计算有限公司 | 辽宁华擎智工云计算有限公司 | 中国 | 1 | 0 | — | 客户解决方案与交付 1 | `TEAM-5F5AD88C6A80325C` |
 | 711 | 达观数据 / DataGrand | 达观数据 / DataGrand | 中国 | 0 | 0 | — | — | `TEAM-3E57F7E02A342FCB` |
 | 712 | 酷睿程 / CARIZON | 酷睿程 / CARIZON | 中国 | 1 | 1 | 平台、基础设施与数据 1 | 平台、基础设施与数据 1 | `TEAM-63CF26DEF67A1DB9` |
-| 713 | 重庆小易智联智能技术有限公司 / Xiaoyi | 重庆小易智联智能技术有限公司 / Xiaoyi | 中国 | 1 | 1 | 客户解决方案与交付 1 | 客户解决方案与交付 1 | `TEAM-E6E26FE7B11CDB8D` |
+| 713 | 重庆小易智联智能技术有限公司 / Xiaoyi | 重庆小易智联智能技术有限公司 / Xiaoyi | 中国 | 1 | 0 | — | 客户解决方案与交付 1 | `TEAM-E6E26FE7B11CDB8D` |
 | 714 | 渝欧新物智 / 重庆渝欧新物智（重庆）科技有限责任公司 | 重庆渝欧跨境电子商务股份有限公司 | 中国 | 0 | 0 | — | — | `TEAM-5CEE5377C1D55378` |
-| 715 | 重庆通用人工智能研究院 | 重庆通用人工智能研究院 | 中国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-5676E68A668B88D3` |
+| 715 | 重庆通用人工智能研究院 | 重庆通用人工智能研究院 | 中国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-5676E68A668B88D3` |
 | 716 | 金智维 AI 数字员工 | 金智维 AI 数字员工 | 中国 | 0 | 0 | — | — | `TEAM-8B1125E43620D1D3` |
 | 717 | 金科环境股份有限公司 / GreenTech Environmental | 金科环境股份有限公司 / GreenTech Environmental | 中国 | 0 | 0 | — | — | `TEAM-5A88400A966CA74C` |
 | 718 | 长沙小艾引擎科技有限公司 / 小A引擎 | 长沙小艾引擎科技有限公司 / 小A引擎 | 中国 | 0 | 0 | — | — | `TEAM-062289DCA8646379` |
 | 719 | 阿里妈妈数字营销 / AI万相 | 阿里妈妈数字营销 / AI万相 | 中国 | 0 | 0 | — | — | `TEAM-BE83DEE1B97D9CFB` |
-| 720 | 零次方量化 / Zerith | 零次方量化 / Zerith | 中国 | 1 | 1 | 运营、项目与职能 1 | 运营、项目与职能 1 | `TEAM-E22DAB89391F7E0C` |
-| 721 | 青岛未来城市信息技术有限公司 | 青岛未来城市信息技术有限公司 | 中国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-F67594F827E0575B` |
+| 720 | 零次方量化 / Zerith | 零次方量化 / Zerith | 中国 | 1 | 0 | — | 运营、项目与职能 1 | `TEAM-E22DAB89391F7E0C` |
+| 721 | 青岛未来城市信息技术有限公司 | 青岛未来城市信息技术有限公司 | 中国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-F67594F827E0575B` |
 | 722 | 青藤云安全 / Qingteng | 青藤云安全 / Qingteng | 中国 | 0 | 0 | — | — | `TEAM-5C1A55CFC51D0D21` |
-| 723 | 飞捷科思智能科技（上海）有限公司 / Fysics | 飞捷科思智能科技（上海）有限公司 / Fysics | 中国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-04049400D3E66A56` |
+| 723 | 飞捷科思智能科技（上海）有限公司 / Fysics | 飞捷科思智能科技（上海）有限公司 / Fysics | 中国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-04049400D3E66A56` |
 | 724 | FreedomAI | 香港中文大学（深圳） | 中国 | 0 | 0 | — | — | `TEAM-971677FBD9123E25` |
 | 725 | 鲲云科技 / Corerain | 鲲云科技 / Corerain | 中国 | 0 | 0 | — | — | `TEAM-1BB60F4DC8496EB4` |
 | 726 | 鲲锦天下（厦门）科技有限公司 / MacsMind | 鲲锦天下（厦门）科技有限公司 / MacsMind | 中国 | 0 | 0 | — | — | `TEAM-51E31B4FBB52FF84` |
-| 727 | 鼎桥技术有限公司 | 鼎桥技术有限公司 | 中国 | 1 | 1 | 安全、治理与合规 1 | 安全、治理与合规 1 | `TEAM-3D74E7D233983929` |
+| 727 | 鼎桥技术有限公司 | 鼎桥技术有限公司 | 中国 | 1 | 0 | — | 安全、治理与合规 1 | `TEAM-3D74E7D233983929` |
 | 728 | 龙岩龙安安全科技有限公司 | 龙岩龙安安全科技有限公司 | 中国 | 0 | 0 | — | — | `TEAM-03EF763F36A31FA5` |
-| 729 | 1mind | 1mind | 美国 | 8 | 7 | 产品与设计 2；客户解决方案与交付 2；商务、市场与合作 1；算法、研究与模型 1；平台、基础设施与数据 1 | 产品与设计 3；客户解决方案与交付 2；商务、市场与合作 1；算法、研究与模型 1；平台、基础设施与数据 1 | `TEAM-581BDF3619F405E1` |
+| 729 | 1mind | 1mind | 美国 | 8 | 6 | 产品与设计 2；商务、市场与合作 1；客户解决方案与交付 1；算法、研究与模型 1；平台、基础设施与数据 1 | 产品与设计 3；客户解决方案与交付 2；商务、市场与合作 1；算法、研究与模型 1；平台、基础设施与数据 1 | `TEAM-581BDF3619F405E1` |
 | 730 | NewCo (Stealth) | 25madison | 美国 | 0 | 0 | — | — | `TEAM-990B5E3F6DCDA9F3` |
 | 731 | AArete | AArete | 美国 | 0 | 0 | — | — | `TEAM-E05D7E2CE76A8E29` |
 | 732 | Acadia Pharmaceuticals | Acadia Pharmaceuticals | 美国 | 0 | 0 | — | — | `TEAM-E507D335D0E58B36` |
 | 733 | Acclaim | Acclaim | 美国 | 0 | 0 | — | — | `TEAM-663FF21EF15368A3` |
 | 734 | AccuroAI | AccuroAI | 美国 | 0 | 0 | — | — | `TEAM-1BE01AC6EA589837` |
-| 735 | Acquisition.com | Acquisition.com | 美国 | 1 | 1 | 评测、测试与质量 1 | 评测、测试与质量 1 | `TEAM-1AB8DD98C152F19A` |
+| 735 | Acquisition.com | Acquisition.com | 美国 | 1 | 0 | — | 评测、测试与质量 1 | `TEAM-1AB8DD98C152F19A` |
 | 736 | Acrely | Acrely | 美国 | 0 | 0 | — | — | `TEAM-A492C6FDD37BFAC8` |
 | 737 | Activepieces | Activepieces Inc. | 美国 | 0 | 0 | — | — | `TEAM-8E77AEC8478ACD3C` |
 | 738 | Actual AI | Actual AI | 美国 | 0 | 0 | — | — | `TEAM-EE695F597BA6FF9A` |
@@ -900,10 +899,10 @@
 | 765 | Alterion | Alterion | 美国 | 0 | 0 | — | — | `TEAM-366B5E80DBDCE6E7` |
 | 766 | Alteryx, Inc. | Alteryx, Inc. | 美国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-A3FCF33B933595A7` |
 | 767 | Amazon Ads | Amazon / AWS | 美国 | 0 | 0 | — | — | `TEAM-5B16D4D6EAFB8853` |
-| 768 | Amazon Ring | Amazon / AWS | 美国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-17D09010C88F858E` |
+| 768 | Amazon Ring | Amazon / AWS | 美国 | 1 | 0 | — | 产品与设计 1 | `TEAM-17D09010C88F858E` |
 | 769 | Amazon Web Services | Amazon / AWS | 美国 | 0 | 0 | — | — | `TEAM-9313656567665E44` |
 | 770 | Ambral | Ambral | 美国 | 0 | 0 | — | — | `TEAM-6E1893F144E43321` |
-| 771 | American Bureau of Shipping (ABS) | American Bureau of Shipping (ABS) | 美国 | 1 | 1 | 评测、测试与质量 1 | 评测、测试与质量 1 | `TEAM-4886DD8E8C7458BE` |
+| 771 | American Bureau of Shipping (ABS) | American Bureau of Shipping (ABS) | 美国 | 1 | 0 | — | 评测、测试与质量 1 | `TEAM-4886DD8E8C7458BE` |
 | 772 | CAS | American Chemical Society | 美国 | 0 | 0 | — | — | `TEAM-A09A9F202E613752` |
 | 773 | American Express | American Express | 美国 | 1 | 0 | — | 安全、治理与合规 1 | `TEAM-49DC4441CE109507` |
 | 774 | AmeriSave Mortgage Corp. | AmeriSave Mortgage Corp. | 美国 | 0 | 0 | — | — | `TEAM-D17885D5232500C4` |
@@ -912,21 +911,21 @@
 | 777 | Andco | Andco | 美国 | 0 | 0 | — | — | `TEAM-14C90D1762042191` |
 | 778 | Andera | Andera | 美国 | 0 | 0 | — | — | `TEAM-650F4C4ECF6FA01D` |
 | 779 | OpenCode | Anomaly Innovations, Inc. | 美国 | 0 | 0 | — | — | `TEAM-82C5746C32D97316` |
-| 780 | AnswerMyQ, Inc. | AnswerMyQ, Inc. | 美国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-577AB4552EBE685B` |
+| 780 | AnswerMyQ, Inc. | AnswerMyQ, Inc. | 美国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-577AB4552EBE685B` |
 | 781 | Anterior | Anterior | 美国 | 0 | 0 | — | — | `TEAM-4923AF3638182963` |
-| 782 | Anthropic | Anthropic | 美国 | 74 | 62 | 安全、治理与合规 15；评测、测试与质量 15；产品与设计 15；平台、基础设施与数据 10；商务、市场与合作 4；运营、项目与职能 3 | 安全、治理与合规 15；评测、测试与质量 15；产品与设计 15；其他或边界岗位 12；平台、基础设施与数据 10；商务、市场与合作 4；运营、项目与职能 3 | `TEAM-A6A6891ED31429E7` |
+| 782 | Anthropic | Anthropic | 美国 | 74 | 57 | 安全、治理与合规 15；产品与设计 15；评测、测试与质量 12；平台、基础设施与数据 8；商务、市场与合作 4；运营、项目与职能 3 | 安全、治理与合规 15；评测、测试与质量 15；产品与设计 15；其他或边界岗位 12；平台、基础设施与数据 10；商务、市场与合作 4；运营、项目与职能 3 | `TEAM-A6A6891ED31429E7` |
 | 783 | Anthropic / Convogo | Anthropic | 美国 | 0 | 0 | — | — | `TEAM-44E39038636640EC` |
 | 784 | Vercept | Anthropic | 美国 | 0 | 0 | — | — | `TEAM-E1B71955F2B3E91C` |
-| 785 | Cursor / Anysphere | Anysphere, Inc. | 美国 | 3 | 3 | 评测、测试与质量 1；商务、市场与合作 1；平台、基础设施与数据 1 | 评测、测试与质量 1；商务、市场与合作 1；平台、基础设施与数据 1 | `TEAM-DE5EA4B969E019CE` |
+| 785 | Cursor / Anysphere | Anysphere, Inc. | 美国 | 3 | 2 | 评测、测试与质量 1；平台、基础设施与数据 1 | 评测、测试与质量 1；商务、市场与合作 1；平台、基础设施与数据 1 | `TEAM-DE5EA4B969E019CE` |
 | 786 | Create.xyz / Anything | Anything | 美国 | 0 | 0 | — | — | `TEAM-07D6E54032BD3E9B` |
 | 787 | Blue Machines AI | apna | 美国 | 1 | 0 | — | 评测、测试与质量 1 | `TEAM-E34DD82B87222686` |
 | 788 | Apollo GraphQL | Apollo Graph Inc. | 美国 | 0 | 0 | — | — | `TEAM-7D4D1594666EF6F7` |
 | 789 | AppFolio | AppFolio | 美国 | 0 | 0 | — | — | `TEAM-30EB4B9407DF0433` |
 | 790 | AppGate | AppGate | 美国 | 0 | 0 | — | — | `TEAM-D89AC0B3E50D3F1E` |
-| 791 | Applied Systems | Applied Systems | 美国 | 1 | 1 | 客户解决方案与交付 1 | 客户解决方案与交付 1 | `TEAM-84D65E2DF2E5F775` |
+| 791 | Applied Systems | Applied Systems | 美国 | 1 | 0 | — | 客户解决方案与交付 1 | `TEAM-84D65E2DF2E5F775` |
 | 792 | AppZen | AppZen | 美国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-C4A0C1A605D09760` |
 | 793 | Archer | Archer | 美国 | 0 | 0 | — | — | `TEAM-1348A9188B2C9048` |
-| 794 | Archy | Archy | 美国 | 13 | 6 | 平台、基础设施与数据 4；安全、治理与合规 1；产品与设计 1 | 平台、基础设施与数据 6；产品与设计 4；商务、市场与合作 2；安全、治理与合规 1 | `TEAM-DF697C6EC036B349` |
+| 794 | Archy | Archy | 美国 | 13 | 3 | 平台、基础设施与数据 3 | 平台、基础设施与数据 6；产品与设计 4；商务、市场与合作 2；安全、治理与合规 1 | `TEAM-DF697C6EC036B349` |
 | 795 | Arctic Health | Arctic Health | 美国 | 0 | 0 | — | — | `TEAM-70B1445C14F3BADB` |
 | 796 | Arden | Arden | 美国 | 0 | 0 | — | — | `TEAM-4AD1A2585FD0E5EA` |
 | 797 | Ardent | Ardent | 美国 | 0 | 0 | — | — | `TEAM-DF443B08CC081ABB` |
@@ -947,9 +946,9 @@
 | 812 | Atrisa | Atrisa | 美国 | 0 | 0 | — | — | `TEAM-A69C59B5B75D7B24` |
 | 813 | Attinio AI | Attinio AI | 美国 | 0 | 0 | — | — | `TEAM-B700CB6FD49FE919` |
 | 814 | Auditoria.AI | Auditoria.AI | 美国 | 0 | 0 | — | — | `TEAM-EEC8370EE79D45E1` |
-| 815 | Augusto Digital | Augusto Digital | 美国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-129F611F20AF2972` |
+| 815 | Augusto Digital | Augusto Digital | 美国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-129F611F20AF2972` |
 | 816 | Aurelian | Aurelian | 美国 | 0 | 0 | — | — | `TEAM-9AE88DB88A5EEBA7` |
-| 817 | Autohand AI | Autohand AI | 美国 | 2 | 2 | 运营、项目与职能 2 | 运营、项目与职能 2 | `TEAM-A3A3F2DB89B184A0` |
+| 817 | Autohand AI | Autohand AI | 美国 | 2 | 0 | — | 运营、项目与职能 2 | `TEAM-A3A3F2DB89B184A0` |
 | 818 | Automat | Automat | 美国 | 6 | 5 | 商务、市场与合作 2；产品与设计 1；算法、研究与模型 1；平台、基础设施与数据 1 | 商务、市场与合作 3；产品与设计 1；算法、研究与模型 1；平台、基础设施与数据 1 | `TEAM-9E5E11947410F8E0` |
 | 819 | AutoSitu | AutoSitu | 美国 | 0 | 0 | — | — | `TEAM-9FD8C0D68FBF1576` |
 | 820 | Autostep | Autostep | 美国 | 0 | 0 | — | — | `TEAM-254BBBEF8828D4D8` |
@@ -967,15 +966,15 @@
 | 832 | BLEN | BLEN | 美国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-89C3427EEE1BF1C0` |
 | 833 | Blue Water Hospitality / Blue Water Development Corporation | Blue Water Hospitality / Blue Water Development Corporation | 美国 | 0 | 0 | — | — | `TEAM-4995DA033B1815BD` |
 | 834 | Bluejay | Bluejay | 美国 | 0 | 0 | — | — | `TEAM-D45488175D8126A6` |
-| 835 | Bolder Apps | Bolder Apps | 美国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-9EDB1E8DFAC484E9` |
+| 835 | Bolder Apps | Bolder Apps | 美国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-9EDB1E8DFAC484E9` |
 | 836 | Boom AI | Boom AI | 美国 | 0 | 0 | — | — | `TEAM-7DB65B2D20ADA5F7` |
 | 837 | boost.ai | boost.ai | 美国 | 0 | 0 | — | — | `TEAM-70D8EF03E8DCED99` |
-| 838 | Booz Allen Hamilton | Booz Allen Hamilton | 美国 | 1 | 1 | 平台、基础设施与数据 1 | 平台、基础设施与数据 1 | `TEAM-E5260EA36D6F4FD5` |
+| 838 | Booz Allen Hamilton | Booz Allen Hamilton | 美国 | 1 | 0 | — | 平台、基础设施与数据 1 | `TEAM-E5260EA36D6F4FD5` |
 | 839 | Bosch Group | Bosch Group | 美国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-192A17096D2B8FD5` |
 | 840 | Boundary | Boundary | 美国 | 0 | 0 | — | — | `TEAM-49EF352537BC3ADB` |
 | 841 | Bread Financial | Bread Financial | 美国 | 0 | 0 | — | — | `TEAM-87A382B8F0AF18EE` |
 | 842 | Bretton AI | Bretton AI | 美国 | 0 | 0 | — | — | `TEAM-B7BC5592E082D3AF` |
-| 843 | Bridgewater Associates | Bridgewater Associates | 美国 | 1 | 1 | 安全、治理与合规 1 | 安全、治理与合规 1 | `TEAM-652E0A72942A695E` |
+| 843 | Bridgewater Associates | Bridgewater Associates | 美国 | 1 | 0 | — | 安全、治理与合规 1 | `TEAM-652E0A72942A695E` |
 | 844 | Bristol Myers Squibb | Bristol Myers Squibb | 美国 | 0 | 0 | — | — | `TEAM-ED30A4F8C1D90100` |
 | 845 | Broccoli AI | Broccoli AI | 美国 | 0 | 0 | — | — | `TEAM-45F21068781CC00A` |
 | 846 | Burnt | Burnt | 美国 | 0 | 0 | — | — | `TEAM-B4E94356E46B2367` |
@@ -1016,9 +1015,9 @@
 | 881 | Langfuse | ClickHouse | 美国 | 0 | 0 | — | — | `TEAM-BCA0DAC0F607604A` |
 | 882 | Climb | Climb | 美国 | 0 | 0 | — | — | `TEAM-976427B45BAE3EB1` |
 | 883 | CloudNSite | CloudNSite | 美国 | 0 | 0 | — | — | `TEAM-260459EC257F13A1` |
-| 884 | CocoIndex | CocoIndex | 美国 | 2 | 2 | 产品与设计 1；平台、基础设施与数据 1 | 产品与设计 1；平台、基础设施与数据 1 | `TEAM-D26C7C656D09532A` |
+| 884 | CocoIndex | CocoIndex | 美国 | 2 | 0 | — | 产品与设计 1；平台、基础设施与数据 1 | `TEAM-D26C7C656D09532A` |
 | 885 | Codoxo | Codoxo | 美国 | 0 | 0 | — | — | `TEAM-5D9951F96F4F70C0` |
-| 886 | Cogniify | Cogniify | 美国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-27054724599E26A6` |
+| 886 | Cogniify | Cogniify | 美国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-27054724599E26A6` |
 | 887 | Cognizant | Cognizant | 美国 | 0 | 0 | — | — | `TEAM-787BEEA23696CE4F` |
 | 888 | Cohere Commerce | Cohere | 美国 | 0 | 0 | — | — | `TEAM-6EB79ACCD7244059` |
 | 889 | Cohere Health | Cohere | 美国 | 0 | 0 | — | — | `TEAM-01BC17E27A47F675` |
@@ -1034,8 +1033,8 @@
 | 899 | Conduit | Conduit | 美国 | 0 | 0 | — | — | `TEAM-2945D6C45C658601` |
 | 900 | Confido | Confido | 美国 | 0 | 0 | — | — | `TEAM-4591B5B585ECC966` |
 | 901 | Harris Computer | Constellation Software Inc. | 美国 | 0 | 0 | — | — | `TEAM-969BE6C324C46FB1` |
-| 902 | CopilotKit | CopilotKit, Inc. | 美国 | 2 | 2 | 客户解决方案与交付 1；工程与应用开发 1 | 客户解决方案与交付 1；工程与应用开发 1 | `TEAM-6EED43646570851F` |
-| 903 | Coralogix | Coralogix | 美国 | 1 | 1 | 客户解决方案与交付 1 | 客户解决方案与交付 1 | `TEAM-37F3D41C2FB18952` |
+| 902 | CopilotKit | CopilotKit, Inc. | 美国 | 2 | 1 | 工程与应用开发 1 | 客户解决方案与交付 1；工程与应用开发 1 | `TEAM-6EED43646570851F` |
+| 903 | Coralogix | Coralogix | 美国 | 1 | 0 | — | 客户解决方案与交付 1 | `TEAM-37F3D41C2FB18952` |
 | 904 | Cotton Holdings | Cotton Holdings | 美国 | 1 | 0 | — | 客户解决方案与交付 1 | `TEAM-3E9328CD79CE4B99` |
 | 905 | Cova | Cova | 美国 | 0 | 0 | — | — | `TEAM-AB4130E1305BBFDF` |
 | 906 | Coval | Coval | 美国 | 0 | 0 | — | — | `TEAM-7CCB7EBD61E450FD` |
@@ -1054,9 +1053,9 @@
 | 919 | DataSpring | DataSpring | 美国 | 0 | 0 | — | — | `TEAM-DC67E57393B8520F` |
 | 920 | Datastrato | Datastrato | 美国 | 0 | 0 | — | — | `TEAM-638E95F6632386CF` |
 | 921 | David Condrey / misterdev | David Condrey / misterdev | 美国 | 0 | 0 | — | — | `TEAM-B7078A638D8DE2CE` |
-| 922 | Day & Zimmermann | Day & Zimmermann | 美国 | 1 | 1 | 评测、测试与质量 1 | 评测、测试与质量 1 | `TEAM-51A83BFE0ECE3C11` |
+| 922 | Day & Zimmermann | Day & Zimmermann | 美国 | 1 | 0 | — | 评测、测试与质量 1 | `TEAM-51A83BFE0ECE3C11` |
 | 923 | Dayforce | Dayforce | 美国 | 0 | 0 | — | — | `TEAM-BF0E2DB887AD369E` |
-| 924 | Daytona | Daytona PlatformS Inc. (official footer spelling) | 美国 | 1 | 1 | 平台、基础设施与数据 1 | 平台、基础设施与数据 1 | `TEAM-699E5445283515AC` |
+| 924 | Daytona | Daytona PlatformS Inc. (official footer spelling) | 美国 | 1 | 0 | — | 平台、基础设施与数据 1 | `TEAM-699E5445283515AC` |
 | 925 | Deccan AI | Deccan AI | 美国 | 0 | 0 | — | — | `TEAM-FE1A0969110376AF` |
 | 926 | Deduction | Deduction | 美国 | 0 | 0 | — | — | `TEAM-6BDBA211023B05A0` |
 | 927 | Deepgram | Deepgram | 美国 | 3 | 3 | 工程与应用开发 2；产品与设计 1 | 工程与应用开发 2；产品与设计 1 | `TEAM-631D2B14D59AAFE7` |
@@ -1085,7 +1084,7 @@
 | 950 | elly client (employer undisclosed) | elly recruiting locator | 美国 | 0 | 0 | — | — | `TEAM-D6615B6D867FA328` |
 | 951 | Emergence AI | Emergence AI | 美国 | 0 | 0 | — | — | `TEAM-BE24207FD0029D82` |
 | 952 | Encora | Encora | 美国 | 0 | 0 | — | — | `TEAM-64EBAE5E61D60972` |
-| 953 | Epic Games, Inc. | Epic Games, Inc. | 美国 | 1 | 1 | 安全、治理与合规 1 | 安全、治理与合规 1 | `TEAM-BB4AB003D68E8098` |
+| 953 | Epic Games, Inc. | Epic Games, Inc. | 美国 | 1 | 0 | — | 安全、治理与合规 1 | `TEAM-BB4AB003D68E8098` |
 | 954 | Equi | Equi | 美国 | 1 | 1 | 平台、基础设施与数据 1 | 平台、基础设施与数据 1 | `TEAM-9E1069FB9ADA5132` |
 | 955 | Equifax | Equifax | 美国 | 0 | 0 | — | — | `TEAM-C86445E5399F2AA0` |
 | 956 | eSimplicity | eSimplicity | 美国 | 0 | 0 | — | — | `TEAM-92F60457EC39ECFB` |
@@ -1099,7 +1098,7 @@
 | 964 | fabric, Inc. | fabric, Inc. | 美国 | 0 | 0 | — | — | `TEAM-4792DF61FA4A624C` |
 | 965 | Fairmarkit | Fairmarkit | 美国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-8AD8C937B7192592` |
 | 966 | Fenrock AI | Fenrock AI | 美国 | 0 | 0 | — | — | `TEAM-5464A6015770EA3B` |
-| 967 | Fervo Energy | Fervo Energy | 美国 | 1 | 1 | 评测、测试与质量 1 | 评测、测试与质量 1 | `TEAM-5E4B469CA211F00D` |
+| 967 | Fervo Energy | Fervo Energy | 美国 | 1 | 0 | — | 评测、测试与质量 1 | `TEAM-5E4B469CA211F00D` |
 | 968 | FieldAI | FieldAI | 美国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-88C75A0042587C4C` |
 | 969 | Fifth Third Bank | Fifth Third Bank | 美国 | 0 | 0 | — | — | `TEAM-34915E879CE3E3E5` |
 | 970 | Filevine | Filevine | 美国 | 9 | 2 | 平台、基础设施与数据 2 | 平台、基础设施与数据 4；产品与设计 3；评测、测试与质量 1；客户解决方案与交付 1 | `TEAM-340EBFA3421F32EE` |
@@ -1124,9 +1123,9 @@
 | 989 | General Motors | General Motors | 美国 | 0 | 0 | — | — | `TEAM-25934CB8EE0DEB7B` |
 | 990 | GM Financial | General Motors | 美国 | 1 | 1 | 客户解决方案与交付 1 | 客户解决方案与交付 1 | `TEAM-C6AFF0A85DDB2EE7` |
 | 991 | Genpact Experience | Genpact | 美国 | 0 | 0 | — | — | `TEAM-75DFD30B60962DF8` |
-| 992 | GeoDelphi / Whitespace | GeoDelphi / Whitespace | 美国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-FD22E902E416F154` |
+| 992 | GeoDelphi / Whitespace | GeoDelphi / Whitespace | 美国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-FD22E902E416F154` |
 | 993 | Ghost | Ghost | 美国 | 0 | 0 | — | — | `TEAM-A119CC2E08E32E6B` |
-| 994 | Giga | Giga | 美国 | 16 | 13 | 平台、基础设施与数据 5；产品与设计 2；商务、市场与合作 2；客户解决方案与交付 2；安全、治理与合规 1；评测、测试与质量 1 | 产品与设计 5；平台、基础设施与数据 5；商务、市场与合作 2；客户解决方案与交付 2；安全、治理与合规 1；评测、测试与质量 1 | `TEAM-50AEB088B6BF6D15` |
+| 994 | Giga | Giga | 美国 | 16 | 12 | 平台、基础设施与数据 5；商务、市场与合作 2；客户解决方案与交付 2；安全、治理与合规 1；评测、测试与质量 1；产品与设计 1 | 产品与设计 5；平台、基础设施与数据 5；商务、市场与合作 2；客户解决方案与交付 2；安全、治理与合规 1；评测、测试与质量 1 | `TEAM-50AEB088B6BF6D15` |
 | 995 | Gigacatalyst | Gigacatalyst | 美国 | 0 | 0 | — | — | `TEAM-BE58C7A83DF947B7` |
 | 996 | GIGR | GIGR | 美国 | 0 | 0 | — | — | `TEAM-5852F410851BAD38` |
 | 997 | Gilead Sciences | Gilead Sciences | 美国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-0E97E1923CB4B8A0` |
@@ -1183,12 +1182,12 @@
 | 1048 | InsForge | InsForge | 美国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-EBCA3F3E4FAE0035` |
 | 1049 | Insight Enterprises | Insight Enterprises | 美国 | 0 | 0 | — | — | `TEAM-1F1FCFAB981E32FB` |
 | 1050 | InstaLILY AI | InstaLILY AI | 美国 | 0 | 0 | — | — | `TEAM-0B9623C1E9E446CC` |
-| 1051 | Intel Corporation | Intel Corporation | 美国 | 1 | 1 | 安全、治理与合规 1 | 安全、治理与合规 1 | `TEAM-8A6399BF0DFF529F` |
+| 1051 | Intel Corporation | Intel Corporation | 美国 | 1 | 0 | — | 安全、治理与合规 1 | `TEAM-8A6399BF0DFF529F` |
 | 1052 | IntelePeer Cloud Communications LLC | IntelePeer Cloud Communications LLC | 美国 | 1 | 1 | 评测、测试与质量 1 | 评测、测试与质量 1 | `TEAM-626CE2C703B75934` |
 | 1053 | InterConnect Defense / IC Defense | InterConnect Defense / IC Defense | 美国 | 0 | 0 | — | — | `TEAM-6D25A334D21E876A` |
 | 1054 | Interfere | Interfere | 美国 | 0 | 0 | — | — | `TEAM-6CE68A71D8847CE1` |
-| 1055 | Intuigence AI | Intuigence AI | 美国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-CE9716D6E09F708E` |
-| 1056 | Intuit Inc. | Intuit Inc. | 美国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-4402159A92A4F36C` |
+| 1055 | Intuigence AI | Intuigence AI | 美国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-CE9716D6E09F708E` |
+| 1056 | Intuit Inc. | Intuit Inc. | 美国 | 1 | 0 | — | 产品与设计 1 | `TEAM-4402159A92A4F36C` |
 | 1057 | ISO New England | ISO New England | 美国 | 0 | 0 | — | — | `TEAM-1D11CF3DBE2EDD53` |
 | 1058 | Johnson & Johnson | Johnson & Johnson | 美国 | 0 | 0 | — | — | `TEAM-4E66783AD2FA133E` |
 | 1059 | JPMorgan Chase & Co. | JPMorgan Chase & Co. | 美国 | 0 | 0 | — | — | `TEAM-77FFB7E58253704F` |
@@ -1203,7 +1202,7 @@
 | 1068 | Kinelo | Kinelo | 美国 | 0 | 0 | — | — | `TEAM-74773236E1556A16` |
 | 1069 | Kino AI | Kino AI | 美国 | 0 | 0 | — | — | `TEAM-4AC3F2968415BD59` |
 | 1070 | Kinro | Kinro | 美国 | 0 | 0 | — | — | `TEAM-7FD2619F57C997F2` |
-| 1071 | Dematic | KION Group | 美国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-B095EC3A27BE409B` |
+| 1071 | Dematic | KION Group | 美国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-B095EC3A27BE409B` |
 | 1072 | Klaimee | Klaimee | 美国 | 0 | 0 | — | — | `TEAM-A88631CC0A0CD742` |
 | 1073 | Klarify | Klarify | 美国 | 0 | 0 | — | — | `TEAM-B5185B66AEB8F503` |
 | 1074 | Klavis AI | Klavis AI | 美国 | 0 | 0 | — | — | `TEAM-1619AE0E3F71E7AD` |
@@ -1221,7 +1220,7 @@
 | 1086 | Lean Solutions Group | Lean Solutions Group | 美国 | 0 | 0 | — | — | `TEAM-28ABA5236F6847C6` |
 | 1087 | Leonardo DRS Land Electronics | Leonardo DRS | 美国 | 1 | 1 | 评测、测试与质量 1 | 评测、测试与质量 1 | `TEAM-3B7E0B0E1274F75D` |
 | 1088 | Letterbook | Letterbook | 美国 | 0 | 0 | — | — | `TEAM-56632E22A7AD7DE9` |
-| 1089 | Lifepoint Health, Inc. | Lifepoint Health, Inc. | 美国 | 1 | 1 | 安全、治理与合规 1 | 安全、治理与合规 1 | `TEAM-8DBFEE6C6133C2E2` |
+| 1089 | Lifepoint Health, Inc. | Lifepoint Health, Inc. | 美国 | 1 | 0 | — | 安全、治理与合规 1 | `TEAM-8DBFEE6C6133C2E2` |
 | 1090 | Light Anchor | Light Anchor | 美国 | 0 | 0 | — | — | `TEAM-BB72E6781F83AD97` |
 | 1091 | Lighthouz AI | Lighthouz AI | 美国 | 0 | 0 | — | — | `TEAM-A2ACD385D67C4A39` |
 | 1092 | Lightsprint | Lightsprint | 美国 | 0 | 0 | — | — | `TEAM-7944C411BD3B25B6` |
@@ -1230,7 +1229,7 @@
 | 1095 | Linzumi | Linzumi | 美国 | 0 | 0 | — | — | `TEAM-A3A82C40A9D3725C` |
 | 1096 | LocalStack | LocalStack | 美国 | 0 | 0 | — | — | `TEAM-D4C6F06A3299B875` |
 | 1097 | Lockheed Martin Space | Lockheed Martin | 美国 | 0 | 0 | — | — | `TEAM-6869CF6259312437` |
-| 1098 | Loman AI | Loman AI | 美国 | 1 | 1 | 评测、测试与质量 1 | 评测、测试与质量 1 | `TEAM-C06A95EE3E6FC20F` |
+| 1098 | Loman AI | Loman AI | 美国 | 1 | 0 | — | 评测、测试与质量 1 | `TEAM-C06A95EE3E6FC20F` |
 | 1099 | Longroad Energy | Longroad Energy | 美国 | 0 | 0 | — | — | `TEAM-2CE54FE73EC3A94D` |
 | 1100 | Lorikeet | Lorikeet | 美国 | 0 | 0 | — | — | `TEAM-85726424CBDD0FCC` |
 | 1101 | Lovable | Lovable | 美国 | 0 | 0 | — | — | `TEAM-35A04C97D829D2C6` |
@@ -1264,7 +1263,7 @@
 | 1129 | MindFort | MindFort | 美国 | 0 | 0 | — | — | `TEAM-101FA2B1547A3F54` |
 | 1130 | Minicor | Minicor | 美国 | 0 | 0 | — | — | `TEAM-0020A524760E4EC5` |
 | 1131 | Helicone | Mintlify | 美国 | 0 | 0 | — | — | `TEAM-B4F5815862EF77FD` |
-| 1132 | MintMCP | MintMCP | 美国 | 1 | 1 | 平台、基础设施与数据 1 | 平台、基础设施与数据 1 | `TEAM-C526BB2670CA239C` |
+| 1132 | MintMCP | MintMCP | 美国 | 1 | 0 | — | 平台、基础设施与数据 1 | `TEAM-C526BB2670CA239C` |
 | 1133 | AnythingLLM / Mintplex Labs | Mintplex Labs | 美国 | 0 | 0 | — | — | `TEAM-4D304F1210F3AFA2` |
 | 1134 | MochaCare | MochaCare | 美国 | 0 | 0 | — | — | `TEAM-FAF05E6A588CFC41` |
 | 1135 | Modal Labs | Modal Labs | 美国 | 0 | 0 | — | — | `TEAM-39796B4003CFB9CE` |
@@ -1315,7 +1314,7 @@
 | 1180 | Pace | Pace | 美国 | 0 | 0 | — | — | `TEAM-2110EE80A53AD573` |
 | 1181 | PaleBlueDot AI | PaleBlueDot AI | 美国 | 0 | 0 | — | — | `TEAM-333320584443A693` |
 | 1182 | Pallet | Pallet | 美国 | 0 | 0 | — | — | `TEAM-8CC38D17728FD26B` |
-| 1183 | Palo Alto Networks | Palo Alto Networks / Venafi EOOD | 美国 | 1 | 1 | 安全、治理与合规 1 | 安全、治理与合规 1 | `TEAM-B681D44C5B735901` |
+| 1183 | Palo Alto Networks | Palo Alto Networks / Venafi EOOD | 美国 | 1 | 0 | — | 安全、治理与合规 1 | `TEAM-B681D44C5B735901` |
 | 1184 | Parahelp | Parahelp | 美国 | 0 | 0 | — | — | `TEAM-A07CFD7B63D01B42` |
 | 1185 | Paramount Global | Paramount Global | 美国 | 1 | 1 | 平台、基础设施与数据 1 | 平台、基础设施与数据 1 | `TEAM-991EA2A0222C47C4` |
 | 1186 | Paramount Streaming | Paramount Skydance Corporation | 美国 | 1 | 1 | 平台、基础设施与数据 1 | 平台、基础设施与数据 1 | `TEAM-D115BE1146966A44` |
@@ -1344,7 +1343,7 @@
 | 1209 | Powder | Powder | 美国 | 0 | 0 | — | — | `TEAM-0D1F32A85B8D76AD` |
 | 1210 | Praxis AI, Inc. | Praxis AI, Inc. | 美国 | 0 | 0 | — | — | `TEAM-016F068A93A55C0E` |
 | 1211 | primitive | primitive | 美国 | 0 | 0 | — | — | `TEAM-BA3B43460A671406` |
-| 1212 | Procter & Gamble / P&G | Procter & Gamble / P&G | 美国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-8ABE19FB4EBC6481` |
+| 1212 | Procter & Gamble / P&G | Procter & Gamble / P&G | 美国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-8ABE19FB4EBC6481` |
 | 1213 | Prodigal | Prodigal | 美国 | 0 | 0 | — | — | `TEAM-AD88DD6EB20A7632` |
 | 1214 | ProfitSolv | ProfitSolv | 美国 | 0 | 0 | — | — | `TEAM-CADBFA5A9286CE85` |
 | 1215 | PromptLayer | PromptLayer | 美国 | 0 | 0 | — | — | `TEAM-28D7C58BEB5B31AE` |
@@ -1396,7 +1395,7 @@
 | 1261 | Sail Research | Sail Research | 美国 | 1 | 0 | — | 评测、测试与质量 1 | `TEAM-E0DB339349AFA382` |
 | 1262 | Salesforce | Salesforce | 美国 | 2 | 0 | — | 产品与设计 1；工程与应用开发 1 | `TEAM-B84AE0D1C530C28C` |
 | 1263 | Salus | Salus | 美国 | 0 | 0 | — | — | `TEAM-2C3F93DCD8129C02` |
-| 1264 | Sandia National Laboratories | Sandia National Laboratories | 美国 | 1 | 1 | 安全、治理与合规 1 | 安全、治理与合规 1 | `TEAM-C42872DDDA90B26E` |
+| 1264 | Sandia National Laboratories | Sandia National Laboratories | 美国 | 1 | 0 | — | 安全、治理与合规 1 | `TEAM-C42872DDDA90B26E` |
 | 1265 | Sanity | Sanity | 美国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-64725CA797277BBC` |
 | 1266 | Saris AI | Saris AI | 美国 | 0 | 0 | — | — | `TEAM-019692BC2D1BA907` |
 | 1267 | Scrapybara | Scrapybara | 美国 | 0 | 0 | — | — | `TEAM-B75F6F15DA842487` |
@@ -1411,7 +1410,7 @@
 | 1276 | Shinsegae / Reflection AI | Shinsegae / Reflection AI | 美国 | 0 | 0 | — | — | `TEAM-4C19988EF5615FE2` |
 | 1277 | Sia | Sia | 美国 | 0 | 0 | — | — | `TEAM-4BCA345BAA49C814` |
 | 1278 | Siblings Software | Siblings Software | 美国 | 0 | 0 | — | — | `TEAM-62E0FE97B1FCCE03` |
-| 1279 | Signature Aviation | Signature Aviation | 美国 | 1 | 1 | 运营、项目与职能 1 | 运营、项目与职能 1 | `TEAM-D48A27C103CA6B00` |
+| 1279 | Signature Aviation | Signature Aviation | 美国 | 1 | 0 | — | 运营、项目与职能 1 | `TEAM-D48A27C103CA6B00` |
 | 1280 | Simantic | Simantic | 美国 | 0 | 0 | — | — | `TEAM-63421B3F0E754688` |
 | 1281 | Simbie AI | Simbie AI | 美国 | 0 | 0 | — | — | `TEAM-0199681C006A2D79` |
 | 1282 | Simile | Simile | 美国 | 0 | 0 | — | — | `TEAM-849A7059C3021354` |
@@ -1419,9 +1418,9 @@
 | 1284 | Sixtyfour | Sixtyfour | 美国 | 0 | 0 | — | — | `TEAM-919E2D77858477B0` |
 | 1285 | Skai | Skai | 美国 | 0 | 0 | — | — | `TEAM-C40DF7BBBED84CD4` |
 | 1286 | Skaled Consulting | Skaled Consulting | 美国 | 0 | 0 | — | — | `TEAM-477D0FF53E3607D0` |
-| 1287 | Skit.ai | Skit.ai | 美国 | 1 | 1 | 平台、基础设施与数据 1 | 平台、基础设施与数据 1 | `TEAM-E626864C2EE7255F` |
+| 1287 | Skit.ai | Skit.ai | 美国 | 1 | 0 | — | 平台、基础设施与数据 1 | `TEAM-E626864C2EE7255F` |
 | 1288 | Skypher | Skypher | 美国 | 0 | 0 | — | — | `TEAM-D73B9671E6D38BFB` |
-| 1289 | Slalom, LLC | Slalom, LLC | 美国 | 1 | 1 | 安全、治理与合规 1 | 安全、治理与合规 1 | `TEAM-44DB5B2D1F60D453` |
+| 1289 | Slalom, LLC | Slalom, LLC | 美国 | 1 | 0 | — | 安全、治理与合规 1 | `TEAM-44DB5B2D1F60D453` |
 | 1290 | Slipstream IT | Slipstream IT | 美国 | 0 | 0 | — | — | `TEAM-AF4FD507F80C6E15` |
 | 1291 | SmarterX Ventures, LLC | SmarterX Ventures, LLC | 美国 | 0 | 0 | — | — | `TEAM-597371A23CEDCD37` |
 | 1292 | Software AG | Software AG | 美国 | 0 | 0 | — | — | `TEAM-5E4BD7BE00737BDF` |
@@ -1433,7 +1432,7 @@
 | 1298 | Spurs Sports & Entertainment | Spurs Sports & Entertainment | 美国 | 0 | 0 | — | — | `TEAM-D60073C052DEBA4D` |
 | 1299 | SQDM | SQDM | 美国 | 0 | 0 | — | — | `TEAM-E58087678B779B81` |
 | 1300 | Squid AI | Squid Cloud, Inc. | 美国 | 0 | 0 | — | — | `TEAM-6567779FA67E4257` |
-| 1301 | St. Jude Children's Research Hospital | St. Jude Children's Research Hospital | 美国 | 1 | 1 | 安全、治理与合规 1 | 安全、治理与合规 1 | `TEAM-C13B4E667A57DC54` |
+| 1301 | St. Jude Children's Research Hospital | St. Jude Children's Research Hospital | 美国 | 1 | 0 | — | 安全、治理与合规 1 | `TEAM-C13B4E667A57DC54` |
 | 1302 | Stage | Stage | 美国 | 0 | 0 | — | — | `TEAM-A9B3C163771F9E9F` |
 | 1303 | Standout | Standout | 美国 | 0 | 0 | — | — | `TEAM-FAC9728D96716411` |
 | 1304 | StitchFin Inc. | StitchFin Inc. | 美国 | 0 | 0 | — | — | `TEAM-ED9A5D9783C3F1F4` |
@@ -1459,7 +1458,7 @@
 | 1324 | The Hog | The Hog | 美国 | 0 | 0 | — | — | `TEAM-16F82F35D9D625C2` |
 | 1325 | The Paper Store | The Paper Store | 美国 | 0 | 0 | — | — | `TEAM-D31214BFCDA8D152` |
 | 1326 | The Trade Desk | The Trade Desk | 美国 | 0 | 0 | — | — | `TEAM-D388021F1324F85D` |
-| 1327 | Travelers | The Travelers Indemnity Company | 美国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-10D2DA7ACB9A13C3` |
+| 1327 | Travelers | The Travelers Indemnity Company | 美国 | 1 | 0 | — | 产品与设计 1 | `TEAM-10D2DA7ACB9A13C3` |
 | 1328 | Third Way Health | Third Way Health | 美国 | 0 | 0 | — | — | `TEAM-3D62ACD48A405148` |
 | 1329 | Tiger Analytics Inc. | Tiger Analytics Inc. | 美国 | 0 | 0 | — | — | `TEAM-52D7A1FAEEFEDE36` |
 | 1330 | Titan AI | Titan AI | 美国 | 0 | 0 | — | — | `TEAM-4261A4F5AC15229A` |
@@ -1477,7 +1476,7 @@
 | 1342 | Trellis | Trellis | 美国 | 0 | 0 | — | — | `TEAM-291FB386055B6BB2` |
 | 1343 | TREND Health Partners | TREND Health Partners | 美国 | 0 | 0 | — | — | `TEAM-AD2454B91B2933CC` |
 | 1344 | Trico Electric Cooperative, Inc. | Trico Electric Cooperative, Inc. | 美国 | 0 | 0 | — | — | `TEAM-D52CA1BF0EE7AC27` |
-| 1345 | Trilagen | Trilagen | 美国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-C5AC901212D1D1DE` |
+| 1345 | Trilagen | Trilagen | 美国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-C5AC901212D1D1DE` |
 | 1346 | Trilon Group | Trilon Group | 美国 | 1 | 1 | 评测、测试与质量 1 | 评测、测试与质量 1 | `TEAM-6B962AB0D73F9138` |
 | 1347 | Truewind | Truewind | 美国 | 0 | 0 | — | — | `TEAM-4C46D6823986F6B6` |
 | 1348 | Truity Credit Union | Truity Credit Union | 美国 | 0 | 0 | — | — | `TEAM-A3926526DA8FBC54` |
@@ -1489,7 +1488,7 @@
 | 1354 | UiPath Agentic Automation | UiPath | 美国 | 0 | 0 | — | — | `TEAM-73B0E62F6BB10A9C` |
 | 1355 | Ujwal Inc. / Level AI (attribution unresolved) | Ujwal Inc. / Level AI (attribution unresolved) | 美国 | 0 | 0 | — | — | `TEAM-5F40B7801E7FB502` |
 | 1356 | Ultimate Knowledge Institute | Ultimate Knowledge Institute | 美国 | 0 | 0 | — | — | `TEAM-317603D3C42A7491` |
-| 1357 | Uniphore | Uniphore Technologies North America Inc | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-AB3F4D9F7369C318` |
+| 1357 | Uniphore | Uniphore Technologies North America Inc | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-AB3F4D9F7369C318` |
 | 1358 | United Global Technologies | United Global Technologies | 美国 | 0 | 0 | — | — | `TEAM-25BAA738D30CE0DE` |
 | 1359 | United Placement Group | United Placement Group | 美国 | 0 | 0 | — | — | `TEAM-C196C09081D3FB2E` |
 | 1360 | Optum Tech | UnitedHealth Group | 美国 | 0 | 0 | — | — | `TEAM-06BF6F337924443D` |
@@ -1499,8 +1498,8 @@
 | 1364 | UpDoc | UpDoc | 美国 | 0 | 0 | — | — | `TEAM-0B077012D3864895` |
 | 1365 | UpSmith | UpSmith | 美国 | 0 | 0 | — | — | `TEAM-DA9E7E1BBC9ABD2D` |
 | 1366 | Oak Ridge National Laboratory (ORNL) | UT-Battelle | 美国 | 0 | 0 | — | — | `TEAM-93AE5C762E98183D` |
-| 1367 | V7 | V7 | 美国 | 1 | 1 | 客户解决方案与交付 1 | 客户解决方案与交付 1 | `TEAM-7CADD3498F4B32F2` |
-| 1368 | Vacatia | Vacatia | 美国 | 1 | 1 | 评测、测试与质量 1 | 评测、测试与质量 1 | `TEAM-1C2A055280131EB0` |
+| 1367 | V7 | V7 | 美国 | 1 | 0 | — | 客户解决方案与交付 1 | `TEAM-7CADD3498F4B32F2` |
+| 1368 | Vacatia | Vacatia | 美国 | 1 | 0 | — | 评测、测试与质量 1 | `TEAM-1C2A055280131EB0` |
 | 1369 | Valiant Harbor International, LLC | Valiant Harbor International, LLC | 美国 | 0 | 0 | — | — | `TEAM-F527886F888C8ADB` |
 | 1370 | Valitana LLC | Valitana LLC | 美国 | 0 | 0 | — | — | `TEAM-5135984845F89929` |
 | 1371 | Variance | Variance | 美国 | 4 | 4 | 评测、测试与质量 2；产品与设计 2 | 评测、测试与质量 2；产品与设计 2 | `TEAM-D3013E330DB2EB98` |
@@ -1509,7 +1508,7 @@
 | 1374 | Vector Legal | Vector Legal | 美国 | 0 | 0 | — | — | `TEAM-5A0A19CE1E2EB0C9` |
 | 1375 | Vehlo | Vehlo | 美国 | 0 | 0 | — | — | `TEAM-3574D33242823EB7` |
 | 1376 | Vela | Vela | 美国 | 0 | 0 | — | — | `TEAM-9B98BC4B264782A1` |
-| 1377 | Ventus AI | Ventus AI | 美国 | 1 | 1 | 评测、测试与质量 1 | 评测、测试与质量 1 | `TEAM-DE151D947B84A65D` |
+| 1377 | Ventus AI | Ventus AI | 美国 | 1 | 0 | — | 评测、测试与质量 1 | `TEAM-DE151D947B84A65D` |
 | 1378 | Vercel | Vercel | 美国 | 5 | 5 | 产品与设计 1；商务、市场与合作 1；客户解决方案与交付 1；工程与应用开发 1；其他或边界岗位 1 | 产品与设计 1；商务、市场与合作 1；客户解决方案与交付 1；工程与应用开发 1；其他或边界岗位 1 | `TEAM-CA3D9ABA45E7E193` |
 | 1379 | Veritus | Veritus | 美国 | 0 | 0 | — | — | `TEAM-6FA5F2BBDD968674` |
 | 1380 | VeryAI / Veros Inc. | VeryAI / Veros Inc. | 美国 | 0 | 0 | — | — | `TEAM-137FEE2019DB4610` |
@@ -1532,7 +1531,7 @@
 | 1397 | Western Digital | Western Digital | 美国 | 0 | 0 | — | — | `TEAM-27DB63E03DF5C23D` |
 | 1398 | Wildcard | Wildcard | 美国 | 0 | 0 | — | — | `TEAM-5841E7B611D9A719` |
 | 1399 | Wilmac Technologies | Wilmac Technologies | 美国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-C728FF2F2AD487B5` |
-| 1400 | Wilson Sonsini Goodrich & Rosati | Wilson Sonsini Goodrich & Rosati | 美国 | 1 | 1 | 安全、治理与合规 1 | 安全、治理与合规 1 | `TEAM-9F15F4E9F11D8823` |
+| 1400 | Wilson Sonsini Goodrich & Rosati | Wilson Sonsini Goodrich & Rosati | 美国 | 1 | 0 | — | 安全、治理与合规 1 | `TEAM-9F15F4E9F11D8823` |
 | 1401 | Windward Consulting | Windward Consulting | 美国 | 0 | 0 | — | — | `TEAM-E743ABB8DC19244E` |
 | 1402 | Wipro Limited | Wipro Limited | 美国 | 0 | 0 | — | — | `TEAM-142974405866D749` |
 | 1403 | withQ / Quickserve AI Inc. | withQ / Quickserve AI Inc. | 美国 | 0 | 0 | — | — | `TEAM-8820819DD1CA3445` |
@@ -1541,13 +1540,13 @@
 | 1406 | Workato | Workato | 美国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-2B1B83989B194597` |
 | 1407 | Workday | Workday | 美国 | 0 | 0 | — | — | `TEAM-E4849ECB220AA5E4` |
 | 1408 | World Bank Group | World Bank Group | 美国 | 0 | 0 | — | — | `TEAM-3B9BC10A7584659F` |
-| 1409 | World Wide Technology | World Wide Technology | 美国 | 1 | 1 | 评测、测试与质量 1 | 评测、测试与质量 1 | `TEAM-FCBC732D691DD073` |
+| 1409 | World Wide Technology | World Wide Technology | 美国 | 1 | 0 | — | 评测、测试与质量 1 | `TEAM-FCBC732D691DD073` |
 | 1410 | XBOW | XBOW | 美国 | 0 | 0 | — | — | `TEAM-E8FC6DC560E338BE` |
 | 1411 | YouArt | YouArt | 美国 | 0 | 0 | — | — | `TEAM-9F38DEC24ED1E6D8` |
 | 1412 | Yuma AI | Yuma AI | 美国 | 0 | 0 | — | — | `TEAM-DFBB30AEBE356FA9` |
 | 1413 | Yutori | Yutori | 美国 | 0 | 0 | — | — | `TEAM-735D0210A28030B8` |
 | 1414 | Zania | Zania | 美国 | 0 | 0 | — | — | `TEAM-49A81BBF084D625E` |
-| 1415 | Zenity | Zenity | 美国 | 1 | 1 | 安全、治理与合规 1 | 安全、治理与合规 1 | `TEAM-7E3F6E18E032790D` |
+| 1415 | Zenity | Zenity | 美国 | 1 | 0 | — | 安全、治理与合规 1 | `TEAM-7E3F6E18E032790D` |
 | 1416 | ZeroPath | ZeroPath | 美国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-86AEB3F9A34CF98F` |
 | 1417 | Zillow Group | Zillow Group | 美国 | 0 | 0 | — | — | `TEAM-EF45994558C78C62` |
 | 1418 | zudo.work | zudo.work | 美国 | 0 | 0 | — | — | `TEAM-BDB4136D2C307A22` |
