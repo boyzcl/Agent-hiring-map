@@ -1,28 +1,31 @@
 {
   "after": {
-    "current": 479,
+    "current": 959,
     "relations": 11437,
     "roles": 1313
   },
   "before": {
-    "current": 836,
+    "current": 479,
     "relations": 11437,
     "roles": 1313
   },
   "changed": {
     "canonical_role_identity_changes": 0,
-    "current_added": 0,
-    "current_removed": 357,
-    "current_retained_and_reverified": 479,
-    "removed_terminal_counts": {
-      "blocked_transient": 9,
-      "closed_verified": 2,
-      "disputed": 11,
-      "unknown_insufficient_evidence": 335
-    }
+    "current_added_existing_roles": 547,
+    "current_removed": 67,
+    "current_retained": 412,
+    "disposition_distribution": {
+      "keep_public_noncurrent_blocked": 22,
+      "keep_public_noncurrent_closed": 209,
+      "keep_public_noncurrent_disputed": 47,
+      "keep_public_noncurrent_exhausted_unresolved": 75,
+      "keep_public_noncurrent_relevance_or_title_failed": 1,
+      "publish_current": 959
+    },
+    "role_public_disposition_updates": 1313
   },
   "evidence_rows_changed": 0,
-  "reason": "existing_role_currentness_v1_full_bootstrap",
+  "reason": "existing_role_publication_completeness_v1",
   "release_as_of": "2026-08-05",
-  "schema_version": "agent-hiring-map-public-delta/1.3"
+  "schema_version": "agent-hiring-map-public-delta/2.0"
 }

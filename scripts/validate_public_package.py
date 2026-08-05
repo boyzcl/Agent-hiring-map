@@ -11,6 +11,7 @@ import re
 import subprocess
 import sys
 import tempfile
+from collections import Counter
 from datetime import date
 from pathlib import Path
 from typing import Any
@@ -844,7 +845,10 @@ def scale_doc_errors(
         f"{metadata['evidence_rows']:,} 条证据": "evidence_rows",
         f"{evidence['global_frozen_rows']:,} 条": "global_frozen_rows",
         f"{canonical['roles']:,} 个岗位": "role_rows",
+        f"{recovery['public_confidence_tier']['verified']:,} 个已核实岗位": "verified_roles",
+        f"{recovery['public_confidence_tier']['probable']:,} 个高概率岗位": "probable_roles",
         f"{metadata['current_opportunities']['rows']:,} 个确认当前开放": "current_rows",
+        f"{metadata['review_queue_rows']:,} | 复核队列事件": "review_queue_rows",
         f"{current_teams:,} 个有当前岗位的团队": "current_teams",
         f"{canonical['organizations']:,} | 组织": "organizations",
         f"{canonical['teams']:,} | 团队": "teams",
@@ -924,6 +928,27 @@ def run_default() -> dict[str, Any]:
         errors.extend(current_errors(datasets["current-opportunities"], metadata))
     if "roles" in datasets:
         errors.extend(role_display_errors(datasets["roles"], metadata))
+    if "review-queue" in datasets:
+        if len(datasets["review-queue"]) != metadata.get("review_queue_rows"):
+            errors.append("metadata_row_count:review-queue")
+    if "roles" in datasets and "review-queue" in datasets:
+        probable_ids = {
+            row["role_id"]
+            for row in datasets["roles"]
+            if row.get("public_confidence_tier") == "probable"
+        }
+        queued_probable_ids = {
+            row["role_id"]
+            for row in datasets["review-queue"]
+            if row.get("review_reason") == "probable_role_followup"
+        }
+        if probable_ids != queued_probable_ids:
+            errors.append("review_queue_probable_role_set_mismatch")
+        reason_counts = Counter(
+            str(row.get("review_reason")) for row in datasets["review-queue"]
+        )
+        if sum(reason_counts.values()) != metadata.get("review_queue_rows"):
+            errors.append("review_queue_reason_partition")
     required_map = {"organizations", "teams", "products", "roles", "relations"}
     if required_map.issubset(datasets) and "evidence-ledger-safe" in datasets:
         errors.extend(
@@ -934,6 +959,23 @@ def run_default() -> dict[str, Any]:
         )
     if "current-opportunities" in datasets and "roles" in datasets:
         role_by_id = {row["role_id"]: row for row in datasets["roles"]}
+        current_ids = {row["role_id"] for row in datasets["current-opportunities"]}
+        publish_ids = {
+            row["role_id"]
+            for row in datasets["roles"]
+            if row.get("public_disposition") == "publish_current"
+        }
+        if current_ids != publish_ids:
+            errors.append("current_publish_disposition_set_mismatch")
+        for role in datasets["roles"]:
+            is_current = role["role_id"] in current_ids
+            if role.get("public_is_current") is not is_current:
+                errors.append(f"role_public_is_current_mismatch:{role['role_id']}")
+            if not is_current and role.get("currentness_status") in {
+                "current_verified",
+                "current_probable",
+            }:
+                errors.append(f"noncurrent_role_implies_current:{role['role_id']}")
         for row in datasets["current-opportunities"]:
             role = role_by_id.get(row["role_id"])
             if role is None:
@@ -949,11 +991,9 @@ def run_default() -> dict[str, Any]:
                 errors.append(f"current_role_title_mismatch:{row['role_id']}")
             if (
                 role.get("public_confidence_tier") != "verified"
-                or role.get("recovery_origin") not in {
-                    "existing_role_revalidated",
-                    "global_deferred_evidence_recovered",
-                }
                 or role.get("eligible_for_strict_current") is not True
+                or role.get("public_disposition") != "publish_current"
+                or role.get("currentness_terminal") != "open_verified"
             ):
                 errors.append(f"current_role_confidence_mismatch:{row['role_id']}")
     errors.extend(scan_text_safety())

@@ -9,10 +9,10 @@
 | 团队总数 | 1741 | 全球公开来源有界恢复；中国与美国为优先验证地区 |
 | 有地图岗位记录的团队 | 788 | 至少关联 1 条标准化 Role 记录 |
 | 没有地图岗位记录的团队 | 953 | 仍保留团队及其证据关系 |
-| 有当前岗位的团队 | 255 | 至少有 1 条记录进入当前岗位视图 |
-| 当前岗位为 0 的团队 | 1486 | 不等于该团队永久不招聘 |
+| 有当前岗位的团队 | 561 | 至少有 1 条记录进入当前岗位视图 |
+| 当前岗位为 0 的团队 | 1180 | 不等于该团队永久不招聘 |
 | 地图岗位记录 | 1313 | 仅含已核实或高概率的标准化 Role 对象 |
-| 当前岗位 | 479 | 通过本次公开快照的日期、来源和访问门 |
+| 当前岗位 | 959 | 通过本次公开快照的日期、来源和访问门 |
 | 安全证据索引 | 7217 | **不是岗位数，也不是招聘人数** |
 
 ## 统计口径
@@ -31,17 +31,17 @@
 
 | 阅读用岗位类别 | 地图岗位记录 | 占地图岗位 | 当前岗位 | 占当前岗位 |
 | --- | ---: | ---: | ---: | ---: |
-| 安全、治理与合规 | 50 | 3.8% | 26 | 5.4% |
-| 评测、测试与质量 | 75 | 5.7% | 30 | 6.3% |
-| 产品与设计 | 122 | 9.3% | 55 | 11.5% |
-| 商务、市场与合作 | 18 | 1.4% | 10 | 2.1% |
-| 客户解决方案与交付 | 63 | 4.8% | 29 | 6.1% |
-| 运营、项目与职能 | 13 | 1.0% | 9 | 1.9% |
-| 算法、研究与模型 | 132 | 10.1% | 54 | 11.3% |
-| 平台、基础设施与数据 | 73 | 5.6% | 40 | 8.4% |
-| 工程与应用开发 | 131 | 10.0% | 58 | 12.1% |
-| 其他或边界岗位 | 636 | 48.4% | 168 | 35.1% |
-| **合计** | **1313** | **100.0%** | **479** | **100.0%** |
+| 安全、治理与合规 | 50 | 3.8% | 41 | 4.3% |
+| 评测、测试与质量 | 75 | 5.7% | 56 | 5.8% |
+| 产品与设计 | 122 | 9.3% | 95 | 9.9% |
+| 商务、市场与合作 | 18 | 1.4% | 15 | 1.6% |
+| 客户解决方案与交付 | 63 | 4.8% | 49 | 5.1% |
+| 运营、项目与职能 | 13 | 1.0% | 10 | 1.0% |
+| 算法、研究与模型 | 132 | 10.1% | 83 | 8.7% |
+| 平台、基础设施与数据 | 73 | 5.6% | 58 | 6.0% |
+| 工程与应用开发 | 131 | 10.0% | 87 | 9.1% |
+| 其他或边界岗位 | 636 | 48.4% | 465 | 48.5% |
+| **合计** | **1313** | **100.0%** | **959** | **100.0%** |
 
 ### 原始岗位族标签（前 25 项）
 
@@ -81,66 +81,57 @@
 
 | 类型 | 数量 | 占比 |
 | --- | ---: | ---: |
-| 美国 | 172 | 35.9% |
-| 中国 | 147 | 30.7% |
-| 其他地区或全球岗位 | 53 | 11.1% |
-| 国家或地区待复核 | 50 | 10.4% |
-| 印度 | 12 | 2.5% |
-| 英国 | 11 | 2.3% |
-| 德国 | 8 | 1.7% |
-| 斯里兰卡 | 5 | 1.0% |
-| 法国 | 4 | 0.8% |
-| 马来西亚 | 3 | 0.6% |
-| 巴基斯坦 | 3 | 0.6% |
-| 加拿大 | 2 | 0.4% |
-| 以色列 | 2 | 0.4% |
-| 新加坡 | 2 | 0.4% |
-| 阿根廷 | 1 | 0.2% |
-| 澳大利亚 | 1 | 0.2% |
-| 墨西哥 | 1 | 0.2% |
-| 波兰 | 1 | 0.2% |
-| 西班牙 | 1 | 0.2% |
+| 国家或地区待复核 | 863 | 90.0% |
+| 其他地区或全球岗位 | 56 | 5.8% |
+| 印度 | 9 | 0.9% |
+| 英国 | 8 | 0.8% |
+| 美国 | 5 | 0.5% |
+| 斯里兰卡 | 4 | 0.4% |
+| 法国 | 3 | 0.3% |
+| 德国 | 3 | 0.3% |
+| 加拿大 | 2 | 0.2% |
+| 巴基斯坦 | 2 | 0.2% |
+| 澳大利亚 | 1 | 0.1% |
+| 墨西哥 | 1 | 0.1% |
+| 波兰 | 1 | 0.1% |
+| 西班牙 | 1 | 0.1% |
 
 ### 地图岗位可信度
 
 | 类型 | 数量 | 占比 |
 | --- | ---: | ---: |
-| 已核实岗位 | 979 | 74.6% |
-| 高概率岗位 | 334 | 25.4% |
+| 已核实岗位 | 1195 | 91.0% |
+| 高概率岗位 | 118 | 9.0% |
 
 ### 地图岗位记录的当前状态
 
 | 类型 | 数量 | 占比 |
 | --- | ---: | ---: |
-| 很可能当前有效 | 936 | 71.3% |
-| 已确认当前有效 | 345 | 26.3% |
-| 已确认关闭 | 10 | 0.8% |
-| historical_closed_or_offline | 10 | 0.8% |
-| 已过期、未重新确认 | 8 | 0.6% |
-| unknown | 3 | 0.2% |
-| 存在争议 | 1 | 0.1% |
+| 已确认当前有效 | 959 | 73.0% |
+| 已确认关闭 | 209 | 15.9% |
+| 已过期、未重新确认 | 98 | 7.5% |
+| 存在争议 | 47 | 3.6% |
 
-> 注意：地图 Role 中标为“很可能当前有效”的记录，仍可能因为公开发布时的期限、访问或结构门而没有进入 479 条当前岗位；求职检索应以当前岗位视图为准。
+> 注意：地图 Role 中标为“很可能当前有效”的记录，仍可能因为公开发布时的期限、访问或结构门而没有进入 959 条当前岗位；求职检索应以当前岗位视图为准。
 
 ### 当前岗位证据等级
 
 | 类型 | 数量 | 占比 |
 | --- | ---: | ---: |
-| A | 472 | 98.5% |
-| B | 7 | 1.5% |
+| A | 959 | 100.0% |
 
 ### 当前岗位访问方式
 
 | 类型 | 数量 | 占比 |
 | --- | ---: | ---: |
-| 公开网页、无需登录 | 479 | 100.0% |
+| 公开网页、无需登录 | 959 | 100.0% |
 
 ### 当前岗位远程/混合办公字段
 
 | 类型 | 数量 | 占比 |
 | --- | ---: | ---: |
-| 现场办公（来源未标远程或混合时按规则默认） | 365 | 76.2% |
-| 明确标注远程或混合办公 | 114 | 23.8% |
+| 现场办公（来源未标远程或混合时按规则默认） | 739 | 77.1% |
+| 明确标注远程或混合办公 | 220 | 22.9% |
 
 > 未明确写远程或混合办公的岗位，按本项目已确认规则归为现场办公；卡片会披露这一判断依据。
 
@@ -148,11 +139,11 @@
 
 | 每团队当前岗位数 | 团队数 | 占全部团队 |
 | --- | ---: | ---: |
-| 0 | 1486 | 85.4% |
-| 1 | 227 | 13.0% |
-| 2–4 | 15 | 0.9% |
-| 5–9 | 6 | 0.3% |
-| 10 及以上 | 7 | 0.4% |
+| 0 | 1180 | 67.8% |
+| 1 | 510 | 29.3% |
+| 2–4 | 28 | 1.6% |
+| 5–9 | 14 | 0.8% |
+| 10 及以上 | 9 | 0.5% |
 
 ## 全部团队完整列表
 
@@ -160,7 +151,7 @@
 
 | 序号 | 团队 | 所属组织 | 地域 | 地图岗位记录 | 当前岗位 | 当前岗位类别摘要 | 全部岗位类别摘要 | 团队编号 |
 | ---: | --- | --- | --- | ---: | ---: | --- | --- | --- |
-| 1 | 零一万物 01.AI | 01.AI / 零一万物 | 中国 | 15 | 12 | 客户解决方案与交付 3；工程与应用开发 3；平台、基础设施与数据 2；评测、测试与质量 1；产品与设计 1；商务、市场与合作 1；算法、研究与模型 1 | 产品与设计 3；客户解决方案与交付 3；工程与应用开发 3；评测、测试与质量 2；平台、基础设施与数据 2；商务、市场与合作 1；算法、研究与模型 1 | `TEAM-10C405784F542C45` |
+| 1 | 零一万物 01.AI | 01.AI / 零一万物 | 中国 | 15 | 14 | 产品与设计 3；客户解决方案与交付 3；工程与应用开发 3；平台、基础设施与数据 2；评测、测试与质量 1；商务、市场与合作 1；算法、研究与模型 1 | 产品与设计 3；客户解决方案与交付 3；工程与应用开发 3；评测、测试与质量 2；平台、基础设施与数据 2；商务、市场与合作 1；算法、研究与模型 1 | `TEAM-10C405784F542C45` |
 | 2 | 360 Group / 360集团 | 360 Group / 360集团 | 中国 | 0 | 0 | — | — | `TEAM-A7AA49B633396CD0` |
 | 3 | 360 纳米 AI 搜索 | 360 纳米 AI 搜索 | 中国 | 0 | 0 | — | — | `TEAM-5772D8F24BF41F24` |
 | 4 | Agentica | Agentica | 中国 | 0 | 0 | — | — | `TEAM-9640633244925380` |
@@ -209,7 +200,7 @@
 | 47 | 蚂蚁数字科技 / Ant Digital | Ant Group / 蚂蚁集团 | 中国 | 0 | 0 | — | — | `TEAM-1CF0136C7EA345A0` |
 | 48 | AnyEnv / Anycodes 在线编程 | AnyEnv / Anycodes 在线编程 | 中国 | 0 | 0 | — | — | `TEAM-016347B934A548A9` |
 | 49 | AtomCode | AtomCode | 中国 | 0 | 0 | — | — | `TEAM-F6179FB3CFE501B5` |
-| 50 | Baichuan Intelligence / 百川智能 | Baichuan Intelligence / 百川智能 | 中国 | 7 | 0 | — | 算法、研究与模型 2；工程与应用开发 2；安全、治理与合规 1；平台、基础设施与数据 1；其他或边界岗位 1 | `TEAM-9A82995FED33C9F6` |
+| 50 | Baichuan Intelligence / 百川智能 | Baichuan Intelligence / 百川智能 | 中国 | 7 | 6 | 算法、研究与模型 2；工程与应用开发 2；平台、基础设施与数据 1；其他或边界岗位 1 | 算法、研究与模型 2；工程与应用开发 2；安全、治理与合规 1；平台、基础设施与数据 1；其他或边界岗位 1 | `TEAM-9A82995FED33C9F6` |
 | 51 | 百川智能 | Baichuan Intelligence / 百川智能 | 中国 | 0 | 0 | — | — | `TEAM-9A976AD93BA42646` |
 | 52 | Baidu ACG Agent Product GTM | Baidu / 百度 | 中国 | 1 | 0 | — | 商务、市场与合作 1 | `TEAM-8BDA57274A79792F` |
 | 53 | Baidu ACG AI Coding Adoption | Baidu / 百度 | 中国 | 0 | 0 | — | — | `TEAM-2C25CF2963AC1862` |
@@ -271,36 +262,36 @@
 | 109 | Beike / 贝壳 | Beike / 贝壳 | 中国 | 0 | 0 | — | — | `TEAM-5D1A631E81D07B62` |
 | 110 | BlueFocus Group / 蓝色光标集团 | BlueFocus Group / 蓝色光标集团 | 中国 | 2 | 1 | 工程与应用开发 1 | 工程与应用开发 1；其他或边界岗位 1 | `TEAM-A5F79437673A2BD4` |
 | 111 | Bocha AI Search | Bocha | 中国 | 0 | 0 | — | — | `TEAM-87A1A9849239B358` |
-| 112 | ArkClaw / ByteDance | ByteDance / 字节跳动 | 中国 | 1 | 0 | — | 产品与设计 1 | `TEAM-A53BD0E7DFCC42B9` |
+| 112 | ArkClaw / ByteDance | ByteDance / 字节跳动 | 中国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-A53BD0E7DFCC42B9` |
 | 113 | ArkClaw / 字节跳动 | ByteDance / 字节跳动 | 中国 | 0 | 0 | — | — | `TEAM-C832622E65D70B72` |
 | 114 | ByteDance / 字节跳动 | ByteDance / 字节跳动 | 中国 | 1 | 0 | — | 评测、测试与质量 1 | `TEAM-9AA5CB6DF0FA1643` |
-| 115 | ByteDance China Transaction and Ads | ByteDance / 字节跳动 | 中国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-7564E9444C0F1857` |
-| 116 | ByteDance Commercial AI | ByteDance / 字节跳动 | 中国 | 2 | 0 | — | 评测、测试与质量 1；算法、研究与模型 1 | `TEAM-CB53F4244D51BF58` |
-| 117 | ByteDance Commercial Trust and Safety | ByteDance / 字节跳动 | 中国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-983D3899F2A96F84` |
-| 118 | ByteDance Data Platform | ByteDance / 字节跳动 | 中国 | 1 | 0 | — | 评测、测试与质量 1 | `TEAM-D1D3AC9D30BD7879` |
-| 119 | ByteDance Global Monetization Product and Technology | ByteDance / 字节跳动 | 中国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-243466EE951FC1BC` |
+| 115 | ByteDance China Transaction and Ads | ByteDance / 字节跳动 | 中国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-7564E9444C0F1857` |
+| 116 | ByteDance Commercial AI | ByteDance / 字节跳动 | 中国 | 2 | 2 | 评测、测试与质量 1；算法、研究与模型 1 | 评测、测试与质量 1；算法、研究与模型 1 | `TEAM-CB53F4244D51BF58` |
+| 117 | ByteDance Commercial Trust and Safety | ByteDance / 字节跳动 | 中国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-983D3899F2A96F84` |
+| 118 | ByteDance Data Platform | ByteDance / 字节跳动 | 中国 | 1 | 1 | 评测、测试与质量 1 | 评测、测试与质量 1 | `TEAM-D1D3AC9D30BD7879` |
+| 119 | ByteDance Global Monetization Product and Technology | ByteDance / 字节跳动 | 中国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-243466EE951FC1BC` |
 | 120 | ByteDance intelligent security | ByteDance / 字节跳动 | 中国 | 0 | 0 | — | — | `TEAM-9A6BBE0C729BF47E` |
-| 121 | ByteDance international e-commerce | ByteDance / 字节跳动 | 中国 | 1 | 0 | — | 产品与设计 1 | `TEAM-B646A5D905A4F8F7` |
-| 122 | ByteDance International E-commerce | ByteDance / 字节跳动 | 中国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-E0668FA0A346F26E` |
-| 123 | ByteDance PDI Search / 字节跳动搜索 | ByteDance / 字节跳动 | 中国 | 2 | 0 | — | 工程与应用开发 2 | `TEAM-AE7A05A1E83E25FE` |
-| 124 | ByteDance safety/risk-control | ByteDance / 字节跳动 | 中国 | 1 | 0 | — | 产品与设计 1 | `TEAM-078D350AC1E55D2B` |
-| 125 | ByteDance Security Engineering / Volcano Engine | ByteDance / 字节跳动 | 中国 | 1 | 0 | — | 安全、治理与合规 1 | `TEAM-2DE1AED7007642C8` |
-| 126 | ByteDance Seed | ByteDance / 字节跳动 | 中国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-E5A965BD23B008B3` |
+| 121 | ByteDance international e-commerce | ByteDance / 字节跳动 | 中国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-B646A5D905A4F8F7` |
+| 122 | ByteDance International E-commerce | ByteDance / 字节跳动 | 中国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-E0668FA0A346F26E` |
+| 123 | ByteDance PDI Search / 字节跳动搜索 | ByteDance / 字节跳动 | 中国 | 2 | 2 | 工程与应用开发 2 | 工程与应用开发 2 | `TEAM-AE7A05A1E83E25FE` |
+| 124 | ByteDance safety/risk-control | ByteDance / 字节跳动 | 中国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-078D350AC1E55D2B` |
+| 125 | ByteDance Security Engineering / Volcano Engine | ByteDance / 字节跳动 | 中国 | 1 | 1 | 安全、治理与合规 1 | 安全、治理与合规 1 | `TEAM-2DE1AED7007642C8` |
+| 126 | ByteDance Seed | ByteDance / 字节跳动 | 中国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-E5A965BD23B008B3` |
 | 127 | CloudWeGo / ByteDance | ByteDance / 字节跳动 | 中国 | 0 | 0 | — | — | `TEAM-52A1D1C25E833577` |
-| 128 | Coze / ByteDance | ByteDance / 字节跳动 | 中国 | 1 | 0 | — | 产品与设计 1 | `TEAM-40BCA87BD0F0F82E` |
+| 128 | Coze / ByteDance | ByteDance / 字节跳动 | 中国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-40BCA87BD0F0F82E` |
 | 129 | Coze Studio | ByteDance / 字节跳动 | 中国 | 0 | 0 | — | — | `TEAM-50F8255A5460C543` |
 | 130 | Douyin Intelligent Creation / ByteDance | ByteDance / 字节跳动 | 中国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-E4FA03F4862DABC5` |
-| 131 | Douyin Open Platform / ByteDance | ByteDance / 字节跳动 | 中国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-1A402FF2E79C3A32` |
-| 132 | Feilian / ByteDance | ByteDance / 字节跳动 | 中国 | 1 | 0 | — | 产品与设计 1 | `TEAM-623579AC45184FDA` |
-| 133 | Feishu AI / ByteDance | ByteDance / 字节跳动 | 中国 | 1 | 0 | — | 产品与设计 1 | `TEAM-58AB49A5EB551528` |
+| 131 | Douyin Open Platform / ByteDance | ByteDance / 字节跳动 | 中国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-1A402FF2E79C3A32` |
+| 132 | Feilian / ByteDance | ByteDance / 字节跳动 | 中国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-623579AC45184FDA` |
+| 133 | Feishu AI / ByteDance | ByteDance / 字节跳动 | 中国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-58AB49A5EB551528` |
 | 134 | OpenViking / Volcengine | ByteDance / 字节跳动 | 中国 | 0 | 0 | — | — | `TEAM-88279BD90EC15F49` |
 | 135 | SandboxFusion / ByteDance | ByteDance / 字节跳动 | 中国 | 0 | 0 | — | — | `TEAM-2B3CB040FB8C15C9` |
-| 136 | TikTok Privacy Safety / ByteDance | ByteDance / 字节跳动 | 中国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-518315F1A2382017` |
-| 137 | TikTok Short Video Recommendation / ByteDance | ByteDance / 字节跳动 | 中国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-0352035CA5889F6D` |
+| 136 | TikTok Privacy Safety / ByteDance | ByteDance / 字节跳动 | 中国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-518315F1A2382017` |
+| 137 | TikTok Short Video Recommendation / ByteDance | ByteDance / 字节跳动 | 中国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-0352035CA5889F6D` |
 | 138 | TRAE | ByteDance / 字节跳动 | 中国 | 0 | 0 | — | — | `TEAM-129E2CB6E1925C7B` |
 | 139 | TRAE / 字节跳动 | ByteDance / 字节跳动 | 中国 | 0 | 0 | — | — | `TEAM-A1322C05FE767DB7` |
 | 140 | Volcengine Coze / HiAgent / TRAE | ByteDance / 字节跳动 | 中国 | 1 | 0 | — | 客户解决方案与交付 1 | `TEAM-E0997F09635690EA` |
-| 141 | Volcengine Coze / TRAE | ByteDance / 字节跳动 | 中国 | 1 | 0 | — | 客户解决方案与交付 1 | `TEAM-3B326CB321144207` |
+| 141 | Volcengine Coze / TRAE | ByteDance / 字节跳动 | 中国 | 1 | 1 | 客户解决方案与交付 1 | 客户解决方案与交付 1 | `TEAM-3B326CB321144207` |
 | 142 | 国际电商 / 字节跳动 | ByteDance / 字节跳动 | 中国 | 0 | 0 | — | — | `TEAM-F3C7B1F5BBEF04B3` |
 | 143 | 字节跳动 Data | ByteDance / 字节跳动 | 中国 | 0 | 0 | — | — | `TEAM-CF56CBF2327EC9DE` |
 | 144 | 字节跳动 Seed | ByteDance / 字节跳动 | 中国 | 0 | 0 | — | — | `TEAM-60054AA9F7E08A77` |
@@ -350,10 +341,10 @@
 | 188 | DeepSeek | DeepSeek / 深度求索 | 中国 | 0 | 0 | — | — | `TEAM-F85C895051A39D83` |
 | 189 | DeepSeek / 杭州深度求索 | DeepSeek / 深度求索 | 中国 | 0 | 0 | — | — | `TEAM-3A8DB7932D55A6AB` |
 | 190 | MetaGPT / DeepWisdom / FoundationAgents | DeepWisdom / FoundationAgents | 中国 | 0 | 0 | — | — | `TEAM-E0DFA34077B30B25` |
-| 191 | Desay SV / 惠州市德赛西威汽车电子股份有限公司 | Desay SV / 惠州市德赛西威汽车电子股份有限公司 | 中国 | 5 | 0 | — | 平台、基础设施与数据 2；客户解决方案与交付 1；算法、研究与模型 1；其他或边界岗位 1 | `TEAM-7850261E00ECC2F3` |
+| 191 | Desay SV / 惠州市德赛西威汽车电子股份有限公司 | Desay SV / 惠州市德赛西威汽车电子股份有限公司 | 中国 | 5 | 3 | 客户解决方案与交付 1；算法、研究与模型 1；平台、基础设施与数据 1 | 平台、基础设施与数据 2；客户解决方案与交付 1；算法、研究与模型 1；其他或边界岗位 1 | `TEAM-7850261E00ECC2F3` |
 | 192 | DIDA-AI / Dida Hotel MCP | Didatravel International Limited | 中国 | 0 | 0 | — | — | `TEAM-78B52D288FEB35B2` |
 | 193 | EasyClaw | DOCUAGILE PTE. LTD. | 中国 | 0 | 0 | — | — | `TEAM-DC0F77B8396DA1BA` |
-| 194 | Dongchedi / 懂车帝 | Dongchedi / 懂车帝 | 中国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-3ADD1B84A0009420` |
+| 194 | Dongchedi / 懂车帝 | Dongchedi / 懂车帝 | 中国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-3ADD1B84A0009420` |
 | 195 | Du Xiaoman / 度小满 | Du Xiaoman / 度小满 | 中国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-0498D7679F649898` |
 | 196 | 翼鸥集团 / EEO Group | EEO Group | 中国 | 0 | 0 | — | — | `TEAM-210D3E9FFC8FF07F` |
 | 197 | EvoFlow / EvoVex AI | Evovex AI | 中国 | 0 | 0 | — | — | `TEAM-629A4F46F1B27A91` |
@@ -397,7 +388,7 @@
 | 235 | 讯飞晓医 | iFlytek / 科大讯飞 | 中国 | 0 | 0 | — | — | `TEAM-7D9E58EDA2C454C8` |
 | 236 | iMaoKe / i贸客 | iMaoKe / i贸客 | 中国 | 0 | 0 | — | — | `TEAM-67DA03E0C9DE4861` |
 | 237 | imcp / imcp.pro | imcp / imcp.pro | 中国 | 0 | 0 | — | — | `TEAM-FC286DBF02C5C96E` |
-| 238 | Inspire Group / 英湃数字科技 | Inspire Group / 英湃数字科技 | 中国 | 1 | 0 | — | 产品与设计 1 | `TEAM-D2C49B2C1B824800` |
+| 238 | Inspire Group / 英湃数字科技 | Inspire Group / 英湃数字科技 | 中国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-D2C49B2C1B824800` |
 | 239 | itongban ChatBI | itongban | 中国 | 0 | 0 | — | — | `TEAM-5CA9969A518DA06B` |
 | 240 | iWhaleCloud / 浩鲸科技 | iWhaleCloud / 浩鲸科技 | 中国 | 1 | 0 | — | 客户解决方案与交付 1 | `TEAM-0266AED0EA91186B` |
 | 241 | BOE / 京东方 | JD.com / 京东 | 中国 | 0 | 0 | — | — | `TEAM-6F48E6D594A605A0` |
@@ -417,7 +408,7 @@
 | 255 | Laiye / 来也科技 | Laiye / 来也科技 | 中国 | 0 | 0 | — | — | `TEAM-E89F3F39C8602535` |
 | 256 | Dify / LangGenius | LangGenius | 中国 | 0 | 0 | — | — | `TEAM-168FBE3E61DABA2A` |
 | 257 | Leapmotor / 浙江零跑科技股份有限公司 | Leapmotor / 浙江零跑科技股份有限公司 | 中国 | 0 | 0 | — | — | `TEAM-0EB69C82191FFC33` |
-| 258 | Li Auto / 理想汽车 | Li Auto / 理想汽车 | 中国 | 1 | 0 | — | 产品与设计 1 | `TEAM-E7EA10B1C04ACE7D` |
+| 258 | Li Auto / 理想汽车 | Li Auto / 理想汽车 | 中国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-E7EA10B1C04ACE7D` |
 | 259 | Lulula | Lulula | 中国 | 0 | 0 | — | — | `TEAM-B4698E64FF2A4B6B` |
 | 260 | Maimai / 脉脉 | Maimai / 脉脉 | 中国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-DCA46671BE51CE1A` |
 | 261 | MAREF / maref-org | MAREF / maref-org | 中国 | 0 | 0 | — | — | `TEAM-07A1D6FC12E20F1F` |
@@ -434,11 +425,11 @@
 | 272 | MetaGO Lightyear / metago-ai | MetaGO Lightyear / metago-ai | 中国 | 0 | 0 | — | — | `TEAM-6DF5132589A31793` |
 | 273 | MetaHub / 元枢科技 | MetaHub / 元枢科技 | 中国 | 0 | 0 | — | — | `TEAM-DDF996F84EBF5E8C` |
 | 274 | Mindverse | Mindverse | 中国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-BBC84DF3FB5A2EBB` |
-| 275 | MiniMax | MiniMax | 中国 | 28 | 0 | — | 平台、基础设施与数据 7；工程与应用开发 7；评测、测试与质量 4；产品与设计 4；客户解决方案与交付 3；安全、治理与合规 1；算法、研究与模型 1；其他或边界岗位 1 | `TEAM-CA43507C9674341D` |
+| 275 | MiniMax | MiniMax | 中国 | 28 | 26 | 平台、基础设施与数据 7；工程与应用开发 5；评测、测试与质量 4；产品与设计 4；客户解决方案与交付 3；安全、治理与合规 1；算法、研究与模型 1；其他或边界岗位 1 | 平台、基础设施与数据 7；工程与应用开发 7；评测、测试与质量 4；产品与设计 4；客户解决方案与交付 3；安全、治理与合规 1；算法、研究与模型 1；其他或边界岗位 1 | `TEAM-CA43507C9674341D` |
 | 276 | MiniMax Agent | MiniMax | 中国 | 0 | 0 | — | — | `TEAM-9B5332F90EC1D267` |
 | 277 | MiniMax Code | MiniMax | 中国 | 0 | 0 | — | — | `TEAM-D7F9250FE721EE0E` |
 | 278 | Mininglamp Technology / 明略科技 | Mininglamp Technology / 明略科技 | 中国 | 0 | 0 | — | — | `TEAM-37BCBC1B0B905942` |
-| 279 | ModelBest / 面壁智能 | ModelBest / 面壁智能 | 中国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-CCF3F15BB0083947` |
+| 279 | ModelBest / 面壁智能 | ModelBest / 面壁智能 | 中国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-CCF3F15BB0083947` |
 | 280 | ModelScope / 魔搭 | ModelScope / 魔搭 | 中国 | 0 | 0 | — | — | `TEAM-9A9B9F80FDC3D972` |
 | 281 | ModelScope AgentScope | ModelScope AgentScope | 中国 | 0 | 0 | — | — | `TEAM-BCCDC5B2CAE95059` |
 | 282 | Moka / 北京希瑞亚斯科技有限公司 | Moka / 北京希瑞亚斯科技有限公司 | 中国 | 0 | 0 | — | — | `TEAM-D786573431C98A46` |
@@ -460,8 +451,8 @@
 | 298 | 网易游戏（互娱） | NetEase / 网易 | 中国 | 0 | 0 | — | — | `TEAM-8C20383F53C1995E` |
 | 299 | 网易游戏（雷火） | NetEase / 网易 | 中国 | 0 | 0 | — | — | `TEAM-44BFAC78E2D4A990` |
 | 300 | 网易职能 | NetEase / 网易 | 中国 | 0 | 0 | — | — | `TEAM-1C19D795AC11481E` |
-| 301 | Zhi Ao Tong / 新紫光前沿院 / 智遨通（天津）信息技术有限公司 | New Unigroup / 新紫光 | 中国 | 3 | 2 | 评测、测试与质量 1；平台、基础设施与数据 1 | 评测、测试与质量 1；算法、研究与模型 1；平台、基础设施与数据 1 | `TEAM-3BF3BD3EB8450A34` |
-| 302 | NIO / 蔚来 | NIO / 蔚来 | 中国 | 82 | 42 | 算法、研究与模型 12；产品与设计 11；工程与应用开发 8；客户解决方案与交付 6；安全、治理与合规 3；平台、基础设施与数据 1；其他或边界岗位 1 | 算法、研究与模型 23；产品与设计 19；工程与应用开发 19；客户解决方案与交付 9；安全、治理与合规 8；评测、测试与质量 2；平台、基础设施与数据 1；其他或边界岗位 1 | `TEAM-C4A36E8C44F675DF` |
+| 301 | Zhi Ao Tong / 新紫光前沿院 / 智遨通（天津）信息技术有限公司 | New Unigroup / 新紫光 | 中国 | 3 | 3 | 评测、测试与质量 1；算法、研究与模型 1；平台、基础设施与数据 1 | 评测、测试与质量 1；算法、研究与模型 1；平台、基础设施与数据 1 | `TEAM-3BF3BD3EB8450A34` |
+| 302 | NIO / 蔚来 | NIO / 蔚来 | 中国 | 82 | 61 | 产品与设计 15；算法、研究与模型 15；工程与应用开发 12；客户解决方案与交付 8；安全、治理与合规 7；评测、测试与质量 2；平台、基础设施与数据 1；其他或边界岗位 1 | 算法、研究与模型 23；产品与设计 19；工程与应用开发 19；客户解决方案与交付 9；安全、治理与合规 8；评测、测试与质量 2；平台、基础设施与数据 1；其他或边界岗位 1 | `TEAM-C4A36E8C44F675DF` |
 | 303 | NIO GeniTech / Shenji | NIO / 蔚来 | 中国 | 0 | 0 | — | — | `TEAM-32ABF1B2861BC2D7` |
 | 304 | Nuwax AI Agent Platform | Nuwax AI Agent Platform | 中国 | 0 | 0 | — | — | `TEAM-12CCEB8AABCC218A` |
 | 305 | PowerMem / OceanBase | OceanBase, Inc. | 中国 | 0 | 0 | — | — | `TEAM-E8ED8B113AE8A6EE` |
@@ -484,7 +475,7 @@
 | 322 | ProcessOn AI | ProcessOn AI | 中国 | 0 | 0 | — | — | `TEAM-E84AAE594B1B4F51` |
 | 323 | Proscenic / 普森斯 | Proscenic / 普森斯 | 中国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-7BE2D3EFBFF43119` |
 | 324 | QCraft / 轻舟智航 | QCraft / 轻舟智航 | 中国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-3450E800065CFFF6` |
-| 325 | Qianzhi Tech / 千帜科技 (UNICUS) | Qianzhi Tech / 千帜科技 (UNICUS) | 中国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-2B36DD27E3DB585E` |
+| 325 | Qianzhi Tech / 千帜科技 (UNICUS) | Qianzhi Tech / 千帜科技 (UNICUS) | 中国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-2B36DD27E3DB585E` |
 | 326 | Qihe Agent / 启合涌现 | Qihe Agent / 启合涌现 | 中国 | 0 | 0 | — | — | `TEAM-75839F3297A2092B` |
 | 327 | Ragent AI / 拿个offer | Ragent AI / 拿个offer | 中国 | 0 | 0 | — | — | `TEAM-E095E995A1495A62` |
 | 328 | RAGFlow / InfiniFlow | RAGFlow / InfiniFlow | 中国 | 0 | 0 | — | — | `TEAM-E3C75721B603EB62` |
@@ -503,7 +494,7 @@
 | 341 | OMNILab / 上海交通大学大数据智能实验室 | Shanghai Jiao Tong University | 中国 | 0 | 0 | — | — | `TEAM-F012199CDFDEF59B` |
 | 342 | Shanghai Sudu Technology / 上海苏度科技有限公司 | Shanghai Sudu Technology / 上海苏度科技有限公司 | 中国 | 1 | 0 | — | 平台、基础设施与数据 1 | `TEAM-B1DD3CF89771A2BE` |
 | 343 | ShellWard / jnMetaCode | ShellWard / jnMetaCode | 中国 | 0 | 0 | — | — | `TEAM-01F3AE483E07BE5C` |
-| 344 | ShengShu Technology / 生数科技 | ShengShu Technology / 生数科技 | 中国 | 1 | 0 | — | 产品与设计 1 | `TEAM-1BFC0DEA147F89D2` |
+| 344 | ShengShu Technology / 生数科技 | ShengShu Technology / 生数科技 | 中国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-1BFC0DEA147F89D2` |
 | 345 | Shenzhen Institute of Artificial Intelligence and Robotics for Society / AIRS | Shenzhen Institute of Artificial Intelligence and Robotics for Society / AIRS | 中国 | 0 | 0 | — | — | `TEAM-14993C2985B76E5D` |
 | 346 | SigmaZ | SigmaZ | 中国 | 0 | 0 | — | — | `TEAM-9BF0BFFE22DF36FE` |
 | 347 | SIMIAIOS / 龙虾手机 | SIMIAIOS / 龙虾手机 | 中国 | 0 | 0 | — | — | `TEAM-0678B1CFC492202E` |
@@ -558,7 +549,7 @@
 | 396 | Xiaomi / MiMo | Xiaomi / 小米 | 中国 | 0 | 0 | — | — | `TEAM-9B7E64A2898EAACB` |
 | 397 | Xiaomi / 小米 | Xiaomi / 小米 | 中国 | 2 | 0 | — | 评测、测试与质量 2 | `TEAM-098C48CA29B7C627` |
 | 398 | Xiaomi Auto / 小米汽车 | Xiaomi / 小米 | 中国 | 0 | 0 | — | — | `TEAM-0836C08769F5BFE8` |
-| 399 | XPeng / 小鹏汽车 | XPeng / 小鹏汽车 | 中国 | 106 | 29 | 工程与应用开发 11；客户解决方案与交付 8；算法、研究与模型 6；产品与设计 3；评测、测试与质量 1 | 算法、研究与模型 34；工程与应用开发 25；客户解决方案与交付 18；产品与设计 15；评测、测试与质量 11；安全、治理与合规 3 | `TEAM-729BC98A1D8C89EA` |
+| 399 | XPeng / 小鹏汽车 | XPeng / 小鹏汽车 | 中国 | 106 | 77 | 算法、研究与模型 23；工程与应用开发 22；客户解决方案与交付 15；产品与设计 8；评测、测试与质量 7；安全、治理与合规 2 | 算法、研究与模型 34；工程与应用开发 25；客户解决方案与交付 18；产品与设计 15；评测、测试与质量 11；安全、治理与合规 3 | `TEAM-729BC98A1D8C89EA` |
 | 400 | Yidian Intelligent Computing / 仪电智算 | Yidian Intelligent Computing / 仪电智算 | 中国 | 0 | 0 | — | — | `TEAM-107AEB3CC67BD0A8` |
 | 401 | 用友 / BIP企业AI | Yonyou / 用友 | 中国 | 0 | 0 | — | — | `TEAM-58938B0966B271B0` |
 | 402 | 用友 / Yonyou | Yonyou / 用友 | 中国 | 0 | 0 | — | — | `TEAM-8813467FBE5FEC90` |
@@ -726,7 +717,7 @@
 | 564 | 尊创数字科技南京有限公司 / AgenticAudit | 尊创数字科技南京有限公司 / AgenticAudit | 中国 | 0 | 0 | — | — | `TEAM-9D0E5AA426BBA846` |
 | 565 | 小i机器人 华藏大模型 | 小i机器人 华藏大模型 | 中国 | 0 | 0 | — | — | `TEAM-7943FDD582D8637A` |
 | 566 | 小多科技 | 小多科技 | 中国 | 0 | 0 | — | — | `TEAM-E8A4BBF525B1B717` |
-| 567 | 小马智行 / Pony.ai | 小马智行 / Pony.ai | 中国 | 1 | 0 | — | 评测、测试与质量 1 | `TEAM-FB53C4EF499FB7E0` |
+| 567 | 小马智行 / Pony.ai | 小马智行 / Pony.ai | 中国 | 1 | 1 | 评测、测试与质量 1 | 评测、测试与质量 1 | `TEAM-FB53C4EF499FB7E0` |
 | 568 | 山东中创软件商用中间件股份有限公司 | 山东中创软件商用中间件股份有限公司 | 中国 | 0 | 0 | — | — | `TEAM-D011C1D4F1736FBC` |
 | 569 | 山东华越智能科技有限公司 / Huayue Intelligent | 山东华越智能科技有限公司 / Huayue Intelligent | 中国 | 0 | 0 | — | — | `TEAM-392851C5B5E4279C` |
 | 570 | 山东大学通用智能实验室 | 山东大学通用智能实验室 | 中国 | 0 | 0 | — | — | `TEAM-A066E5269B682597` |
@@ -871,7 +862,7 @@
 | 709 | 软通智慧科技有限公司 / iSoftStone Smart | 软通智慧科技有限公司 / iSoftStone Smart | 中国 | 0 | 0 | — | — | `TEAM-F35318012D70B4C6` |
 | 710 | 辽宁华擎智工云计算有限公司 | 辽宁华擎智工云计算有限公司 | 中国 | 0 | 0 | — | — | `TEAM-5F5AD88C6A80325C` |
 | 711 | 达观数据 / DataGrand | 达观数据 / DataGrand | 中国 | 0 | 0 | — | — | `TEAM-3E57F7E02A342FCB` |
-| 712 | 酷睿程 / CARIZON | 酷睿程 / CARIZON | 中国 | 1 | 0 | — | 平台、基础设施与数据 1 | `TEAM-63CF26DEF67A1DB9` |
+| 712 | 酷睿程 / CARIZON | 酷睿程 / CARIZON | 中国 | 1 | 1 | 平台、基础设施与数据 1 | 平台、基础设施与数据 1 | `TEAM-63CF26DEF67A1DB9` |
 | 713 | 重庆小易智联智能技术有限公司 / Xiaoyi | 重庆小易智联智能技术有限公司 / Xiaoyi | 中国 | 0 | 0 | — | — | `TEAM-E6E26FE7B11CDB8D` |
 | 714 | 渝欧新物智 / 重庆渝欧新物智（重庆）科技有限责任公司 | 重庆渝欧跨境电子商务股份有限公司 | 中国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-5CEE5377C1D55378` |
 | 715 | 重庆通用人工智能研究院 | 重庆通用人工智能研究院 | 中国 | 0 | 0 | — | — | `TEAM-5676E68A668B88D3` |
@@ -890,7 +881,7 @@
 | 728 | 龙岩龙安安全科技有限公司 | 龙岩龙安安全科技有限公司 | 中国 | 0 | 0 | — | — | `TEAM-03EF763F36A31FA5` |
 | 729 | 1mind | 1mind | 美国 | 5 | 5 | 产品与设计 2；客户解决方案与交付 1；算法、研究与模型 1；平台、基础设施与数据 1 | 产品与设计 2；客户解决方案与交付 1；算法、研究与模型 1；平台、基础设施与数据 1 | `TEAM-581BDF3619F405E1` |
 | 730 | NewCo (Stealth) | 25madison | 美国 | 0 | 0 | — | — | `TEAM-990B5E3F6DCDA9F3` |
-| 731 | AArete | AArete | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-E05D7E2CE76A8E29` |
+| 731 | AArete | AArete | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-E05D7E2CE76A8E29` |
 | 732 | Acadia Pharmaceuticals | Acadia Pharmaceuticals | 美国 | 0 | 0 | — | — | `TEAM-E507D335D0E58B36` |
 | 733 | Acclaim | Acclaim | 美国 | 0 | 0 | — | — | `TEAM-663FF21EF15368A3` |
 | 734 | AccuroAI | AccuroAI | 美国 | 0 | 0 | — | — | `TEAM-1BE01AC6EA589837` |
@@ -900,40 +891,40 @@
 | 738 | Actual AI | Actual AI | 美国 | 0 | 0 | — | — | `TEAM-EE695F597BA6FF9A` |
 | 739 | Ad Hoc | Ad Hoc | 美国 | 0 | 0 | — | — | `TEAM-497004CEE4D19808` |
 | 740 | Advanced Micro Devices / AMD | Advanced Micro Devices / AMD | 美国 | 0 | 0 | — | — | `TEAM-61AB8985C301787F` |
-| 741 | Advisor360° | Advisor360° | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-9D4092C167603877` |
-| 742 | Aeris Communications | Aeris Communications | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-01A6218D53F838CC` |
+| 741 | Advisor360° | Advisor360° | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-9D4092C167603877` |
+| 742 | Aeris Communications | Aeris Communications | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-01A6218D53F838CC` |
 | 743 | Afelyon | Afelyon | 美国 | 0 | 0 | — | — | `TEAM-77B1DA2F7957F8C2` |
 | 744 | AgentDM | AgentDM | 美国 | 0 | 0 | — | — | `TEAM-93231138781768F0` |
 | 745 | AgentMail | AgentMail | 美国 | 1 | 1 | 平台、基础设施与数据 1 | 平台、基础设施与数据 1 | `TEAM-74F5A33EF9274AAA` |
 | 746 | Agnost AI | Agnost AI | 美国 | 0 | 0 | — | — | `TEAM-9D9C18B0EDB3BE88` |
-| 747 | DeepLearning.AI / Context Hub | AI Fund | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-9BDB15FE3D2E738E` |
+| 747 | DeepLearning.AI / Context Hub | AI Fund | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-9BDB15FE3D2E738E` |
 | 748 | AiPrise | AiPrise | 美国 | 0 | 0 | — | — | `TEAM-E6EDBFD7D66FE25F` |
 | 749 | Airbnb | Airbnb | 美国 | 0 | 0 | — | — | `TEAM-EFB3EDD7D0528357` |
 | 750 | Airweave | Airweave | 美国 | 0 | 0 | — | — | `TEAM-B855368AF7F9761E` |
 | 751 | AIS | AIS | 美国 | 0 | 0 | — | — | `TEAM-3664CC1F7E080379` |
 | 752 | Alaro | Alaro | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-5A10C3088E1121F6` |
-| 753 | Albert Invent | Albert Invent | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-8A0A37E491D07418` |
+| 753 | Albert Invent | Albert Invent | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-8A0A37E491D07418` |
 | 754 | Aline | Aline | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-4B30A2EF682EB8FE` |
 | 755 | Alkera AI | Alkera AI | 美国 | 0 | 0 | — | — | `TEAM-148CCC51FBA1ACE0` |
 | 756 | The Allen Institute for Artificial Intelligence | Allen Institute | 美国 | 1 | 1 | 评测、测试与质量 1 | 评测、测试与质量 1 | `TEAM-5920148F3BDB3F9C` |
 | 757 | Allowance | Allowance | 美国 | 0 | 0 | — | — | `TEAM-9362F3E46D4EFB2D` |
 | 758 | Answer Financial | Allstate | 美国 | 0 | 0 | — | — | `TEAM-D89FF1334720690C` |
 | 759 | SquareTrade | Allstate | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-CA8380314CB9F7C6` |
-| 760 | Allus AI | Allus AI | 美国 | 1 | 0 | — | 评测、测试与质量 1 | `TEAM-4B401111C25CD0B0` |
+| 760 | Allus AI | Allus AI | 美国 | 1 | 1 | 评测、测试与质量 1 | 评测、测试与质量 1 | `TEAM-4B401111C25CD0B0` |
 | 761 | Alpha Vantage | Alpha Vantage | 美国 | 0 | 0 | — | — | `TEAM-EC9C6B17D2E77554` |
 | 762 | Google | Alphabet / Google | 美国 | 0 | 0 | — | — | `TEAM-085CF1D5BF408EA0` |
-| 763 | Waymo | Alphabet / Google | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-CF068A3AAF6D296A` |
+| 763 | Waymo | Alphabet / Google | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-CF068A3AAF6D296A` |
 | 764 | Alphawatch AI | Alphawatch AI | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-637C34B0E21C0E11` |
-| 765 | Alterion | Alterion | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-366B5E80DBDCE6E7` |
+| 765 | Alterion | Alterion | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-366B5E80DBDCE6E7` |
 | 766 | Alteryx, Inc. | Alteryx, Inc. | 美国 | 1 | 0 | — | 产品与设计 1 | `TEAM-A3FCF33B933595A7` |
-| 767 | Amazon Ads | Amazon / AWS | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-5B16D4D6EAFB8853` |
-| 768 | Amazon Ring | Amazon / AWS | 美国 | 1 | 0 | — | 产品与设计 1 | `TEAM-17D09010C88F858E` |
-| 769 | Amazon Web Services | Amazon / AWS | 美国 | 5 | 0 | — | 其他或边界岗位 5 | `TEAM-9313656567665E44` |
-| 770 | Ambral | Ambral | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-6E1893F144E43321` |
+| 767 | Amazon Ads | Amazon / AWS | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-5B16D4D6EAFB8853` |
+| 768 | Amazon Ring | Amazon / AWS | 美国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-17D09010C88F858E` |
+| 769 | Amazon Web Services | Amazon / AWS | 美国 | 5 | 3 | 其他或边界岗位 3 | 其他或边界岗位 5 | `TEAM-9313656567665E44` |
+| 770 | Ambral | Ambral | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-6E1893F144E43321` |
 | 771 | American Bureau of Shipping (ABS) | American Bureau of Shipping (ABS) | 美国 | 1 | 0 | — | 评测、测试与质量 1 | `TEAM-4886DD8E8C7458BE` |
 | 772 | CAS | American Chemical Society | 美国 | 0 | 0 | — | — | `TEAM-A09A9F202E613752` |
 | 773 | American Express | American Express | 美国 | 1 | 0 | — | 安全、治理与合规 1 | `TEAM-49DC4441CE109507` |
-| 774 | AmeriSave Mortgage Corp. | AmeriSave Mortgage Corp. | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-D17885D5232500C4` |
+| 774 | AmeriSave Mortgage Corp. | AmeriSave Mortgage Corp. | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-D17885D5232500C4` |
 | 775 | Amira Learning | Amira Learning | 美国 | 0 | 0 | — | — | `TEAM-3535EA17DA1C765C` |
 | 776 | Amulet | Amulet | 美国 | 0 | 0 | — | — | `TEAM-0EE7CED14396860B` |
 | 777 | Andco | Andco | 美国 | 0 | 0 | — | — | `TEAM-14C90D1762042191` |
@@ -941,33 +932,33 @@
 | 779 | OpenCode | Anomaly Innovations, Inc. | 美国 | 0 | 0 | — | — | `TEAM-82C5746C32D97316` |
 | 780 | AnswerMyQ, Inc. | AnswerMyQ, Inc. | 美国 | 0 | 0 | — | — | `TEAM-577AB4552EBE685B` |
 | 781 | Anterior | Anterior | 美国 | 0 | 0 | — | — | `TEAM-4923AF3638182963` |
-| 782 | Anthropic | Anthropic | 美国 | 65 | 52 | 安全、治理与合规 14；产品与设计 14；评测、测试与质量 11；平台、基础设施与数据 7；商务、市场与合作 3；运营、项目与职能 3 | 产品与设计 15；安全、治理与合规 14；评测、测试与质量 12；其他或边界岗位 10；平台、基础设施与数据 8；商务、市场与合作 3；运营、项目与职能 3 | `TEAM-A6A6891ED31429E7` |
+| 782 | Anthropic | Anthropic | 美国 | 65 | 62 | 安全、治理与合规 14；产品与设计 14；评测、测试与质量 11；其他或边界岗位 10；平台、基础设施与数据 7；商务、市场与合作 3；运营、项目与职能 3 | 产品与设计 15；安全、治理与合规 14；评测、测试与质量 12；其他或边界岗位 10；平台、基础设施与数据 8；商务、市场与合作 3；运营、项目与职能 3 | `TEAM-A6A6891ED31429E7` |
 | 783 | Anthropic / Convogo | Anthropic | 美国 | 0 | 0 | — | — | `TEAM-44E39038636640EC` |
 | 784 | Vercept | Anthropic | 美国 | 0 | 0 | — | — | `TEAM-E1B71955F2B3E91C` |
-| 785 | Cursor / Anysphere | Anysphere, Inc. | 美国 | 2 | 2 | 评测、测试与质量 1；平台、基础设施与数据 1 | 评测、测试与质量 1；平台、基础设施与数据 1 | `TEAM-DE5EA4B969E019CE` |
+| 785 | Cursor / Anysphere | Anysphere, Inc. | 美国 | 2 | 0 | — | 评测、测试与质量 1；平台、基础设施与数据 1 | `TEAM-DE5EA4B969E019CE` |
 | 786 | Create.xyz / Anything | Anything | 美国 | 0 | 0 | — | — | `TEAM-07D6E54032BD3E9B` |
 | 787 | Blue Machines AI | apna | 美国 | 0 | 0 | — | — | `TEAM-E34DD82B87222686` |
 | 788 | Apollo GraphQL | Apollo Graph Inc. | 美国 | 0 | 0 | — | — | `TEAM-7D4D1594666EF6F7` |
 | 789 | AppFolio | AppFolio | 美国 | 0 | 0 | — | — | `TEAM-30EB4B9407DF0433` |
 | 790 | AppGate | AppGate | 美国 | 0 | 0 | — | — | `TEAM-D89AC0B3E50D3F1E` |
 | 791 | Applied Systems | Applied Systems | 美国 | 0 | 0 | — | — | `TEAM-84D65E2DF2E5F775` |
-| 792 | AppZen | AppZen | 美国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-C4A0C1A605D09760` |
+| 792 | AppZen | AppZen | 美国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-C4A0C1A605D09760` |
 | 793 | Archer | Archer | 美国 | 0 | 0 | — | — | `TEAM-1348A9188B2C9048` |
-| 794 | Archy | Archy | 美国 | 8 | 3 | 平台、基础设施与数据 3 | 平台、基础设施与数据 5；产品与设计 2；商务、市场与合作 1 | `TEAM-DF697C6EC036B349` |
+| 794 | Archy | Archy | 美国 | 8 | 6 | 平台、基础设施与数据 5；产品与设计 1 | 平台、基础设施与数据 5；产品与设计 2；商务、市场与合作 1 | `TEAM-DF697C6EC036B349` |
 | 795 | Arctic Health | Arctic Health | 美国 | 0 | 0 | — | — | `TEAM-70B1445C14F3BADB` |
 | 796 | Arden | Arden | 美国 | 0 | 0 | — | — | `TEAM-4AD1A2585FD0E5EA` |
-| 797 | Ardent | Ardent | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-DF443B08CC081ABB` |
-| 798 | Ariso | Ariso | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-2E8FE114F8B33769` |
+| 797 | Ardent | Ardent | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-DF443B08CC081ABB` |
+| 798 | Ariso | Ariso | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-2E8FE114F8B33769` |
 | 799 | Arize AI | Arize AI | 美国 | 1 | 1 | 评测、测试与质量 1 | 评测、测试与质量 1 | `TEAM-09D3583F88D3FB07` |
 | 800 | Arize Phoenix / Arize AI | Arize AI | 美国 | 0 | 0 | — | — | `TEAM-844AADA1B31CA505` |
 | 801 | Armature | Armature | 美国 | 0 | 0 | — | — | `TEAM-E513004C6FE08588` |
 | 802 | arnata | arnata | 美国 | 0 | 0 | — | — | `TEAM-A6B7B263C2B5D1EA` |
 | 803 | ARSIEM Corporation | ARSIEM Corporation | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-54E3BBA678037B8B` |
 | 804 | Articul8 AI | Articul8 AI | 美国 | 0 | 0 | — | — | `TEAM-104A59F429C17DCE` |
-| 805 | Arva AI | Arva AI | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-4F14482C757253D3` |
-| 806 | Asha Health | Asha Health | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-F55B5D7E4BBB4F7D` |
-| 807 | Assembled | Assembled | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-BAFC4D65D2C53B38` |
-| 808 | Astraea | Astraea | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-46E23C5007A1BC08` |
+| 805 | Arva AI | Arva AI | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-4F14482C757253D3` |
+| 806 | Asha Health | Asha Health | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-F55B5D7E4BBB4F7D` |
+| 807 | Assembled | Assembled | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-BAFC4D65D2C53B38` |
+| 808 | Astraea | Astraea | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-46E23C5007A1BC08` |
 | 809 | Atlassian | Atlassian | 美国 | 0 | 0 | — | — | `TEAM-7EA3DF1145E13AB8` |
 | 810 | Atomic Object | Atomic Object | 美国 | 0 | 0 | — | — | `TEAM-5326263EA28E2C7B` |
 | 811 | Atria Health and Research Institute | Atria Health and Research Institute | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-3726905310E33DF6` |
@@ -975,23 +966,23 @@
 | 813 | Attinio AI | Attinio AI | 美国 | 0 | 0 | — | — | `TEAM-B700CB6FD49FE919` |
 | 814 | Auditoria.AI | Auditoria.AI | 美国 | 0 | 0 | — | — | `TEAM-EEC8370EE79D45E1` |
 | 815 | Augusto Digital | Augusto Digital | 美国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-129F611F20AF2972` |
-| 816 | Aurelian | Aurelian | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-9AE88DB88A5EEBA7` |
+| 816 | Aurelian | Aurelian | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-9AE88DB88A5EEBA7` |
 | 817 | Autohand AI | Autohand AI | 美国 | 0 | 0 | — | — | `TEAM-A3A3F2DB89B184A0` |
-| 818 | Automat | Automat | 美国 | 5 | 0 | — | 商务、市场与合作 2；产品与设计 1；算法、研究与模型 1；平台、基础设施与数据 1 | `TEAM-9E5E11947410F8E0` |
-| 819 | AutoSitu | AutoSitu | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-9FD8C0D68FBF1576` |
+| 818 | Automat | Automat | 美国 | 5 | 5 | 商务、市场与合作 2；产品与设计 1；算法、研究与模型 1；平台、基础设施与数据 1 | 商务、市场与合作 2；产品与设计 1；算法、研究与模型 1；平台、基础设施与数据 1 | `TEAM-9E5E11947410F8E0` |
+| 819 | AutoSitu | AutoSitu | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-9FD8C0D68FBF1576` |
 | 820 | Autostep | Autostep | 美国 | 0 | 0 | — | — | `TEAM-254BBBEF8828D4D8` |
-| 821 | Avalara | Avalara | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-31C4A65D730EA4FF` |
+| 821 | Avalara | Avalara | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-31C4A65D730EA4FF` |
 | 822 | Aware Health | Aware Health | 美国 | 0 | 0 | — | — | `TEAM-16114EB719A5808B` |
 | 823 | Baselayer | Baselayer | 美国 | 0 | 0 | — | — | `TEAM-346EF48EDAED5880` |
-| 824 | Bay Cities Container | Bay Cities Container | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-FCA0A6046182F722` |
+| 824 | Bay Cities Container | Bay Cities Container | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-FCA0A6046182F722` |
 | 825 | BCU | BCU | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-67D7A10EEC4A98F7` |
-| 826 | BDIPlus | BDIPlus | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-7FF9DD3DA69FAB7A` |
-| 827 | Belay Technologies | Belay Technologies | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-4C9DF10D8686EEA3` |
+| 826 | BDIPlus | BDIPlus | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-7FF9DD3DA69FAB7A` |
+| 827 | Belay Technologies | Belay Technologies | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-4C9DF10D8686EEA3` |
 | 828 | GEICO | Berkshire Hathaway | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-2824F6BC9CE5367C` |
 | 829 | BIK | BIK | 美国 | 0 | 0 | — | — | `TEAM-DCEC6851D574158C` |
-| 830 | BioStack Platforms | BioStack Platforms | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-0032267A8833B692` |
+| 830 | BioStack Platforms | BioStack Platforms | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-0032267A8833B692` |
 | 831 | Birdeye | Birdeye | 美国 | 0 | 0 | — | — | `TEAM-1EC6ECA4AC600E07` |
-| 832 | BLEN | BLEN | 美国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-89C3427EEE1BF1C0` |
+| 832 | BLEN | BLEN | 美国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-89C3427EEE1BF1C0` |
 | 833 | Blue Water Hospitality / Blue Water Development Corporation | Blue Water Hospitality / Blue Water Development Corporation | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-4995DA033B1815BD` |
 | 834 | Bluejay | Bluejay | 美国 | 0 | 0 | — | — | `TEAM-D45488175D8126A6` |
 | 835 | Bolder Apps | Bolder Apps | 美国 | 0 | 0 | — | — | `TEAM-9EDB1E8DFAC484E9` |
@@ -1001,27 +992,27 @@
 | 839 | Bosch Group | Bosch Group | 美国 | 3 | 1 | 算法、研究与模型 1 | 其他或边界岗位 2；算法、研究与模型 1 | `TEAM-192A17096D2B8FD5` |
 | 840 | Boundary | Boundary | 美国 | 0 | 0 | — | — | `TEAM-49EF352537BC3ADB` |
 | 841 | Bread Financial | Bread Financial | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-87A382B8F0AF18EE` |
-| 842 | Bretton AI | Bretton AI | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-B7BC5592E082D3AF` |
+| 842 | Bretton AI | Bretton AI | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-B7BC5592E082D3AF` |
 | 843 | Bridgewater Associates | Bridgewater Associates | 美国 | 0 | 0 | — | — | `TEAM-652E0A72942A695E` |
 | 844 | Bristol Myers Squibb | Bristol Myers Squibb | 美国 | 0 | 0 | — | — | `TEAM-ED30A4F8C1D90100` |
-| 845 | Broccoli AI | Broccoli AI | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-45F21068781CC00A` |
+| 845 | Broccoli AI | Broccoli AI | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-45F21068781CC00A` |
 | 846 | Burnt | Burnt | 美国 | 0 | 0 | — | — | `TEAM-B4E94356E46B2367` |
-| 847 | Burq, Inc. | Burq, Inc. | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-C72209874334B7CB` |
-| 848 | C the Signs | C the Signs | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-32225CADB23144E6` |
+| 847 | Burq, Inc. | Burq, Inc. | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-C72209874334B7CB` |
+| 848 | C the Signs | C the Signs | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-32225CADB23144E6` |
 | 849 | C2 Labs, Inc. | C2 Labs, Inc. | 美国 | 0 | 0 | — | — | `TEAM-59827D007ED8A290` |
 | 850 | C3 AI | C3 AI | 美国 | 0 | 0 | — | — | `TEAM-41F73149C86E9A28` |
-| 851 | Cain Watters & Associates | Cain Watters & Associates | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-DF8A24BA36126886` |
-| 852 | Cair Health | Cair Health | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-D5F9A7F021CAA665` |
+| 851 | Cain Watters & Associates | Cain Watters & Associates | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-DF8A24BA36126886` |
+| 852 | Cair Health | Cair Health | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-D5F9A7F021CAA665` |
 | 853 | Callab AI | Callab AI | 美国 | 0 | 0 | — | — | `TEAM-386FD671DFE69A61` |
-| 854 | candidate.fyi | candidate.fyi | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-C258E5AFBF8C1D4C` |
+| 854 | candidate.fyi | candidate.fyi | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-C258E5AFBF8C1D4C` |
 | 855 | Capital Group | Capital Group | 美国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-AF7A2EE3D7B89141` |
 | 856 | Capitol Services | Capitol Services | 美国 | 0 | 0 | — | — | `TEAM-2470BA637A45DDC2` |
-| 857 | Cardinal | Cardinal | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-E1968090CAA7056C` |
+| 857 | Cardinal | Cardinal | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-E1968090CAA7056C` |
 | 858 | Careforce | Careforce | 美国 | 0 | 0 | — | — | `TEAM-6933DC6D237364F2` |
-| 859 | CarMax | CarMax | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-F47AF4586E763872` |
-| 860 | Casco | Casco | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-6022CD924016471D` |
-| 861 | Catena | Catena | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-223BA09C2824CC00` |
-| 862 | Cato Institute | Cato Institute | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-FD9A9E02388EF851` |
+| 859 | CarMax | CarMax | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-F47AF4586E763872` |
+| 860 | Casco | Casco | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-6022CD924016471D` |
+| 861 | Catena | Catena | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-223BA09C2824CC00` |
+| 862 | Cato Institute | Cato Institute | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-FD9A9E02388EF851` |
 | 863 | CBT | CBT | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-83E84DD85BB7F869` |
 | 864 | Cekura | Cekura | 美国 | 0 | 0 | — | — | `TEAM-E153E0F7D53CAB5F` |
 | 865 | CellType | CellType | 美国 | 0 | 0 | — | — | `TEAM-61E8FD04AED57338` |
@@ -1030,9 +1021,9 @@
 | 868 | CGI | CGI | 美国 | 0 | 0 | — | — | `TEAM-1A4A8470F0A386F0` |
 | 869 | Champ AI | Champ AI | 美国 | 0 | 0 | — | — | `TEAM-114809FBC8A88F8C` |
 | 870 | CharacterQuilt | CharacterQuilt | 美国 | 0 | 0 | — | — | `TEAM-DDE6A67F2C17B6D1` |
-| 871 | Charles River Associates | Charles River Associates | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-76BCA7D5080F852A` |
-| 872 | Chasi | Chasi | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-E172B9E1D2F9E6A1` |
-| 873 | Cheiron | Cheiron | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-21D8711C1B59EEFD` |
+| 871 | Charles River Associates | Charles River Associates | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-76BCA7D5080F852A` |
+| 872 | Chasi | Chasi | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-E172B9E1D2F9E6A1` |
+| 873 | Cheiron | Cheiron | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-21D8711C1B59EEFD` |
 | 874 | Cherry Bekaert | Cherry Bekaert | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-0689B47C9AD089BE` |
 | 875 | ChipAgents | ChipAgents | 美国 | 0 | 0 | — | — | `TEAM-93FE6417612CC701` |
 | 876 | Chroma | Chroma | 美国 | 0 | 0 | — | — | `TEAM-AEC727FB241AD666` |
@@ -1041,12 +1032,12 @@
 | 879 | Clarion | Clarion | 美国 | 0 | 0 | — | — | `TEAM-CC440300784D64DB` |
 | 880 | Clawvisor | Clawvisor | 美国 | 0 | 0 | — | — | `TEAM-D64B65277412B32D` |
 | 881 | Langfuse | ClickHouse | 美国 | 0 | 0 | — | — | `TEAM-BCA0DAC0F607604A` |
-| 882 | Climb | Climb | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-976427B45BAE3EB1` |
+| 882 | Climb | Climb | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-976427B45BAE3EB1` |
 | 883 | CloudNSite | CloudNSite | 美国 | 0 | 0 | — | — | `TEAM-260459EC257F13A1` |
 | 884 | CocoIndex | CocoIndex | 美国 | 0 | 0 | — | — | `TEAM-D26C7C656D09532A` |
-| 885 | Codoxo | Codoxo | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-5D9951F96F4F70C0` |
+| 885 | Codoxo | Codoxo | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-5D9951F96F4F70C0` |
 | 886 | Cogniify | Cogniify | 美国 | 0 | 0 | — | — | `TEAM-27054724599E26A6` |
-| 887 | Cognizant | Cognizant | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-787BEEA23696CE4F` |
+| 887 | Cognizant | Cognizant | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-787BEEA23696CE4F` |
 | 888 | Cohere Commerce | Cohere | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-6EB79ACCD7244059` |
 | 889 | Cohere Health | Cohere | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-01BC17E27A47F675` |
 | 890 | Cohesion | Cohesion | 美国 | 0 | 0 | — | — | `TEAM-46F61B73DB4E12F5` |
@@ -1056,90 +1047,90 @@
 | 894 | Compliance Registry / TESSA | Compliance Registry / TESSA | 美国 | 0 | 0 | — | — | `TEAM-A28CECFADAB1D7FB` |
 | 895 | Complir | Complir | 美国 | 0 | 0 | — | — | `TEAM-D93402DE29BE3EA5` |
 | 896 | Complyance | Complyance | 美国 | 0 | 0 | — | — | `TEAM-8565AF5862F6A7B7` |
-| 897 | Composio | Composio | 美国 | 4 | 0 | — | 其他或边界岗位 4 | `TEAM-E224E19C314CFEAA` |
+| 897 | Composio | Composio | 美国 | 4 | 4 | 其他或边界岗位 4 | 其他或边界岗位 4 | `TEAM-E224E19C314CFEAA` |
 | 898 | Concourse | Concourse | 美国 | 0 | 0 | — | — | `TEAM-F5C0C41F3A46C5E5` |
 | 899 | Conduit | Conduit | 美国 | 0 | 0 | — | — | `TEAM-2945D6C45C658601` |
 | 900 | Confido | Confido | 美国 | 0 | 0 | — | — | `TEAM-4591B5B585ECC966` |
 | 901 | Harris Computer | Constellation Software Inc. | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-969BE6C324C46FB1` |
-| 902 | CopilotKit | CopilotKit, Inc. | 美国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-6EED43646570851F` |
-| 903 | Coralogix | Coralogix | 美国 | 1 | 0 | — | 客户解决方案与交付 1 | `TEAM-37F3D41C2FB18952` |
+| 902 | CopilotKit | CopilotKit, Inc. | 美国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-6EED43646570851F` |
+| 903 | Coralogix | Coralogix | 美国 | 1 | 1 | 客户解决方案与交付 1 | 客户解决方案与交付 1 | `TEAM-37F3D41C2FB18952` |
 | 904 | Cotton Holdings | Cotton Holdings | 美国 | 0 | 0 | — | — | `TEAM-3E9328CD79CE4B99` |
 | 905 | Cova | Cova | 美国 | 0 | 0 | — | — | `TEAM-AB4130E1305BBFDF` |
-| 906 | Coval | Coval | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-7CCB7EBD61E450FD` |
+| 906 | Coval | Coval | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-7CCB7EBD61E450FD` |
 | 907 | Cox Enterprises | Cox Enterprises | 美国 | 0 | 0 | — | — | `TEAM-A2451DD5E213EA89` |
 | 908 | Craft Technologies / CraftFlow | Craft Technologies / CraftFlow | 美国 | 0 | 0 | — | — | `TEAM-32EF07C5549A3C69` |
-| 909 | Cranston AI | Cranston AI | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-FA81F968BC479DA4` |
+| 909 | Cranston AI | Cranston AI | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-FA81F968BC479DA4` |
 | 910 | Credal.ai | Credal.ai | 美国 | 0 | 0 | — | — | `TEAM-DF9BDD4342F1CD6A` |
-| 911 | Cresta | Cresta | 美国 | 3 | 0 | — | 产品与设计 1；客户解决方案与交付 1；工程与应用开发 1 | `TEAM-780F90A660C3B4FE` |
+| 911 | Cresta | Cresta | 美国 | 3 | 3 | 产品与设计 1；客户解决方案与交付 1；工程与应用开发 1 | 产品与设计 1；客户解决方案与交付 1；工程与应用开发 1 | `TEAM-780F90A660C3B4FE` |
 | 912 | CrowdStrike | CrowdStrike | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-2CAFCC0F09BEBF63` |
-| 913 | Crunchyroll | Crunchyroll | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-5498DE1FF49F6947` |
-| 914 | Cua | Cua | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-FB018B485FE56DE3` |
+| 913 | Crunchyroll | Crunchyroll | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-5498DE1FF49F6947` |
+| 914 | Cua | Cua | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-FB018B485FE56DE3` |
 | 915 | Cummins | Cummins | 美国 | 0 | 0 | — | — | `TEAM-372A2865602113D7` |
 | 916 | CVS Health | CVS Health | 美国 | 0 | 0 | — | — | `TEAM-4D6F7A2BC7525002` |
 | 917 | Datadog | Datadog | 美国 | 0 | 0 | — | — | `TEAM-E99FC396397FB765` |
-| 918 | Dataleap | Dataleap | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-33710F889DBBF1EE` |
-| 919 | DataSpring | DataSpring | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-DC67E57393B8520F` |
+| 918 | Dataleap | Dataleap | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-33710F889DBBF1EE` |
+| 919 | DataSpring | DataSpring | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-DC67E57393B8520F` |
 | 920 | Datastrato | Datastrato | 美国 | 0 | 0 | — | — | `TEAM-638E95F6632386CF` |
 | 921 | David Condrey / misterdev | David Condrey / misterdev | 美国 | 0 | 0 | — | — | `TEAM-B7078A638D8DE2CE` |
-| 922 | Day & Zimmermann | Day & Zimmermann | 美国 | 1 | 0 | — | 评测、测试与质量 1 | `TEAM-51A83BFE0ECE3C11` |
+| 922 | Day & Zimmermann | Day & Zimmermann | 美国 | 1 | 1 | 评测、测试与质量 1 | 评测、测试与质量 1 | `TEAM-51A83BFE0ECE3C11` |
 | 923 | Dayforce | Dayforce | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-BF0E2DB887AD369E` |
 | 924 | Daytona | Daytona PlatformS Inc. (official footer spelling) | 美国 | 1 | 0 | — | 平台、基础设施与数据 1 | `TEAM-699E5445283515AC` |
 | 925 | Deccan AI | Deccan AI | 美国 | 0 | 0 | — | — | `TEAM-FE1A0969110376AF` |
-| 926 | Deduction | Deduction | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-6BDBA211023B05A0` |
-| 927 | Deepgram | Deepgram | 美国 | 3 | 0 | — | 工程与应用开发 2；产品与设计 1 | `TEAM-631D2B14D59AAFE7` |
+| 926 | Deduction | Deduction | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-6BDBA211023B05A0` |
+| 927 | Deepgram | Deepgram | 美国 | 3 | 3 | 工程与应用开发 2；产品与设计 1 | 工程与应用开发 2；产品与设计 1 | `TEAM-631D2B14D59AAFE7` |
 | 928 | Delan Associates, Inc. | Delan Associates, Inc. | 美国 | 0 | 0 | — | — | `TEAM-D77D8D7A9FD2968D` |
 | 929 | Delegance | Delegance | 美国 | 0 | 0 | — | — | `TEAM-22DCD7664BDF3A48` |
 | 930 | Deloitte | Deloitte | 美国 | 0 | 0 | — | — | `TEAM-96DDB8C70E35398F` |
 | 931 | Denta | Denta | 美国 | 0 | 0 | — | — | `TEAM-DB652ACA4DE63DB0` |
 | 932 | Depot | Depot | 美国 | 0 | 0 | — | — | `TEAM-D6FB004FA33EB7A3` |
-| 933 | DepthFirst | DepthFirst | 美国 | 6 | 0 | — | 客户解决方案与交付 2；安全、治理与合规 1；评测、测试与质量 1；产品与设计 1；平台、基础设施与数据 1 | `TEAM-12D1466D041A8784` |
+| 933 | DepthFirst | DepthFirst | 美国 | 6 | 6 | 客户解决方案与交付 2；安全、治理与合规 1；评测、测试与质量 1；产品与设计 1；平台、基础设施与数据 1 | 客户解决方案与交付 2；安全、治理与合规 1；评测、测试与质量 1；产品与设计 1；平台、基础设施与数据 1 | `TEAM-12D1466D041A8784` |
 | 934 | DevIQ | DevIQ | 美国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-AECC804300A9A130` |
 | 935 | DeVry University | DeVry University | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-D44F484F107704AC` |
 | 936 | Discovered Materials | Discovered Materials | 美国 | 0 | 0 | — | — | `TEAM-830C6CE187AD0583` |
 | 937 | Distru | Distru | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-A0696C641AD75A38` |
 | 938 | DocVerify | DocVerify | 美国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-48D1B1BC300F0555` |
-| 939 | DomainTools | DomainTools | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-D7A9713AF2C6FBDC` |
+| 939 | DomainTools | DomainTools | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-D7A9713AF2C6FBDC` |
 | 940 | Doss | Doss | 美国 | 0 | 0 | — | — | `TEAM-408529EBC4F1F7EB` |
-| 941 | Double Blind Bio | Double Blind Bio | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-C8B96E9A3F467DCF` |
+| 941 | Double Blind Bio | Double Blind Bio | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-C8B96E9A3F467DCF` |
 | 942 | DPR Construction | DPR Construction | 美国 | 0 | 0 | — | — | `TEAM-D6754BD0F05A307A` |
 | 943 | ECI Software Solutions | ECI Software Solutions | 美国 | 0 | 0 | — | — | `TEAM-8EEBDA5AD7D90AD2` |
 | 944 | eClerx | eClerx | 美国 | 0 | 0 | — | — | `TEAM-F3B6B1C1D2F0AAAA` |
 | 945 | ego / Ego AI | ego / Ego AI | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-CF8C414B446EB7F6` |
 | 946 | Elevance Health | Elevance Health | 美国 | 0 | 0 | — | — | `TEAM-ECB913AC2996FFDC` |
 | 947 | Eli Lilly and Company | Eli Lilly and Company | 美国 | 0 | 0 | — | — | `TEAM-B2B98D17D1DADB42` |
-| 948 | Elixirr Digital | Elixirr | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-82A16882592804C7` |
-| 949 | Eliza | Eliza | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-C2C8233BEFFBAAAF` |
+| 948 | Elixirr Digital | Elixirr | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-82A16882592804C7` |
+| 949 | Eliza | Eliza | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-C2C8233BEFFBAAAF` |
 | 950 | elly client (employer undisclosed) | elly recruiting locator | 美国 | 0 | 0 | — | — | `TEAM-D6615B6D867FA328` |
 | 951 | Emergence AI | Emergence AI | 美国 | 0 | 0 | — | — | `TEAM-BE24207FD0029D82` |
 | 952 | Encora | Encora | 美国 | 0 | 0 | — | — | `TEAM-64EBAE5E61D60972` |
 | 953 | Epic Games, Inc. | Epic Games, Inc. | 美国 | 1 | 0 | — | 安全、治理与合规 1 | `TEAM-BB4AB003D68E8098` |
 | 954 | Equi | Equi | 美国 | 1 | 1 | 平台、基础设施与数据 1 | 平台、基础设施与数据 1 | `TEAM-9E1069FB9ADA5132` |
-| 955 | Equifax | Equifax | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-C86445E5399F2AA0` |
+| 955 | Equifax | Equifax | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-C86445E5399F2AA0` |
 | 956 | eSimplicity | eSimplicity | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-92F60457EC39ECFB` |
-| 957 | Espa Labs | Espa Labs | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-9CDB0F2FDD7B394C` |
+| 957 | Espa Labs | Espa Labs | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-9CDB0F2FDD7B394C` |
 | 958 | Generali Global Assistance | Europ Assistance Group | 美国 | 0 | 0 | — | — | `TEAM-A2D5A6B442B94CD1` |
 | 959 | Eversheds Sutherland (US) LLP | Eversheds Sutherland (US) LLP | 美国 | 0 | 0 | — | — | `TEAM-3DE3C3156B47722F` |
 | 960 | Exa | Exa Labs Inc. | 美国 | 0 | 0 | — | — | `TEAM-5BBA87672E545D41` |
-| 961 | Expedia Group | Expedia Group | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-661C38562FA6471F` |
-| 962 | Extra Space Storage Inc. | Extra Space Storage Inc. | 美国 | 1 | 0 | — | 评测、测试与质量 1 | `TEAM-8C5E4106DC3E7859` |
+| 961 | Expedia Group | Expedia Group | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-661C38562FA6471F` |
+| 962 | Extra Space Storage Inc. | Extra Space Storage Inc. | 美国 | 1 | 1 | 评测、测试与质量 1 | 评测、测试与质量 1 | `TEAM-8C5E4106DC3E7859` |
 | 963 | Fabraix | Fabraix | 美国 | 0 | 0 | — | — | `TEAM-645E78F7999D5152` |
-| 964 | fabric, Inc. | fabric, Inc. | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-4792DF61FA4A624C` |
+| 964 | fabric, Inc. | fabric, Inc. | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-4792DF61FA4A624C` |
 | 965 | Fairmarkit | Fairmarkit | 美国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-8AD8C937B7192592` |
-| 966 | Fenrock AI | Fenrock AI | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-5464A6015770EA3B` |
+| 966 | Fenrock AI | Fenrock AI | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-5464A6015770EA3B` |
 | 967 | Fervo Energy | Fervo Energy | 美国 | 1 | 1 | 评测、测试与质量 1 | 评测、测试与质量 1 | `TEAM-5E4B469CA211F00D` |
-| 968 | FieldAI | FieldAI | 美国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-88C75A0042587C4C` |
+| 968 | FieldAI | FieldAI | 美国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-88C75A0042587C4C` |
 | 969 | Fifth Third Bank | Fifth Third Bank | 美国 | 0 | 0 | — | — | `TEAM-34915E879CE3E3E5` |
-| 970 | Filevine | Filevine | 美国 | 9 | 2 | 平台、基础设施与数据 2 | 平台、基础设施与数据 4；产品与设计 3；评测、测试与质量 1；客户解决方案与交付 1 | `TEAM-340EBFA3421F32EE` |
+| 970 | Filevine | Filevine | 美国 | 9 | 9 | 平台、基础设施与数据 4；产品与设计 3；评测、测试与质量 1；客户解决方案与交付 1 | 平台、基础设施与数据 4；产品与设计 3；评测、测试与质量 1；客户解决方案与交付 1 | `TEAM-340EBFA3421F32EE` |
 | 971 | Finic | Finic | 美国 | 0 | 0 | — | — | `TEAM-4B58D8136588342F` |
 | 972 | FinThrive | FinThrive | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-72548895BE9C8AC8` |
 | 973 | Fisher Phillips LLP | Fisher Phillips LLP | 美国 | 0 | 0 | — | — | `TEAM-648F14B9FDE89672` |
-| 974 | Flagship Pioneering / Pioneering Intelligence | Flagship Pioneering | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-9402AF7091F5D867` |
-| 975 | Flair Labs | Flair Labs | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-67DD25A4628F75BE` |
+| 974 | Flagship Pioneering / Pioneering Intelligence | Flagship Pioneering | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-9402AF7091F5D867` |
+| 975 | Flair Labs | Flair Labs | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-67DD25A4628F75BE` |
 | 976 | FlowGen Labs | FlowGen Labs | 美国 | 0 | 0 | — | — | `TEAM-B917F163569D3E2E` |
 | 977 | Flowtel | Flowtel | 美国 | 0 | 0 | — | — | `TEAM-77010CDC2A166214` |
 | 978 | FLUXAI US INC. | FLUXAI US INC. | 美国 | 0 | 0 | — | — | `TEAM-F8B6BB67D831CF7E` |
-| 979 | forgd, inc. | forgd, inc. | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-BCAE6B530D0D582C` |
-| 980 | Hamming AI | Forward Inc. | 美国 | 1 | 0 | — | 评测、测试与质量 1 | `TEAM-C457A7247B8B1BE9` |
+| 979 | forgd, inc. | forgd, inc. | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-BCAE6B530D0D582C` |
+| 980 | Hamming AI | Forward Inc. | 美国 | 1 | 1 | 评测、测试与质量 1 | 评测、测试与质量 1 | `TEAM-C457A7247B8B1BE9` |
 | 981 | Freestyle | Freestyle | 美国 | 0 | 0 | — | — | `TEAM-937C0DFF71CE14CE` |
 | 982 | Freshworks | Freshworks | 美国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-A1CC54B38A603474` |
 | 983 | Freshworks Director Product Management, AI for EX | Freshworks | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-09DC575A3A39FF4A` |
@@ -1147,144 +1138,144 @@
 | 985 | Freshworks Principal AI Solutions Engineer | Freshworks | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-34F643D30EC25352` |
 | 986 | Freshworks Principal Engineer | Freshworks | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-3B4E9CEF975E0A68` |
 | 987 | Freshworks Staff Backend AI Platform Engineer | Freshworks | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-8FEAC969C7D263B1` |
-| 988 | Fullthrottle.ai | Fullthrottle.ai | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-423A984676AB460C` |
-| 989 | FurtherAI | FurtherAI | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-F76E2A020C2DE9EE` |
-| 990 | FuseAI | FuseAI | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-00342A86C8014AEC` |
-| 991 | Future Works | Future Works | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-559C41620622193A` |
+| 988 | Fullthrottle.ai | Fullthrottle.ai | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-423A984676AB460C` |
+| 989 | FurtherAI | FurtherAI | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-F76E2A020C2DE9EE` |
+| 990 | FuseAI | FuseAI | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-00342A86C8014AEC` |
+| 991 | Future Works | Future Works | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-559C41620622193A` |
 | 992 | Emdash / General Action | General Action, Inc. | 美国 | 0 | 0 | — | — | `TEAM-2FAC4FF31CC21830` |
-| 993 | General Context | General Context | 美国 | 1 | 0 | — | 平台、基础设施与数据 1 | `TEAM-F42511097C96D196` |
-| 994 | General Motors | General Motors | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-25934CB8EE0DEB7B` |
-| 995 | GM Financial | General Motors | 美国 | 1 | 0 | — | 客户解决方案与交付 1 | `TEAM-C6AFF0A85DDB2EE7` |
-| 996 | Genpact Experience | Genpact | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-75DFD30B60962DF8` |
+| 993 | General Context | General Context | 美国 | 1 | 1 | 平台、基础设施与数据 1 | 平台、基础设施与数据 1 | `TEAM-F42511097C96D196` |
+| 994 | General Motors | General Motors | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-25934CB8EE0DEB7B` |
+| 995 | GM Financial | General Motors | 美国 | 1 | 1 | 客户解决方案与交付 1 | 客户解决方案与交付 1 | `TEAM-C6AFF0A85DDB2EE7` |
+| 996 | Genpact Experience | Genpact | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-75DFD30B60962DF8` |
 | 997 | GeoDelphi / Whitespace | GeoDelphi / Whitespace | 美国 | 0 | 0 | — | — | `TEAM-FD22E902E416F154` |
 | 998 | Ghost | Ghost | 美国 | 0 | 0 | — | — | `TEAM-A119CC2E08E32E6B` |
-| 999 | Giga | Giga | 美国 | 13 | 11 | 平台、基础设施与数据 5；商务、市场与合作 2；安全、治理与合规 1；评测、测试与质量 1；产品与设计 1；客户解决方案与交付 1 | 平台、基础设施与数据 5；产品与设计 2；商务、市场与合作 2；客户解决方案与交付 2；安全、治理与合规 1；评测、测试与质量 1 | `TEAM-50AEB088B6BF6D15` |
+| 999 | Giga | Giga | 美国 | 13 | 12 | 平台、基础设施与数据 5；产品与设计 2；商务、市场与合作 2；安全、治理与合规 1；评测、测试与质量 1；客户解决方案与交付 1 | 平台、基础设施与数据 5；产品与设计 2；商务、市场与合作 2；客户解决方案与交付 2；安全、治理与合规 1；评测、测试与质量 1 | `TEAM-50AEB088B6BF6D15` |
 | 1000 | Gigacatalyst | Gigacatalyst | 美国 | 0 | 0 | — | — | `TEAM-BE58C7A83DF947B7` |
 | 1001 | GIGR | GIGR | 美国 | 0 | 0 | — | — | `TEAM-5852F410851BAD38` |
 | 1002 | Gilead Sciences | Gilead Sciences | 美国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-0E97E1923CB4B8A0` |
 | 1003 | Gimlet Labs | Gimlet Labs | 美国 | 0 | 0 | — | — | `TEAM-92A1C132F0418B78` |
-| 1004 | Glean | Glean | 美国 | 2 | 0 | — | 产品与设计 1；工程与应用开发 1 | `TEAM-67B1F196D17FDDE5` |
+| 1004 | Glean | Glean | 美国 | 2 | 2 | 产品与设计 1；工程与应用开发 1 | 产品与设计 1；工程与应用开发 1 | `TEAM-67B1F196D17FDDE5` |
 | 1005 | Glen | Glen | 美国 | 0 | 0 | — | — | `TEAM-55436E36464BE8DF` |
 | 1006 | GodHands | GodHands | 美国 | 0 | 0 | — | — | `TEAM-37F673043A320133` |
-| 1007 | goodfin | goodfin | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-43D6B65F495C4DF6` |
-| 1008 | Govly, Inc. | Govly, Inc. | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-7D1F2FD83F3D09E6` |
+| 1007 | goodfin | goodfin | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-43D6B65F495C4DF6` |
+| 1008 | Govly, Inc. | Govly, Inc. | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-7D1F2FD83F3D09E6` |
 | 1009 | Graebel Companies, Inc. | Graebel Companies, Inc. | 美国 | 0 | 0 | — | — | `TEAM-A7E76A97B076F4E6` |
 | 1010 | Gravitee | Gravitee | 美国 | 0 | 0 | — | — | `TEAM-9ADAEF4D52517466` |
 | 1011 | Great American Insurance Group | Great American Insurance Group | 美国 | 0 | 0 | — | — | `TEAM-BF87157518246F6C` |
 | 1012 | Greater New York Mutual Insurance Company | Greater New York Mutual Insurance Company | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-6AAB78F4E087B85B` |
-| 1013 | Greptile | Greptile | 美国 | 5 | 4 | 平台、基础设施与数据 3；算法、研究与模型 1 | 平台、基础设施与数据 3；客户解决方案与交付 1；算法、研究与模型 1 | `TEAM-AA286618731A7B97` |
+| 1013 | Greptile | Greptile | 美国 | 5 | 5 | 平台、基础设施与数据 3；客户解决方案与交付 1；算法、研究与模型 1 | 平台、基础设施与数据 3；客户解决方案与交付 1；算法、研究与模型 1 | `TEAM-AA286618731A7B97` |
 | 1014 | Stratus | GTP Software, Inc. | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-CCC28B9E90A24167` |
 | 1015 | Guide Labs | Guide Labs | 美国 | 0 | 0 | — | — | `TEAM-EEF0DBDD453CD8BF` |
 | 1016 | Guild.ai | Guild.ai | 美国 | 0 | 0 | — | — | `TEAM-FA32B955448DD636` |
 | 1017 | Halluminate | Halluminate | 美国 | 0 | 0 | — | — | `TEAM-C78E9D5CECC39AC4` |
-| 1018 | HappyRobot | HappyRobot | 美国 | 7 | 0 | — | 评测、测试与质量 2；商务、市场与合作 2；平台、基础设施与数据 2；产品与设计 1 | `TEAM-327C1F0DE62CBF74` |
+| 1018 | HappyRobot | HappyRobot | 美国 | 7 | 6 | 商务、市场与合作 2；平台、基础设施与数据 2；评测、测试与质量 1；产品与设计 1 | 评测、测试与质量 2；商务、市场与合作 2；平台、基础设施与数据 2；产品与设计 1 | `TEAM-327C1F0DE62CBF74` |
 | 1019 | hardware intelligence | hardware intelligence | 美国 | 0 | 0 | — | — | `TEAM-284FBE7BBB12419B` |
-| 1020 | Harper | Harper | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-9D1302E24CDC6586` |
+| 1020 | Harper | Harper | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-9D1302E24CDC6586` |
 | 1021 | Harvard University | Harvard University | 美国 | 0 | 0 | — | — | `TEAM-AA138E5BF5F7DF9B` |
-| 1022 | Haven | Haven | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-FF93041FC22A5031` |
+| 1022 | Haven | Haven | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-FF93041FC22A5031` |
 | 1023 | Hazel | Hazel | 美国 | 0 | 0 | — | — | `TEAM-AC4E4EE259ED90A7` |
 | 1024 | Healiom | Healiom | 美国 | 1 | 1 | 算法、研究与模型 1 | 算法、研究与模型 1 | `TEAM-A3E5134E875492B7` |
 | 1025 | Heartbeat | Heartbeat | 美国 | 0 | 0 | — | — | `TEAM-DE557C4610B1C0E3` |
 | 1026 | Hellyeah AI | Hellyeah AI | 美国 | 0 | 0 | — | — | `TEAM-D3F9107C765B160E` |
 | 1027 | Hex Security | Hex Security | 美国 | 0 | 0 | — | — | `TEAM-1BD72407384CBB4F` |
-| 1028 | Hexion Inc. | Hexion Inc. | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-4A9659E8AC7C647E` |
+| 1028 | Hexion Inc. | Hexion Inc. | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-4A9659E8AC7C647E` |
 | 1029 | HeyGen | HeyGen | 美国 | 1 | 1 | 平台、基础设施与数据 1 | 平台、基础设施与数据 1 | `TEAM-914EDB1F2ACF5317` |
-| 1030 | High Side Technology | High Side Technology | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-7E69ED7E4133EC75` |
+| 1030 | High Side Technology | High Side Technology | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-7E69ED7E4133EC75` |
 | 1031 | Highspot | Highspot | 美国 | 0 | 0 | — | — | `TEAM-16436F886A9BD3C7` |
-| 1032 | Hobbes | Hobbes | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-41CA882749F865CA` |
-| 1033 | Horizon3.ai | Horizon3.ai | 美国 | 1 | 0 | — | 评测、测试与质量 1 | `TEAM-7A51B8F340765547` |
+| 1032 | Hobbes | Hobbes | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-41CA882749F865CA` |
+| 1033 | Horizon3.ai | Horizon3.ai | 美国 | 1 | 1 | 评测、测试与质量 1 | 评测、测试与质量 1 | `TEAM-7A51B8F340765547` |
 | 1034 | HUD | HUD | 美国 | 0 | 0 | — | — | `TEAM-ABF91EF59F8CCE0F` |
 | 1035 | Humaans | Humaans | 美国 | 0 | 0 | — | — | `TEAM-8C59CEC121492FE7` |
 | 1036 | Humans& | Humans& | 美国 | 0 | 0 | — | — | `TEAM-1E3F3E43EA948BBB` |
 | 1037 | Humwork | Humwork | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-D2AD61DB8C9BED9E` |
 | 1038 | HungerRush / Menufy | HungerRush / Menufy | 美国 | 0 | 0 | — | — | `TEAM-70B3A3445E2705A5` |
 | 1039 | HyperProbe | HyperProbe | 美国 | 0 | 0 | — | — | `TEAM-4BC99E703D58D972` |
-| 1040 | Hyperspell | Hyperspell | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-2E6B73090B62C0F9` |
+| 1040 | Hyperspell | Hyperspell | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-2E6B73090B62C0F9` |
 | 1041 | Hyundai Capital America | Hyundai Capital America | 美国 | 0 | 0 | — | — | `TEAM-870D647779BFDB45` |
-| 1042 | ID.me | ID.me | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-CFEE8F75E68E40E7` |
+| 1042 | ID.me | ID.me | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-CFEE8F75E68E40E7` |
 | 1043 | Identity Digital | Identity Digital | 美国 | 0 | 0 | — | — | `TEAM-0D80818D648580BD` |
-| 1044 | IFS | IFS | 美国 | 5 | 5 | 产品与设计 2；算法、研究与模型 2；客户解决方案与交付 1 | 产品与设计 2；算法、研究与模型 2；客户解决方案与交付 1 | `TEAM-18B8A4B99524EC7F` |
-| 1045 | IFS / TheLoops | IFS | 美国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-212FFCD8DF7B1A1A` |
+| 1044 | IFS | IFS | 美国 | 5 | 1 | 算法、研究与模型 1 | 产品与设计 2；算法、研究与模型 2；客户解决方案与交付 1 | `TEAM-18B8A4B99524EC7F` |
+| 1045 | IFS / TheLoops | IFS | 美国 | 1 | 0 | — | 产品与设计 1 | `TEAM-212FFCD8DF7B1A1A` |
 | 1046 | Illume Labs | Illume Labs | 美国 | 0 | 0 | — | — | `TEAM-8635E339ECC0334D` |
 | 1047 | Imprezia | Imprezia | 美国 | 0 | 0 | — | — | `TEAM-B86A5C594BF0B0EF` |
 | 1048 | Index Analytics LLC | Index Analytics LLC | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-5427376B4A4DC4DF` |
-| 1049 | Infer | Infer | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-C296B58149874037` |
+| 1049 | Infer | Infer | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-C296B58149874037` |
 | 1050 | Inferact | Inferact | 美国 | 0 | 0 | — | — | `TEAM-47E7C4C6201C498A` |
 | 1051 | Influur | Influur | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-5847CE6A7A4F2B9E` |
-| 1052 | InRule Technology, Inc. | InRule Technology, Inc. | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-8F077B293D842CD3` |
+| 1052 | InRule Technology, Inc. | InRule Technology, Inc. | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-8F077B293D842CD3` |
 | 1053 | InsForge | InsForge | 美国 | 0 | 0 | — | — | `TEAM-EBCA3F3E4FAE0035` |
 | 1054 | Insight Enterprises | Insight Enterprises | 美国 | 0 | 0 | — | — | `TEAM-1F1FCFAB981E32FB` |
-| 1055 | InstaLILY AI | InstaLILY AI | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-0B9623C1E9E446CC` |
+| 1055 | InstaLILY AI | InstaLILY AI | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-0B9623C1E9E446CC` |
 | 1056 | Intel Corporation | Intel Corporation | 美国 | 0 | 0 | — | — | `TEAM-8A6399BF0DFF529F` |
 | 1057 | IntelePeer Cloud Communications LLC | IntelePeer Cloud Communications LLC | 美国 | 1 | 0 | — | 评测、测试与质量 1 | `TEAM-626CE2C703B75934` |
 | 1058 | InterConnect Defense / IC Defense | InterConnect Defense / IC Defense | 美国 | 0 | 0 | — | — | `TEAM-6D25A334D21E876A` |
 | 1059 | Interfere | Interfere | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-6CE68A71D8847CE1` |
 | 1060 | Intuigence AI | Intuigence AI | 美国 | 0 | 0 | — | — | `TEAM-CE9716D6E09F708E` |
-| 1061 | Intuit Inc. | Intuit Inc. | 美国 | 1 | 0 | — | 产品与设计 1 | `TEAM-4402159A92A4F36C` |
+| 1061 | Intuit Inc. | Intuit Inc. | 美国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-4402159A92A4F36C` |
 | 1062 | ISO New England | ISO New England | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-1D11CF3DBE2EDD53` |
-| 1063 | Johnson & Johnson | Johnson & Johnson | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-4E66783AD2FA133E` |
+| 1063 | Johnson & Johnson | Johnson & Johnson | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-4E66783AD2FA133E` |
 | 1064 | JPMorgan Chase & Co. | JPMorgan Chase & Co. | 美国 | 0 | 0 | — | — | `TEAM-77FFB7E58253704F` |
 | 1065 | Judi Health | Judi Health | 美国 | 1 | 1 | 安全、治理与合规 1 | 安全、治理与合规 1 | `TEAM-C1023D0EB67C0274` |
-| 1066 | Juicebox | Juicebox | 美国 | 6 | 4 | 客户解决方案与交付 2；安全、治理与合规 1；平台、基础设施与数据 1 | 商务、市场与合作 2；客户解决方案与交付 2；安全、治理与合规 1；平台、基础设施与数据 1 | `TEAM-E74F634204F775B9` |
+| 1066 | Juicebox | Juicebox | 美国 | 6 | 5 | 客户解决方案与交付 2；安全、治理与合规 1；商务、市场与合作 1；平台、基础设施与数据 1 | 商务、市场与合作 2；客户解决方案与交付 2；安全、治理与合规 1；平台、基础设施与数据 1 | `TEAM-E74F634204F775B9` |
 | 1067 | Justinian | Justinian | 美国 | 0 | 0 | — | — | `TEAM-2334C936850AF7C5` |
 | 1068 | Kai Cyber, Inc. | Kai Cyber, Inc. | 美国 | 0 | 0 | — | — | `TEAM-A4EFBDCD09BB92B7` |
 | 1069 | Kai Security | Kai Security | 美国 | 0 | 0 | — | — | `TEAM-72EFFDACB9A238DE` |
 | 1070 | Kargo | Kargo | 美国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-A184671519D961A7` |
-| 1071 | Kastle | Kastle | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-BC75C3A3F330A0E4` |
-| 1072 | Keycard Labs | Keycard Labs | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-6EE44F374C78AC5D` |
-| 1073 | Kinelo | Kinelo | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-74773236E1556A16` |
-| 1074 | Kino AI | Kino AI | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-4AC3F2968415BD59` |
-| 1075 | Kinro | Kinro | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-7FD2619F57C997F2` |
+| 1071 | Kastle | Kastle | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-BC75C3A3F330A0E4` |
+| 1072 | Keycard Labs | Keycard Labs | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-6EE44F374C78AC5D` |
+| 1073 | Kinelo | Kinelo | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-74773236E1556A16` |
+| 1074 | Kino AI | Kino AI | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-4AC3F2968415BD59` |
+| 1075 | Kinro | Kinro | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-7FD2619F57C997F2` |
 | 1076 | Dematic | KION Group | 美国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-B095EC3A27BE409B` |
 | 1077 | Klaimee | Klaimee | 美国 | 0 | 0 | — | — | `TEAM-A88631CC0A0CD742` |
 | 1078 | Klarify | Klarify | 美国 | 0 | 0 | — | — | `TEAM-B5185B66AEB8F503` |
-| 1079 | Klavis AI | Klavis AI | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-1619AE0E3F71E7AD` |
-| 1080 | Knotch, Inc. | Knotch, Inc. | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-8DAA7C390C69C3EF` |
+| 1079 | Klavis AI | Klavis AI | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-1619AE0E3F71E7AD` |
+| 1080 | Knotch, Inc. | Knotch, Inc. | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-8DAA7C390C69C3EF` |
 | 1081 | Komodo Health | Komodo Health | 美国 | 1 | 0 | — | 客户解决方案与交付 1 | `TEAM-A47FB816A6B46D1D` |
-| 1082 | Kong Inc. | Kong Inc. | 美国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-A1E31AC245E34E0E` |
+| 1082 | Kong Inc. | Kong Inc. | 美国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-A1E31AC245E34E0E` |
 | 1083 | Kortix | Kortix AI Corp | 美国 | 0 | 0 | — | — | `TEAM-7383F7F71F4F8C8F` |
 | 1084 | KPMG US | KPMG US | 美国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-257AD6F9FDFF7AA7` |
 | 1085 | Kraken / Payward | Kraken / Payward | 美国 | 0 | 0 | — | — | `TEAM-12F60899333D1D47` |
 | 1086 | Kuli | Kuli | 美国 | 0 | 0 | — | — | `TEAM-124138C20689747F` |
 | 1087 | Kura AI | Kura AI | 美国 | 0 | 0 | — | — | `TEAM-A74D693CA4ABE042` |
 | 1088 | Lance | Lance | 美国 | 1 | 1 | 平台、基础设施与数据 1 | 平台、基础设施与数据 1 | `TEAM-0FE11DE64CA45A85` |
-| 1089 | LangChain | LangChain | 美国 | 3 | 0 | — | 其他或边界岗位 3 | `TEAM-441D6B22770E7A85` |
-| 1090 | Layerup | Layerup | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-172CBB26FB16DAFE` |
+| 1089 | LangChain | LangChain | 美国 | 3 | 3 | 其他或边界岗位 3 | 其他或边界岗位 3 | `TEAM-441D6B22770E7A85` |
+| 1090 | Layerup | Layerup | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-172CBB26FB16DAFE` |
 | 1091 | Lean Solutions Group | Lean Solutions Group | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-28ABA5236F6847C6` |
 | 1092 | Leonardo DRS Land Electronics | Leonardo DRS | 美国 | 1 | 1 | 评测、测试与质量 1 | 评测、测试与质量 1 | `TEAM-3B7E0B0E1274F75D` |
 | 1093 | Letterbook | Letterbook | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-56632E22A7AD7DE9` |
-| 1094 | Lifepoint Health, Inc. | Lifepoint Health, Inc. | 美国 | 1 | 0 | — | 安全、治理与合规 1 | `TEAM-8DBFEE6C6133C2E2` |
+| 1094 | Lifepoint Health, Inc. | Lifepoint Health, Inc. | 美国 | 1 | 1 | 安全、治理与合规 1 | 安全、治理与合规 1 | `TEAM-8DBFEE6C6133C2E2` |
 | 1095 | Light Anchor | Light Anchor | 美国 | 0 | 0 | — | — | `TEAM-BB72E6781F83AD97` |
 | 1096 | Lighthouz AI | Lighthouz AI | 美国 | 0 | 0 | — | — | `TEAM-A2ACD385D67C4A39` |
-| 1097 | Lightsprint | Lightsprint | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-7944C411BD3B25B6` |
+| 1097 | Lightsprint | Lightsprint | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-7944C411BD3B25B6` |
 | 1098 | Liminal Strategy | Liminal Strategy | 美国 | 0 | 0 | — | — | `TEAM-595A1E59A4F1CC54` |
 | 1099 | Liner | Liner | 美国 | 8 | 6 | 运营、项目与职能 3；商务、市场与合作 2；产品与设计 1 | 运营、项目与职能 5；商务、市场与合作 2；产品与设计 1 | `TEAM-567669C2033C7C30` |
 | 1100 | Linzumi | Linzumi | 美国 | 0 | 0 | — | — | `TEAM-A3A82C40A9D3725C` |
 | 1101 | LocalStack | LocalStack | 美国 | 0 | 0 | — | — | `TEAM-D4C6F06A3299B875` |
 | 1102 | Lockheed Martin Space | Lockheed Martin | 美国 | 0 | 0 | — | — | `TEAM-6869CF6259312437` |
 | 1103 | Loman AI | Loman AI | 美国 | 0 | 0 | — | — | `TEAM-C06A95EE3E6FC20F` |
-| 1104 | Longroad Energy | Longroad Energy | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-2CE54FE73EC3A94D` |
+| 1104 | Longroad Energy | Longroad Energy | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-2CE54FE73EC3A94D` |
 | 1105 | Lorikeet | Lorikeet | 美国 | 0 | 0 | — | — | `TEAM-85726424CBDD0FCC` |
 | 1106 | Lovable | Lovable | 美国 | 0 | 0 | — | — | `TEAM-35A04C97D829D2C6` |
 | 1107 | Orca / Stably AI | Lovecast Inc. | 美国 | 0 | 0 | — | — | `TEAM-BA6FA0E12B169BCF` |
 | 1108 | Lowenstein Sandler | Lowenstein Sandler | 美国 | 0 | 0 | — | — | `TEAM-011EED7D365E63E6` |
-| 1109 | Lumari | Lumari | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-22339A98F83A9D18` |
+| 1109 | Lumari | Lumari | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-22339A98F83A9D18` |
 | 1110 | Luxury Presence | Luxury Presence | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-7F8A2BD624DD36CD` |
 | 1111 | LVT | LVT | 美国 | 1 | 1 | 平台、基础设施与数据 1 | 平台、基础设施与数据 1 | `TEAM-A0A53D21CC1EE3FF` |
 | 1112 | Lyzr AI | Lyzr AI | 美国 | 0 | 0 | — | — | `TEAM-B13F13B16E2E2755` |
 | 1113 | Machinify | Machinify | 美国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-E1763C4650540962` |
 | 1114 | MACOM | MACOM | 美国 | 0 | 0 | — | — | `TEAM-E00EB1E438FE0C06` |
-| 1115 | MacStadium | MacStadium | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-EE15635BA1D4BB53` |
+| 1115 | MacStadium | MacStadium | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-EE15635BA1D4BB53` |
 | 1116 | MAI | MAI | 美国 | 0 | 0 | — | — | `TEAM-53EBB103B722194B` |
 | 1117 | Make | Make | 美国 | 0 | 0 | — | — | `TEAM-1A77460ED703A35E` |
-| 1118 | Mango Languages | Mango Languages | 美国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-09BA178CF086C9E1` |
+| 1118 | Mango Languages | Mango Languages | 美国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-09BA178CF086C9E1` |
 | 1119 | Manicule | Manicule | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-FB7BFD64012E9C8F` |
-| 1120 | Manufact (formerly mcp-use) | Manufact (formerly mcp-use) | 美国 | 1 | 0 | — | 评测、测试与质量 1 | `TEAM-E763AFBE3EA02D89` |
+| 1120 | Manufact (formerly mcp-use) | Manufact (formerly mcp-use) | 美国 | 1 | 1 | 评测、测试与质量 1 | 评测、测试与质量 1 | `TEAM-E763AFBE3EA02D89` |
 | 1121 | MarginFront | MarginFront | 美国 | 0 | 0 | — | — | `TEAM-39A8D8210EA0FF37` |
 | 1122 | Marion Counseling Services | Marion Counseling Services | 美国 | 0 | 0 | — | — | `TEAM-A59A9208C475864F` |
-| 1123 | Misfits & Machines | Marketing Architects | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-4A9A727D36E79609` |
+| 1123 | Misfits & Machines | Marketing Architects | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-4A9A727D36E79609` |
 | 1124 | Massachusetts Institute of Technology / MGHPCC | Massachusetts Institute of Technology / MGHPCC | 美国 | 0 | 0 | — | — | `TEAM-6DC9C9D59A5E8C4B` |
-| 1125 | Matrices | Matrices | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-D95DB777040B5504` |
+| 1125 | Matrices | Matrices | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-D95DB777040B5504` |
 | 1126 | Medeloop | Medeloop | 美国 | 1 | 1 | 安全、治理与合规 1 | 安全、治理与合规 1 | `TEAM-52CE358C9132B40A` |
 | 1127 | MedPro Disposal / MP1 Solutions | MedPro Disposal / MP1 Solutions | 美国 | 0 | 0 | — | — | `TEAM-FD3C5196DEDC37E7` |
 | 1128 | Meeting Tomorrow | Meeting Tomorrow | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-E948D36C4B0DBF1A` |
@@ -1292,26 +1283,26 @@
 | 1130 | Intermolecular / EMD Electronics | Merck KGaA | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-F74BE0FFB1B674C8` |
 | 1131 | Meridian | Meridian | 美国 | 0 | 0 | — | — | `TEAM-95E7487C89A7CBD2` |
 | 1132 | Micron Technology | Micron Technology | 美国 | 0 | 0 | — | — | `TEAM-741712D4388326C5` |
-| 1133 | Mimecast | Mimecast | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-6AD66C345246FB8C` |
-| 1134 | MindFort | MindFort | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-101FA2B1547A3F54` |
+| 1133 | Mimecast | Mimecast | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-6AD66C345246FB8C` |
+| 1134 | MindFort | MindFort | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-101FA2B1547A3F54` |
 | 1135 | Minicor | Minicor | 美国 | 0 | 0 | — | — | `TEAM-0020A524760E4EC5` |
 | 1136 | Helicone | Mintlify | 美国 | 0 | 0 | — | — | `TEAM-B4F5815862EF77FD` |
 | 1137 | MintMCP | MintMCP | 美国 | 0 | 0 | — | — | `TEAM-C526BB2670CA239C` |
 | 1138 | AnythingLLM / Mintplex Labs | Mintplex Labs | 美国 | 0 | 0 | — | — | `TEAM-4D304F1210F3AFA2` |
-| 1139 | MochaCare | MochaCare | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-FAF05E6A588CFC41` |
+| 1139 | MochaCare | MochaCare | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-FAF05E6A588CFC41` |
 | 1140 | Modal Labs | Modal Labs | 美国 | 0 | 0 | — | — | `TEAM-39796B4003CFB9CE` |
 | 1141 | Modern | Modern | 美国 | 0 | 0 | — | — | `TEAM-AB427E646B411ED7` |
 | 1142 | Molina Healthcare | Molina Healthcare | 美国 | 0 | 0 | — | — | `TEAM-8C4B5E09E035D253` |
 | 1143 | Momentic | Momentic | 美国 | 0 | 0 | — | — | `TEAM-6125BA7381E8850B` |
 | 1144 | Monte Carlo | Monte Carlo | 美国 | 0 | 0 | — | — | `TEAM-54691A47600A7124` |
-| 1145 | Mor Furniture For Less Inc. | Mor Furniture For Less Inc. | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-063DE3F3BDDCC7D1` |
+| 1145 | Mor Furniture For Less Inc. | Mor Furniture For Less Inc. | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-063DE3F3BDDCC7D1` |
 | 1146 | Mount | Mount | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-48711AE0E2A45BFF` |
 | 1147 | Mount Sinai Health System | Mount Sinai Health System | 美国 | 0 | 0 | — | — | `TEAM-0DBB647A18D14271` |
 | 1148 | Mural | Mural | 美国 | 0 | 0 | — | — | `TEAM-9E4FFF7669B36030` |
-| 1149 | Mutual of Omaha | Mutual of Omaha | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-3A78F5B5991D148A` |
-| 1150 | Nango | Nango | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-30FF2FCAAB0F4850` |
+| 1149 | Mutual of Omaha | Mutual of Omaha | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-3A78F5B5991D148A` |
+| 1150 | Nango | Nango | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-30FF2FCAAB0F4850` |
 | 1151 | Narrative | Narrative | 美国 | 0 | 0 | — | — | `TEAM-88260DBC7E8ECD3E` |
-| 1152 | Naver U.Hub INC | NAVER | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-9E13A1985648BA3F` |
+| 1152 | Naver U.Hub INC | NAVER | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-9E13A1985648BA3F` |
 | 1153 | Navy Federal Credit Union | Navy Federal Credit Union | 美国 | 0 | 0 | — | — | `TEAM-3EA9C14F8C59A5B8` |
 | 1154 | Tavily | Nebius | 美国 | 0 | 0 | — | — | `TEAM-43C209FDD6DC4FB0` |
 | 1155 | Nebula Security | Nebula Security | 美国 | 0 | 0 | — | — | `TEAM-0B79C46C5A12DB48` |
@@ -1322,23 +1313,23 @@
 | 1160 | NovaVoxx AI | NovaVoxx AI | 美国 | 0 | 0 | — | — | `TEAM-4A56A5E62CB980BF` |
 | 1161 | Nozomio | Nozomio | 美国 | 0 | 0 | — | — | `TEAM-D8BCD00F11948C42` |
 | 1162 | NTT DATA Services | NTT DATA | 美国 | 1 | 1 | 评测、测试与质量 1 | 评测、测试与质量 1 | `TEAM-DF473991675C2B64` |
-| 1163 | Nutanix | Nutanix | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-0D2DBE4C3A9333A9` |
+| 1163 | Nutanix | Nutanix | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-0D2DBE4C3A9333A9` |
 | 1164 | Nutrient | Nutrient | 美国 | 0 | 0 | — | — | `TEAM-BB5BDB2D7A65721C` |
 | 1165 | Observe.AI | Observe.AI | 美国 | 0 | 0 | — | — | `TEAM-887E6902D44E1AD0` |
 | 1166 | Ocient | Ocient | 美国 | 0 | 0 | — | — | `TEAM-30C9B0ABF4197C17` |
 | 1167 | Onix | Onix | 美国 | 0 | 0 | — | — | `TEAM-76119403CDD6DCE0` |
-| 1168 | Onton | Onton | 美国 | 1 | 0 | — | 产品与设计 1 | `TEAM-F080D45DB10E365F` |
+| 1168 | Onton | Onton | 美国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-F080D45DB10E365F` |
 | 1169 | Ontora | Ontora | 美国 | 0 | 0 | — | — | `TEAM-96AD18605ECA0BB3` |
 | 1170 | Ooak Data | Ooak Data | 美国 | 0 | 0 | — | — | `TEAM-F840350B5B43DF6A` |
 | 1171 | Opendoor | Opendoor | 美国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-FC7388A93C0E8CB9` |
 | 1172 | OpenHands | OpenHands | 美国 | 0 | 0 | — | — | `TEAM-357EED72347FC702` |
 | 1173 | OpenProse | OpenProse | 美国 | 0 | 0 | — | — | `TEAM-7C8F7C78E5C43518` |
 | 1174 | Operon | Operon | 美国 | 0 | 0 | — | — | `TEAM-DC9BAADE52520133` |
-| 1175 | OPPO US Research Center / InnoPeak | OPPO | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-4B3A5805D1736436` |
+| 1175 | OPPO US Research Center / InnoPeak | OPPO | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-4B3A5805D1736436` |
 | 1176 | Oracle | Oracle | 美国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-C3C7A6C48068D1EA` |
 | 1177 | Orbis Operations | Orbis Operations | 美国 | 0 | 0 | — | — | `TEAM-06AEE371DA7F0C37` |
-| 1178 | Origin | Origin | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-DEEAD9A1F39E88D7` |
-| 1179 | Orkes | Orkes | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-1BB8E654B527E7E5` |
+| 1178 | Origin | Origin | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-DEEAD9A1F39E88D7` |
+| 1179 | Orkes | Orkes | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-1BB8E654B527E7E5` |
 | 1180 | Roamly Labs / The Ride Platform | Outdoorsy Group | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-F72DF3F46A20907D` |
 | 1181 | Outreach | Outreach | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-B169E4BC9EEB02D7` |
 | 1182 | Outtake | Outtake | 美国 | 0 | 0 | — | — | `TEAM-EC7831E3635F3B89` |
@@ -1347,71 +1338,71 @@
 | 1185 | Pace | Pace | 美国 | 0 | 0 | — | — | `TEAM-2110EE80A53AD573` |
 | 1186 | PaleBlueDot AI | PaleBlueDot AI | 美国 | 0 | 0 | — | — | `TEAM-333320584443A693` |
 | 1187 | Pallet | Pallet | 美国 | 0 | 0 | — | — | `TEAM-8CC38D17728FD26B` |
-| 1188 | Palo Alto Networks | Palo Alto Networks / Venafi EOOD | 美国 | 1 | 0 | — | 安全、治理与合规 1 | `TEAM-B681D44C5B735901` |
+| 1188 | Palo Alto Networks | Palo Alto Networks / Venafi EOOD | 美国 | 1 | 1 | 安全、治理与合规 1 | 安全、治理与合规 1 | `TEAM-B681D44C5B735901` |
 | 1189 | Parahelp | Parahelp | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-A07CFD7B63D01B42` |
 | 1190 | Paramount Global | Paramount Global | 美国 | 0 | 0 | — | — | `TEAM-991EA2A0222C47C4` |
 | 1191 | Paramount Streaming | Paramount Skydance Corporation | 美国 | 1 | 1 | 平台、基础设施与数据 1 | 平台、基础设施与数据 1 | `TEAM-D115BE1146966A44` |
-| 1192 | Parloa | Parloa | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-08F8201B96D6A77E` |
+| 1192 | Parloa | Parloa | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-08F8201B96D6A77E` |
 | 1193 | Pasito | Pasito | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-A30C0BE17F6E05E8` |
 | 1194 | Patch My PC | Patch My PC | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-B7EF8F81BB2CEE40` |
-| 1195 | Shiplight AI | Pear VC | 美国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-912103D167E16664` |
+| 1195 | Shiplight AI | Pear VC | 美国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-912103D167E16664` |
 | 1196 | Pepper | Pepper | 美国 | 0 | 0 | — | — | `TEAM-1EC33570FC87D455` |
-| 1197 | Peppr AI | Peppr AI | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-4B8BF42C870F5A09` |
+| 1197 | Peppr AI | Peppr AI | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-4B8BF42C870F5A09` |
 | 1198 | PepsiCo | PepsiCo | 美国 | 0 | 0 | — | — | `TEAM-C4C2F6865E360D71` |
 | 1199 | Perforce Software | Perforce Software | 美国 | 0 | 0 | — | — | `TEAM-3DBBB917F6E71288` |
-| 1200 | Phase2 | Phase2 | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-5EA2653F8B640972` |
+| 1200 | Phase2 | Phase2 | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-5EA2653F8B640972` |
 | 1201 | Phonely | Phonely | 美国 | 0 | 0 | — | — | `TEAM-0C39340AA026AE3A` |
 | 1202 | Phylo | Phylo | 美国 | 0 | 0 | — | — | `TEAM-2AC336E3377D95BC` |
 | 1203 | Pilot Company | Pilot Company | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-CC2D062DE05C7A3C` |
 | 1204 | Pilotcrew AI | Pilotcrew AI | 美国 | 0 | 0 | — | — | `TEAM-58473A9EB5D0F0DB` |
 | 1205 | Pipe17 | Pipe17 | 美国 | 0 | 0 | — | — | `TEAM-A3E360BA2668BC4B` |
 | 1206 | RipperMercs / TensorFeed | Pizza Robot Studios LLC | 美国 | 0 | 0 | — | — | `TEAM-C72F1A4EF24F39E9` |
-| 1207 | Planera | Planera | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-9741280473BCD062` |
-| 1208 | Plot Technologies, Inc. | Plot Technologies, Inc. | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-5829AF45C103F2C0` |
+| 1207 | Planera | Planera | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-9741280473BCD062` |
+| 1208 | Plot Technologies, Inc. | Plot Technologies, Inc. | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-5829AF45C103F2C0` |
 | 1209 | Plura AI | Plura AI | 美国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-D7EA3C6BEB43A389` |
 | 1210 | Pluto | Pluto | 美国 | 0 | 0 | — | — | `TEAM-B7C6B7F6BCE9699F` |
-| 1211 | Poetiq | Poetiq | 美国 | 2 | 0 | — | 产品与设计 2 | `TEAM-EFDC8AFD0FEE1589` |
+| 1211 | Poetiq | Poetiq | 美国 | 2 | 2 | 产品与设计 2 | 产品与设计 2 | `TEAM-EFDC8AFD0FEE1589` |
 | 1212 | Pond & Company / Enercon Services | Pond & Company / Enercon Services | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-89E7CC9E7630FC64` |
-| 1213 | Postman | Postman | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-F101A6DC9BD315D9` |
-| 1214 | Powder | Powder | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-0D1F32A85B8D76AD` |
+| 1213 | Postman | Postman | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-F101A6DC9BD315D9` |
+| 1214 | Powder | Powder | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-0D1F32A85B8D76AD` |
 | 1215 | Praxis AI, Inc. | Praxis AI, Inc. | 美国 | 0 | 0 | — | — | `TEAM-016F068A93A55C0E` |
-| 1216 | primitive | primitive | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-BA3B43460A671406` |
+| 1216 | primitive | primitive | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-BA3B43460A671406` |
 | 1217 | Procter & Gamble / P&G | Procter & Gamble / P&G | 美国 | 1 | 0 | — | 算法、研究与模型 1 | `TEAM-8ABE19FB4EBC6481` |
 | 1218 | Prodigal | Prodigal | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-AD88DD6EB20A7632` |
 | 1219 | ProfitSolv | ProfitSolv | 美国 | 0 | 0 | — | — | `TEAM-CADBFA5A9286CE85` |
 | 1220 | PromptLayer | PromptLayer | 美国 | 0 | 0 | — | — | `TEAM-28D7C58BEB5B31AE` |
 | 1221 | Promptless | Promptless | 美国 | 0 | 0 | — | — | `TEAM-5887A6BE694A2E49` |
 | 1222 | Prototyping.io | Prototyping.io | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-C3FA9D286FEB60EB` |
-| 1223 | Prox | Prox | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-E6E65262CDDBD790` |
+| 1223 | Prox | Prox | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-E6E65262CDDBD790` |
 | 1224 | Proximitty | Proximitty | 美国 | 0 | 0 | — | — | `TEAM-B5A6626D7B3AA8D5` |
-| 1225 | PTP | PTP | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-63A4C2A5EA224033` |
-| 1226 | PulsePoint | PulsePoint | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-05FDF0F0759F0D85` |
+| 1225 | PTP | PTP | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-63A4C2A5EA224033` |
+| 1226 | PulsePoint | PulsePoint | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-05FDF0F0759F0D85` |
 | 1227 | PwC US | PwC US | 美国 | 0 | 0 | — | — | `TEAM-FE83A45023E90A6C` |
 | 1228 | Qualtrics | Qualtrics | 美国 | 0 | 0 | — | — | `TEAM-ADCF62B1461BCB0F` |
-| 1229 | RamAIn | RamAIn | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-B28A014BA9A0FFEA` |
+| 1229 | RamAIn | RamAIn | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-B28A014BA9A0FFEA` |
 | 1230 | Rational | Rational | 美国 | 0 | 0 | — | — | `TEAM-F5DA0D268B964AD9` |
-| 1231 | Re:Build Manufacturing / Reflow | Re:Build Manufacturing | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-0B090027B508CC93` |
+| 1231 | Re:Build Manufacturing / Reflow | Re:Build Manufacturing | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-0B090027B508CC93` |
 | 1232 | RealPact | RealPact | 美国 | 0 | 0 | — | — | `TEAM-B490754B8CBA12A5` |
 | 1233 | Leadpages | Redbrick | 美国 | 0 | 0 | — | — | `TEAM-DC797C77B5618BFD` |
 | 1234 | Redis | Redis | 美国 | 0 | 0 | — | — | `TEAM-CCB4B33574BF7179` |
-| 1235 | Refactor | Refactor | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-0FAF84AA06E01109` |
+| 1235 | Refactor | Refactor | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-0FAF84AA06E01109` |
 | 1236 | ReFiBuy, Inc. | ReFiBuy, Inc. | 美国 | 0 | 0 | — | — | `TEAM-2E3D6846B07FECA4` |
 | 1237 | Reforged Labs | Reforged Labs | 美国 | 0 | 0 | — | — | `TEAM-FB94D189FBE2E1A2` |
 | 1238 | Regal | Regal | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-A32BB80DFADE1A6F` |
-| 1239 | Relari | Relari | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-2D72D66D258FE6F0` |
-| 1240 | Relevance AI | Relevance AI | 美国 | 2 | 0 | — | 其他或边界岗位 2 | `TEAM-BD8C5A1932A48834` |
+| 1239 | Relari | Relari | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-2D72D66D258FE6F0` |
+| 1240 | Relevance AI | Relevance AI | 美国 | 2 | 1 | 其他或边界岗位 1 | 其他或边界岗位 2 | `TEAM-BD8C5A1932A48834` |
 | 1241 | Renesas Electronics | Renesas Electronics | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-CF6ADCD824285DED` |
 | 1242 | Senior Staff Engineer for agentic models in smart devices | Renesas Electronics | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-1EC4CD22F4BBE1CF` |
-| 1243 | Renew Home | Renew Home | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-71F9C0B9FC3727A6` |
+| 1243 | Renew Home | Renew Home | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-71F9C0B9FC3727A6` |
 | 1244 | RentAHuman | RentAHuman | 美国 | 0 | 0 | — | — | `TEAM-5F0B671725D50B65` |
 | 1245 | Replicas | Replicas | 美国 | 0 | 0 | — | — | `TEAM-33C949FF98FEFB71` |
-| 1246 | Rescript | Rescript | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-8A65048DE05DF075` |
+| 1246 | Rescript | Rescript | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-8A65048DE05DF075` |
 | 1247 | Resorius / 리소리우스 | Resorius / 리소리우스 | 美国 | 0 | 0 | — | — | `TEAM-8ED2C41CA7837F6B` |
 | 1248 | Restate | Restate | 美国 | 0 | 0 | — | — | `TEAM-D06ABFE7EFAC7F25` |
 | 1249 | Resultant | Resultant | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-58954907EFF3DA89` |
 | 1250 | Revion | Revion | 美国 | 0 | 0 | — | — | `TEAM-9997587D5BE1DCE2` |
 | 1251 | Revnu | Revnu | 美国 | 0 | 0 | — | — | `TEAM-9E1C7C48FBE89FA4` |
-| 1252 | Revyl | Revyl | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-F71B02E220FAFF50` |
+| 1252 | Revyl | Revyl | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-F71B02E220FAFF50` |
 | 1253 | Rezolve.ai | Rezolve.ai | 美国 | 0 | 0 | — | — | `TEAM-96E2BF9F705B21A1` |
 | 1254 | Ricursive Intelligence | Ricursive Intelligence | 美国 | 0 | 0 | — | — | `TEAM-AF53D6B682A43332` |
 | 1255 | RightSeat.AI | RightSeat.AI | 美国 | 0 | 0 | — | — | `TEAM-2F18FA7EB21C9F26` |
@@ -1420,65 +1411,65 @@
 | 1258 | Robby | Robby | 美国 | 0 | 0 | — | — | `TEAM-3DFC93D0A503DDDE` |
 | 1259 | Rockhopper | Rockhopper | 美国 | 0 | 0 | — | — | `TEAM-D85DA82DD937430C` |
 | 1260 | Rollio | Rollio | 美国 | 0 | 0 | — | — | `TEAM-13D2C9B604DB7B60` |
-| 1261 | Rovi Health | Rovi Health | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-0FA075D6B8D464C5` |
-| 1262 | Rownd | Rownd | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-3C030821DD3DFBA1` |
-| 1263 | Ruma Care | Ruma Care | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-6416B0B13DEC015A` |
+| 1261 | Rovi Health | Rovi Health | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-0FA075D6B8D464C5` |
+| 1262 | Rownd | Rownd | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-3C030821DD3DFBA1` |
+| 1263 | Ruma Care | Ruma Care | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-6416B0B13DEC015A` |
 | 1264 | Ryde Technologies, LLC | Ryde Technologies, LLC | 美国 | 0 | 0 | — | — | `TEAM-8D4B6C5880FA41DA` |
 | 1265 | Saffron | Saffron | 美国 | 0 | 0 | — | — | `TEAM-D5CFD2B2B2A7ED92` |
-| 1266 | Sage Care | Sage Care | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-ECB4E6693CF9EBC8` |
-| 1267 | Sail Research | Sail Research | 美国 | 1 | 0 | — | 评测、测试与质量 1 | `TEAM-E0DB339349AFA382` |
+| 1266 | Sage Care | Sage Care | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-ECB4E6693CF9EBC8` |
+| 1267 | Sail Research | Sail Research | 美国 | 1 | 1 | 评测、测试与质量 1 | 评测、测试与质量 1 | `TEAM-E0DB339349AFA382` |
 | 1268 | Salesforce | Salesforce | 美国 | 0 | 0 | — | — | `TEAM-B84AE0D1C530C28C` |
 | 1269 | Salus | Salus | 美国 | 0 | 0 | — | — | `TEAM-2C3F93DCD8129C02` |
 | 1270 | Sandia National Laboratories | Sandia National Laboratories | 美国 | 0 | 0 | — | — | `TEAM-C42872DDDA90B26E` |
 | 1271 | Sanity | Sanity | 美国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-64725CA797277BBC` |
 | 1272 | Saris AI | Saris AI | 美国 | 0 | 0 | — | — | `TEAM-019692BC2D1BA907` |
 | 1273 | Scrapybara | Scrapybara | 美国 | 0 | 0 | — | — | `TEAM-B75F6F15DA842487` |
-| 1274 | screenpipe | screenpipe | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-115C0A72563C9FC8` |
-| 1275 | SDL / GovPilot ecosystem | SDL / GovPilot ecosystem | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-0D21D5920364D353` |
+| 1274 | screenpipe | screenpipe | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-115C0A72563C9FC8` |
+| 1275 | SDL / GovPilot ecosystem | SDL / GovPilot ecosystem | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-0D21D5920364D353` |
 | 1276 | Sekai | Sekai | 美国 | 0 | 0 | — | — | `TEAM-1C25079C7A062B39` |
 | 1277 | SellScale | SellScale | 美国 | 0 | 0 | — | — | `TEAM-740915524E6E263B` |
 | 1278 | Moveworks | ServiceNow | 美国 | 0 | 0 | — | — | `TEAM-431EEBA48C5B0A43` |
-| 1279 | ServiceNow | ServiceNow | 美国 | 40 | 19 | 工程与应用开发 12；算法、研究与模型 5；安全、治理与合规 1；产品与设计 1 | 工程与应用开发 16；其他或边界岗位 7；产品与设计 6；算法、研究与模型 6；安全、治理与合规 4；客户解决方案与交付 1 | `TEAM-EC30E55EE8695AA4` |
-| 1280 | Sesame | Sesame | 美国 | 11 | 9 | 算法、研究与模型 4；平台、基础设施与数据 4；产品与设计 1 | 平台、基础设施与数据 5；算法、研究与模型 4；产品与设计 2 | `TEAM-8724C4A4142BAC41` |
-| 1281 | Shepherd | Shepherd | 美国 | 1 | 0 | — | 运营、项目与职能 1 | `TEAM-040324B34E9919E8` |
+| 1279 | ServiceNow | ServiceNow | 美国 | 40 | 23 | 工程与应用开发 11；其他或边界岗位 4；安全、治理与合规 3；算法、研究与模型 3；产品与设计 1；客户解决方案与交付 1 | 工程与应用开发 16；其他或边界岗位 7；产品与设计 6；算法、研究与模型 6；安全、治理与合规 4；客户解决方案与交付 1 | `TEAM-EC30E55EE8695AA4` |
+| 1280 | Sesame | Sesame | 美国 | 11 | 10 | 算法、研究与模型 4；平台、基础设施与数据 4；产品与设计 2 | 平台、基础设施与数据 5；算法、研究与模型 4；产品与设计 2 | `TEAM-8724C4A4142BAC41` |
+| 1281 | Shepherd | Shepherd | 美国 | 1 | 1 | 运营、项目与职能 1 | 运营、项目与职能 1 | `TEAM-040324B34E9919E8` |
 | 1282 | Shinsegae / Reflection AI | Shinsegae / Reflection AI | 美国 | 0 | 0 | — | — | `TEAM-4C19988EF5615FE2` |
 | 1283 | Sia | Sia | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-4BCA345BAA49C814` |
 | 1284 | Siblings Software | Siblings Software | 美国 | 0 | 0 | — | — | `TEAM-62E0FE97B1FCCE03` |
 | 1285 | Signature Aviation | Signature Aviation | 美国 | 1 | 0 | — | 运营、项目与职能 1 | `TEAM-D48A27C103CA6B00` |
-| 1286 | Simantic | Simantic | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-63421B3F0E754688` |
-| 1287 | Simbie AI | Simbie AI | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-0199681C006A2D79` |
+| 1286 | Simantic | Simantic | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-63421B3F0E754688` |
+| 1287 | Simbie AI | Simbie AI | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-0199681C006A2D79` |
 | 1288 | Simile | Simile | 美国 | 0 | 0 | — | — | `TEAM-849A7059C3021354` |
-| 1289 | Sixfold | Sixfold | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-81CE721AEB2006EF` |
+| 1289 | Sixfold | Sixfold | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-81CE721AEB2006EF` |
 | 1290 | Sixtyfour | Sixtyfour | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-919E2D77858477B0` |
 | 1291 | Skai | Skai | 美国 | 0 | 0 | — | — | `TEAM-C40DF7BBBED84CD4` |
 | 1292 | Skaled Consulting | Skaled Consulting | 美国 | 0 | 0 | — | — | `TEAM-477D0FF53E3607D0` |
 | 1293 | Skit.ai | Skit.ai | 美国 | 0 | 0 | — | — | `TEAM-E626864C2EE7255F` |
 | 1294 | Skypher | Skypher | 美国 | 0 | 0 | — | — | `TEAM-D73B9671E6D38BFB` |
-| 1295 | Slalom, LLC | Slalom, LLC | 美国 | 1 | 0 | — | 安全、治理与合规 1 | `TEAM-44DB5B2D1F60D453` |
+| 1295 | Slalom, LLC | Slalom, LLC | 美国 | 1 | 1 | 安全、治理与合规 1 | 安全、治理与合规 1 | `TEAM-44DB5B2D1F60D453` |
 | 1296 | Slipstream IT | Slipstream IT | 美国 | 0 | 0 | — | — | `TEAM-AF4FD507F80C6E15` |
 | 1297 | SmarterX Ventures, LLC | SmarterX Ventures, LLC | 美国 | 0 | 0 | — | — | `TEAM-597371A23CEDCD37` |
 | 1298 | Software AG | Software AG | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-5E4BD7BE00737BDF` |
-| 1299 | Software Defined Automation | Software Defined Automation | 美国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-0AB7AA339624B97C` |
-| 1300 | Solum Health | Solum Health | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-A1CA9340F4CA9C58` |
-| 1301 | Sourcebot | Sourcebot | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-BE8F243CBCCD2401` |
+| 1299 | Software Defined Automation | Software Defined Automation | 美国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-0AB7AA339624B97C` |
+| 1300 | Solum Health | Solum Health | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-A1CA9340F4CA9C58` |
+| 1301 | Sourcebot | Sourcebot | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-BE8F243CBCCD2401` |
 | 1302 | preloop / preloop | Spacecode.AI, Inc. | 美国 | 0 | 0 | — | — | `TEAM-DC6F6D77AB19A414` |
-| 1303 | Spur | Spur | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-D2DF1FA39240A80F` |
+| 1303 | Spur | Spur | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-D2DF1FA39240A80F` |
 | 1304 | Spurs Sports & Entertainment | Spurs Sports & Entertainment | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-D60073C052DEBA4D` |
-| 1305 | SQDM | SQDM | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-E58087678B779B81` |
-| 1306 | Squid AI | Squid Cloud, Inc. | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-6567779FA67E4257` |
-| 1307 | St. Jude Children's Research Hospital | St. Jude Children's Research Hospital | 美国 | 1 | 0 | — | 安全、治理与合规 1 | `TEAM-C13B4E667A57DC54` |
+| 1305 | SQDM | SQDM | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-E58087678B779B81` |
+| 1306 | Squid AI | Squid Cloud, Inc. | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-6567779FA67E4257` |
+| 1307 | St. Jude Children's Research Hospital | St. Jude Children's Research Hospital | 美国 | 1 | 1 | 安全、治理与合规 1 | 安全、治理与合规 1 | `TEAM-C13B4E667A57DC54` |
 | 1308 | Stage | Stage | 美国 | 0 | 0 | — | — | `TEAM-A9B3C163771F9E9F` |
-| 1309 | Standout | Standout | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-FAC9728D96716411` |
-| 1310 | StitchFin Inc. | StitchFin Inc. | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-ED9A5D9783C3F1F4` |
-| 1311 | Strata Decision Technology | Strata Decision Technology | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-5A34E0B37F3A7248` |
+| 1309 | Standout | Standout | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-FAC9728D96716411` |
+| 1310 | StitchFin Inc. | StitchFin Inc. | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-ED9A5D9783C3F1F4` |
+| 1311 | Strata Decision Technology | Strata Decision Technology | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-5A34E0B37F3A7248` |
 | 1312 | Structured AI | Structured AI | 美国 | 0 | 0 | — | — | `TEAM-18D3A2ACF689BA0D` |
-| 1313 | Substrate | Substrate | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-DD8D2025D2E97AEE` |
+| 1313 | Substrate | Substrate | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-DD8D2025D2E97AEE` |
 | 1314 | Sully.ai | Sully.ai | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-130C491599B86CF0` |
-| 1315 | Super.com | Super.com | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-0938544CB90CF5CB` |
-| 1316 | Superconductor | Superconductor | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-27925BF6E4A7BE0D` |
+| 1315 | Super.com | Super.com | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-0938544CB90CF5CB` |
+| 1316 | Superconductor | Superconductor | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-27925BF6E4A7BE0D` |
 | 1317 | Superset | Superset | 美国 | 0 | 0 | — | — | `TEAM-9E6B7AE15D237712` |
-| 1318 | Principal Architect | Sutherland | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-A436C5B97220A165` |
-| 1319 | Sutherland | Sutherland | 美国 | 1 | 1 | 客户解决方案与交付 1 | 客户解决方案与交付 1 | `TEAM-E230AC04719BDE3D` |
+| 1318 | Principal Architect | Sutherland | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-A436C5B97220A165` |
+| 1319 | Sutherland | Sutherland | 美国 | 1 | 0 | — | 客户解决方案与交付 1 | `TEAM-E230AC04719BDE3D` |
 | 1320 | Swap | Swap | 美国 | 0 | 0 | — | — | `TEAM-1E5D4E9177637481` |
 | 1321 | SWARM Engineering | SWARM Engineering | 美国 | 0 | 0 | — | — | `TEAM-1570D7C0665E2392` |
 | 1322 | Synphony | Synphony | 美国 | 0 | 0 | — | — | `TEAM-010F61421AEDE424` |
@@ -1486,43 +1477,43 @@
 | 1324 | Tabnine | Tabnine | 美国 | 0 | 0 | — | — | `TEAM-3781821C7ADD684E` |
 | 1325 | Talcott Financial Group | Talcott Financial Group | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-23946CFDBE8F1BFD` |
 | 1326 | Taxbit | Taxbit | 美国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-57799B4AC6B45F06` |
-| 1327 | Tebra | Tebra | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-56E05C60970F21E9` |
-| 1328 | Temper | Temper | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-162B81219CD88E4B` |
+| 1327 | Tebra | Tebra | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-56E05C60970F21E9` |
+| 1328 | Temper | Temper | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-162B81219CD88E4B` |
 | 1329 | TesterArmy | TesterArmy | 美国 | 0 | 0 | — | — | `TEAM-843E82CA4FA5FBCA` |
-| 1330 | The General Intelligence Company of New York | The General Intelligence Company of New York | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-AD2FB280FC7FBA37` |
+| 1330 | The General Intelligence Company of New York | The General Intelligence Company of New York | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-AD2FB280FC7FBA37` |
 | 1331 | The Hog | The Hog | 美国 | 0 | 0 | — | — | `TEAM-16F82F35D9D625C2` |
 | 1332 | The Paper Store | The Paper Store | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-D31214BFCDA8D152` |
-| 1333 | The Trade Desk | The Trade Desk | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-D388021F1324F85D` |
+| 1333 | The Trade Desk | The Trade Desk | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-D388021F1324F85D` |
 | 1334 | Travelers | The Travelers Indemnity Company | 美国 | 1 | 0 | — | 产品与设计 1 | `TEAM-10D2DA7ACB9A13C3` |
-| 1335 | Third Way Health | Third Way Health | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-3D62ACD48A405148` |
+| 1335 | Third Way Health | Third Way Health | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-3D62ACD48A405148` |
 | 1336 | Tiger Analytics Inc. | Tiger Analytics Inc. | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-52D7A1FAEEFEDE36` |
-| 1337 | Titan AI | Titan AI | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-4261A4F5AC15229A` |
+| 1337 | Titan AI | Titan AI | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-4261A4F5AC15229A` |
 | 1338 | Titan Holdings | Titan Holdings | 美国 | 1 | 1 | 评测、测试与质量 1 | 评测、测试与质量 1 | `TEAM-CDA4FC6D90104FF7` |
-| 1339 | Tivara | Tivara | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-40EE790590CDA6FC` |
+| 1339 | Tivara | Tivara | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-40EE790590CDA6FC` |
 | 1340 | Tolmo | Tolmo | 美国 | 0 | 0 | — | — | `TEAM-9973ECC00A7745F8` |
 | 1341 | ToolJet | ToolJet Solutions, Inc. | 美国 | 0 | 0 | — | — | `TEAM-93152B2C94EB3F2D` |
 | 1342 | Cognee / Topoteretes UG | Topoteretes UG (haftungsbeschraenkt) | 美国 | 0 | 0 | — | — | `TEAM-88A3922A420AB861` |
 | 1343 | Cognee | Topoteretes UG (haftungsbeschränkt) | 美国 | 0 | 0 | — | — | `TEAM-246A1BD6B35A6871` |
 | 1344 | Toshiba America Business Solutions, Inc. | Toshiba | 美国 | 0 | 0 | — | — | `TEAM-9B2FFF26ADA93E9D` |
-| 1345 | TraceRoot.AI | TraceRoot.AI | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-87C0C3C8421FF53D` |
+| 1345 | TraceRoot.AI | TraceRoot.AI | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-87C0C3C8421FF53D` |
 | 1346 | Trase Systems | Trase Systems | 美国 | 0 | 0 | — | — | `TEAM-0772C884A728885D` |
 | 1347 | Tray.ai | Tray.ai | 美国 | 0 | 0 | — | — | `TEAM-6C0EB30F4B83F31D` |
-| 1348 | Tread | Tread | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-4E10FC2CCE55F077` |
+| 1348 | Tread | Tread | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-4E10FC2CCE55F077` |
 | 1349 | Trellis | Trellis | 美国 | 0 | 0 | — | — | `TEAM-291FB386055B6BB2` |
 | 1350 | TREND Health Partners | TREND Health Partners | 美国 | 0 | 0 | — | — | `TEAM-AD2454B91B2933CC` |
 | 1351 | Trico Electric Cooperative, Inc. | Trico Electric Cooperative, Inc. | 美国 | 0 | 0 | — | — | `TEAM-D52CA1BF0EE7AC27` |
 | 1352 | Trilagen | Trilagen | 美国 | 0 | 0 | — | — | `TEAM-C5AC901212D1D1DE` |
 | 1353 | Trilon Group | Trilon Group | 美国 | 1 | 1 | 评测、测试与质量 1 | 评测、测试与质量 1 | `TEAM-6B962AB0D73F9138` |
-| 1354 | Truewind | Truewind | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-4C46D6823986F6B6` |
+| 1354 | Truewind | Truewind | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-4C46D6823986F6B6` |
 | 1355 | Truity Credit Union | Truity Credit Union | 美国 | 0 | 0 | — | — | `TEAM-A3926526DA8FBC54` |
 | 1356 | Kompato AI | Trusting Social | 美国 | 0 | 0 | — | — | `TEAM-477FCCCAECF02CD7` |
 | 1357 | Tsenta | Tsenta | 美国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-51085C7FD8F13CC5` |
 | 1358 | Twelve Labs / 트웰브랩스 | Twelve Labs / 트웰브랩스 | 美国 | 0 | 0 | — | — | `TEAM-207EFD4F6CD1D1CC` |
 | 1359 | Uber | Uber | 美国 | 0 | 0 | — | — | `TEAM-CD5D3CFD68269F93` |
-| 1360 | Udacity | Udacity | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-478E90CAAB0D4B76` |
-| 1361 | UiPath Agentic Automation | UiPath | 美国 | 6 | 0 | — | 其他或边界岗位 6 | `TEAM-73B0E62F6BB10A9C` |
+| 1360 | Udacity | Udacity | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-478E90CAAB0D4B76` |
+| 1361 | UiPath Agentic Automation | UiPath | 美国 | 6 | 5 | 其他或边界岗位 5 | 其他或边界岗位 6 | `TEAM-73B0E62F6BB10A9C` |
 | 1362 | Ujwal Inc. / Level AI (attribution unresolved) | Ujwal Inc. / Level AI (attribution unresolved) | 美国 | 0 | 0 | — | — | `TEAM-5F40B7801E7FB502` |
-| 1363 | Ultimate Knowledge Institute | Ultimate Knowledge Institute | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-317603D3C42A7491` |
+| 1363 | Ultimate Knowledge Institute | Ultimate Knowledge Institute | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-317603D3C42A7491` |
 | 1364 | Uniphore | Uniphore Technologies North America Inc | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-AB3F4D9F7369C318` |
 | 1365 | United Global Technologies | United Global Technologies | 美国 | 0 | 0 | — | — | `TEAM-25BAA738D30CE0DE` |
 | 1366 | United Placement Group | United Placement Group | 美国 | 0 | 0 | — | — | `TEAM-C196C09081D3FB2E` |
@@ -1530,46 +1521,46 @@
 | 1368 | University of Wisconsin–Madison | Universities of Wisconsin | 美国 | 0 | 0 | — | — | `TEAM-C6ACA6BA52361640` |
 | 1369 | First State AI Institute / University of Delaware | University of Delaware | 美国 | 0 | 0 | — | — | `TEAM-1ACFF315E0519C90` |
 | 1370 | Unsiloed AI | Unsiloed AI | 美国 | 0 | 0 | — | — | `TEAM-94994EBFFDAECC7F` |
-| 1371 | UpDoc | UpDoc | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-0B077012D3864895` |
-| 1372 | UpSmith | UpSmith | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-DA9E7E1BBC9ABD2D` |
+| 1371 | UpDoc | UpDoc | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-0B077012D3864895` |
+| 1372 | UpSmith | UpSmith | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-DA9E7E1BBC9ABD2D` |
 | 1373 | Oak Ridge National Laboratory (ORNL) | UT-Battelle | 美国 | 0 | 0 | — | — | `TEAM-93AE5C762E98183D` |
 | 1374 | V7 | V7 | 美国 | 0 | 0 | — | — | `TEAM-7CADD3498F4B32F2` |
 | 1375 | Vacatia | Vacatia | 美国 | 1 | 0 | — | 评测、测试与质量 1 | `TEAM-1C2A055280131EB0` |
 | 1376 | Valiant Harbor International, LLC | Valiant Harbor International, LLC | 美国 | 0 | 0 | — | — | `TEAM-F527886F888C8ADB` |
-| 1377 | Valitana LLC | Valitana LLC | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-5135984845F89929` |
-| 1378 | Variance | Variance | 美国 | 4 | 0 | — | 评测、测试与质量 2；产品与设计 2 | `TEAM-D3013E330DB2EB98` |
+| 1377 | Valitana LLC | Valitana LLC | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-5135984845F89929` |
+| 1378 | Variance | Variance | 美国 | 4 | 4 | 评测、测试与质量 2；产品与设计 2 | 评测、测试与质量 2；产品与设计 2 | `TEAM-D3013E330DB2EB98` |
 | 1379 | Varos | Varos | 美国 | 0 | 0 | — | — | `TEAM-A40C5082F416921E` |
 | 1380 | VAST Data | VAST Data | 美国 | 0 | 0 | — | — | `TEAM-C44D098C4236AC5A` |
-| 1381 | Vector Legal | Vector Legal | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-5A0A19CE1E2EB0C9` |
+| 1381 | Vector Legal | Vector Legal | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-5A0A19CE1E2EB0C9` |
 | 1382 | Vehlo | Vehlo | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-3574D33242823EB7` |
-| 1383 | Vela | Vela | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-9B98BC4B264782A1` |
+| 1383 | Vela | Vela | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-9B98BC4B264782A1` |
 | 1384 | Ventus AI | Ventus AI | 美国 | 0 | 0 | — | — | `TEAM-DE151D947B84A65D` |
 | 1385 | Vercel | Vercel | 美国 | 5 | 5 | 产品与设计 1；商务、市场与合作 1；客户解决方案与交付 1；工程与应用开发 1；其他或边界岗位 1 | 产品与设计 1；商务、市场与合作 1；客户解决方案与交付 1；工程与应用开发 1；其他或边界岗位 1 | `TEAM-CA3D9ABA45E7E193` |
-| 1386 | Veritus | Veritus | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-6FA5F2BBDD968674` |
+| 1386 | Veritus | Veritus | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-6FA5F2BBDD968674` |
 | 1387 | VeryAI / Veros Inc. | VeryAI / Veros Inc. | 美国 | 0 | 0 | — | — | `TEAM-137FEE2019DB4610` |
 | 1388 | Vibranium Labs | Vibranium Labs | 美国 | 0 | 0 | — | — | `TEAM-6A7622716793404E` |
 | 1389 | VikingCloud | VikingCloud | 美国 | 0 | 0 | — | — | `TEAM-E3BC17AEED7F084C` |
 | 1390 | Visionary Integration Professionals | Visionary Integration Professionals | 美国 | 0 | 0 | — | — | `TEAM-047F8CD824103B7C` |
-| 1391 | Vista Fulfillment Group | Vista Fulfillment Group | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-0BCB4B899F38568F` |
-| 1392 | Voiceops | Voiceops | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-4CEF3E40D1538AFE` |
+| 1391 | Vista Fulfillment Group | Vista Fulfillment Group | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-0BCB4B899F38568F` |
+| 1392 | Voiceops | Voiceops | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-4CEF3E40D1538AFE` |
 | 1393 | Voiceops, Inc. | Voiceops | 美国 | 0 | 0 | — | — | `TEAM-9EA46E740754BBF0` |
 | 1394 | VoiceRun | VoiceRun | 美国 | 0 | 0 | — | — | `TEAM-3FC6A01CE9708981` |
 | 1395 | VoltAgent | VoltAgent Inc. | 美国 | 0 | 0 | — | — | `TEAM-63F4796A7D2A5108` |
 | 1396 | Vooma | Vooma | 美国 | 0 | 0 | — | — | `TEAM-4506472FBAF3DB03` |
 | 1397 | Voquill | Voquill | 美国 | 0 | 0 | — | — | `TEAM-387FE8E6103D350D` |
-| 1398 | VOYGR | VOYGR | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-344CBF0E9D443FDF` |
+| 1398 | VOYGR | VOYGR | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-344CBF0E9D443FDF` |
 | 1399 | Vulcan Technologies | Vulcan Technologies | 美国 | 0 | 0 | — | — | `TEAM-A2793C43AA3EE227` |
 | 1400 | Wato | Wato | 美国 | 0 | 0 | — | — | `TEAM-819D0A177B2B9CC8` |
-| 1401 | Wellmark, Inc. | Wellmark, Inc. | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-12C3979F0086A08B` |
+| 1401 | Wellmark, Inc. | Wellmark, Inc. | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-12C3979F0086A08B` |
 | 1402 | Wells Fargo | Wells Fargo | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-DBBBB19043303754` |
 | 1403 | Westcore | Westcore | 美国 | 0 | 0 | — | — | `TEAM-46F212C780E9FD35` |
 | 1404 | Western Digital | Western Digital | 美国 | 0 | 0 | — | — | `TEAM-27DB63E03DF5C23D` |
-| 1405 | Wildcard | Wildcard | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-5841E7B611D9A719` |
+| 1405 | Wildcard | Wildcard | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-5841E7B611D9A719` |
 | 1406 | Wilmac Technologies | Wilmac Technologies | 美国 | 1 | 1 | 产品与设计 1 | 产品与设计 1 | `TEAM-C728FF2F2AD487B5` |
 | 1407 | Wilson Sonsini Goodrich & Rosati | Wilson Sonsini Goodrich & Rosati | 美国 | 1 | 1 | 安全、治理与合规 1 | 安全、治理与合规 1 | `TEAM-9F15F4E9F11D8823` |
 | 1408 | Windward Consulting | Windward Consulting | 美国 | 0 | 0 | — | — | `TEAM-E743ABB8DC19244E` |
 | 1409 | Wipro Limited | Wipro Limited | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-142974405866D749` |
-| 1410 | withQ / Quickserve AI Inc. | withQ / Quickserve AI Inc. | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-8820819DD1CA3445` |
+| 1410 | withQ / Quickserve AI Inc. | withQ / Quickserve AI Inc. | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-8820819DD1CA3445` |
 | 1411 | Wolfia | Wolfia | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-5F9A0424F83D4586` |
 | 1412 | Womble Bond Dickinson | Womble Bond Dickinson | 美国 | 0 | 0 | — | — | `TEAM-05B8CB7A0B503CD6` |
 | 1413 | Workato | Workato | 美国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-2B1B83989B194597` |
@@ -1579,20 +1570,20 @@
 | 1417 | XBOW | XBOW | 美国 | 0 | 0 | — | — | `TEAM-E8FC6DC560E338BE` |
 | 1418 | YouArt | YouArt | 美国 | 0 | 0 | — | — | `TEAM-9F38DEC24ED1E6D8` |
 | 1419 | Yuma AI | Yuma AI | 美国 | 0 | 0 | — | — | `TEAM-DFBB30AEBE356FA9` |
-| 1420 | Yutori | Yutori | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-735D0210A28030B8` |
+| 1420 | Yutori | Yutori | 美国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-735D0210A28030B8` |
 | 1421 | Zania | Zania | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-49A81BBF084D625E` |
 | 1422 | Zenity | Zenity | 美国 | 1 | 1 | 安全、治理与合规 1 | 安全、治理与合规 1 | `TEAM-7E3F6E18E032790D` |
 | 1423 | ZeroPath | ZeroPath | 美国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-86AEB3F9A34CF98F` |
 | 1424 | Zillow Group | Zillow Group | 美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-EF45994558C78C62` |
 | 1425 | zudo.work | zudo.work | 美国 | 0 | 0 | — | — | `TEAM-BDB4136D2C307A22` |
-| 1426 | Zuma | Zuma | 美国 | 1 | 1 | 工程与应用开发 1 | 工程与应用开发 1 | `TEAM-381882982FB7869E` |
+| 1426 | Zuma | Zuma | 美国 | 1 | 0 | — | 工程与应用开发 1 | `TEAM-381882982FB7869E` |
 | 1427 | Zylo | Zylo | 美国 | 1 | 0 | — | 平台、基础设施与数据 1 | `TEAM-3EEAFEF391FAED56` |
 | 1428 | 合同会社Nonagon Capital | 合同会社Nonagon Capital | 美国 | 0 | 0 | — | — | `TEAM-776953521C97FAB6` |
-| 1429 | AbbVie | AbbVie | 中国、美国 | 9 | 3 | 安全、治理与合规 1；客户解决方案与交付 1；工程与应用开发 1 | 工程与应用开发 5；客户解决方案与交付 2；安全、治理与合规 1；其他或边界岗位 1 | `TEAM-9C57045FA4FFB418` |
+| 1429 | AbbVie | AbbVie | 中国、美国 | 9 | 4 | 工程与应用开发 2；安全、治理与合规 1；客户解决方案与交付 1 | 工程与应用开发 5；客户解决方案与交付 2；安全、治理与合规 1；其他或边界岗位 1 | `TEAM-9C57045FA4FFB418` |
 | 1430 | Microsoft | Microsoft | 中国、美国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-B656B917C8BBBA70` |
 | 1431 | Nagarro | Nagarro | 中国、美国 | 2 | 1 | 工程与应用开发 1 | 工程与应用开发 2 | `TEAM-0D4C26B19C72E699` |
-| 1432 | Principal Software Engineer - Product Security | ServiceNow | 以色列 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-6259A14D15A65A07` |
-| 1433 | Sr Staff Software Engineer - Product Security | ServiceNow | 以色列 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-0C0C7F4FB6A6C8E7` |
+| 1432 | Principal Software Engineer - Product Security | ServiceNow | 以色列 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-6259A14D15A65A07` |
+| 1433 | Sr Staff Software Engineer - Product Security | ServiceNow | 以色列 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-0C0C7F4FB6A6C8E7` |
 | 1434 | Staff Software Engineer - Product Security | ServiceNow | 以色列 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-B60D8A6F633C7650` |
 | 1435 | Implementation Consultant for Ada Generative AI customer-service automation | Ada | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-2482EA0B3CC368F2` |
 | 1436 | [Expression of Interest] Research Engineer / Scientist, Alignment - London \| Anthropic current Agent system or Agent-enabled workflow role family | Anthropic | 其他地区或全球岗位 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-C68F9CF0CDF24E89` |
@@ -1600,8 +1591,8 @@
 | 1438 | Engineering Manager, Connectivity - London \| Anthropic current Agent system or Agent-enabled workflow role family | Anthropic | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-DB4A2BB90C351458` |
 | 1439 | Staff+ Software Engineer, Safeguards Infrastructure \| Anthropic current Agent system or Agent-enabled workflow role family | Anthropic | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-35EADCAD5B99BD69` |
 | 1440 | Technical Architect \| Anthropic current Agent system or Agent-enabled workflow role family | Anthropic | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-BB0B7EADCC4ACF87` |
-| 1441 | Growth | API Hero Ltd. | 其他地区或全球岗位 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-522DC7DAF2E4A3DC` |
-| 1442 | Engineering | Clarity | 其他地区或全球岗位 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-9EDB6D6D74513944` |
+| 1441 | Growth | API Hero Ltd. | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-522DC7DAF2E4A3DC` |
+| 1442 | Engineering | Clarity | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-9EDB6D6D74513944` |
 | 1443 | Forward Deploy Engineer (AI Platform) \| Agent Studio and support Agents | DevRev | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-ED1D4C05798F5934` |
 | 1444 | Forward Deployed Architect \| Agent Studio and support Agents | DevRev | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-BAC3C26E2B8DE98A` |
 | 1445 | Forward Deployed Engineer - Applied AI \| Agent Studio and support Agents | DevRev | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-6551D71CEC7887A9` |
@@ -1611,14 +1602,14 @@
 | 1449 | Software Engineer - Applied AI \| Agent Studio and support Agents | DevRev | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-CC92B3EC8B07A6EA` |
 | 1450 | Senior Technical Product Manager \| AURI Agentic Application Security Platform | Endor Labs | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-252C8FD5099852E1` |
 | 1451 | Solutions Architect for Glean Work AI / scalable AI agents implementations | Glean | 其他地区或全球岗位 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-F53AE3D55BD15E4B` |
-| 1452 | Build | Gushwork | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-05CDF6AD202A7823` |
-| 1453 | Build | Gushwork | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-3CA32742B81E737B` |
-| 1454 | Build | Gushwork | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-C866815FE56A3A23` |
-| 1455 | Grow | Gushwork | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-4654229E801A8300` |
+| 1452 | Build | Gushwork | 其他地区或全球岗位 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-05CDF6AD202A7823` |
+| 1453 | Build | Gushwork | 其他地区或全球岗位 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-3CA32742B81E737B` |
+| 1454 | Build | Gushwork | 其他地区或全球岗位 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-C866815FE56A3A23` |
+| 1455 | Grow | Gushwork | 其他地区或全球岗位 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-4654229E801A8300` |
 | 1456 | Deployment | HappyRobot | 其他地区或全球岗位 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-2324A76BA9514182` |
 | 1457 | Deployment | HappyRobot | 其他地区或全球岗位 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-4A1470B241D75F09` |
-| 1458 | Engineering | HappyRobot | 其他地区或全球岗位 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-E604492AE589B380` |
-| 1459 | Engineering | HelmGuard Technologies, Inc. | 其他地区或全球岗位 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-52812F5C8317E039` |
+| 1458 | Engineering | HappyRobot | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-E604492AE589B380` |
+| 1459 | Engineering | HelmGuard Technologies, Inc. | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-52812F5C8317E039` |
 | 1460 | AI Creative Designer, Email \| Agentic Marketing Platform and AI Decisioning Agents | Hightouch | 其他地区或全球岗位 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-2E514623599333FD` |
 | 1461 | Engineering Manager, Agents \| Agentic Marketing Platform and AI Decisioning Agents | Hightouch | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-154BB69EEBB4B205` |
 | 1462 | Forward Deployed Creative Strategist \| Agentic Marketing Platform and AI Decisioning Agents | Hightouch | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-9388B00BF0E76B76` |
@@ -1635,12 +1626,12 @@
 | 1473 | AI Infrastructure Engineer for Fin model training and inference platform | Intercom | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-194DAB9C1DDA0452` |
 | 1474 | Forward Deployed Software Engineer for Fin AI Customer Agent deployments | Intercom | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-ABE2EA9A44B38F73` |
 | 1475 | Senior Data Scientist for internal LLM and agent-powered GTM tooling | Intercom | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-8B99A71B1836502A` |
-| 1476 | Deployed Engineering | LangChain | 其他地区或全球岗位 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-8009A75FBBA4D8FA` |
-| 1477 | GTM | Linkup | 其他地区或全球岗位 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-AC6C31DA09D75E12` |
+| 1476 | Deployed Engineering | LangChain | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-8009A75FBBA4D8FA` |
+| 1477 | GTM | Linkup | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-AC6C31DA09D75E12` |
 | 1478 | Engineering | Manus AI | 其他地区或全球岗位 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-DC5A6965FE22EA6C` |
-| 1479 | Nango | Nango | 其他地区或全球岗位 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-FC19E685AEFD7773` |
+| 1479 | Nango | Nango | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-FC19E685AEFD7773` |
 | 1480 | Forward Deployed Engineer for AI-native agentic workflows and RAG systems | Nanonets | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-AF7C3CC68E42FEAE` |
-| 1481 | Global Services & Delivery | Netomi | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-9D7F15886D42F06F` |
+| 1481 | Global Services & Delivery | Netomi | 其他地区或全球岗位 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-9D7F15886D42F06F` |
 | 1482 | Agentic Voice AI sales agents \| Full Stack Engineer | Omakase.ai | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-C7BD3711E469831C` |
 | 1483 | Lead Agent Architect SAP | Parloa | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-DF9296E8AA1D99BB` |
 | 1484 | Principal Applied Scientist - agent systems | Parloa | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-F31DA9AA0218C096` |
@@ -1648,32 +1639,32 @@
 | 1486 | SAP Integration Engineer - Agent integrations | Parloa | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-9276EFCB845A72D9` |
 | 1487 | Senior Backend Engineer - Agent tool marketplace and MCP | Parloa | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-999E1268C6852CFA` |
 | 1488 | Senior Data Engineer - Internal Platform - AI Agent data enablement | Parloa | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-2BB1195432966B1F` |
-| 1489 | Sr Partner Delivery Manager - agentic AI | Parloa | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-FB38339AC415852B` |
-| 1490 | Technical Program Manager - Agentic AI customer projects | Parloa | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-93376924BAC2625A` |
-| 1491 | SG | Patsnap | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-A6EAC256BAFB6B7F` |
+| 1489 | Sr Partner Delivery Manager - agentic AI | Parloa | 其他地区或全球岗位 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-FB38339AC415852B` |
+| 1490 | Technical Program Manager - Agentic AI customer projects | Parloa | 其他地区或全球岗位 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-93376924BAC2625A` |
+| 1491 | SG | Patsnap | 其他地区或全球岗位 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-A6EAC256BAFB6B7F` |
 | 1492 | LLM/RAG/MCP and AI-workflow testing \| Automation QA Engineer | PayPay | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-5A83E6C6CD2F1718` |
 | 1493 | Titan industrial physical AI robot | RoboForce | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-60F54C4712765665` |
-| 1494 | Product Development | StarCompliance | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-85CFCC15756F2A5E` |
+| 1494 | Product Development | StarCompliance | 其他地区或全球岗位 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-85CFCC15756F2A5E` |
 | 1495 | Principal Developer Advocate AI for agentic systems education and ecosystem | Temporal Technologies | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-8C0827AA8C720474` |
 | 1496 | Staff Product Manager Agent Platform for durable AI agent execution | Temporal Technologies | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-C30E4AC577A0CAA3` |
 | 1497 | Staff Software Engineer AI Foundations for Temporal AI SDK and agent frameworks | Temporal Technologies | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-812F1C1FB0775016` |
 | 1498 | Staff Software Engineer Nexus SDK for reliable execution of agentic AI systems | Temporal Technologies | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-7251ED7D835FCBCC` |
 | 1499 | Frontier Agents Intern (Fall 2026) \| Agent research and sandbox infrastructure | Together AI | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-48704FFAD3B408FE` |
 | 1500 | GTM Engineer \| Agent research and sandbox infrastructure | Together AI | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-77399D7675BFE16B` |
-| 1501 | Platform | Tzafon | 其他地区或全球岗位 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-0B3B4F900364FF04` |
-| 1502 | Product | UiPath | 其他地区或全球岗位 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-3FD44C5A9C87306F` |
-| 1503 | Product | UiPath | 其他地区或全球岗位 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-AAA68ED169CA7788` |
+| 1501 | Platform | Tzafon | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-0B3B4F900364FF04` |
+| 1502 | Product | UiPath | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-3FD44C5A9C87306F` |
+| 1503 | Product | UiPath | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-AAA68ED169CA7788` |
 | 1504 | Sales Support | UiPath | 其他地区或全球岗位 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-32F32D821193ECDA` |
-| 1505 | Sales Support | UiPath | 其他地区或全球岗位 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-867A9F93731810A2` |
+| 1505 | Sales Support | UiPath | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-867A9F93731810A2` |
 | 1506 | Services | UiPath | 其他地区或全球岗位 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-17EC9B62D95A2D3E` |
-| 1507 | Services | UiPath | 其他地区或全球岗位 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-B8217323C3EB5D9E` |
+| 1507 | Services | UiPath | 其他地区或全球岗位 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-B8217323C3EB5D9E` |
 | 1508 | Customer Support / CX Agent | Ada | 其他地区或全球岗位、国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-6B62CED1C312FB77` |
 | 1509 | Research and Development | IFS | 加拿大 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-36E785B0AD7FBCFE` |
 | 1510 | Engineering, Infrastructure and Operations | ServiceNow | 加拿大 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-0D0079569FF4DF15` |
 | 1511 | Engineering, Infrastructure and Operations | ServiceNow | 加拿大 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-E8AAA74B1E03CFFC` |
-| 1512 | Lead - Cybersecurity Risk & Compliance | Freshworks | 印度 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-4DF682BEA0F37AB9` |
+| 1512 | Lead - Cybersecurity Risk & Compliance | Freshworks | 印度 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-4DF682BEA0F37AB9` |
 | 1513 | Staff Engineer - Systems | Freshworks | 印度 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-EFA409821596A2D4` |
-| 1514 | Research and Development | IFS | 印度 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-0756AA3360E98F47` |
+| 1514 | Research and Development | IFS | 印度 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-0756AA3360E98F47` |
 | 1515 | Research and Development | IFS | 印度 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-3AC75448615BF386` |
 | 1516 | Research and Development | IFS | 印度 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-3E35AC63F4997DC9` |
 | 1517 | Engineering | Nagarro | 印度 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-0073980D4B70C583` |
@@ -1683,224 +1674,224 @@
 | 1521 | Director of AI/ML Engineering (EDA & Semiconductor Design) | Renesas Electronics | 印度 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-C61D05FD85A1A184` |
 | 1522 | Sr. AI Engineer, Backend (Altium) | Renesas Electronics | 印度 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-4E696FBAF80D4545` |
 | 1523 | Engineering, Infrastructure and Operations | ServiceNow | 印度 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-CB0681E5F8425C2F` |
-| 1524 | Product | ServiceNow | 印度 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-6DCA742D8D370788` |
+| 1524 | Product | ServiceNow | 印度 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-6DCA742D8D370788` |
 | 1525 | Sales | ServiceNow | 印度 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-25D32725949378BF` |
-| 1526 | Product | 7AI | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-5991B2E2A83406FF` |
-| 1527 | R&D | 7AI | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-1770780AFE05B05A` |
-| 1528 | R&D | 7AI | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-1E2BAEB3BACD19C8` |
-| 1529 | R&D | 7AI | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-6F960817D5546110` |
-| 1530 | R&D | 7AI | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-74BE0CCDDA195496` |
-| 1531 | R&D | 7AI | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-B0B9FEC67193891D` |
-| 1532 | Security | 7AI | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-606E41E7BDC5A520` |
-| 1533 | Builder | Abridge | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-8C4D39E13FE1538F` |
-| 1534 | Development | ActiveCampaign | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-E6F030D2F2E17F27` |
+| 1526 | Product | 7AI | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-5991B2E2A83406FF` |
+| 1527 | R&D | 7AI | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-1770780AFE05B05A` |
+| 1528 | R&D | 7AI | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-1E2BAEB3BACD19C8` |
+| 1529 | R&D | 7AI | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-6F960817D5546110` |
+| 1530 | R&D | 7AI | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-74BE0CCDDA195496` |
+| 1531 | R&D | 7AI | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-B0B9FEC67193891D` |
+| 1532 | Security | 7AI | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-606E41E7BDC5A520` |
+| 1533 | Builder | Abridge | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-8C4D39E13FE1538F` |
+| 1534 | Development | ActiveCampaign | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-E6F030D2F2E17F27` |
 | 1535 | Agentic AI product engineering | Air | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-7B0D3BC587FE55C9` |
-| 1536 | SignNow | airSlate | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-3CF89135B992E67F` |
+| 1536 | SignNow | airSlate | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-3CF89135B992E67F` |
 | 1537 | Airtable | Airtable | 国家或地区待复核 | 4 | 4 | 其他或边界岗位 4 | 其他或边界岗位 4 | `TEAM-D5EB72E3B6D701E0` |
 | 1538 | Engineering | Aiwyn | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-B63FC8A912454DB5` |
-| 1539 | Engineering | Ambience Healthcare | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-D6C577C72DCA37A5` |
-| 1540 | Engineering, Product, and Design | Anrok | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-068635ACE53565FE` |
-| 1541 | Founding Team | Anything / Create.xyz | 国家或地区待复核 | 2 | 0 | — | 其他或边界岗位 2 | `TEAM-BBB8DA86567A23AE` |
+| 1539 | Engineering | Ambience Healthcare | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-D6C577C72DCA37A5` |
+| 1540 | Engineering, Product, and Design | Anrok | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-068635ACE53565FE` |
+| 1541 | Founding Team | Anything / Create.xyz | 国家或地区待复核 | 2 | 2 | 其他或边界岗位 2 | 其他或边界岗位 2 | `TEAM-BBB8DA86567A23AE` |
 | 1542 | AI agent / adtech platform engineering | Appier | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-454A96AC87B944CB` |
-| 1543 | Engineering | Applied Labs | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-EBE541E222BB9008` |
-| 1544 | Engineering | Arcade.dev | 国家或地区待复核 | 3 | 0 | — | 其他或边界岗位 3 | `TEAM-F58DE6206E0EE6F5` |
-| 1545 | Engineering | Artisan | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-5525A41439AF0FE4` |
-| 1546 | Engineering | Asana | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-789B9E654214D4E6` |
-| 1547 | Engineering | Asana | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-BA4C214292F95083` |
-| 1548 | Engineering | Asana | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-DBC04565D9EE37AC` |
-| 1549 | Engineering | Asana | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-F8B51925D6748C67` |
-| 1550 | Deployment & Operations | Assort Health | 国家或地区待复核 | 2 | 0 | — | 其他或边界岗位 2 | `TEAM-9EC246D9BD8B7301` |
-| 1551 | Technology | ATI Business Group | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-114468D2D8CFE542` |
-| 1552 | Customer Solutions | Avallon | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-38D4649134716EFD` |
+| 1543 | Engineering | Applied Labs | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-EBE541E222BB9008` |
+| 1544 | Engineering | Arcade.dev | 国家或地区待复核 | 3 | 3 | 其他或边界岗位 3 | 其他或边界岗位 3 | `TEAM-F58DE6206E0EE6F5` |
+| 1545 | Engineering | Artisan | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-5525A41439AF0FE4` |
+| 1546 | Engineering | Asana | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-789B9E654214D4E6` |
+| 1547 | Engineering | Asana | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-BA4C214292F95083` |
+| 1548 | Engineering | Asana | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-DBC04565D9EE37AC` |
+| 1549 | Engineering | Asana | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-F8B51925D6748C67` |
+| 1550 | Deployment & Operations | Assort Health | 国家或地区待复核 | 2 | 2 | 其他或边界岗位 2 | 其他或边界岗位 2 | `TEAM-9EC246D9BD8B7301` |
+| 1551 | Technology | ATI Business Group | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-114468D2D8CFE542` |
+| 1552 | Customer Solutions | Avallon | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-38D4649134716EFD` |
 | 1553 | Deployed Intelligence | Basis | 国家或地区待复核 | 0 | 0 | — | — | `TEAM-579C1197B7427BA5` |
-| 1554 | Engineering | Benchling | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-0EFC4671D247EF1A` |
-| 1555 | Engineering | Blaxel | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-A9DD48412EA50777` |
+| 1554 | Engineering | Benchling | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-0EFC4671D247EF1A` |
+| 1555 | Engineering | Blaxel | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-A9DD48412EA50777` |
 | 1556 | Bolt.new / StackBlitz | Bolt.new / StackBlitz | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-745B12F8B710FA63` |
-| 1557 | Engineering | Braintrust | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-48BDE86CA76F24EB` |
-| 1558 | Engineering | Browserbase | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-7E129721125BB57E` |
-| 1559 | Products | Camunda | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-99B9BD0269C5BEB0` |
-| 1560 | Engineering | Clera | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-CC13E2553DFF7DE9` |
-| 1561 | Research & Development | Cleric | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-86D2E4CF0278D82F` |
-| 1562 | Research & Development | Cleric | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-F149BF395E6FE9BF` |
-| 1563 | Engineering | CodeRabbit | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-E4DE5E846E5AA0D0` |
+| 1557 | Engineering | Braintrust | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-48BDE86CA76F24EB` |
+| 1558 | Engineering | Browserbase | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-7E129721125BB57E` |
+| 1559 | Products | Camunda | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-99B9BD0269C5BEB0` |
+| 1560 | Engineering | Clera | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-CC13E2553DFF7DE9` |
+| 1561 | Research & Development | Cleric | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-86D2E4CF0278D82F` |
+| 1562 | Research & Development | Cleric | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-F149BF395E6FE9BF` |
+| 1563 | Engineering | CodeRabbit | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-E4DE5E846E5AA0D0` |
 | 1564 | Cognigy | Cognigy | 国家或地区待复核 | 3 | 3 | 其他或边界岗位 3 | 其他或边界岗位 3 | `TEAM-92E8D8376556A3C3` |
-| 1565 | Sales | Cognition | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-0760AF8BA1F2130B` |
+| 1565 | Sales | Cognition | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-0760AF8BA1F2130B` |
 | 1566 | Agentic Platform | Cohere North | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-F61A9246EC7E0846` |
-| 1567 | Applied | Context | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-141B95D75C4E9DD0` |
-| 1568 | Platform | Context | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-7FCF2789717FD7EE` |
-| 1569 | R&D | Cooper AI | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-60BDB3B92035452D` |
-| 1570 | R&D | Cooper AI | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-D54EC855E6F0983A` |
+| 1567 | Applied | Context | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-141B95D75C4E9DD0` |
+| 1568 | Platform | Context | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-7FCF2789717FD7EE` |
+| 1569 | R&D | Cooper AI | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-60BDB3B92035452D` |
+| 1570 | R&D | Cooper AI | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-D54EC855E6F0983A` |
 | 1571 | Customer Support / CX Agent | Cresta | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-65745992E03D9EE1` |
-| 1572 | Deployment Strategists | Decagon | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-048ADBB3103B50C9` |
-| 1573 | Engineering | Decagon | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-828138DB66A2FC67` |
-| 1574 | Engineering | Displai | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-4137C1AD9ADF8E13` |
+| 1572 | Deployment Strategists | Decagon | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-048ADBB3103B50C9` |
+| 1573 | Engineering | Decagon | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-828138DB66A2FC67` |
+| 1574 | Engineering | Displai | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-4137C1AD9ADF8E13` |
 | 1575 | Customer Experience | Dust | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-5BAAC4D8665945AC` |
-| 1576 | GTM | E2B | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-4565913B54FAE1DA` |
-| 1577 | Engineering | Eigen Labs | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-6EE875343BA070D9` |
-| 1578 | Engineering | Ema | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-10BA77DCDBB0710E` |
-| 1579 | Engineering | Exa | 国家或地区待复核 | 2 | 0 | — | 其他或边界岗位 2 | `TEAM-04060F9204E66EDB` |
-| 1580 | Engineering | Fabrion | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-D9C6C4F43A03C03D` |
-| 1581 | Engineering | Fabrion | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-FF6AF53922888F5A` |
-| 1582 | Engineering, Product, and Design | Fieldguide | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-8D8FF71C8222E1A6` |
-| 1583 | Engineering, Product, and Design | Fieldguide | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-BC4E1B9E92A2E482` |
+| 1576 | GTM | E2B | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-4565913B54FAE1DA` |
+| 1577 | Engineering | Eigen Labs | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-6EE875343BA070D9` |
+| 1578 | Engineering | Ema | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-10BA77DCDBB0710E` |
+| 1579 | Engineering | Exa | 国家或地区待复核 | 2 | 2 | 其他或边界岗位 2 | 其他或边界岗位 2 | `TEAM-04060F9204E66EDB` |
+| 1580 | Engineering | Fabrion | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-D9C6C4F43A03C03D` |
+| 1581 | Engineering | Fabrion | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-FF6AF53922888F5A` |
+| 1582 | Engineering, Product, and Design | Fieldguide | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-8D8FF71C8222E1A6` |
+| 1583 | Engineering, Product, and Design | Fieldguide | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-BC4E1B9E92A2E482` |
 | 1584 | Humanoid robotics agent / AI tooling hiring | Figure AI | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-44BF5E0A46E7B0F9` |
-| 1585 | Engineering Team | Firecrawl | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-45C642150AF68F01` |
-| 1586 | Product & Engineering | Flux | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-45625EA77262BFEC` |
-| 1587 | Engineering | FriendliAI | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-198B420F9BEC2F75` |
+| 1585 | Engineering Team | Firecrawl | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-45C642150AF68F01` |
+| 1586 | Product & Engineering | Flux | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-45625EA77262BFEC` |
+| 1587 | Engineering | FriendliAI | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-198B420F9BEC2F75` |
 | 1588 | Coding Agent / Developer Tool | GitLab | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-07BFA69B561895F1` |
 | 1589 | Enterprise Workflow Agent | Glean | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-50A4F6B8CAD02EFE` |
 | 1590 | Agentic AI platform workflow engineering | GoFundMe | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-85E5999C5CC5C170` |
 | 1591 | Grafana Labs | Grafana Labs | 国家或地区待复核 | 2 | 2 | 其他或边界岗位 2 | 其他或边界岗位 2 | `TEAM-CDA7DFBB501AE7F8` |
-| 1592 | Engineering | Granted | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-345A4DCA78577453` |
-| 1593 | Engineering | Harvey | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-EEBC4A0F8EA0CB41` |
-| 1594 | Tech R&D | Healx | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-A0083BC6718745E3` |
-| 1595 | Engineering | Hebbia | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-372BA9F32D073FCB` |
-| 1596 | Product & Operations | Hello Patient | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-508D85081DB97E58` |
-| 1597 | Magic AI / AI Agent engineering | Hex | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-62FE2B3303AF2A8E` |
+| 1592 | Engineering | Granted | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-345A4DCA78577453` |
+| 1593 | Engineering | Harvey | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-EEBC4A0F8EA0CB41` |
+| 1594 | Tech R&D | Healx | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-A0083BC6718745E3` |
+| 1595 | Engineering | Hebbia | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-372BA9F32D073FCB` |
+| 1596 | Product & Operations | Hello Patient | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-508D85081DB97E58` |
+| 1597 | Magic AI / AI Agent engineering | Hex | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-62FE2B3303AF2A8E` |
 | 1598 | Agentic AI workflows for regulated documents | iCapital Network | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-6407A46BC077CA48` |
 | 1599 | Product | January | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-CCE8B682A7C42DFA` |
-| 1600 | Engineering | Kepler | 国家或地区待复核 | 2 | 0 | — | 其他或边界岗位 2 | `TEAM-3A3F2CB46BC5A99A` |
-| 1601 | Core | Lazer | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-013F63B632071B3F` |
+| 1600 | Engineering | Kepler | 国家或地区待复核 | 2 | 2 | 其他或边界岗位 2 | 其他或边界岗位 2 | `TEAM-3A3F2CB46BC5A99A` |
+| 1601 | Core | Lazer | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-013F63B632071B3F` |
 | 1602 | Customer Enablement | Legora | 国家或地区待复核 | 0 | 0 | — | — | `TEAM-6BE624A8F370DE9F` |
 | 1603 | Liberate | Liberate | 国家或地区待复核 | 2 | 1 | 其他或边界岗位 1 | 其他或边界岗位 2 | `TEAM-FDF710DAE85AF064` |
-| 1604 | Engineering | LiveFlow | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-4EFCF6136A617D4A` |
-| 1605 | R&D | LiveKit | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-C20B4452DCC9516A` |
-| 1606 | Engineering | LlamaIndex | 国家或地区待复核 | 2 | 0 | — | 其他或边界岗位 2 | `TEAM-DB96D3CA9A800692` |
-| 1607 | Engineering | Lovable | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-B902F33DDBD7058A` |
-| 1608 | Engineering | Lumos | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-B08E79C0A5018169` |
-| 1609 | Product Management | Magical | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-2DA117097654D4E0` |
-| 1610 | Engineering | Mastra | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-4471A16B8ACA5376` |
-| 1611 | R&D department | Metaprise.ai | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-B08464C2DD52DA6C` |
-| 1612 | Technical Staff | Model AI | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-4F43BCE34985718A` |
-| 1613 | Product | n8n | 国家或地区待复核 | 3 | 0 | — | 其他或边界岗位 3 | `TEAM-A6E1E2100E1FA4C1` |
+| 1604 | Engineering | LiveFlow | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-4EFCF6136A617D4A` |
+| 1605 | R&D | LiveKit | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-C20B4452DCC9516A` |
+| 1606 | Engineering | LlamaIndex | 国家或地区待复核 | 2 | 2 | 其他或边界岗位 2 | 其他或边界岗位 2 | `TEAM-DB96D3CA9A800692` |
+| 1607 | Engineering | Lovable | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-B902F33DDBD7058A` |
+| 1608 | Engineering | Lumos | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-B08E79C0A5018169` |
+| 1609 | Product Management | Magical | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-2DA117097654D4E0` |
+| 1610 | Engineering | Mastra | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-4471A16B8ACA5376` |
+| 1611 | R&D department | Metaprise.ai | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-B08464C2DD52DA6C` |
+| 1612 | Technical Staff | Model AI | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-4F43BCE34985718A` |
+| 1613 | Product | n8n | 国家或地区待复核 | 3 | 1 | 其他或边界岗位 1 | 其他或边界岗位 3 | `TEAM-A6E1E2100E1FA4C1` |
 | 1614 | Backend Engineer \| Navier Agent-Driven Engineering platform | Navier | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-0F2D953E7DCF86C4` |
 | 1615 | Full Stack Engineer \| Navier Agent-Driven Engineering platform | Navier | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-9CDD63583C790020` |
-| 1616 | Engineering | NegotiateAI | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-296FDFA9D5C12FDF` |
+| 1616 | Engineering | NegotiateAI | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-296FDFA9D5C12FDF` |
 | 1617 | Neo4j | Neo4j | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-19F453CDC2FCA7CE` |
-| 1618 | GTM | Neon Health | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-0703D671C983BC12` |
-| 1619 | Global Services & Delivery | Netomi | 国家或地区待复核 | 2 | 2 | 其他或边界岗位 2 | 其他或边界岗位 2 | `TEAM-AC6D5DBCE4750671` |
-| 1620 | Engineering | NextGen Federal Systems | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-3EF29A0E6581663F` |
-| 1621 | Engineering | Nooks | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-02D6309A7603AE9B` |
-| 1622 | Engineering | Nooks | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-A8BA82A0EA0607FD` |
-| 1623 | Engineering | Norm Ai | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-4846070C62C18AA1` |
-| 1624 | Engineering | Norm Ai | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-A4B10FA3F422AF89` |
-| 1625 | Engineering | Nova Intelligence | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-C381B59DF331C0E6` |
-| 1626 | Engineer | Nubank | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-661E6FD7F38535EB` |
-| 1627 | Engineering | Old Well Labs | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-0E08273955C21FE5` |
-| 1628 | Engineering | OneSchema | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-00EE7D82209DDDD8` |
-| 1629 | Applied AI | OpenAI | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-6EA1F9523D5445C2` |
+| 1618 | GTM | Neon Health | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-0703D671C983BC12` |
+| 1619 | Global Services & Delivery | Netomi | 国家或地区待复核 | 2 | 0 | — | 其他或边界岗位 2 | `TEAM-AC6D5DBCE4750671` |
+| 1620 | Engineering | NextGen Federal Systems | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-3EF29A0E6581663F` |
+| 1621 | Engineering | Nooks | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-02D6309A7603AE9B` |
+| 1622 | Engineering | Nooks | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-A8BA82A0EA0607FD` |
+| 1623 | Engineering | Norm Ai | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-4846070C62C18AA1` |
+| 1624 | Engineering | Norm Ai | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-A4B10FA3F422AF89` |
+| 1625 | Engineering | Nova Intelligence | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-C381B59DF331C0E6` |
+| 1626 | Engineer | Nubank | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-661E6FD7F38535EB` |
+| 1627 | Engineering | Old Well Labs | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-0E08273955C21FE5` |
+| 1628 | Engineering | OneSchema | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-00EE7D82209DDDD8` |
+| 1629 | Applied AI | OpenAI | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-6EA1F9523D5445C2` |
 | 1630 | Engineering | OpenHands / All Hands AI | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-0304CCA555E4F84E` |
-| 1631 | Engineering | Peek | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-64625F030736A0AD` |
+| 1631 | Engineering | Peek | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-64625F030736A0AD` |
 | 1632 | Operational AI agent workflows | Pelago | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-A619FA80E5452361` |
-| 1633 | Engineering | PermitFlow | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-4F1709463BC8A0D5` |
-| 1634 | Core Team | Plato | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-8A21CC6429BB478B` |
+| 1633 | Engineering | PermitFlow | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-4F1709463BC8A0D5` |
+| 1634 | Core Team | Plato | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-8A21CC6429BB478B` |
 | 1635 | AI Agent platform for local business | Podium | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-AD8E83517098B6FB` |
 | 1636 | Product | Ramp Agentic CX | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-7EEAE51EA52CADCB` |
-| 1637 | Engineering | Reducto | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-7F5B773698A6267A` |
-| 1638 | Engineering | Replit | 国家或地区待复核 | 5 | 0 | — | 其他或边界岗位 5 | `TEAM-655E1A2F3C0E2961` |
-| 1639 | Customer Success | Rescale | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-BC6EB4D259903EF6` |
-| 1640 | Founders Initiatives | Retell AI | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-192A2FA20E5A021B` |
+| 1637 | Engineering | Reducto | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-7F5B773698A6267A` |
+| 1638 | Engineering | Replit | 国家或地区待复核 | 5 | 5 | 其他或边界岗位 5 | 其他或边界岗位 5 | `TEAM-655E1A2F3C0E2961` |
+| 1639 | Customer Success | Rescale | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-BC6EB4D259903EF6` |
+| 1640 | Founders Initiatives | Retell AI | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-192A2FA20E5A021B` |
 | 1641 | Engineering | Robotic Assistance Devices | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-29E49A4CDAEB441F` |
-| 1642 | Product | Rogo | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-CE6EA9170CEEAAFC` |
+| 1642 | Product | Rogo | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-CE6EA9170CEEAAFC` |
 | 1643 | Embedded Agentic AI | Roku | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-94C95D90D56C0F8D` |
-| 1644 | Agent Ops | Runbook | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-D0652CEDDFAAF997` |
-| 1645 | Engineering | Runlayer | 国家或地区待复核 | 2 | 0 | — | 其他或边界岗位 2 | `TEAM-F41B69F049CFF25C` |
-| 1646 | Engineering | Runloop | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-181AB4E1164297AE` |
-| 1647 | Product | Saga | 国家或地区待复核 | 2 | 2 | 其他或边界岗位 2 | 其他或边界岗位 2 | `TEAM-83600A3FC7660AEE` |
-| 1648 | Engineering | Sardine | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-45CA46425608818B` |
-| 1649 | Engineering | Sazabi | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-B778A475B5BD38C2` |
+| 1644 | Agent Ops | Runbook | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-D0652CEDDFAAF997` |
+| 1645 | Engineering | Runlayer | 国家或地区待复核 | 2 | 2 | 其他或边界岗位 2 | 其他或边界岗位 2 | `TEAM-F41B69F049CFF25C` |
+| 1646 | Engineering | Runloop | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-181AB4E1164297AE` |
+| 1647 | Product | Saga | 国家或地区待复核 | 2 | 0 | — | 其他或边界岗位 2 | `TEAM-83600A3FC7660AEE` |
+| 1648 | Engineering | Sardine | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-45CA46425608818B` |
+| 1649 | Engineering | Sazabi | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-B778A475B5BD38C2` |
 | 1650 | Frontier Agents / customer AI workflows | Scale AI | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-B2F4524C43B75D6E` |
-| 1651 | Engineering | Scaled Cognition | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-B015FD85E936AA93` |
-| 1652 | Sales | Sema4.ai | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-DEC69624053C6A8B` |
+| 1651 | Engineering | Scaled Cognition | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-B015FD85E936AA93` |
+| 1652 | Sales | Sema4.ai | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-DEC69624053C6A8B` |
 | 1653 | Engineering | Serval | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-2C83D61F7A086657` |
-| 1654 | Engineering | Serval | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-C129D7C37E6C46A8` |
+| 1654 | Engineering | Serval | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-C129D7C37E6C46A8` |
 | 1655 | Engineering | Sierra | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-6AFEDA6BEEC49902` |
-| 1656 | Engineering | Sierra | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-CA77B41F6A57BF28` |
-| 1657 | Design | Sim | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-B23179C260CDEA32` |
-| 1658 | Engineering | Sim | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-61E069531E5BC7DE` |
-| 1659 | Engineering | Sim | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-A11F5B7F0F8BE0EC` |
-| 1660 | Engineering | Sim | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-E60AC76CFBF5811E` |
-| 1661 | GTM | Sim | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-474C4207CF98E469` |
-| 1662 | Engineering | Simple AI | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-BD87020050FADC74` |
-| 1663 | Engineering | Simple AI | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-F05DEDA0D3C10E0A` |
+| 1656 | Engineering | Sierra | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-CA77B41F6A57BF28` |
+| 1657 | Design | Sim | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-B23179C260CDEA32` |
+| 1658 | Engineering | Sim | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-61E069531E5BC7DE` |
+| 1659 | Engineering | Sim | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-A11F5B7F0F8BE0EC` |
+| 1660 | Engineering | Sim | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-E60AC76CFBF5811E` |
+| 1661 | GTM | Sim | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-474C4207CF98E469` |
+| 1662 | Engineering | Simple AI | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-BD87020050FADC74` |
+| 1663 | Engineering | Simple AI | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-F05DEDA0D3C10E0A` |
 | 1664 | Forward Deployed Engineer - production underwriting Agents | Sixfold | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-976969B90BB52840` |
-| 1665 | Tech | Socure | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-087A3E3BA3E0E259` |
-| 1666 | Tech | Socure | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-F5B75314D9375650` |
+| 1665 | Tech | Socure | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-087A3E3BA3E0E259` |
+| 1666 | Tech | Socure | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-F5B75314D9375650` |
 | 1667 | Agentic AI automotive software engineering | Sonatus | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-95E72A3EBA72630B` |
-| 1668 | Engineering | Speakeasy | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-231822CCFE7FBC8C` |
-| 1669 | Engineering | Sphinx | 国家或地区待复核 | 2 | 0 | — | 其他或边界岗位 2 | `TEAM-B53413A2945FE843` |
+| 1668 | Engineering | Speakeasy | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-231822CCFE7FBC8C` |
+| 1669 | Engineering | Sphinx | 国家或地区待复核 | 2 | 2 | 其他或边界岗位 2 | 其他或边界岗位 2 | `TEAM-B53413A2945FE843` |
 | 1670 | Automation Engineer for agentic orchestration and enterprise AI agents | StackAdapt | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-33F0085CEA53CCAA` |
-| 1671 | Engineering | Steel | 国家或地区待复核 | 2 | 0 | — | 其他或边界岗位 2 | `TEAM-505957645FD1F1DA` |
-| 1672 | Technology | SuperDial | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-7481EC109E32620D` |
-| 1673 | Technology | SuperDial | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-E51D206206506586` |
-| 1674 | Open Jobs | System1 | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-48C38C94B300FE7F` |
+| 1671 | Engineering | Steel | 国家或地区待复核 | 2 | 2 | 其他或边界岗位 2 | 其他或边界岗位 2 | `TEAM-505957645FD1F1DA` |
+| 1672 | Technology | SuperDial | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-7481EC109E32620D` |
+| 1673 | Technology | SuperDial | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-E51D206206506586` |
+| 1674 | Open Jobs | System1 | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-48C38C94B300FE7F` |
 | 1675 | Tavily | Tavily | 国家或地区待复核 | 2 | 2 | 其他或边界岗位 2 | 其他或边界岗位 2 | `TEAM-55BCB96CAFF2C517` |
 | 1676 | Enterprise financial agent platform | Terzo | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-FD13B89445091154` |
-| 1677 | Team Agent products | Toast | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-17C7F40440EB4E54` |
-| 1678 | Engineering | Traversal | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-FA61E5BD2FB24EA1` |
-| 1679 | R&D | TRM Labs | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-06C457F51209CE35` |
-| 1680 | R&D | TRM Labs | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-AA17E7E1DDCD69EA` |
-| 1681 | Engineering | Turgon AI | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-11D60B14B1A3E81B` |
-| 1682 | Engineering | Turgon AI | 国家或地区待复核 | 2 | 2 | 其他或边界岗位 2 | 其他或边界岗位 2 | `TEAM-FC3D61ADC6DBE48D` |
-| 1683 | Engineering | Twin Labs | 国家或地区待复核 | 2 | 0 | — | 其他或边界岗位 2 | `TEAM-F3756A905AF906CF` |
-| 1684 | Customer | Valerie Health | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-34CF28F47C27F615` |
-| 1685 | Engineering | Valerie Health | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-CDD799784EBA77F8` |
+| 1677 | Team Agent products | Toast | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-17C7F40440EB4E54` |
+| 1678 | Engineering | Traversal | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-FA61E5BD2FB24EA1` |
+| 1679 | R&D | TRM Labs | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-06C457F51209CE35` |
+| 1680 | R&D | TRM Labs | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-AA17E7E1DDCD69EA` |
+| 1681 | Engineering | Turgon AI | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-11D60B14B1A3E81B` |
+| 1682 | Engineering | Turgon AI | 国家或地区待复核 | 2 | 0 | — | 其他或边界岗位 2 | `TEAM-FC3D61ADC6DBE48D` |
+| 1683 | Engineering | Twin Labs | 国家或地区待复核 | 2 | 2 | 其他或边界岗位 2 | 其他或边界岗位 2 | `TEAM-F3756A905AF906CF` |
+| 1684 | Customer | Valerie Health | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-34CF28F47C27F615` |
+| 1685 | Engineering | Valerie Health | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-CDD799784EBA77F8` |
 | 1686 | Engineering | Varick Agents | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-F0E1B339BD64471D` |
 | 1687 | Vercel | Vercel | 国家或地区待复核 | 5 | 5 | 其他或边界岗位 5 | 其他或边界岗位 5 | `TEAM-181F32EE239098AB` |
-| 1688 | Engineering | Vori | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-233BF4B3D1BEA0FA` |
+| 1688 | Engineering | Vori | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-233BF4B3D1BEA0FA` |
 | 1689 | Agents and automations for operations | Webflow | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-3EF38C2B5984865B` |
-| 1690 | Engineering, product & design | WRITER | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-234302B59C402782` |
+| 1690 | Engineering, product & design | WRITER | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-234302B59C402782` |
 | 1691 | Finance / FinOps / Research Agent | YipitData AI Agents | 国家或地区待复核 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-F172D4EFC88FEE6E` |
 | 1692 | Software | Zanskar | 国家或地区待复核 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-B525BF2D29B7ACA8` |
 | 1693 | Information Technology | Solidigm | 墨西哥 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-2D2AFBBE74585D84` |
 | 1694 | Data Analyst (Marketing) | Delivery Hero | 巴基斯坦 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-226FEB9D361DCAF8` |
-| 1695 | Senior Data Analyst (Logistics Analytics) | Delivery Hero | 巴基斯坦 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-ED4A74D8AABE7A7D` |
+| 1695 | Senior Data Analyst (Logistics Analytics) | Delivery Hero | 巴基斯坦 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-ED4A74D8AABE7A7D` |
 | 1696 | Senior Data Analyst (Markets) | Delivery Hero | 巴基斯坦 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-59021A4B00481AA4` |
-| 1697 | Associate Product Manager, Agent AI - (Logistics, Service) | Delivery Hero | 德国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-1D9F9E9120FE4672` |
+| 1697 | Associate Product Manager, Agent AI - (Logistics, Service) | Delivery Hero | 德国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-1D9F9E9120FE4672` |
 | 1698 | Principal ML Engineer for agentic vendor-data orchestration | Delivery Hero | 德国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-F1F03BC5CBCA77E7` |
-| 1699 | Principal Product Manager – Internal Developer Portal | Delivery Hero | 德国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-0CF063DC8E80CFEE` |
-| 1700 | Product Manager - Business Automation | Delivery Hero | 德国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-484048F6F376C9DB` |
-| 1701 | Senior Manager, Software Engineering, Herogen (Tech Foundations) | Delivery Hero | 德国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-2A26FFDDADC77B59` |
-| 1702 | Senior Software Engineer, ReactJS - (Logistics, Service Experience) | Delivery Hero | 德国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-790229DA743C7DC9` |
+| 1699 | Principal Product Manager – Internal Developer Portal | Delivery Hero | 德国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-0CF063DC8E80CFEE` |
+| 1700 | Product Manager - Business Automation | Delivery Hero | 德国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-484048F6F376C9DB` |
+| 1701 | Senior Manager, Software Engineering, Herogen (Tech Foundations) | Delivery Hero | 德国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-2A26FFDDADC77B59` |
+| 1702 | Senior Software Engineer, ReactJS - (Logistics, Service Experience) | Delivery Hero | 德国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-790229DA743C7DC9` |
 | 1703 | Sales | IFS | 德国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-85BAAF7529CD4C25` |
 | 1704 | Engineering | Nagarro | 德国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-4FD8DBFC56414887` |
 | 1705 | Engineering | Nagarro | 德国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-7C60F9303EA6AB48` |
 | 1706 | Staff AI Agent Engineer – Moveworks \| Customer Deployment | ServiceNow | 德国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-47CFA5A5A0155D45` |
-| 1707 | IGT1 | IFS | 斯里兰卡 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-CE111D5BB8047324` |
+| 1707 | IGT1 | IFS | 斯里兰卡 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-CE111D5BB8047324` |
 | 1708 | Research and Development | IFS | 斯里兰卡 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-9164E3D47BB73965` |
 | 1709 | Research and Development | IFS | 斯里兰卡 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-97DAD1EF0692560C` |
 | 1710 | Research and Development | IFS | 斯里兰卡 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-99D5D92F7DD9E27E` |
 | 1711 | Research and Development | IFS | 斯里兰卡 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-E9E795BDF943A600` |
 | 1712 | Engineering | Nagarro | 斯里兰卡 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-5C15AA0D5D8C04B2` |
-| 1713 | Analytics Engineering Manager (AI & Agentic Analytics) | Delivery Hero | 新加坡 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-CFC677082EC68260` |
-| 1714 | Others | NCS | 新加坡 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-1E97289674BAB268` |
+| 1713 | Analytics Engineering Manager (AI & Agentic Analytics) | Delivery Hero | 新加坡 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-CFC677082EC68260` |
+| 1714 | Others | NCS | 新加坡 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-1E97289674BAB268` |
 | 1715 | Senior AI Agent Engineer – Moveworks \| Customer Deployment | ServiceNow | 法国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-9D13E1E156FF7743` |
 | 1716 | Business Intelligence | Talan | 法国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-B890380FFB4FDFB1` |
 | 1717 | Engineering & Development IT | Talan | 法国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-8D468262AC7D4F78` |
 | 1718 | Engineering & Development IT | Talan | 法国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-9DFA0D1DC79F01FA` |
 | 1719 | Engineering & Development IT | Talan | 法国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-B2AEFDBBBDE3C59A` |
-| 1720 | Engineering & Development IT | Talan | 法国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-D39702E8F858377E` |
+| 1720 | Engineering & Development IT | Talan | 法国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-D39702E8F858377E` |
 | 1721 | Engineering & Development IT | Talan | 波兰 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-EE73F16753D21E36` |
 | 1722 | Sales | ServiceNow | 澳大利亚 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-E2D27D32BDF03408` |
 | 1723 | Finance | IFS | 英国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-2896ABAEE713CAEA` |
 | 1724 | Marketing | IFS | 英国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-953EBDA0567D896C` |
-| 1725 | Partner Sales | IFS | 英国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-FA4E28F2C8E1C03A` |
+| 1725 | Partner Sales | IFS | 英国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-FA4E28F2C8E1C03A` |
 | 1726 | Pre-Sales | IFS | 英国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-F168E4B83134BCBE` |
 | 1727 | Research and Development | IFS | 英国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-1593011E581AAD0D` |
-| 1728 | Research and Development | IFS | 英国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-4A78EF23A7B0826C` |
-| 1729 | Research and Development | IFS | 英国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-56BAF88C22F40DED` |
+| 1728 | Research and Development | IFS | 英国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-4A78EF23A7B0826C` |
+| 1729 | Research and Development | IFS | 英国 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-56BAF88C22F40DED` |
 | 1730 | Sr Staff AI Software Development Engineer | Renesas Electronics | 英国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-E2361739E2841744` |
 | 1731 | SQLI UK | SQLI | 英国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-5B2761FA9D3660AA` |
 | 1732 | Consulting | Talan | 英国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-AB39027AC32F7B19` |
 | 1733 | Consulting | Talan | 英国 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-DAE98ADBC6F82EEE` |
 | 1734 | Sr. Applied AI Engineer | Renesas Electronics | 葡萄牙 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-2A618FE779F741E2` |
-| 1735 | Director of Data Science & AI | Delivery Hero | 西班牙 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-DAF8E099F71BDE69` |
+| 1735 | Director of Data Science & AI | Delivery Hero | 西班牙 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-DAF8E099F71BDE69` |
 | 1736 | O-SIS - Digital Solutions (34004111) | Deutsche Telekom | 西班牙 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-3017E431B100CEC8` |
-| 1737 | O-SISGD - GDC Iberia (34005365) | Deutsche Telekom | 西班牙 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-B4D83215637702C0` |
-| 1738 | Client Delivery | Endava | 阿根廷 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-C9E72AAE5426463E` |
-| 1739 | Senior Data Analyst (Finance) | Delivery Hero | 马来西亚 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-D90FDD8233333957` |
-| 1740 | Senior Data Analyst (Fraud) | Delivery Hero | 马来西亚 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-DC3524E4E1608786` |
-| 1741 | Senior Data Analyst (Marketing) | Delivery Hero | 马来西亚 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-19954FE7FA8AFE05` |
+| 1737 | O-SISGD - GDC Iberia (34005365) | Deutsche Telekom | 西班牙 | 1 | 1 | 其他或边界岗位 1 | 其他或边界岗位 1 | `TEAM-B4D83215637702C0` |
+| 1738 | Client Delivery | Endava | 阿根廷 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-C9E72AAE5426463E` |
+| 1739 | Senior Data Analyst (Finance) | Delivery Hero | 马来西亚 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-D90FDD8233333957` |
+| 1740 | Senior Data Analyst (Fraud) | Delivery Hero | 马来西亚 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-DC3524E4E1608786` |
+| 1741 | Senior Data Analyst (Marketing) | Delivery Hero | 马来西亚 | 1 | 0 | — | 其他或边界岗位 1 | `TEAM-19954FE7FA8AFE05` |
 
 ## 如何更新本页
 

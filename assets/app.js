@@ -177,6 +177,11 @@ const I18N = Object.freeze({
     currentStale: "已过期、未重新确认",
     currentClosed: "已确认关闭",
     currentDisputed: "存在争议",
+    currentBlocked: "公开读取暂时受阻，等待复核",
+    currentExhausted: "官方公开路径已穷尽，仍无法确认",
+    currentRelevanceTitleFailed: "岗位相关性或标题未通过当前公开门",
+    currentDuplicate: "重复岗位历史记录",
+    currentSuperseded: "已被后续岗位记录替代",
   }),
   en: Object.freeze({
     metaDescription: "A traceable global public-source map of Agent roles, with China and the United States as priority validated regions.",
@@ -345,6 +350,11 @@ const I18N = Object.freeze({
     currentStale: "Stale and not reverified",
     currentClosed: "Verified closed",
     currentDisputed: "Disputed",
+    currentBlocked: "Public read temporarily blocked; recheck scheduled",
+    currentExhausted: "Official public paths exhausted; still unresolved",
+    currentRelevanceTitleFailed: "Role relevance or title did not pass the Current gate",
+    currentDuplicate: "Duplicate historical role record",
+    currentSuperseded: "Superseded by a later role record",
   }),
 });
 
@@ -387,6 +397,14 @@ const CURRENTNESS_LABEL_KEYS = Object.freeze({
   stale_unverified: "currentStale",
   closed_verified: "currentClosed",
   disputed: "currentDisputed",
+  publish_current: "currentVerified",
+  keep_public_noncurrent_closed: "currentClosed",
+  keep_public_noncurrent_exhausted_unresolved: "currentExhausted",
+  keep_public_noncurrent_blocked: "currentBlocked",
+  keep_public_noncurrent_disputed: "currentDisputed",
+  keep_public_noncurrent_duplicate: "currentDuplicate",
+  keep_public_noncurrent_superseded: "currentSuperseded",
+  keep_public_noncurrent_relevance_or_title_failed: "currentRelevanceTitleFailed",
 });
 
 const TITLE_SUPPORT_LABEL_KEYS = Object.freeze({
@@ -632,6 +650,7 @@ function buildStore(raw) {
         role.access_requirement ||
         t("notRecorded"),
       currentnessStatus: role.currentness_status || "",
+      publicDisposition: role.public_disposition || "",
       lastVerifiedAt:
         current?.last_verified_at ||
         role.title_source_observed_at ||
@@ -1093,7 +1112,9 @@ function renderJobCard(job) {
   );
 
   const details = createElement("dl", "job-details");
-  const currentnessKey = CURRENTNESS_LABEL_KEYS[job.currentnessStatus];
+  const currentnessKey =
+    CURRENTNESS_LABEL_KEYS[job.publicDisposition] ||
+    CURRENTNESS_LABEL_KEYS[job.currentnessStatus];
   const evidenceText = [
     t("gradeOption", { grade: job.evidenceGrade }),
     accessLabel(job.accessRequirement),

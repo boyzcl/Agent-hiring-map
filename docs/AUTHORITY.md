@@ -23,3 +23,5 @@
 公开筛选网页也是只读展示层。它在浏览器中直接读取 `data/map/`、`data/current/` 和发布元数据，不保存或提升外部输入，不构成新的岗位、当前性或组织归属判断。网页显示与底层数据冲突时，仍以 schema、manifest 和底层 JSONL 为准。
 
 任何自动化都不能绕过人工审核把外部文本写入正式地图。
+
+- Current 的集合权威是全量 Role 的 `public_disposition=publish_current` 直接投影；旧 836/479 快照不得作为 allowlist。

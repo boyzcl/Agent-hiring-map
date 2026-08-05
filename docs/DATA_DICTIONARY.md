@@ -130,3 +130,8 @@ Role 仍只有一套正式记录。岗位标题与岗位类别严格分开：`ro
 - `last_verified_at`：实际完成来源复核的日期，不是发布日期、截止日期或未来计划日期；
 - 当前岗位复核期限为 14 天；
 - 未来日期、缺失日期和超过期限的记录必须离开当前视图并进入复核。
+
+
+## 存量岗位公开处置
+
+每条公开 Role 都包含 `public_disposition`、`currentness_terminal`、`evidence_exhausted`、`public_is_current`、`currentness_next_check_at` 和 `decision_sha256`。默认 Current 只由 `959` 条 `publish_current` 组成；closed、blocked、disputed、exhausted unresolved 与相关性/标题失败只保留为非当前历史记录。

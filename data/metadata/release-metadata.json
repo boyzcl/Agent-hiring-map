@@ -40,27 +40,22 @@
       "ROLE-DF72C228F5621EB1"
     ],
     "geography": {
-      "Argentina": 1,
       "Australia": 1,
       "Canada": 2,
-      "China": 147,
-      "France": 4,
-      "Germany": 8,
-      "India": 12,
-      "Israel": 2,
-      "Malaysia": 3,
+      "France": 3,
+      "Germany": 3,
+      "India": 9,
       "Mexico": 1,
-      "Other/Global": 53,
-      "Pakistan": 3,
+      "Other/Global": 56,
+      "Pakistan": 2,
       "Poland": 1,
-      "Singapore": 2,
       "Spain": 1,
-      "Sri Lanka": 5,
-      "United Kingdom": 11,
-      "United States": 172,
-      "Unknown": 50
+      "Sri Lanka": 4,
+      "United Kingdom": 8,
+      "United States": 5,
+      "Unknown": 863
     },
-    "rows": 479,
+    "rows": 959,
     "ttl_days": 14
   },
   "currentness_v1": {
@@ -106,6 +101,32 @@
     "published_at": "2026-07-23",
     "repository_url": "https://github.com/boyzcl/Agent-hiring-map"
   },
+  "publication_completeness_v1": {
+    "current_minus_publish": 0,
+    "disposition_distribution": {
+      "keep_public_noncurrent_blocked": 22,
+      "keep_public_noncurrent_closed": 209,
+      "keep_public_noncurrent_disputed": 47,
+      "keep_public_noncurrent_exhausted_unresolved": 75,
+      "keep_public_noncurrent_relevance_or_title_failed": 1,
+      "publish_current": 959
+    },
+    "fixed_now": "2026-08-05T07:35:23Z",
+    "http_attempts": 1115,
+    "http_hard_limit": 12000,
+    "input_roles": 1313,
+    "legacy_published_current": 479,
+    "legacy_removed": 67,
+    "legacy_retained": 412,
+    "newly_published_existing_roles": 547,
+    "publish_minus_current": 0,
+    "published_current": 959,
+    "raw_html_or_full_jd_stored": false,
+    "run_id": "PUBLICATION-COMPLETENESS-20260805T073523Z-01",
+    "search_summary_used_as_terminal_evidence": false,
+    "usd_cost": 0,
+    "version": "agent-hiring-map-publication-completeness/1.0"
+  },
   "recovery": {
     "duplicate_role_records_suppressed": 2,
     "existing_records_demoted_to_leads": 445,
@@ -119,14 +140,14 @@
     "new_probable_roles": 172,
     "new_roles_admitted_to_strict_current": 91,
     "public_confidence_tier": {
-      "probable": 334,
-      "verified": 979
+      "probable": 118,
+      "verified": 1195
     },
     "public_role_records": 1313,
     "version": "agent-hiring-map-global-evidence-recovery/1.0"
   },
   "release_as_of": "2026-08-05",
-  "review_queue_rows": 763,
+  "review_queue_rows": 624,
   "role_display": {
     "default_rule": "roles without explicit remote or hybrid signals are classified as onsite",
     "languages": [
