@@ -1,5 +1,12 @@
 # 版本记录
 
+## 2026-08-05 — 存量岗位公开完整性终审
+
+- 1,313 / 1,313 Role 获得唯一公开处置；Current 从全量处置直接投影为 959，双向集合差为 0；
+- 旧公开 479 中保留 412、移出 67，新增进入 547；288 条 open-but-not-current 与 544 条保守队列全部闭环；
+- 处置分布：{"keep_public_noncurrent_blocked": 22, "keep_public_noncurrent_closed": 209, "keep_public_noncurrent_disputed": 47, "keep_public_noncurrent_exhausted_unresolved": 75, "keep_public_noncurrent_relevance_or_title_failed": 1, "publish_current": 959}；
+- 非 Current 在全部地图层保留明确状态，默认搜索、计数与 Current API 不返回；raw HTML/完整 JD、付费和外联均为 0。
+
 ## 2026-08-05 — 1,313 个存量岗位 Currentness 全量复核
 
 - 冻结并复核 1,313 / 1,313 个 Role，运行开始时 836 / 836 个 Current 全覆盖；

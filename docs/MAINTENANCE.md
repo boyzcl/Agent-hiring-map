@@ -1,6 +1,6 @@
 # 维护手册
 
-> 当前发布基线：2026-08-05，严格 Current=479；原 836 条已完成全量 currentness 复核。后续周期只处理 `next_check_at` 或 14 天 TTL 到期对象。
+> 当前发布基线：2026-08-05，严格 Current=959；它由 1,313 条唯一 `public_disposition` 直接投影。后续周期只处理 `next_check_at` 或 14 天 TTL 到期对象，且无人值守运行不得直接发布 Current。
 
 ## 每周复核
 
