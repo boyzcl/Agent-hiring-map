@@ -1,5 +1,5 @@
 {
-  "as_of_date": "2026-07-24",
+  "as_of_date": "2026-08-05",
   "evidence": {
     "deleted": 0,
     "global_frozen_rows": 4643,
@@ -80,6 +80,7 @@
     "new_unique_roles": 347,
     "new_verified_roles": 345,
     "observation_decisions": 528,
+    "public_current_after": 479,
     "reused_existing_organizations": 16
   },
   "quality": {

@@ -1,5 +1,13 @@
 # 版本记录
 
+## 2026-08-05 — 1,313 个存量岗位 Currentness 全量复核
+
+- 冻结并复核 1,313 / 1,313 个 Role，运行开始时 836 / 836 个 Current 全覆盖；
+- 发布 479 个仍满足 `open_verified`、公开访问、标题真实性和 14 天 TTL 的严格 Current；
+- 357 个原 Current 保守移出：unknown 335、disputed 11、blocked 9、closed 2；没有把 404、429、5xx、challenge、timeout 或证据不足误判为关闭；
+- canonical Role 保持 1,313 个且 identity hash 不变；完整 JD/raw HTML、外部业务写入和付费均为 0；
+- V1–V17、双 replay、checkpoint/resume、pointer off/on rollback、保护审计和公开包验证通过。
+
 ## 2026-07-24 — 95 个全球高概率岗位补证升级
 
 - 冻结并复核 95 / 95 个全球新增高概率岗位，覆盖 Ashby 44、Greenhouse 25、Lever 13、SmartRecruiters 13；
