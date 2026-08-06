@@ -6,16 +6,17 @@ from __future__ import annotations
 import argparse
 import csv
 import hashlib
+import ipaddress
 import json
 import re
 import subprocess
 import sys
 import tempfile
 from collections import Counter
-from datetime import date
+from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Any
-from urllib.parse import urlsplit
+from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 from validate_submission import validate as validate_submission
 
@@ -59,6 +60,10 @@ WORK_ARRANGEMENT_BASES = {
     "default_onsite_no_remote_signal",
 }
 PUBLIC_CONFIDENCE_TIERS = {"verified", "probable"}
+TRACKING_KEYS = {"fbclid", "gclid", "ref", "source"}
+NONCANONICAL_NUMERIC_HOST_RE = re.compile(
+    r"^(?:0[xX][0-9a-fA-F]+|[0-9]+)(?:\.(?:0[xX][0-9a-fA-F]+|[0-9]+))*$"
+)
 LOCATION_RESIDUE_ZH = re.compile(
     r"(?i)(?:"
     r"\b(?:current|roles?|job|remote|hybrid|onsite|on-site|full-time|"
@@ -80,7 +85,7 @@ LOCATION_RESIDUE_EN = re.compile(
     r")"
 )
 DATASET_SPECS = {
-    "data/evidence/evidence-ledger-safe": 7217,
+    "data/evidence/evidence-ledger-safe": None,
     "data/map/organizations": None,
     "data/map/teams": None,
     "data/map/products": None,
@@ -177,14 +182,77 @@ def parity_errors(stem: str) -> list[str]:
 def valid_public_url(value: str) -> bool:
     try:
         parts = urlsplit(value)
+        port = parts.port
     except ValueError:
+        return False
+    host = (parts.hostname or "").casefold().rstrip(".")
+    if host in {"localhost", "localhost.localdomain"} or host.endswith(".local"):
+        return False
+    try:
+        address = ipaddress.ip_address(host)
+    except ValueError:
+        address = None
+    if address is None and NONCANONICAL_NUMERIC_HOST_RE.fullmatch(host):
         return False
     return (
         parts.scheme in {"http", "https"}
         and bool(parts.netloc)
         and parts.username is None
         and parts.password is None
+        and (address is None or address.is_global)
     )
+
+
+def normalize_url_for_projection(value: object) -> str:
+    """Mirror the release builder's public URL canonicalization."""
+
+    try:
+        parsed = urlsplit(str(value or "").strip())
+        if not valid_public_url(str(value or "")):
+            return ""
+        host = parsed.hostname.casefold().rstrip(".")
+        query = [
+            (key, val)
+            for key, val in parse_qsl(parsed.query, keep_blank_values=True)
+            if key.casefold() not in TRACKING_KEYS
+            and not key.casefold().startswith("utm_")
+        ]
+        fragment = parsed.fragment.strip()
+        moka_job = re.fullmatch(r"/?job/[A-Za-z0-9._:-]{8,240}", fragment)
+        trip_job = (
+            parsed.scheme == "https"
+            and parsed.hostname.casefold() == "careers.ctrip.com"
+            and parsed.port is None
+            and (parsed.path or "/") == "/index.html"
+            and not parsed.query
+            and re.fullmatch(r"/?experienced/job-detail/MJ[0-9]+", fragment)
+        )
+        if not (moka_job or trip_job):
+            fragment = ""
+        elif not fragment.startswith("/"):
+            fragment = "/" + fragment
+        path = re.sub(r"/+", "/", parsed.path)
+        path = (path or "/") if fragment else (path.rstrip("/") or "/")
+        port = f":{parsed.port}" if parsed.port else ""
+        return urlunsplit(
+            ("https", f"{host}{port}", path, urlencode(sorted(query)), fragment)
+        )
+    except (TypeError, ValueError):
+        return ""
+
+
+def filesystem_structure_errors() -> list[str]:
+    errors: list[str] = []
+    if ROOT.is_symlink():
+        errors.append("public_root_symlink_forbidden")
+        return errors
+    for path in ROOT.rglob("*"):
+        relative = path.relative_to(ROOT).as_posix()
+        if path.is_symlink():
+            errors.append(f"symlink_forbidden:{relative}")
+        if relative == "metrics-private" or relative.startswith("metrics-private/"):
+            errors.append(f"private_metrics_forbidden:{relative}")
+    return errors
 
 
 def scan_text_safety() -> list[str]:
@@ -243,7 +311,9 @@ def scan_csv_formula() -> list[str]:
 
 def evidence_errors(rows: list[dict[str, Any]]) -> list[str]:
     errors: list[str] = []
-    expected_ids = [f"AMC-{index:04d}" for index in range(1, 7218)]
+    if len(rows) < 7217:
+        errors.append("evidence_below_sealed_historical_baseline")
+    expected_ids = [f"AMC-{index:04d}" for index in range(1, len(rows) + 1)]
     actual_ids = [row.get("evidence_id") for row in rows]
     if actual_ids != expected_ids:
         errors.append("evidence_ids_not_unique_continuous")
@@ -401,10 +471,25 @@ def role_display_errors(
             "existing_role_revalidated",
             "unlinked_evidence_recovered",
             "global_deferred_evidence_recovered",
+            "continuous_new_role_discovery",
         }:
             errors.append(f"role_recovery_origin:{role_id}")
         else:
             origin_counts[origin] = origin_counts.get(origin, 0) + 1
+        if role.get("public_disposition") == "publish_current":
+            try:
+                verified = date.fromisoformat(str(role["last_verified_at"]))
+                next_check = datetime.fromisoformat(
+                    str(role["currentness_next_check_at"]).replace("Z", "+00:00")
+                )
+                if next_check.tzinfo is None:
+                    raise ValueError("timezone required")
+                next_check = next_check.astimezone(timezone.utc)
+                ttl_days = (next_check.date() - verified).days
+                if ttl_days < 1 or ttl_days > 14:
+                    errors.append(f"role_currentness_ttl_out_of_bounds:{role_id}")
+            except (KeyError, TypeError, ValueError):
+                errors.append(f"role_currentness_next_check_invalid:{role_id}")
         if confidence_tier == "probable" and (
             role.get("eligible_for_strict_current") is not False
             or role.get("title_current_eligible_after_gate") is not False
@@ -540,12 +625,25 @@ def role_display_errors(
         sorted(confidence_counts.items())
     ):
         errors.append("recovery_confidence_counts")
-    if origin_counts != {
+    historical_origin_counts = {
+        key: origin_counts.get(key, 0)
+        for key in (
+            "existing_role_revalidated",
+            "global_deferred_evidence_recovered",
+            "unlinked_evidence_recovered",
+        )
+    }
+    if historical_origin_counts != {
         "existing_role_revalidated": 701,
         "global_deferred_evidence_recovered": 347,
         "unlinked_evidence_recovered": 265,
     }:
         errors.append("recovery_origin_counts")
+    incremental_count = origin_counts.get("continuous_new_role_discovery", 0)
+    if recovery_metadata.get("continuous_new_role_discovery_roles", 0) != incremental_count:
+        errors.append("recovery_incremental_role_count")
+    if recovery_metadata.get("historical_public_role_records", 1313) != 1313:
+        errors.append("recovery_historical_role_count")
     if recovery_metadata.get("new_roles_admitted_to_strict_current") != 91:
         errors.append("recovery_new_role_current_pollution")
     if recovery_metadata.get("global_new_current_opportunities") != 345:
@@ -613,6 +711,328 @@ def role_display_errors(
     ):
         if forbidden_title in serialized_titles:
             errors.append(f"known_false_title_reintroduced:{forbidden_title}")
+    return errors
+
+
+def incremental_tree_manifest(root: Path) -> dict[str, str]:
+    files: dict[str, str] = {}
+    for path in sorted(root.rglob("*")):
+        if path.is_symlink() or not path.is_file():
+            continue
+        relative_path = path.relative_to(root)
+        relative = relative_path.as_posix()
+        if any(part in {".git", "__pycache__", ".pytest_cache", ".DS_Store"} for part in relative_path.parts):
+            continue
+        if path.suffix == ".pyc" or relative in {
+            "manifest.json",
+            "data/metadata/incremental-build-seal.json",
+        }:
+            continue
+        files[relative] = sha256(path)
+    return files
+
+
+def stable_manifest_sha256(files: dict[str, str]) -> str:
+    encoded = json.dumps(
+        files, ensure_ascii=False, separators=(",", ":"), sort_keys=True
+    ).encode("utf-8")
+    return hashlib.sha256(encoded).hexdigest()
+
+
+def incremental_release_errors(
+    datasets: dict[str, list[dict[str, Any]]],
+    metadata: dict[str, Any],
+    root: Path | None = None,
+) -> list[str]:
+    """Tie incremental rows, metadata, delta, and build seal into one closure."""
+    errors: list[str] = []
+    root = ROOT if root is None else root
+    roles = datasets.get("roles", [])
+    evidence = datasets.get("evidence-ledger-safe", [])
+    current = datasets.get("current-opportunities", [])
+    review = datasets.get("review-queue", [])
+    incremental_roles = [
+        row for row in roles if row.get("recovery_origin") == "continuous_new_role_discovery"
+    ]
+    incremental_evidence = [
+        row
+        for row in evidence
+        if "continuous_new_role_discovery" in (row.get("limitations") or [])
+    ]
+    declaration = metadata.get("incremental_release")
+    if not incremental_roles:
+        if declaration:
+            if not isinstance(declaration, dict):
+                errors.append("incremental_declaration_without_roles")
+            else:
+                if (
+                    declaration.get("cumulative_roles") not in {0, None}
+                    or declaration.get("batch_roles_added") not in {0, None}
+                    or declaration.get("batch_evidence_added") not in {0, None}
+                    or declaration.get("role_ids_added") not in (None, (), [])
+                ):
+                    errors.append("incremental_declaration_without_roles")
+                if declaration.get("raw_html_or_full_jd_stored") is not False:
+                    errors.append("incremental_raw_html_or_full_jd")
+        return errors
+    if not isinstance(declaration, dict):
+        return ["incremental_release_metadata_missing"]
+    if declaration.get("version") != "agent-hiring-map-continuous-new-role-discovery/1.0":
+        errors.append("incremental_release_version")
+    if declaration.get("cumulative_roles") != len(incremental_roles):
+        errors.append("incremental_cumulative_role_count")
+    if len(incremental_evidence) != len(incremental_roles):
+        errors.append("incremental_role_evidence_bijection")
+    if declaration.get("raw_html_or_full_jd_stored") is not False:
+        errors.append("incremental_raw_html_or_full_jd")
+    evidence_id_list = [str(row.get("evidence_id") or "") for row in incremental_evidence]
+    evidence_ids = set(evidence_id_list)
+    if not all(evidence_id_list) or len(evidence_ids) != len(evidence_id_list):
+        errors.append("incremental_evidence_ids_not_unique")
+    role_to_evidence: dict[str, str] = {}
+    for role in incremental_roles:
+        linked = list(role.get("evidence_ids") or [])
+        matched = set(linked) & evidence_ids
+        if (
+            role.get("public_confidence_tier") != "verified"
+            or role.get("public_disposition") != "publish_current"
+            or role.get("currentness_terminal") != "open_verified"
+            or len(linked) != 1
+            or len(matched) != 1
+        ):
+            errors.append(f"incremental_role_hard_gate:{role.get('role_id')}")
+        elif role.get("role_id"):
+            role_to_evidence[str(role["role_id"])] = next(iter(matched))
+    usage = Counter(role_to_evidence.values())
+    if set(usage) != evidence_ids or any(count != 1 for count in usage.values()):
+        errors.append("incremental_role_evidence_bijection")
+    for role in roles:
+        if role.get("recovery_origin") != "continuous_new_role_discovery" and set(
+            role.get("evidence_ids") or []
+        ) & evidence_ids:
+            errors.append(f"incremental_evidence_linked_from_historical_role:{role.get('role_id')}")
+
+    actual_counts = {
+        "evidence": len(evidence),
+        "organizations": len(datasets.get("organizations", [])),
+        "teams": len(datasets.get("teams", [])),
+        "products": len(datasets.get("products", [])),
+        "roles": len(roles),
+        "relations": len(datasets.get("relations", [])),
+        "current": len(current),
+        "review": len(review),
+    }
+    canonical = metadata.get("canonical_counts")
+    if not isinstance(canonical, dict):
+        errors.append("incremental_metadata_canonical_counts_missing")
+    else:
+        for key in ("organizations", "teams", "products", "roles", "relations"):
+            if canonical.get(key) != actual_counts[key]:
+                errors.append(f"incremental_metadata_count:{key}")
+    if metadata.get("evidence_rows") != actual_counts["evidence"]:
+        errors.append("incremental_metadata_count:evidence")
+    if metadata.get("review_queue_rows") != actual_counts["review"]:
+        errors.append("incremental_metadata_count:review")
+    current_metadata = metadata.get("current_opportunities")
+    if not isinstance(current_metadata, dict) or current_metadata.get("rows") != actual_counts["current"]:
+        errors.append("incremental_metadata_count:current")
+    actual_current_geography = dict(
+        sorted(Counter(str(row.get("geography") or "") for row in current).items())
+    )
+    if (
+        not isinstance(current_metadata, dict)
+        or current_metadata.get("geography") != actual_current_geography
+    ):
+        errors.append("incremental_metadata_current_geography")
+    actual_confidence = dict(
+        sorted(
+            Counter(str(row.get("public_confidence_tier") or "") for row in roles).items()
+        )
+    )
+    recovery = metadata.get("recovery")
+    if not isinstance(recovery, dict) or recovery.get("public_confidence_tier") != actual_confidence:
+        errors.append("incremental_metadata_confidence_partition")
+
+    delta_path = root / "data/metadata/release-delta.json"
+    seal_path = root / "data/metadata/incremental-build-seal.json"
+    try:
+        delta = json.loads(delta_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        errors.append("incremental_release_delta_missing_or_invalid")
+        delta = None
+    try:
+        seal = json.loads(seal_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        errors.append("incremental_build_seal_missing_or_invalid")
+        seal = None
+    if not isinstance(delta, dict) or not isinstance(seal, dict):
+        return errors
+
+    if delta.get("schema_version") != "agent-hiring-map-public-delta/2.0":
+        errors.append("incremental_delta_schema_version")
+    if delta.get("reason") != "continuous_new_role_discovery_release":
+        errors.append("incremental_delta_reason")
+    if delta.get("raw_html_or_full_jd_stored") is not False:
+        errors.append("incremental_delta_raw_html_or_full_jd")
+    if seal.get("schema_version") != "agent-hiring-map-incremental-build-seal/1.0":
+        errors.append("incremental_build_seal_schema_version")
+
+    release_dates = [
+        metadata.get("release_as_of"),
+        declaration.get("release_date"),
+        delta.get("release_as_of"),
+        seal.get("release_date"),
+    ]
+    if not all(isinstance(value, str) for value in release_dates) or len(set(release_dates)) != 1:
+        errors.append("incremental_release_date_mismatch")
+    else:
+        try:
+            date.fromisoformat(release_dates[0])
+        except ValueError:
+            errors.append("incremental_release_date_invalid")
+
+    input_sha256 = declaration.get("input_sha256")
+    if not isinstance(input_sha256, str) or not re.fullmatch(r"[0-9a-f]{64}", input_sha256):
+        errors.append("incremental_input_sha256_invalid")
+    if seal.get("admissions_sha256") != input_sha256:
+        errors.append("incremental_input_sha256_seal_mismatch")
+    if not isinstance(seal.get("source_manifest_sha256"), str) or not re.fullmatch(
+        r"[0-9a-f]{64}", seal.get("source_manifest_sha256", "")
+    ):
+        errors.append("incremental_source_manifest_sha256_invalid")
+
+    before = delta.get("before")
+    after = delta.get("after")
+    changed = delta.get("changed")
+    count_keys = {
+        "evidence",
+        "organizations",
+        "teams",
+        "products",
+        "roles",
+        "relations",
+        "current",
+        "review",
+    }
+    changed_keys = {
+        "role_ids_added",
+        "roles_added",
+        "current_added",
+        "evidence_added",
+        "organizations_added",
+        "teams_added",
+        "products_added",
+        "relations_added",
+        "review_delta",
+    }
+    if not isinstance(before, dict) or set(before) != count_keys:
+        errors.append("incremental_delta_before_contract")
+    if not isinstance(after, dict) or set(after) != count_keys:
+        errors.append("incremental_delta_after_contract")
+    if not isinstance(changed, dict) or set(changed) != changed_keys:
+        errors.append("incremental_delta_changed_contract")
+    if not isinstance(before, dict) or not isinstance(after, dict) or not isinstance(changed, dict):
+        return errors
+
+    for key in count_keys:
+        if (
+            not isinstance(before.get(key), int)
+            or isinstance(before.get(key), bool)
+            or before.get(key, -1) < 0
+            or not isinstance(after.get(key), int)
+            or isinstance(after.get(key), bool)
+            or after.get(key, -1) < 0
+        ):
+            errors.append(f"incremental_delta_count_type:{key}")
+        if after.get(key) != actual_counts[key]:
+            errors.append(f"incremental_delta_after_actual:{key}")
+
+    delta_fields = {
+        "evidence": "evidence_added",
+        "organizations": "organizations_added",
+        "teams": "teams_added",
+        "products": "products_added",
+        "roles": "roles_added",
+        "relations": "relations_added",
+        "current": "current_added",
+        "review": "review_delta",
+    }
+    for count_key, change_key in delta_fields.items():
+        change_value = changed.get(change_key)
+        if not isinstance(change_value, int) or isinstance(change_value, bool):
+            errors.append(f"incremental_delta_change_type:{change_key}")
+            continue
+        if change_key != "review_delta" and change_value < 0:
+            errors.append(f"incremental_delta_negative_addition:{change_key}")
+        before_value = before.get(count_key)
+        after_value = after.get(count_key)
+        if (
+            isinstance(before_value, int)
+            and not isinstance(before_value, bool)
+            and isinstance(after_value, int)
+            and not isinstance(after_value, bool)
+            and before_value + change_value != after_value
+        ):
+            errors.append(f"incremental_delta_not_closed:{count_key}")
+
+    role_ids_added = changed.get("role_ids_added")
+    declaration_role_ids = declaration.get("role_ids_added")
+    seal_role_ids = seal.get("role_ids_added")
+    if (
+        not isinstance(role_ids_added, list)
+        or not all(isinstance(value, str) and value for value in role_ids_added)
+        or role_ids_added != sorted(set(role_ids_added))
+    ):
+        errors.append("incremental_delta_role_ids_invalid")
+        role_ids_added = []
+    if declaration_role_ids != role_ids_added or seal_role_ids != role_ids_added:
+        errors.append("incremental_role_ids_three_way_mismatch")
+    if declaration.get("batch_roles_added") != len(role_ids_added):
+        errors.append("incremental_batch_role_count")
+    if changed.get("roles_added") != len(role_ids_added):
+        errors.append("incremental_delta_role_count")
+    if changed.get("current_added") != len(role_ids_added):
+        errors.append("incremental_delta_current_count")
+    incremental_role_ids = {str(row.get("role_id") or "") for row in incremental_roles}
+    current_role_ids = {str(row.get("role_id") or "") for row in current}
+    if not set(role_ids_added) <= incremental_role_ids:
+        errors.append("incremental_delta_role_ids_not_incremental")
+    if not set(role_ids_added) <= current_role_ids:
+        errors.append("incremental_delta_role_ids_not_current")
+    batch_evidence_ids = {
+        evidence_id
+        for row in incremental_roles
+        if row.get("role_id") in set(role_ids_added)
+        for evidence_id in (row.get("evidence_ids") or [])
+    }
+    if declaration.get("batch_evidence_added") != len(batch_evidence_ids):
+        errors.append("incremental_batch_evidence_count")
+    if changed.get("evidence_added") != len(batch_evidence_ids):
+        errors.append("incremental_delta_evidence_count")
+
+    metadata_hash = sha256(root / "data/metadata/release-metadata.json")
+    delta_hash = sha256(delta_path)
+    if seal.get("release_metadata_sha256") != metadata_hash:
+        errors.append("incremental_build_seal_metadata_hash")
+    if seal.get("release_delta_sha256") != delta_hash:
+        errors.append("incremental_build_seal_delta_hash")
+    sealed_files = seal.get("output_files")
+    if not isinstance(sealed_files, dict) or any(
+        not isinstance(path, str)
+        or not path
+        or path.startswith("/")
+        or ".." in Path(path).parts
+        or not isinstance(digest, str)
+        or not re.fullmatch(r"[0-9a-f]{64}", digest)
+        for path, digest in (sealed_files.items() if isinstance(sealed_files, dict) else [])
+    ):
+        errors.append("incremental_build_seal_files_contract")
+        sealed_files = {}
+    actual_files = incremental_tree_manifest(root)
+    if sealed_files != actual_files:
+        errors.append("incremental_build_seal_output_drift")
+    if seal.get("output_files_sha256") != stable_manifest_sha256(actual_files):
+        errors.append("incremental_build_seal_output_manifest_hash")
     return errors
 
 
@@ -800,6 +1220,8 @@ def scale_doc_errors(
     document = (ROOT / "docs" / "DATA_SCALE_AND_SCOPE.md").read_text(
         encoding="utf-8"
     )
+    dictionary = (ROOT / "docs" / "DATA_DICTIONARY.md").read_text(encoding="utf-8")
+    methodology = (ROOT / "docs" / "METHODOLOGY.md").read_text(encoding="utf-8")
     errors: list[str] = []
     evidence = summary.get("evidence", {})
     terminal = summary.get("terminal_status", {})
@@ -809,10 +1231,35 @@ def scale_doc_errors(
     recovery = metadata.get("recovery", {})
     canonical = metadata.get("canonical_counts", {})
 
-    if summary.get("as_of_date") != metadata.get("release_as_of"):
+    incremental_roles = [
+        row
+        for row in datasets.get("roles", [])
+        if row.get("recovery_origin") == "continuous_new_role_discovery"
+    ]
+    incremental_evidence = [
+        row
+        for row in datasets.get("evidence-ledger-safe", [])
+        if "continuous_new_role_discovery" in (row.get("limitations") or [])
+    ]
+    try:
+        summary_date = date.fromisoformat(str(summary.get("as_of_date") or ""))
+        release_date = date.fromisoformat(str(metadata.get("release_as_of") or ""))
+    except ValueError:
         errors.append("scale_summary_release_date")
-    if evidence.get("ledger_rows") != metadata.get("evidence_rows"):
+    else:
+        if (
+            (not incremental_roles and summary_date != release_date)
+            or (incremental_roles and summary_date > release_date)
+        ):
+            errors.append("scale_summary_release_date")
+    expected_ledger_rows = metadata.get("evidence_rows")
+    if not isinstance(expected_ledger_rows, int) or isinstance(expected_ledger_rows, bool):
         errors.append("scale_summary_evidence_rows")
+    else:
+        if incremental_roles:
+            expected_ledger_rows -= len(incremental_evidence)
+        if evidence.get("ledger_rows") != expected_ledger_rows:
+            errors.append("scale_summary_evidence_rows")
     if evidence.get("global_frozen_rows") != recovery.get(
         "global_frozen_evidence_terminalized"
     ):
@@ -858,6 +1305,18 @@ def scale_doc_errors(
     for token, code in expected_doc_tokens.items():
         if token not in document:
             errors.append(f"scale_doc_stale:{code}")
+    current_rows = metadata["current_opportunities"]["rows"]
+    role_rows = canonical["roles"]
+    evidence_rows = metadata["evidence_rows"]
+    if f"默认 Current 只由 `{current_rows:,}` 条 `publish_current` 组成" not in dictionary:
+        errors.append("data_dictionary_current_count_stale")
+    if (
+        f"因此 {evidence_rows:,} 条 Evidence、{role_rows:,} 条岗位记录和 "
+        f"{current_rows:,} 条 {metadata['release_as_of']} 严格 Current"
+        not in methodology
+        or f"Current 由全部 {role_rows:,} 条唯一公开处置直接投影" not in methodology
+    ):
+        errors.append("methodology_current_snapshot_stale")
     return errors
 
 
@@ -867,15 +1326,36 @@ def manifest_errors() -> list[str]:
         return ["manifest_missing"]
     manifest = json.loads(path.read_text(encoding="utf-8"))
     errors: list[str] = []
-    if not manifest.get("self_excluded") or "manifest.json" in manifest.get("files", {}):
+    files = manifest.get("files")
+    if (
+        manifest.get("schema_version") != "agent-hiring-map-public-manifest/1.0"
+        or manifest.get("hash_algorithm") != "sha256"
+        or manifest.get("self_excluded") is not True
+        or not isinstance(files, dict)
+    ):
+        errors.append("manifest_contract_invalid")
+        files = files if isinstance(files, dict) else {}
+    if "manifest.json" in files:
         errors.append("manifest_not_self_excluded")
+    for relative, digest in files.items():
+        if (
+            not isinstance(relative, str)
+            or not relative
+            or relative.startswith("/")
+            or ".." in Path(relative).parts
+            or not isinstance(digest, str)
+            or not re.fullmatch(r"[0-9a-f]{64}", digest)
+        ):
+            errors.append("manifest_file_entry_invalid")
+            break
     actual = {}
     for item in sorted(ROOT.rglob("*")):
         if not item.is_file() or ".git" in item.parts:
             continue
         relative = item.relative_to(ROOT).as_posix()
         if (
-            "__pycache__" in item.parts
+            ".pytest_cache" in item.parts
+            or "__pycache__" in item.parts
             or item.suffix == ".pyc"
             or item.name == ".DS_Store"
             or relative == "review-queue.jsonl"
@@ -885,13 +1365,52 @@ def manifest_errors() -> list[str]:
         if relative == "manifest.json":
             continue
         actual[relative] = sha256(item)
-    if actual != manifest.get("files"):
+    if actual != files:
         errors.append("manifest_hash_drift")
     return errors
 
 
+def project_current(role: dict[str, Any], current: dict[str, Any]) -> dict[str, Any]:
+    """Rebuild the deterministic Current fields from canonical Role."""
+
+    return {
+        "access_requirement": role.get("access_requirement"),
+        "agent_specific_excerpt": str(
+            role.get("agent_specific_quote") or role.get("agent_relevance_summary") or ""
+        ).strip()[:300],
+        "citation_supports_title": role.get("citation_supports_title"),
+        "currentness_status": role.get("currentness_status"),
+        "display_title_en": role.get("display_title_en"),
+        "display_title_zh": role.get("display_title_zh"),
+        "evidence_grade": "A",
+        "evidence_ids": role.get("evidence_ids"),
+        "geography": role.get("geography") or current.get("geography"),
+        "last_verified_at": role.get("last_verified_at"),
+        "limitations": current.get("limitations"),
+        "organization_id": role.get("organization_id"),
+        "product_id": role.get("product_id"),
+        "role_id": role.get("role_id"),
+        "schema_version": role.get("schema_version"),
+        "source_urls": [normalize_url_for_projection(role.get("official_role_url"))],
+        "team_id": role.get("team_id"),
+        "title": role.get("official_title_raw"),
+        "title_source_granularity": role.get("title_source_granularity"),
+        "title_source_url": role.get("title_source_url"),
+        "title_support_status": role.get("title_support_status"),
+        "title_translation_status": role.get("title_translation_status"),
+    }
+
+
 def run_default() -> dict[str, Any]:
-    errors: list[str] = []
+    errors = filesystem_structure_errors()
+    if errors:
+        return {
+            "validator": "agent-hiring-map-public-package/1.0",
+            "mode": "default",
+            "counts": {},
+            "errors": sorted(set(errors)),
+            "status": "fail",
+        }
     for name in REQUIRED_FILES:
         if not (ROOT / name).is_file():
             errors.append(f"missing_required_file:{name}")
@@ -907,6 +1426,21 @@ def run_default() -> dict[str, Any]:
         datasets[stem.split("/")[-1]] = rows
         if expected is not None and len(rows) != expected:
             errors.append(f"row_count:{stem}:{len(rows)}")
+    id_keys = {
+        "evidence-ledger-safe": "evidence_id",
+        "organizations": "organization_id",
+        "teams": "team_id",
+        "products": "product_id",
+        "roles": "role_id",
+        "relations": "relation_id",
+        "current-opportunities": "role_id",
+    }
+    for name, key in id_keys.items():
+        if name not in datasets:
+            continue
+        values = [row.get(key) for row in datasets[name]]
+        if any(not value for value in values) or len(values) != len(set(values)):
+            errors.append(f"duplicate_or_missing_id:{name}:{key}")
     metadata = json.loads(
         (ROOT / "data" / "metadata" / "release-metadata.json").read_text(encoding="utf-8")
     )
@@ -928,6 +1462,7 @@ def run_default() -> dict[str, Any]:
         errors.extend(current_errors(datasets["current-opportunities"], metadata))
     if "roles" in datasets:
         errors.extend(role_display_errors(datasets["roles"], metadata))
+    errors.extend(incremental_release_errors(datasets, metadata))
     if "review-queue" in datasets:
         if len(datasets["review-queue"]) != metadata.get("review_queue_rows"):
             errors.append("metadata_row_count:review-queue")
@@ -981,6 +1516,8 @@ def run_default() -> dict[str, Any]:
             if role is None:
                 errors.append(f"current_role_missing:{row['role_id']}")
                 continue
+            if row != project_current(role, row):
+                errors.append(f"current_not_exact_role_projection:{row['role_id']}")
             if (
                 row.get("title") != role.get("official_title_raw")
                 or row.get("title_source_url") != role.get("title_source_url")
@@ -1024,6 +1561,12 @@ def run_self_test() -> dict[str, Any]:
     tests.append(("absolute_path", bool(ABSOLUTE_PATH_PATTERNS[0].search("/Users/name/project"))))
     tests.append(("unsafe_url_scheme", not valid_public_url("file:///tmp/data")))
     tests.append(("url_credentials", not valid_public_url("https://user:pass@example.com/a")))
+    tests.append(("url_localhost", not valid_public_url("https://localhost/jobs/1")))
+    tests.append(("url_private_ipv4", not valid_public_url("https://10.0.0.8/jobs/1")))
+    tests.append(("url_loopback_ipv6", not valid_public_url("https://[::1]/jobs/1")))
+    tests.append(("url_short_loopback", not valid_public_url("https://127.1/jobs/1")))
+    tests.append(("url_integer_loopback", not valid_public_url("https://2130706433/jobs/1")))
+    tests.append(("url_hex_loopback", not valid_public_url("https://0x7f000001/jobs/1")))
     invalid = {
         "schema_version": "agent-hiring-map-submission/1.0",
         "change_type": "add",
@@ -1054,6 +1597,87 @@ def run_self_test() -> dict[str, Any]:
         (
             "probable_current_pollution",
             "probable" in PUBLIC_CONFIDENCE_TIERS and False is not True,
+        )
+    )
+    duplicate_incremental_evidence = incremental_release_errors(
+        {
+            "roles": [
+                {
+                    "role_id": f"ROLE-DUP-{index}",
+                    "recovery_origin": "continuous_new_role_discovery",
+                    "public_confidence_tier": "verified",
+                    "public_disposition": "publish_current",
+                    "currentness_terminal": "open_verified",
+                    "evidence_ids": ["AMC-7218"],
+                }
+                for index in range(2)
+            ],
+            "evidence-ledger-safe": [
+                {
+                    "evidence_id": "AMC-7218",
+                    "limitations": ["continuous_new_role_discovery"],
+                },
+                {
+                    "evidence_id": "AMC-7219",
+                    "limitations": ["continuous_new_role_discovery"],
+                },
+            ],
+        },
+        {
+            "incremental_release": {
+                "version": "agent-hiring-map-continuous-new-role-discovery/1.0",
+                "cumulative_roles": 2,
+                "raw_html_or_full_jd_stored": False,
+            }
+        },
+    )
+    tests.append(
+        (
+            "incremental_duplicate_evidence_negative_control",
+            "incremental_role_evidence_bijection" in duplicate_incremental_evidence,
+        )
+    )
+    negative_incremental = incremental_release_errors(
+        {
+            "roles": [
+                {
+                    "role_id": "ROLE-NEGATIVE",
+                    "recovery_origin": "continuous_new_role_discovery",
+                    "public_confidence_tier": "verified",
+                    "public_disposition": "publish_current",
+                    "currentness_terminal": "open_verified",
+                    "evidence_ids": ["AMC-7218"],
+                }
+            ],
+            "evidence-ledger-safe": [],
+        },
+        {
+            "incremental_release": {
+                "version": "agent-hiring-map-continuous-new-role-discovery/1.0",
+                "cumulative_roles": 1,
+                "raw_html_or_full_jd_stored": False,
+            }
+        },
+    )
+    tests.append(
+        (
+            "incremental_missing_evidence_negative_control",
+            "incremental_role_evidence_bijection" in negative_incremental,
+        )
+    )
+    raw_incremental = incremental_release_errors(
+        {"roles": [], "evidence-ledger-safe": []},
+        {
+            "incremental_release": {
+                "cumulative_roles": 1,
+                "raw_html_or_full_jd_stored": True,
+            }
+        },
+    )
+    tests.append(
+        (
+            "incremental_declaration_without_roles_negative_control",
+            "incremental_declaration_without_roles" in raw_incremental,
         )
     )
     tests.append(

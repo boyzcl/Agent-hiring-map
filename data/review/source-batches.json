@@ -1,5 +1,5 @@
 {
-  "as_of_date": "2026-08-05",
+  "as_of_date": "2026-08-06",
   "domains": [
     {
       "domain": "01ai.jobs.feishu.cn",
@@ -255,7 +255,7 @@
     },
     {
       "domain": "job-boards.greenhouse.io",
-      "queued_role_references": 17
+      "queued_role_references": 18
     },
     {
       "domain": "job.xiaohongshu.com",
@@ -263,7 +263,7 @@
     },
     {
       "domain": "jobs.ashbyhq.com",
-      "queued_role_references": 25
+      "queued_role_references": 29
     },
     {
       "domain": "jobs.bytedance.com",
@@ -283,7 +283,7 @@
     },
     {
       "domain": "jobs.lever.co",
-      "queued_role_references": 14
+      "queued_role_references": 15
     },
     {
       "domain": "jobs.lifepointhealth.net",
@@ -386,6 +386,14 @@
       "queued_role_references": 7
     },
     {
+      "domain": "talent.catl.com",
+      "queued_role_references": 1
+    },
+    {
+      "domain": "talent.lenovo.com.cn",
+      "queued_role_references": 1
+    },
+    {
       "domain": "tcnrm7b535t2.jobs.feishu.cn",
       "queued_role_references": 1
     },
@@ -416,6 +424,10 @@
     {
       "domain": "vrfi1sk8a0.jobs.feishu.cn",
       "queued_role_references": 28
+    },
+    {
+      "domain": "wecruit.hotjob.cn",
+      "queued_role_references": 2
     },
     {
       "domain": "weikezhijia.jobs.feishu.cn",
@@ -556,8 +568,8 @@
   ],
   "network_recheck_performed": false,
   "schema_version": "agent-hiring-map-public/1.0",
-  "unique_domain_count": 138,
-  "unique_url_count": 489,
+  "unique_domain_count": 141,
+  "unique_url_count": 499,
   "urls": [
     "http://www.hnhbck.com:443/join/18",
     "http://www.sim.cas.cn/rczpw/rczp2017/shzp2017/202607/t20260702_8237224.html",
@@ -675,6 +687,7 @@
     "https://job-boards.greenhouse.io/anthropic/jobs/5320469008",
     "https://job-boards.greenhouse.io/arizeai/jobs/5396396004",
     "https://job-boards.greenhouse.io/coherehealth/jobs/7790936003",
+    "https://job-boards.greenhouse.io/cresta/jobs/5133464008",
     "https://job-boards.greenhouse.io/kargo/jobs/6100171004",
     "https://job-boards.greenhouse.io/medeloop/jobs/4236722009",
     "https://job-boards.greenhouse.io/omakaseai/jobs/5570317004",
@@ -695,6 +708,7 @@
     "https://jobs.ashbyhq.com/braintrust/2a6c4ee9-063f-45d4-83ba-faf64b1f1a60",
     "https://jobs.ashbyhq.com/camunda/987fb6e0-1e22-45e5-b152-57acbcb59cb2",
     "https://jobs.ashbyhq.com/eigen-labs/c02fa001-23c9-4d68-8c0a-e27a742d76a4",
+    "https://jobs.ashbyhq.com/futureworks/413f2670-1037-48fc-801b-e8707fba3a6a",
     "https://jobs.ashbyhq.com/happyrobot.ai/812916b1-da01-40d4-8a5b-f3d1f0f4eb42",
     "https://jobs.ashbyhq.com/intrinsic-safety/0d1e219c-d734-43c7-82ea-e1aeb2df2ed6",
     "https://jobs.ashbyhq.com/intrinsic-safety/2dca04c0-1ec1-4645-a807-20347d3f64ce",
@@ -702,12 +716,15 @@
     "https://jobs.ashbyhq.com/intrinsic-safety/e68b8f6a-c8ea-4295-99bd-a95a22d86fac",
     "https://jobs.ashbyhq.com/manusai/29933c53-c5e1-472f-94da-c72545b609de",
     "https://jobs.ashbyhq.com/mastra/3b06208b-34fe-4dda-b409-ee3fd9305cc3",
+    "https://jobs.ashbyhq.com/openhands/57564a95-13b6-47b1-b601-dd2353484e47",
     "https://jobs.ashbyhq.com/openhands/80bfc775-3197-407d-8742-ccb5ddae8709",
+    "https://jobs.ashbyhq.com/plot/b9841f72-75b4-47ac-8f95-d5289d938c17",
     "https://jobs.ashbyhq.com/poetiq/1ca703c8-394d-4b6d-a907-50096b1cc176",
     "https://jobs.ashbyhq.com/poetiq/2dab6fc2-526b-4633-8678-b38101ad1265",
     "https://jobs.ashbyhq.com/relevanceai/a13f1860-17db-4026-9b17-7c77d6738c08",
     "https://jobs.ashbyhq.com/sail/3e00a184-fe57-408c-9dad-20fc2d1ef84f",
     "https://jobs.ashbyhq.com/shepherd/6cbab29e-1bbf-42b4-9308-3823693ca288",
+    "https://jobs.ashbyhq.com/simile/f4790964-9a97-4378-b3e9-20dfbcfdc5cf",
     "https://jobs.ashbyhq.com/twin-so/30eadc1c-e4ab-431e-a5b5-e767cc63b910",
     "https://jobs.ashbyhq.com/twin-so/81cbc65b-a880-460c-83dd-de95d8520874",
     "https://jobs.ashbyhq.com/uipath/8cff1299-f4b4-41b0-997f-cd54f7c5d78e",
@@ -758,6 +775,7 @@
     "https://jobs.lever.co/influur/e799f7bf-9280-4d22-8f1c-387d322f1011",
     "https://jobs.lever.co/luxurypresence/1bb9c63b-7f1c-4846-9b4c-9a752cac99d2",
     "https://jobs.lever.co/meetingtomorrow/1f610796-132e-4256-8146-ee399172bc79",
+    "https://jobs.lever.co/outreach/1ee6929b-42c3-4ada-83cf-2ea170f7b430",
     "https://jobs.lever.co/outreach/c050b2d3-1c6b-4eea-86d1-ef505bd2b4cb",
     "https://jobs.lever.co/patchmypc/a71b827b-c926-4966-9207-dcc4dff7719a",
     "https://jobs.lever.co/regal.ai/7bbea0f0-9f63-4cc8-8d02-8eeec018bbcd",
@@ -874,6 +892,8 @@
     "https://talent.baidu.com/jobs/detail/SOCIAL/cd99369c-ebdf-4ca8-afe0-2fa2db31eaae",
     "https://talent.baidu.com/jobs/detail/SOCIAL/ea7bbb48-615a-4b49-8f14-96b62277271f",
     "https://talent.baidu.com/jobs/detail/SOCIAL/ed67a452-d65b-4be1-9b5c-3bb1ab3cb5a2",
+    "https://talent.catl.com/social-recruitment/catlhr/98098/#/job/c4f4b436-debc-4d26-a608-a92f5789d519",
+    "https://talent.lenovo.com.cn/position/detail?id=2404",
     "https://tcnrm7b535t2.jobs.feishu.cn/748205/position/7644923888778840339/detail",
     "https://tib.cas.cn/rcdw/rczp/zyjszp/t_8227670.html",
     "https://torchv.com/docs/hr/jd",
@@ -909,6 +929,8 @@
     "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7654051545948997894/detail",
     "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7655214771168020742/detail",
     "https://vrfi1sk8a0.jobs.feishu.cn/index/position/7660063893650606374/detail",
+    "https://wecruit.hotjob.cn/SU60a6449a2f9d2430fdc11a19/pb/posDetail.html?postId=67e757e86202cc61e969a439&postType=society",
+    "https://wecruit.hotjob.cn/SU60a6449a2f9d2430fdc11a19/pb/posDetail.html?postId=6913deb3d14e321454247b22&postType=society",
     "https://weikezhijia.jobs.feishu.cn/MSXF0619/position/7532787752207993114/detail",
     "https://weikezhijia.jobs.feishu.cn/MSXF0619/position/7543912202676259115/detail",
     "https://wilmactech.com/about/careers/open-position-ai-engineer",

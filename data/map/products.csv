@@ -47,6 +47,7 @@ agent-hiring-map-public/1.0,PROD-03F5FC3FE96FBC24,ORG-19C372E0140A9CE8,power-gri
 agent-hiring-map-public/1.0,PROD-04060F9204E66EDB,ORG-B70760AB79378B7B,Exa,global_recovered_agent_role_context,https://jobs.ashbyhq.com/exa/98a8bab6-4cbf-4d39-a5a7-0867addc4086,active,0.95,"[""AMC-0643"",""AMC-0644""]",1
 agent-hiring-map-public/1.0,PROD-040B7DDFFE49F9F9,ORG-773573DF61D0529B,具身运动控制算法专家（Locomotion） - XPeng embodied/physical-AI product or infrastructure high-recall locator,infra_evals,https://www.xiaopeng.com/,active,0.95,"[""AMC-4891""]",1
 agent-hiring-map-public/1.0,PROD-040F2C6CA016E2F1,ORG-EC4E9111463743B4,AI-native conversational product and business-workflow builder,enterprise_workflow,https://www.superun.com/,active,0.95,"[""AMC-6305""]",1
+agent-hiring-map-public/1.0,PROD-041A6D4E5DC13126,ORG-A5803FDF10E57E66,Agent role work surface / 智能体岗位工作面,agent_product_or_work_surface,null,active,1.0,"[""AMC-7223""]",1
 agent-hiring-map-public/1.0,PROD-04302F669031F0A1,ORG-5D8D4BA41200536E,personalized AI-character Agents and enterprise workflow Agent systems,infra_evals,https://kaonai.jobs.feishu.cn/index,active,0.95,"[""AMC-6768""]",1
 agent-hiring-map-public/1.0,PROD-04456F8D998A0173,ORG-61FF26299885EEDA,Open-source AI agent development platform,builder_platform,https://github.com/coze-dev/coze-studio,active,0.95,"[""AMC-0375""]",1
 agent-hiring-map-public/1.0,PROD-045DDCE9A6E008B9,ORG-FE61828F21A24F4A,LLM observability / agent traces,infra_evals,https://www.helicone.ai/,active,0.95,"[""AMC-0328""]",1
@@ -118,6 +119,7 @@ agent-hiring-map-public/1.0,PROD-09BD601896FAF47E,ORG-991C198203545D2C,28-Agent 
 agent-hiring-map-public/1.0,PROD-09D0A2014C861817,ORG-A717572B797E1D80,marketplace for AI agents to hire humans and orchestrate real-world work,enterprise_workflow,https://www.ycombinator.com/companies/rentahuman,active,0.95,"[""AMC-6974""]",1
 agent-hiring-map-public/1.0,PROD-09DC575A3A39FF4A,ORG-E6850D6297DD4A17,"Freshworks Director Product Management, AI for EX",global_recovered_agent_role_context,https://jobs.smartrecruiters.com/Freshworks/744000136047063-director-product-management-ai-for-ex,active,0.95,"[""AMC-0766""]",1
 agent-hiring-map-public/1.0,PROD-09E6B6FDA01E7A0F,ORG-650DDBFA8A0CA19F,StepFun 算法工程师（时序预测 · 供应链优化） / supply_chain_agent_algorithm,data_rag,https://platform.stepfun.com/,active,0.95,"[""AMC-5038""]",1
+agent-hiring-map-public/1.0,PROD-0A07F3B5D4696589,ORG-0BA6E2B856D1D9EC,Agent role work surface / 智能体岗位工作面,agent_product_or_work_surface,null,active,1.0,"[""AMC-7226""]",1
 agent-hiring-map-public/1.0,PROD-0A118C7B593AF2A4,ORG-A6EC3507050D128A,Beisen talent-Agent solutions and pre-delivery design,general_other,https://www.beisen.com/res/2726.html,active,0.95,"[""AMC-5078""]",1
 agent-hiring-map-public/1.0,PROD-0A18A16DCFA755C6,ORG-744205E43529C1FC,"Staff+ Software Engineer, GRC Platform | Anthropic current Agent system or Agent-enabled workflow role family",infra_evals,null,active,0.95,"[""AMC-6136""]",1
 agent-hiring-map-public/1.0,PROD-0A3B5B393F752223,ORG-6EEF29B22D48714F,海外运营实习生（Agent方向） / Data / Analytics Agent,enterprise_workflow,https://www.kuaishou.com/,active,0.95,"[""AMC-1124""]",1
@@ -231,6 +233,7 @@ agent-hiring-map-public/1.0,PROD-1374CA4A73E3D791,ORG-773573DF61D0529B,AI资深�
 agent-hiring-map-public/1.0,PROD-1378708CDBE5ED6E,ORG-546A07B08B7CACFD,Senior Software Engineer (Backend) | agentic legal workflow feature,infra_evals,null,active,0.95,"[""AMC-5720""]",1
 agent-hiring-map-public/1.0,PROD-13B29B8E4BF4B4E9,ORG-70DCB89F366FE5A3,AI机器人研究员 - NIO embodied/physical-AI boundary high-recall locator,general_other,https://www.nio.com/,active,0.95,"[""AMC-4820""]",1
 agent-hiring-map-public/1.0,PROD-13CA4F06A5E607F0,ORG-B7F8DFC2578DDA24,Agent Algorithm / Framework Engineering,builder_platform,https://www.lingyiwanwu.com/,active,0.95,"[""AMC-1295""]",1
+agent-hiring-map-public/1.0,PROD-13CEBC14CC92C1F6,ORG-B97625A686F21403,Agent role work surface / 智能体岗位工作面,agent_product_or_work_surface,null,active,1.0,"[""AMC-7221""]",1
 agent-hiring-map-public/1.0,PROD-13DC4F4E78F47D2E,ORG-819D614C9E8427E4,agentic operating system and vertical AI Agents for enterprise GTM,data_rag,https://tryfuse.ai/,active,0.95,"[""AMC-6679""]",1
 agent-hiring-map-public/1.0,PROD-13F72F8DE1ED76BC,ORG-D45932DD4CA1D738,Sensing Systems Engineer | personal voice AI Agent and smart-glasses line,cx_voice,https://www.sesame.com/,active,0.95,"[""AMC-5756""]",1
 agent-hiring-map-public/1.0,PROD-14178B8A4E5FA958,ORG-245B9E122E3F3C0B,agricultural robots agentic solutions and robot-foundation-lab data/evals,infra_evals,https://www.ycombinator.com/companies/synphony,active,0.95,"[""AMC-6947""]",1
@@ -384,6 +387,7 @@ agent-hiring-map-public/1.0,PROD-209FE76C54549F0D,ORG-744205E43529C1FC,"Research
 agent-hiring-map-public/1.0,PROD-20B0F73B28A4693D,ORG-AEF38CBC5445CF75,全栈开发工程师-社区工程（欢迎后端转型）,infra_evals,null,active,0.95,"[""AMC-0991""]",1
 agent-hiring-map-public/1.0,PROD-20F66C45DEF7B0A4,ORG-70DCB89F366FE5A3,机器人运控算法工程师 - NIO embodied/physical-AI boundary high-recall locator,general_other,https://www.nio.com/,active,0.95,"[""AMC-4885""]",1
 agent-hiring-map-public/1.0,PROD-213644EFA706C6A8,ORG-722904A32D75787E,"enterprise Agent platform, multi-Agent orchestration and AI-native business applications",data_rag,https://www.marketingforce.com/,active,0.95,"[""AMC-6808""]",1
+agent-hiring-map-public/1.0,PROD-213F3E7EEF3B1402,ORG-158722378ADAAFD2,Agent role work surface / 智能体岗位工作面,agent_product_or_work_surface,null,active,1.0,"[""AMC-7218""]",1
 agent-hiring-map-public/1.0,PROD-21491D5465F3FF71,ORG-1236323724701EB7,Doctor Agent operations and professional-doctor avatar ecosystem,enterprise_workflow,null,active,0.95,"[""AMC-3466""]",1
 agent-hiring-map-public/1.0,PROD-214C2051135F1520,ORG-2550F50C88BB38C2,AI-native interactive story and content platform,builder_platform,https://infidive.com/,active,0.95,"[""AMC-6311""]",1
 agent-hiring-map-public/1.0,PROD-21560494E7EA47B6,ORG-DD052F9FEA4B2754,multimodal document-intelligence infrastructure for AI agents,data_rag,https://www.ycombinator.com/companies/unsiloed-ai,active,0.95,"[""AMC-6646""]",1
@@ -453,6 +457,7 @@ agent-hiring-map-public/1.0,PROD-2678693788A1C4BB,ORG-7C3994707C036195,Nonagon L
 agent-hiring-map-public/1.0,PROD-267F5B3D8D99E7FC,ORG-773573DF61D0529B,数据平台工具链开发工程师 - XPeng embodied/physical-AI product or infrastructure high-recall locator,infra_evals,https://www.xiaopeng.com/,active,0.95,"[""AMC-4955""]",1
 agent-hiring-map-public/1.0,PROD-2684FF2DBAC84620,ORG-9C78456D8E5699E6,DeepSeek DSec Agent Infra / Sandbox Cloud,data_rag,https://www.deepseek.com/,active,0.95,"[""AMC-1360""]",1
 agent-hiring-map-public/1.0,PROD-268ED4E4B02C6EB5,ORG-6C9CF34D895572B0,misterdev,coding,https://github.com/dcondrey/misterdev,active,0.95,"[""AMC-3773""]",1
+agent-hiring-map-public/1.0,PROD-268F3470AC12E474,ORG-E2FA35C6340D24A8,Agent role work surface / 智能体岗位工作面,agent_product_or_work_surface,null,active,1.0,"[""AMC-7222""]",1
 agent-hiring-map-public/1.0,PROD-26AF8791519205E9,ORG-423F54A3DB406878,Data / Knowledge / RAG Agent,data_rag,https://www.n.cn/,active,0.95,"[""AMC-0001""]",1
 agent-hiring-map-public/1.0,PROD-26CF28EAB46B64E7,ORG-D32A0F6E51A07B22,AI-agent assurance and governance for finance,infra_evals,https://www.rockhopper.co/,active,0.95,"[""AMC-6361""]",1
 agent-hiring-map-public/1.0,PROD-26D5B59AFFB25B16,ORG-61FF26299885EEDA,AI Agent身份权限安全研发实习生,infra_evals,null,active,0.95,"[""AMC-0826""]",1
@@ -645,6 +650,7 @@ agent-hiring-map-public/1.0,PROD-37DCABC70785D1FB,ORG-AEF38CBC5445CF75,AI Agent 
 agent-hiring-map-public/1.0,PROD-3809835796E53994,ORG-3BD601C01212C3AF,GPASS / Agent Security Ecosystem Operations Bridge,infra_evals,https://talent.antgroup.com/home,active,0.95,"[""AMC-1326""]",1
 agent-hiring-map-public/1.0,PROD-38605FFE302ECDD1,ORG-588042376C037600,TensorFeed,general_other,https://github.com/RipperMercs/tensorfeed,active,0.95,"[""AMC-3701""]",1
 agent-hiring-map-public/1.0,PROD-38759723FB93FACD,ORG-F63191160CCB1536,custom enterprise AI Agents and automation,enterprise_workflow,https://cloudnsite.com/careers,active,0.95,"[""AMC-6507""]",1
+agent-hiring-map-public/1.0,PROD-38A0A9D99BF06F9A,ORG-8D687B7989E20535,Agent role work surface / 智能体岗位工作面,agent_product_or_work_surface,null,active,1.0,"[""AMC-7219""]",1
 agent-hiring-map-public/1.0,PROD-38B0554367359957,ORG-AEF38CBC5445CF75,AI Native 全栈工程师-电商平台治理 × Agent/智能体方向,coding,null,active,0.95,"[""AMC-0939""]",1
 agent-hiring-map-public/1.0,PROD-38D4649134716EFD,ORG-2550264E963F34CB,Avallon,global_recovered_agent_role_context,https://jobs.ashbyhq.com/avallon/2d402538-2d78-476e-9695-7829b3db0d2c,active,0.95,"[""AMC-0732""]",1
 agent-hiring-map-public/1.0,PROD-38EF36D4F8398EEE,ORG-70DCB89F366FE5A3,座舱语音体验产品经理 - NIO voice/conversational Agent or assistant workstream,cx_voice,https://www.nio.com/,active,0.95,"[""AMC-4858""]",1
@@ -1389,6 +1395,7 @@ agent-hiring-map-public/1.0,PROD-7A459103F14B1B03,ORG-6C24D5F6930B29BC,面向真
 agent-hiring-map-public/1.0,PROD-7A5340C90D8F543D,ORG-E3C9964E368C656E,DNSid governance-backed DNS-native identity infrastructure for AI Agents,infra_evals,https://identitydigital.hrmdirect.com/employment/job-opening.php,active,0.95,"[""AMC-6952""]",1
 agent-hiring-map-public/1.0,PROD-7A8FF3DDA4FC296A,ORG-AFDC337A28EEBB15,mechanical-processing vertical-model and multi-Agent application engineering,enterprise_workflow,null,active,0.95,"[""AMC-6803""]",1
 agent-hiring-map-public/1.0,PROD-7AB565FAF50B7663,ORG-87CC986CE8E88BEC,Vertical business-line Agent application full-stack engineering,general_other,https://www.cmhk.com/main/,active,0.95,"[""AMC-1424""]",1
+agent-hiring-map-public/1.0,PROD-7AD78E484C3405B1,ORG-DA473304815E78ED,Agent role work surface / 智能体岗位工作面,agent_product_or_work_surface,null,active,1.0,"[""AMC-7220""]",1
 agent-hiring-map-public/1.0,PROD-7B05DA624EA2C649,ORG-61FF26299885EEDA,AI智能体应用开发工程师/专家-Data,data_rag,null,active,0.95,"[""AMC-0277""]",1
 agent-hiring-map-public/1.0,PROD-7B0D3BC587FE55C9,ORG-5DD28FF8D3D8CF2C,Agentic AI product engineering,global_recovered_agent_role_context,https://job-boards.greenhouse.io/air/jobs/4114639009,active,0.95,"[""AMC-0401""]",1
 agent-hiring-map-public/1.0,PROD-7B3A2CA7AEA15C80,ORG-A11413B0A4A315C2,Senior Info Sec Operations Engineer | OKTA | IAM,infra_evals,https://www.servicenow.com/,active,0.95,"[""AMC-5393""]",1
@@ -2011,6 +2018,7 @@ agent-hiring-map-public/1.0,PROD-B12BFF264F26B5D8,ORG-89F37B39CFBE1DAE,龙虾手
 agent-hiring-map-public/1.0,PROD-B15846506EBD6E1F,ORG-273F84488C264D30,intelligent-Agent project-manager hiring locator,enterprise_workflow,null,active,0.95,"[""AMC-6845""]",1
 agent-hiring-map-public/1.0,PROD-B182F9816EC4AD5B,ORG-A11413B0A4A315C2,"Senior Machine Learning Engineer, Agentic AI Systems - Moveworks",infra_evals,https://www.servicenow.com/,active,0.95,"[""AMC-5404""]",1
 agent-hiring-map-public/1.0,PROD-B19AADB4CB05A069,ORG-BAD9159D1A3A75BE,Agent-native enterprise-data MCP and CLI platform,data_rag,https://agent.qcc.com/,active,0.95,"[""AMC-7184""]",1
+agent-hiring-map-public/1.0,PROD-B1A80F9CCCBECC99,ORG-FED0F4E40F22FDC6,Agent role work surface / 智能体岗位工作面,agent_product_or_work_surface,null,active,1.0,"[""AMC-7225""]",1
 agent-hiring-map-public/1.0,PROD-B1AAA33B9D591928,ORG-61FF26299885EEDA,AI Agent开发工程师-抖音,general_other,null,active,0.95,"[""AMC-0282""]",1
 agent-hiring-map-public/1.0,PROD-B1C059839CC43BB1,ORG-9DFC553A9EAE6EC7,Zhipu Large-Model Agent / Coding Evaluation,coding,https://www.zhipuai.cn/,active,0.95,"[""AMC-1276""]",1
 agent-hiring-map-public/1.0,PROD-B1D315A62D20A68E,ORG-250C3EA7DC050E3F,"Olly AI observability agent, MCP server and agentic workflow engineering",infra_evals,https://coralogix.com/docs/user-guides/olly/,active,0.95,"[""AMC-6519""]",1
@@ -2450,6 +2458,7 @@ agent-hiring-map-public/1.0,PROD-DA3D0840EC39E954,ORG-61FF26299885EEDA,Coze Codi
 agent-hiring-map-public/1.0,PROD-DA459CD4E53F826C,ORG-61FF26299885EEDA,AI Agent方向大模型算法实习生 for privacy safety,general_other,null,active,0.95,"[""AMC-0818""]",1
 agent-hiring-map-public/1.0,PROD-DA54A542704266F8,ORG-243AEF4FD434BF25,UAP enterprise and vertical Agent builder platform with RAG workflow orchestration and evaluation,data_rag,https://www.flamelephant.com/,active,0.95,"[""AMC-7004""]",1
 agent-hiring-map-public/1.0,PROD-DA7A0D4501983F02,ORG-650DDBFA8A0CA19F,StepFun 算法工程师（金融大模型/AI Agent方向） / financial_agent_algorithm_engineering,vertical_finance_health,https://platform.stepfun.com/,active,0.95,"[""AMC-5019""]",1
+agent-hiring-map-public/1.0,PROD-DA96AD2F8003D301,ORG-E8CF4F6CA5F215C3,Agent role work surface / 智能体岗位工作面,agent_product_or_work_surface,null,active,1.0,"[""AMC-7224""]",1
 agent-hiring-map-public/1.0,PROD-DA97A5F43F3029ED,ORG-A11413B0A4A315C2,"Senior Staff Software Engineer, Agentic AI Systems - Moveworks",infra_evals,https://www.servicenow.com/,active,0.95,"[""AMC-5368""]",1
 agent-hiring-map-public/1.0,PROD-DAA9ECE576646F1E,ORG-30BD28A317DAFA4E,AI-native productivity assistant and autonomous agent infrastructure,infra_evals,https://espa.ai/,active,0.95,"[""AMC-6412""]",1
 agent-hiring-map-public/1.0,PROD-DAAB2FF45928259A,ORG-2AF1645864C11E12,Senior Software Engineer for Agentic AI Platform,infra_evals,https://www.lvt.com/,active,0.95,"[""AMC-0810""]",1
