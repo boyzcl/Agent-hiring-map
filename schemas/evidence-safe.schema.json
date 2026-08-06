@@ -19,7 +19,7 @@
   ],
   "properties": {
     "schema_version": {"const": "agent-hiring-map-public/1.0"},
-    "evidence_id": {"type": "string", "pattern": "^AMC-[0-9]{4}$"},
+    "evidence_id": {"type": "string", "pattern": "^AMC-[0-9]{4,}$"},
     "geography_bucket": {
       "enum": ["China", "United States", "Other/Global", "Unknown"]
     },

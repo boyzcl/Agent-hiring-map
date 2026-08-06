@@ -1,31 +1,48 @@
 {
   "after": {
-    "current": 959,
-    "relations": 11437,
-    "roles": 1313
+    "current": 969,
+    "evidence": 7227,
+    "organizations": 1358,
+    "products": 2880,
+    "relations": 11484,
+    "review": 634,
+    "roles": 1323,
+    "teams": 1750
   },
   "before": {
-    "current": 479,
+    "current": 959,
+    "evidence": 7217,
+    "organizations": 1355,
+    "products": 2871,
     "relations": 11437,
-    "roles": 1313
+    "review": 624,
+    "roles": 1313,
+    "teams": 1741
   },
   "changed": {
-    "canonical_role_identity_changes": 0,
-    "current_added_existing_roles": 547,
-    "current_removed": 67,
-    "current_retained": 412,
-    "disposition_distribution": {
-      "keep_public_noncurrent_blocked": 22,
-      "keep_public_noncurrent_closed": 209,
-      "keep_public_noncurrent_disputed": 47,
-      "keep_public_noncurrent_exhausted_unresolved": 75,
-      "keep_public_noncurrent_relevance_or_title_failed": 1,
-      "publish_current": 959
-    },
-    "role_public_disposition_updates": 1313
+    "current_added": 10,
+    "evidence_added": 10,
+    "organizations_added": 3,
+    "products_added": 9,
+    "relations_added": 47,
+    "review_delta": 10,
+    "role_ids_added": [
+      "ROLE-0E269EF0EA3E4D14",
+      "ROLE-10F1928B4ADBB226",
+      "ROLE-70CFF6168DD4EE55",
+      "ROLE-7317DE8261B7C261",
+      "ROLE-7F6BBCD16F26BB2E",
+      "ROLE-8729A91B7399B7FD",
+      "ROLE-8A7688820827AC7F",
+      "ROLE-9035C61E37C4E14E",
+      "ROLE-BC3822AD94E7C0A8",
+      "ROLE-D808CBA5D59502F4"
+    ],
+    "roles_added": 10,
+    "teams_added": 9
   },
-  "evidence_rows_changed": 0,
-  "reason": "existing_role_publication_completeness_v1",
-  "release_as_of": "2026-08-05",
+  "raw_html_or_full_jd_stored": false,
+  "reason": "continuous_new_role_discovery_release",
+  "release_as_of": "2026-08-06",
   "schema_version": "agent-hiring-map-public-delta/2.0"
 }

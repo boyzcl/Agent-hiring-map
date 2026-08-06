@@ -15,7 +15,7 @@
     "aliases": {"type": "array", "items": {"type": "string"}},
     "status": {"type": ["string", "null"]},
     "confidence": {"type": "number", "minimum": 0, "maximum": 1},
-    "evidence_ids": {"type": "array", "items": {"type": "string", "pattern": "^AMC-[0-9]{4}$"}},
+    "evidence_ids": {"type": "array", "items": {"type": "string", "pattern": "^AMC-[0-9]{4,}$"}},
     "version": {"type": "integer", "minimum": 1}
   }
 }

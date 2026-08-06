@@ -14,7 +14,7 @@
     "team_geography": {"type": "array", "items": {"type": "string", "minLength": 1, "maxLength": 80}},
     "status": {"type": ["string", "null"]},
     "confidence": {"type": "number", "minimum": 0, "maximum": 1},
-    "evidence_ids": {"type": "array", "items": {"type": "string", "pattern": "^AMC-[0-9]{4}$"}},
+    "evidence_ids": {"type": "array", "items": {"type": "string", "pattern": "^AMC-[0-9]{4,}$"}},
     "version": {"type": "integer", "minimum": 1}
   }
 }

@@ -84,7 +84,7 @@
     "access_requirement": {"type": ["string", "null"]},
     "evidence_grade": {"type": ["string", "null"]},
     "supersedes_role_id": {"type": ["string", "null"]},
-    "evidence_ids": {"type": "array", "items": {"type": "string", "pattern": "^AMC-[0-9]{4}$"}},
+    "evidence_ids": {"type": "array", "items": {"type": "string", "pattern": "^AMC-[0-9]{4,}$"}},
     "version": {"type": "integer", "minimum": 1},
     "role_display_version": {"const": "agent-hiring-map-role-display/1.0"},
     "display_title_zh": {"type": "string", "minLength": 1, "maxLength": 300},
@@ -177,7 +177,8 @@
       "enum": [
         "existing_role_revalidated",
         "unlinked_evidence_recovered",
-        "global_deferred_evidence_recovered"
+        "global_deferred_evidence_recovered",
+        "continuous_new_role_discovery"
       ]
     },
     "geography": {"type": "string", "minLength": 1, "maxLength": 80},

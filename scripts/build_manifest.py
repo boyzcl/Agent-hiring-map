@@ -24,15 +24,19 @@ def sha256(path: Path) -> str:
 def build() -> dict:
     files = {}
     for path in sorted(ROOT.rglob("*")):
+        relative = path.relative_to(ROOT).as_posix()
+        if path.is_symlink():
+            raise ValueError(f"public package symlink forbidden: {relative}")
+        if relative == "metrics-private" or relative.startswith("metrics-private/"):
+            raise ValueError(f"private metrics forbidden in public package: {relative}")
         if not path.is_file() or ".git" in path.parts:
             continue
-        relative = path.relative_to(ROOT).as_posix()
         if (
-            "__pycache__" in path.parts
+            ".pytest_cache" in path.parts
+            or "__pycache__" in path.parts
             or path.suffix == ".pyc"
             or path.name == ".DS_Store"
             or relative == "review-queue.jsonl"
-            or relative.startswith("metrics-private/")
             or relative == "manifest.json"
         ):
             continue
